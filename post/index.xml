@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Giuseppe De Laurentis</title>
-    <link>https://GDeLaurentis.github.io/post/</link>
+    <link>https://gdelaurentis.github.io/post/</link>
     <description>Recent content in Posts on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 May 2019 19:16:01 +0100</lastBuildDate>
     
-	<atom:link href="https://GDeLaurentis.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gdelaurentis.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Analytical Reconstruction of a Simple Tree Amplitude</title>
-      <link>https://GDeLaurentis.github.io/post/a-simple-tree-level-example/</link>
+      <link>https://gdelaurentis.github.io/post/a-simple-tree-level-example/</link>
       <pubDate>Tue, 21 May 2019 19:16:01 +0100</pubDate>
       
-      <guid>https://GDeLaurentis.github.io/post/a-simple-tree-level-example/</guid>
+      <guid>https://gdelaurentis.github.io/post/a-simple-tree-level-example/</guid>
       <description>&lt;a href=&#34;https://arxiv.org/abs/1904.04067&#34; target=&#34;_blank&#34;&gt;https://arxiv.org/abs/1904.04067&lt;/a&gt;</description>
     </item>
     

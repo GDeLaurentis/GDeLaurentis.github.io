@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>QCD on Giuseppe De Laurentis</title>
-    <link>https://GDeLaurentis.github.io/tags/qcd/</link>
+    <link>https://gdelaurentis.github.io/tags/qcd/</link>
     <description>Recent content in QCD on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://GDeLaurentis.github.io/tags/qcd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gdelaurentis.github.io/tags/qcd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Extracting analytical one-loop amplitudes from numerical evaluations</title>
-      <link>https://GDeLaurentis.github.io/publication/arxiv1904.04067/</link>
+      <link>https://gdelaurentis.github.io/publication/arxiv1904.04067/</link>
       <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://GDeLaurentis.github.io/publication/arxiv1904.04067/</guid>
+      <guid>https://gdelaurentis.github.io/publication/arxiv1904.04067/</guid>
       <description></description>
     </item>
     

@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Giuseppe De Laurentis</title>
-    <link>https://GDeLaurentis.github.io/tags/</link>
+    <link>https://gdelaurentis.github.io/tags/</link>
     <description>Recent content in Tags on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://GDeLaurentis.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gdelaurentis.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Loop Calculations</title>
-      <link>https://GDeLaurentis.github.io/tags/loop-calculations/</link>
+      <link>https://gdelaurentis.github.io/tags/loop-calculations/</link>
       <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://GDeLaurentis.github.io/tags/loop-calculations/</guid>
+      <guid>https://gdelaurentis.github.io/tags/loop-calculations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>QCD</title>
-      <link>https://GDeLaurentis.github.io/tags/qcd/</link>
+      <link>https://gdelaurentis.github.io/tags/qcd/</link>
       <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://GDeLaurentis.github.io/tags/qcd/</guid>
+      <guid>https://gdelaurentis.github.io/tags/qcd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scattering Amplitudes</title>
-      <link>https://GDeLaurentis.github.io/tags/scattering-amplitudes/</link>
+      <link>https://gdelaurentis.github.io/tags/scattering-amplitudes/</link>
       <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://GDeLaurentis.github.io/tags/scattering-amplitudes/</guid>
+      <guid>https://gdelaurentis.github.io/tags/scattering-amplitudes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deep Learning</title>
-      <link>https://GDeLaurentis.github.io/tags/deep-learning/</link>
+      <link>https://gdelaurentis.github.io/tags/deep-learning/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://GDeLaurentis.github.io/tags/deep-learning/</guid>
+      <guid>https://gdelaurentis.github.io/tags/deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Demo</title>
-      <link>https://GDeLaurentis.github.io/tags/demo/</link>
+      <link>https://gdelaurentis.github.io/tags/demo/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://GDeLaurentis.github.io/tags/demo/</guid>
+      <guid>https://gdelaurentis.github.io/tags/demo/</guid>
       <description></description>
     </item>
     
