@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Giuseppe De Laurentis</title>
+    <link>https://GDeLaurentis.github.io/authors/admin/</link>
+    <description>Recent content on Giuseppe De Laurentis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://GDeLaurentis.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Extracting analytical one-loop amplitudes from numerical evaluations</title>
+      <link>https://GDeLaurentis.github.io/publication/arxiv1904.04067/</link>
+      <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://GDeLaurentis.github.io/publication/arxiv1904.04067/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://GDeLaurentis.github.io/authors/admin/</link>
+      <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://GDeLaurentis.github.io/authors/admin/</guid>
+      <description>I have lived in Milano until the end of high school. I then moved to Oxford for my undergraduate and master studies. I am currently studying for a PhD in Durham.</description>
+    </item>
+    
+  </channel>
+</rss>
