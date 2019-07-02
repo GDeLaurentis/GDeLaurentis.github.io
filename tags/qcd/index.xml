@@ -20,5 +20,25 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Analytical amplitudes from numerical evaluations</title>
+      <link>https://gdelaurentis.github.io/slides/qcdlhc/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/slides/qcdlhc/</guid>
+      <description>Analytical &amp;nbsp; amplitudes &amp;nbsp; from &amp;nbsp; numerical &amp;nbsp; evaluations 
+Giuseppe De Laurentis
+with Daniel Maitre
+
+IPPP - Durham University
+ Only the speaker can read these notes Press S key to view   Table of Contents 
+1. Motivation and introduction
+2. Singularity structure
+3. Analytical amplitude extraction
+4. Some results (Yang-Mills in the Standard Model)
+
+1.1 Motivation Cross sections at hadron colliders are given by:$σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b/h_2}(x_b, μ_F) \;\hat{σ}_{ab→n-2}(μ_F, μ_R)$</description>
+    </item>
+    
   </channel>
 </rss>

@@ -6,18 +6,27 @@
     <description>Recent content on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Jun 2019 21:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jul 2019 13:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gdelaurentis.github.io/authors/giuseppe-de-laurentis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>QCDMasterClass2019</title>
+      <title>Analytical amplitudes from numerical evaluations</title>
+      <link>https://gdelaurentis.github.io/talk/qcdlhc/</link>
+      <pubDate>Sun, 14 Jul 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/talk/qcdlhc/</guid>
+      <description>QCD@LHC 2019</description>
+    </item>
+    
+    <item>
+      <title>From numerical to analytical amplitudes</title>
       <link>https://gdelaurentis.github.io/talk/qcdmasterclass2019/</link>
       <pubDate>Thu, 13 Jun 2019 21:00:00 +0100</pubDate>
       
       <guid>https://gdelaurentis.github.io/talk/qcdmasterclass2019/</guid>
-      <description></description>
+      <description>QCD Master Class 2019</description>
     </item>
     
     <item>
@@ -27,6 +36,26 @@
       
       <guid>https://gdelaurentis.github.io/post/a-simple-tree-level-example/</guid>
       <description>&lt;a href=&#34;https://arxiv.org/abs/1904.04067&#34; target=&#34;_blank&#34;&gt;https://arxiv.org/abs/1904.04067&lt;/a&gt;</description>
+    </item>
+    
+    <item>
+      <title>Analytical amplitudes from numerical evaluations</title>
+      <link>https://gdelaurentis.github.io/slides/qcdlhc/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/slides/qcdlhc/</guid>
+      <description>Analytical &amp;nbsp; amplitudes &amp;nbsp; from &amp;nbsp; numerical &amp;nbsp; evaluations 
+Giuseppe De Laurentis
+with Daniel Maitre
+
+IPPP - Durham University
+ Only the speaker can read these notes Press S key to view   Table of Contents 
+1. Motivation and introduction
+2. Singularity structure
+3. Analytical amplitude extraction
+4. Some results (Yang-Mills in the Standard Model)
+
+1.1 Motivation Cross sections at hadron colliders are given by:$σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b/h_2}(x_b, μ_F) \;\hat{σ}_{ab→n-2}(μ_F, μ_R)$</description>
     </item>
     
   </channel>

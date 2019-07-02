@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://gdelaurentis.github.io/slides/qcdlhc/">
+
+  <title>Analytical amplitudes from numerical evaluations | Giuseppe De Laurentis</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/sky.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous">
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/reveal_custom.min.css">
+
+  
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/pdf.css' : 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+
+
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="DurhamBlue.png"
+  >
+
+
+<h3 id="analytical-nbsp-amplitudes-nbsp-from-nbsp-numerical-nbsp-evaluations">Analytical &nbsp; amplitudes &nbsp; from &nbsp; numerical &nbsp; evaluations</h3>
+
+<p><br>
+Giuseppe De Laurentis</p>
+
+<p>with Daniel Maitre</p>
+
+<p><br></p>
+
+<p>IPPP - Durham University</p>
+
+<p><img src="IP3_logo_blue.png"; style="max-width:280px;float:center;border:none;"> <img src="DurhamLogo.svg"; style="max-width:280px;float:center;border:none;"></p>
+
+<aside class="notes">
+  <ul>
+<li>Only the speaker can read these notes</li>
+<li>Press <code>S</code> key to view</li>
+</ul>
+</aside>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h3 id="table-of-contents">Table of Contents</h3>
+
+<p><br></p>
+
+<p><em>1. Motivation and introduction</em></p>
+
+<p><em>2. Singularity structure</em></p>
+
+<p><em>3. Analytical amplitude extraction</em></p>
+
+<p><em>4. Some results (Yang-Mills in the Standard Model)</em></p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><section></p>
+
+<h3 id="1-1-motivation">1.1 Motivation</h3>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><font size=6>Cross sections at hadron colliders are given by:</font size></p>
+
+<p><font size=5>
+$σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b/h_2}(x_b, μ_F) \;\hat{σ}_{ab→n-2}(μ_F, μ_R)$</p>
+
+<p>$d\hat{σ}_{n}=\frac{1}{2\hat{s}}dΠ_{n-2}\;(2π)^4δ^4\big(∑_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,μ_F, μ_R)}|^2$
+</font size></p>
+
+<p><font size=6>Better predictions requires more loops and higher multiplicity. <br> The table shows the powers of the coupling:</font size></p>
+
+<p><font size=5></p>
+
+<table width=50% border="1" cellspacing="0" cellpadding="0">
+  <tr class="greenline">
+    <td colspan="2", rowspan="2"> <div id="rot90"> <center> <b> $\mathcal{A}_m^l \propto g_s^n $ </b> </center> </div> </td>
+    <td colspan="4"> <center> <b> multiplicity </b> </center> </td>
+  </tr>
+  <tr>
+    <td><b>4</b></td>
+    <td><b>5</b></td>
+    <td><b>6</b></td>
+    <td><b>7</b></td>
+  </tr>
+  <tr>
+    <td rowspan="3"> <b> loops </b> </td>
+    <td><b>0</b></td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td><b>1</b></td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td><b>2</b></td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+  </tr>
+</table>
+
+<p></font size></p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><font size=6>Brute force calculations are a mess:</font size></p>
+
+<p><img src="Five_gluons_mess.png"; style="max-width:500px;float:center;border:none;"></p>
+
+<p><font size=6>Results are often much easier [<a href="https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.56.2459" target="_blank">1</a>,
+<a href="https://reader.elsevier.com/reader/sd/pii/0550321388904427?token=EFDF378B5E170FFAF0B1BECE184A1EB6304F7798C481CF3C0E7D93DF6D367AE0E093D4D4942C932C66E8BEB75DAB41FE" target="_blank">2</a>]:</font size></p>
+
+<p><font size=5></p>
+
+<p>$$A^{tree}(1^{+}_{g}2^{+}_{g}3^{+}_{g}4^{-}_{g}5^{-}_{g}) = \frac{i\,⟨45⟩^{4}}{⟨12⟩⟨23⟩⟨34⟩⟨45⟩⟨51⟩}$$</p>
+
+<p></font size></p>
+
+<h2 id="section"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><section></p>
+
+<h3 id="1-2-color-ordering">1.2 Color Ordering</h3>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><font size=6>Relation to the full amplitude @ tree level:</font size></p>
+
+<p><font size=5>$\mathcal{A}^{tree}_{n}({p_i, λ_i, a_i}) = \; g^{n-2} ∑_{σ\in S_n/Z_n} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A^{tree}_n(σ(1^{λ_1}),\dots ,σ(n^{λ_n})).$</font size></p>
+
+<p><font size=6>Color decomposition at one loop:</font size></p>
+
+<p><font size=5>
+$\mathcal{A}^{1-loop}_{n}({p_i, λ_i, a_i}) = \; g^{n} ∑_{σ\in S_n/Z_n} N_{c} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A_{n;1}(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))$
+$ + ∑_{c = 2}^{\lfloor n/2 \rfloor + 1}∑_{σ\in S_n/Z_{n;c}} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(c-1)})\text{Tr}(T^{a_σ( c)}\dots T^{a_σ(n)}) A_{n;c}(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))$</font size>
+</font size></p>
+
+<p><font size=6>Decomposition in terms of basis integrals:</font size></p>
+
+<p><font size=5>
+$$A^{1-loop}_{n;1} = \sum_i d_i I^i_{Box} + \sum_i c_i I^i_{Triangle} + \sum_i b_i I^i_{Bubble} + R$$
+</font size></p>
+
+<h2 id="section-1"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><section></p>
+
+<h3 id="1-3-spinor-helicity">1.3 Spinor Helicity</h3>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><font size=6> The lowest-laying representations of the Lorentz group</font size>
+<font size=5> $\mathfrak{so}(1, 3)_\mathbb{C} \sim \mathfrak{su}(2) \times \mathfrak{su}(2)$</font size></p>
+
+<p><font size=5></p>
+
+<table>
+<thead>
+<tr>
+<th align="center">$\boldsymbol{(j_{-},j_{+})}$</th>
+<th align="center">dim.</th>
+<th align="left">name</th>
+<th align="center">quantum field</th>
+<th align="center">kinematic variable</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">(0,0)</td>
+<td align="center">1</td>
+<td align="left">scalar</td>
+<td align="center">$h$</td>
+<td align="center">m</td>
+</tr>
+
+<tr>
+<td align="center">(0,<sup>1</sup>&frasl;<sub>2</sub>)</td>
+<td align="center">2</td>
+<td align="left">right-handed Weyl spinor</td>
+<td align="center">$\chi_{R\,\alpha}$</td>
+<td align="center">$\lambda_\alpha$</td>
+</tr>
+
+<tr>
+<td align="center">(<sup>1</sup>&frasl;<sub>2</sub>,0)</td>
+<td align="center">2</td>
+<td align="left">left-handed Weyl spinor</td>
+<td align="center">$\chi_L^{\,\dot\alpha}$</td>
+<td align="center">$\bar{\lambda}^{\dot\alpha}$</td>
+</tr>
+
+<tr>
+<td align="center">(<sup>1</sup>&frasl;<sub>2</sub>, <sup>1</sup>&frasl;<sub>2</sub>)</td>
+<td align="center">4</td>
+<td align="left">rank-two spinor/four vector</td>
+<td align="center">$A^\mu/A^{\dot\alpha\alpha}$</td>
+<td align="center">$P^\mu/P^{\dot\alpha\alpha}$</td>
+</tr>
+
+<tr>
+<td align="center">(<sup>1</sup>&frasl;<sub>2</sub>,0)$\oplus$(0,<sup>1</sup>&frasl;<sub>2</sub>)</td>
+<td align="center">4</td>
+<td align="left">bispinor (Dirac spinor)</td>
+<td align="center">$\Psi$</td>
+<td align="center">$u, v$</td>
+</tr>
+</tbody>
+</table>
+
+<p></font size></p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><font size=6>Weyl spinors are sufficient for massless particles:</font size></p>
+
+<p><font size=5></p>
+
+<p>$\text{det}(P^{\dot\alpha\alpha})=m^2 \rightarrow 0 \quad \Longrightarrow \quad P^{\dot\alpha\alpha} = \bar\lambda^{\dot\alpha}\lambda^\alpha$</p>
+
+<p></font size></p>
+
+<p><font size=6>where:</font size></p>
+
+<p><font size=5></p>
+
+<p>$$
+\lambda_\alpha=\begin{pmatrix}\sqrt{p^0+p^3} \\ \frac{p^1+ip^2}{\sqrt{p^0+p^3}}\end{pmatrix} \, , \;\;\; \lambda^\alpha=\epsilon^{\alpha\beta} \lambda_\beta =\begin{pmatrix}\frac{p^1+ip^2}{\sqrt{p^0+p^3}} \\ -\sqrt{p^0+p^3}\end{pmatrix}
+$$</p>
+
+<p>$\bar\lambda_{\dot\alpha}=\begin{pmatrix}\sqrt{p^0+p^3} \\ \frac{p^1-ip^2}{\sqrt{p^0+p^3}}\end{pmatrix} \, , \;\;\; \bar\lambda^{\dot\alpha}=\epsilon^{\dot\alpha\dot\beta}\bar\lambda_{\dot\beta}=\begin{pmatrix}\frac{p^1-ip^2}{\sqrt{p^0+p^3}} \\ -\sqrt{p^0+p^3}\end{pmatrix}$</p>
+
+<p>$ \bar\lambda_{\dot\alpha} = (\lambda_\alpha)^\dagger \;\;\; if \;\;\; p^i \in \mathbb{R}$
+</font size></p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><font size=6>Some definitions:</font size></p>
+
+<p><font size=5>
+$$
+⟨ij⟩ = λ_iλ_j = (λ_i)^α(λ_j)_α \quad \quad \quad [ij] = \barλ_i\barλ_j = (\barλ_i)_\dotα(\barλ_j)^\dotα
+$$</p>
+
+<p>$$
+s_{ij} = ⟨ij⟩[ji]
+$$</p>
+
+<p>$$
+⟨i\;|\;(j+k)\;|\;l] = (λ_i)^α (\not P_j + \not P_k )_{α\dotα} \barλ_l^\dotα
+$$</p>
+
+<p>$$
+⟨i\;|\;(j+k)\;|\;(l+m)\;|\;n⟩ = (λ_i)^α (\not P_j + \not P_k )_{α \dot α} (\bar{\not P_l} + \bar{\not P_m} )^{\dot α α} (λ_n)_α
+$$</p>
+
+<p>$$
+tr_5(ijkl) = tr(\gamma^5 \not P_i \not P_j \not P_k \not P_l) =  [i\,|\,j\,|\,k\,|\,l\,|\,i⟩ - ⟨i\,|\,j\,|\,k\,|\,l\,|\,i]
+$$</p>
+
+<p></font size></p>
+
+<h2 id="section-2"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><section></p>
+
+<h2 id="2-1-singular-limits">2.1 Singular limits</h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><font size=5></p>
+
+<p>Singular limits give us information about the poles of the amplitude:</p>
+
+<p>$⟨ij⟩ \rightarrow ε, \quad \mathcal{f} \rightarrow ε^α \; \Rightarrow \; log(\mathcal{f}) \rightarrow α\cdot log(ε)$</p>
+
+<p>$\Rightarrow$ The slope of $log(\mathcal{f})(ε)$ gives us the type of singularity, if any exists.</p>
+
+<p>Constructing the phase space (&ldquo;&hellip;&rdquo; in the output below hide all O(~1) spinor variables):</p>
+
+<p></font size></p>
+
+<p><font size=7></p>
+
+<pre><code class="language-python">oParticles = Particles(6)
+oParticles.randomise_all()
+oParticles.set(&quot;⟨1|2⟩&quot;, 10 ** -30)
+oParticles.phasespace_consistency_check()
+</code></pre>
+
+<pre><code class="language-python">Consistency check:
+The largest momentum violation is 3.10963525161e-308
+The largest on shell violation is 4.58710727171e-308
+⟨1|2⟩ = 1e-30
+...
+</code></pre>
+
+<p></font size></p>
+
+<h2 id="section-3"></section></h2>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/head.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
+
+  <script>
+    window.revealPlugins = { dependencies: [
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/zoom-js/zoom.js', async: true },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/math/math.js', async: true },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/print-pdf/print-pdf.js', async: true },
+      
+      { src: '\/js\/vendor\/reveal.js\/plugin\/notes\/notes.js', async: true }
+    ]};
+
+    let revealDefaults = { center: true, controls: true, history: true, progress: true, transition: 'slide', mouseWheel: true };
+    let revealOptions = Object.assign({}, revealDefaults, revealPlugins);
+    Reveal.initialize(revealOptions);
+  </script>
+
+</body>
+</html>
