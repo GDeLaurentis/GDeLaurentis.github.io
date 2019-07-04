@@ -268,7 +268,7 @@ assert(abs(oTerms(oParticles) - oTree(oParticles)) &amp;lt; 10 ** -280)
 &lt;section data-noprocess data-shortcode-slide
   
       
-      data-background-image=&#34;DurhamBlue.png&#34;
+      data-background-image=&#34;Durham.png&#34;
   &gt;
 
 
@@ -374,7 +374,7 @@ $σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b
 
 &lt;p&gt;&lt;font size=5&gt;&lt;/p&gt;
 
-&lt;p&gt;$$A^{tree}(1^{+}_{g}2^{+}_{g}3^{+}_{g}4^{-}_{g}5^{-}_{g}) = \frac{i\,⟨45⟩^{4}}{⟨12⟩⟨23⟩⟨34⟩⟨45⟩⟨51⟩}$$&lt;/p&gt;
+&lt;p&gt;$A^{tree}(1^{+}_{g}2^{+}_{g}3^{+}_{g}4^{-}_{g}5^{-}_{g}) = \frac{i\,⟨45⟩^{4}}{⟨12⟩⟨23⟩⟨34⟩⟨45⟩⟨51⟩}$&lt;/p&gt;
 
 &lt;p&gt;&lt;/font size&gt;&lt;/p&gt;
 
@@ -457,7 +457,7 @@ $$A^{1-loop}_{n;1} = \sum_i d_i I^i_{Box} + \sum_i c_i I^i_{Triangle} + \sum_i b
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;(&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;, &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;(&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;,&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;)&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;rank-two spinor/four vector&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;$A^\mu/A^{\dot\alpha\alpha}$&lt;/td&gt;
@@ -532,40 +532,365 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;section&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;2-1-singular-limits&#34;&gt;2.1 Singular limits&lt;/h2&gt;
+&lt;h3 id=&#34;2-1-singular-limits&#34;&gt;2.1 Singular limits&lt;/h3&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;font size=5&gt;&lt;/p&gt;
 
-&lt;p&gt;Singular limits give us information about the poles of the amplitude:&lt;/p&gt;
+&lt;p&gt;Singular limits give us information about the poles of the amplitude.&lt;/p&gt;
 
-&lt;p&gt;$⟨ij⟩ \rightarrow ε, \quad \mathcal{f} \rightarrow ε^α \; \Rightarrow \; log(\mathcal{f}) \rightarrow α\cdot log(ε)$&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;$\Rightarrow$ The slope of $log(\mathcal{f})(ε)$ gives us the type of singularity, if any exists.&lt;/p&gt;
+&lt;p&gt;We need a set of possible poles of the amplitudes:&lt;/p&gt;
 
-&lt;p&gt;Constructing the phase space (&amp;ldquo;&amp;hellip;&amp;rdquo; in the output below hide all O(~1) spinor variables):&lt;/p&gt;
+&lt;p&gt;$r_i \in \{ ⟨12⟩, ⟨13⟩, \dots, ⟨1|2+3|4], \dots, s_{123}, \dots \}$,&lt;/p&gt;
+
+&lt;p&gt;and let $\mathbb{f}$ be the function we want to reconstruct.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;$r_i \rightarrow ε \ll 1, \quad r_{j \neq i} \sim \mathcal{O}(1), \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$&lt;/p&gt;
+
+&lt;p&gt;$\Rightarrow$ The slope of $\mathbb{f}(ε)$ in a log-log plot gives us the type of singularity, if any exists.&lt;/p&gt;
 
 &lt;p&gt;&lt;/font size&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;font size=7&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;oParticles = Particles(6)
-oParticles.randomise_all()
-oParticles.set(&amp;quot;⟨1|2⟩&amp;quot;, 10 ** -30)
-oParticles.phasespace_consistency_check()
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;font size=5&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;Consistency check:
-The largest momentum violation is 3.10963525161e-308
-The largest on shell violation is 4.58710727171e-308
-⟨1|2⟩ = 1e-30
-...
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As an example, let us consider following amplitude:&lt;/p&gt;
+
+&lt;p&gt;$\mathbb{f} = A^{tree}(1^{+}_{g}2^{+}_{g}3^{+}_{g}4^{-}_{g}5^{-}_{g}6^{-}_{g})$&lt;/p&gt;
+
+&lt;table width=100% border=&#34;1&#34; frame=&#34;void&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34;&gt;
+  &lt;tr class=&#34;greenline&#34;&gt;
+    &lt;td&gt; &lt;center&gt; $\lim_{⟨12⟩ \rightarrow \epsilon} \mathbb{f} \propto \epsilon^{-1}$ &lt;/center&gt; &lt;/td&gt;
+    &lt;td&gt; &lt;center&gt; $\lim_{⟨13⟩ \rightarrow \epsilon} \mathbb{f} \propto \epsilon^0$ &lt;/center&gt; &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt; &lt;img src=&#34;lim12.png&#34;; style=&#34;max-width:450px;float:center;border:none;&#34;&gt; &lt;/td&gt;
+    &lt;td&gt; &lt;img src=&#34;lim13.png&#34;; style=&#34;max-width:450px;float:center;border:none;&#34;&gt; &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;/font size&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;font size=5&gt;Studying the rest of the limits yields the least common denominator for $\mathbb{f}$:&lt;/font size&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=6&gt;$\mathbb{f} = \frac{\mathcal{N_{LCD}}}{\mathcal{D_{LCD}}} = \frac{\mathcal{N_{LCD}}}{⟨12⟩⟨16⟩[16]⟨23⟩⟨34⟩[34][45][56]s_{234}s_{345}}$.&lt;/font size&gt;
+&lt;font size=5&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;The complexity of the numerator depends on two parameters:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;mass dimension; $\quad \quad \quad$ 2. little group scalings.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;In this case $\mathcal{N_{LCD}}$ has mass dimension, phase weights: 10, [-1, 0, -1, 1, 0, 1].&lt;/p&gt;
+
+&lt;p&gt;The ansatz has 1326 independent terms.&lt;/p&gt;
 
 &lt;p&gt;&lt;/font size&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;section-3&#34;&gt;&lt;/section&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;section&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;2-2-doubly-singular-limits&#34;&gt;2.2 Doubly singular limits&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;font size=5&gt;&lt;/p&gt;
+
+&lt;p&gt;Except for the easiest cases, we should really think about $\mathbb{f}$ as:&lt;/p&gt;
+
+&lt;p&gt;$\mathbb{f} = \sum_i \frac{\mathcal{N}_i}{\mathcal{D}_i} = \sum_i \frac{\mathcal{N}_i}{\mathcal{R}_i\mathcal{S}_i}$,&lt;/p&gt;
+
+&lt;p&gt;where $\mathcal{R}_i$ are products of subsets of $\mathcal{D_{LCD}}$ (i.e. real poles), &lt;br/&gt; and $\mathcal{s} \in \mathcal{S}_i$ don&amp;rsquo;t appear in $\mathcal{D_{LCD}}$ (i.e. spurious poles and cancel in the sum).&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;This information can be accessed by studying doubly singular limits:&lt;/p&gt;
+
+&lt;p&gt;$r_i \rightarrow ε \ll 1, \quad r_j \rightarrow ε \ll 1, \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$&lt;/p&gt;
+
+&lt;p&gt;Note: now in general we cannot guarantee $\;r_{k \neq i, j} \sim \mathcal{O}(1)$&lt;/p&gt;
+
+&lt;p&gt;&lt;/font size&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;font size=5&gt;Reconstructing the behaviour in the limit involves again the slope of a log-log plot:&lt;/font size&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=4&gt;&lt;/p&gt;
+
+&lt;table border=&#34;1&#34; class=&#34;dataframe&#34;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&#34;text-align: right;&#34;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;⟨1|2⟩&lt;/th&gt;
+      &lt;th&gt;⟨1|6⟩&lt;/th&gt;
+      &lt;th&gt;[1|6]&lt;/th&gt;
+      &lt;th&gt;⟨2|3⟩&lt;/th&gt;
+      &lt;th&gt;⟨3|4⟩&lt;/th&gt;
+      &lt;th&gt;[3|4]&lt;/th&gt;
+      &lt;th&gt;[4|5]&lt;/th&gt;
+      &lt;th&gt;[5|6]&lt;/th&gt;
+      &lt;th&gt;s_234&lt;/th&gt;
+      &lt;th&gt;s_345&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;⟨1|2⟩&lt;/th&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1/30/5&lt;/td&gt;
+      &lt;td&gt;1/3/2&lt;/td&gt;
+      &lt;td&gt;1/31/4&lt;/td&gt;
+      &lt;td&gt;1/2/2&lt;/td&gt;
+      &lt;td&gt;2/12/3&lt;/td&gt;
+      &lt;td&gt;2/3/2&lt;/td&gt;
+      &lt;td&gt;2/10/3&lt;/td&gt;
+      &lt;td&gt;1/2/2&lt;/td&gt;
+      &lt;td&gt;2/10/3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;⟨1|6⟩&lt;/th&gt;
+      &lt;td&gt;1/30/5&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1/2/2&lt;/td&gt;
+      &lt;td&gt;1/2/2&lt;/td&gt;
+      &lt;td&gt;1/10/2&lt;/td&gt;
+      &lt;td&gt;2/4/2&lt;/td&gt;
+      &lt;td&gt;2/12/3&lt;/td&gt;
+      &lt;td&gt;1/3/2&lt;/td&gt;
+      &lt;td&gt;2/10/3&lt;/td&gt;
+      &lt;td&gt;2/10/3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;[1|6]&lt;/th&gt;
+      &lt;td&gt;1/3/2&lt;/td&gt;
+      &lt;td&gt;1/2/2&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2/12/3&lt;/td&gt;
+      &lt;td&gt;2/4/2&lt;/td&gt;
+      &lt;td&gt;1/10/2&lt;/td&gt;
+      &lt;td&gt;1/2/2&lt;/td&gt;
+      &lt;td&gt;1/30/6&lt;/td&gt;
+      &lt;td&gt;2/10/3&lt;/td&gt;
+      &lt;td&gt;2/10/3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;⟨2|3⟩&lt;/th&gt;
+      &lt;td&gt;1/31/4&lt;/td&gt;
+      &lt;td&gt;1/2/2&lt;/td&gt;
+      &lt;td&gt;2/12/3&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1/30/6&lt;/td&gt;
+      &lt;td&gt;1/3/2&lt;/td&gt;
+      &lt;td&gt;2/12/3&lt;/td&gt;
+      &lt;td&gt;2/3/2&lt;/td&gt;
+      &lt;td&gt;2/10/3&lt;/td&gt;
+      &lt;td&gt;1/2/2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td colspan=&#34;11&#34;&gt; &lt;center&gt; $\dots$ &lt;/center&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;/font size&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=5&gt;
+The first number if the slope of the log-log plot in the limit.&lt;br/&gt;
+The second number is the degeneracy of the phase space in the limit.&lt;br/&gt;
+The third number is the degeneracy of the &amp;lsquo;cleaned&amp;rsquo; phase space.&lt;br/&gt;
+For instance:&lt;br/&gt;
+$⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s_{345}, ⟨2|1+6|5], \dots \rightarrow \epsilon$
+&lt;/font size&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;font size=5&gt;The slope in the doubly singular limit tells us whether two poles should be in the same denominator and/or how to separate them.&lt;/font size&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=4&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;style  type=&#34;text/css&#34; &gt;
+    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col0 {
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col1 {
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col2 {
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col3 {
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col4 {
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col5 {
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col6 {
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col7 {
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col8 {
+            background:  khaki;
+            background:  khaki;
+            background:  khaki;
+            background:  khaki;
+            background:  khaki;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col9 {
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+        }&lt;/style&gt;&lt;br /&gt;
+&lt;table id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999f&#34; &gt;&lt;caption&gt;Green: forced. Red: Forbidden. Blue: optional (at least one). Light blue: optional.&lt;/caption&gt;
+&lt;thead&gt;    &lt;tr&gt;
+        &lt;th class=&#34;blank level0&#34; &gt;&lt;/th&gt;
+        &lt;th class=&#34;col_heading level0 col0&#34; &gt;⟨1|2⟩&lt;/th&gt;
+        &lt;th class=&#34;col_heading level0 col1&#34; &gt;⟨1|6⟩&lt;/th&gt;
+        &lt;th class=&#34;col_heading level0 col2&#34; &gt;[1|6]&lt;/th&gt;
+        &lt;th class=&#34;col_heading level0 col3&#34; &gt;⟨2|3⟩&lt;/th&gt;
+        &lt;th class=&#34;col_heading level0 col4&#34; &gt;⟨3|4⟩&lt;/th&gt;
+        &lt;th class=&#34;col_heading level0 col5&#34; &gt;[3|4]&lt;/th&gt;
+        &lt;th class=&#34;col_heading level0 col6&#34; &gt;[4|5]&lt;/th&gt;
+        &lt;th class=&#34;col_heading level0 col7&#34; &gt;[5|6]&lt;/th&gt;
+        &lt;th class=&#34;col_heading level0 col8&#34; &gt;s_234&lt;/th&gt;
+        &lt;th class=&#34;col_heading level0 col9&#34; &gt;s_345&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;    &lt;tr&gt;
+        &lt;th id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999flevel0_row0&#34; class=&#34;row_heading level0 row0&#34; &gt;s_234&lt;/th&gt;
+        &lt;td id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col0&#34; class=&#34;data row0 col0&#34; &gt;1/2/2&lt;/td&gt;
+        &lt;td id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col1&#34; class=&#34;data row0 col1&#34; &gt;2/10/3&lt;/td&gt;
+        &lt;td id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col2&#34; class=&#34;data row0 col2&#34; &gt;2/10/3&lt;/td&gt;
+        &lt;td id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col3&#34; class=&#34;data row0 col3&#34; &gt;2/10/3&lt;/td&gt;
+        &lt;td id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col4&#34; class=&#34;data row0 col4&#34; &gt;2/10/3&lt;/td&gt;
+        &lt;td id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col5&#34; class=&#34;data row0 col5&#34; &gt;2/10/4&lt;/td&gt;
+        &lt;td id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col6&#34; class=&#34;data row0 col6&#34; &gt;1/2/2&lt;/td&gt;
+        &lt;td id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col7&#34; class=&#34;data row0 col7&#34; &gt;2/10/3&lt;/td&gt;
+        &lt;td id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col8&#34; class=&#34;data row0 col8&#34; &gt;1&lt;/td&gt;
+        &lt;td id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col9&#34; class=&#34;data row0 col9&#34; &gt;1/2/2&lt;/td&gt;
+    &lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/font size&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;Graph.gv.svg&#34;; style=&#34;max-width:720px;float:center;border:none;&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;section-4&#34;&gt;&lt;/section&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;section&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;3-1-partial-fraction-decomposition&#34;&gt;3.1 Partial fraction decomposition&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;Graph2.gv.svg&#34;; style=&#34;max-width:720px;float:center;border:none;&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;section-5&#34;&gt;&lt;/section&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;section&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;3-2-fitting-of-ansatz&#34;&gt;3.2 Fitting of ansatz&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;How big is the ansatz?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;section-6&#34;&gt;&lt;/section&gt;&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;section&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;4-1-a-real-application&#34;&gt;4.1 A real application&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;font size=5&gt;
+Let us briefly consider the following quantity:&lt;/p&gt;
+
+&lt;p&gt;$R^{1-loop}_6(1^{+}_{g}2^{-}_{g}3^{+}_{g}4^{-}_{g}5^{+}_{g}6^{-}_{g})$
+&lt;/font size&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=4&gt;
+$\mathcal{D_{LCD}} =$&lt;/p&gt;
+
+&lt;p&gt;$⟨12⟩[12]⟨13⟩^2⟨15⟩^2⟨16⟩[16]⟨23⟩[23][24]^2[26]^2⟨34⟩[34]⟨35⟩^2⟨45⟩[45][46]^2⟨56⟩[56]$&lt;/p&gt;
+
+&lt;p&gt;$⟨1|2+3|1]^2⟨1|5+6|1]^2⟨1|3+4|2]^2⟨1|2+3|6]^2⟨2|1+6|2]^2⟨2|3+4|2]^2$&lt;/p&gt;
+
+&lt;p&gt;$⟨3|1+6|2]^2⟨3|1+2|3]^2⟨3|4+5|3]^2⟨3|1+2|4]^2⟨4|2+3|4]^2⟨4|5+6|4]^2$&lt;/p&gt;
+
+&lt;p&gt;$⟨5|1+6|4]^2⟨5|1+6|5]^2⟨5|3+4|5]^2⟨5|1+2|6]^2⟨6|1+2|6]^2⟨6|4+5|6]^2$&lt;/p&gt;
+
+&lt;p&gt;$s_{123}s_{234}s_{345}Δ_{135}^2Δ_{624}^2$&lt;/p&gt;
+
+&lt;p&gt;&lt;/font size&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=5&gt;
+The mass dimension is now MD,&lt;br/&gt;
+which would imply an ansatz with size between X and Y.
+&lt;/font size&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;GraphRational.gv.svg&#34;; style=&#34;maxwidth:1000px; float:center; border:none;&#34;&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;iframe src=&#34;https://arxiv.org/src/1904.04067v3/anc/AllOneLoop6Gluons/6g_pmpmpm_G/rational.pdf&amp;embedded=true&#34; style=&#34;width:718px; height:700px;&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;section-7&#34;&gt;&lt;/section&gt;&lt;/h2&gt;
 </description>
     </item>
     
