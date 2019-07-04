@@ -54,6 +54,12 @@
     
       
 
+<p><html>
+    <head>
+        <link rel="stylesheet" href="../reveal_custom.css">
+    </head>
+</html></p>
+
 
 <section data-noprocess data-shortcode-slide
   
@@ -62,14 +68,16 @@
   >
 
 
-<h3 id="analytical-nbsp-amplitudes-nbsp-from-nbsp-numerical-nbsp-evaluations">Analytical &nbsp; amplitudes &nbsp; from &nbsp; numerical &nbsp; evaluations</h3>
+<h1 id="analytical-nbsp-amplitudes-nbsp-from-nbsp-numerical-nbsp-evaluations">Analytical &nbsp; amplitudes &nbsp; from &nbsp; numerical &nbsp; evaluations</h1>
 
 <p><br>
 Giuseppe De Laurentis</p>
 
 <p>with Daniel Maitre</p>
 
-<p><br></p>
+<p><br>
+QCD@LHC 2019
+<br></p>
 
 <p>IPPP - Durham University</p>
 
@@ -77,8 +85,8 @@ Giuseppe De Laurentis</p>
 
 <aside class="notes">
   <ul>
-<li>Only the speaker can read these notes</li>
-<li>Press <code>S</code> key to view</li>
+<li>Only speaker can read these.</li>
+<li>Press S to view.</li>
 </ul>
 </aside>
 
@@ -93,7 +101,7 @@ Giuseppe De Laurentis</p>
     
       
 
-<h3 id="table-of-contents">Table of Contents</h3>
+<h1 id="table-of-contents">Table of Contents</h1>
 
 <p><br></p>
 
@@ -101,7 +109,7 @@ Giuseppe De Laurentis</p>
 
 <p><em>2. Singularity structure</em></p>
 
-<p><em>3. Analytical amplitude extraction</em></p>
+<p><em>3. Ansatz and amplitude reconstruction</em></p>
 
 <p><em>4. Some results (Yang-Mills in the Standard Model)</em></p>
 
@@ -118,7 +126,7 @@ Giuseppe De Laurentis</p>
 
 <p><section></p>
 
-<h3 id="1-1-motivation">1.1 Motivation</h3>
+<h1 id="1-1-motivation">1.1 Motivation</h1>
 
 
     </section>
@@ -131,7 +139,7 @@ Giuseppe De Laurentis</p>
     
       
 
-<p><font size=6>Cross sections at hadron colliders are given by:</font size></p>
+<p>Cross sections at hadron colliders are given by:</p>
 
 <p><font size=5>
 $σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b/h_2}(x_b, μ_F) \;\hat{σ}_{ab→n-2}(μ_F, μ_R)$</p>
@@ -139,13 +147,15 @@ $σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b
 <p>$d\hat{σ}_{n}=\frac{1}{2\hat{s}}dΠ_{n-2}\;(2π)^4δ^4\big(∑_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,μ_F, μ_R)}|^2$
 </font size></p>
 
-<p><font size=6>Better predictions requires more loops and higher multiplicity. <br> The table shows the powers of the coupling:</font size></p>
+<p><br></p>
+
+<p>Better predictions require both more loops and higher multiplicity.</p>
 
 <p><font size=5></p>
 
-<table width=50% border="1" cellspacing="0" cellpadding="0">
+<table width=50% border="1" cellspacing="0" cellpadding="0" style="margin-bottom:-10px">
   <tr class="greenline">
-    <td colspan="2", rowspan="2"> <div id="rot90"> <center> <b> $\mathcal{A}_m^l \propto g_s^n $ </b> </center> </div> </td>
+    <td colspan="2", rowspan="2"> <div id="rot90"> <center> <b> $\mathcal{A}_{mult.}^{loops} \propto g_s^n $ </b> </center> </div> </td>
     <td colspan="4"> <center> <b> multiplicity </b> </center> </td>
   </tr>
   <tr>
@@ -180,6 +190,8 @@ $σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b
 
 <p></font size></p>
 
+<p><font size=5>Powers of coupling in pure gluon scattering.</font size></p>
+
 
     </section>
     
@@ -191,18 +203,24 @@ $σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b
     
       
 
-<p><font size=6>Brute force calculations are a mess:</font size></p>
+<p>Brute force calculations are a mess:</p>
 
-<p><img src="Five_gluons_mess.png"; style="max-width:500px;float:center;border:none;"></p>
+<p><img src="Five_gluons_mess.png"; style="max-width:500px;float:center;border:none;margin-top:-5px;"></p>
 
-<p><font size=6>Results are often much easier [<a href="https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.56.2459" target="_blank">1</a>,
-<a href="https://reader.elsevier.com/reader/sd/pii/0550321388904427?token=EFDF378B5E170FFAF0B1BECE184A1EB6304F7798C481CF3C0E7D93DF6D367AE0E093D4D4942C932C66E8BEB75DAB41FE" target="_blank">2</a>]:</font size></p>
+<p>Results are often much easier [<a href="https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.56.2459" target="_blank">1</a>,
+<a href="https://reader.elsevier.com/reader/sd/pii/0550321388904427?token=EFDF378B5E170FFAF0B1BECE184A1EB6304F7798C481CF3C0E7D93DF6D367AE0E093D4D4942C932C66E8BEB75DAB41FE" target="_blank">2</a>]:</p>
 
 <p><font size=5></p>
 
 <p>$A^{tree}(1^{+}_{g}2^{+}_{g}3^{+}_{g}4^{-}_{g}5^{-}_{g}) = \frac{i\,⟨45⟩^{4}}{⟨12⟩⟨23⟩⟨34⟩⟨45⟩⟨51⟩}$</p>
 
 <p></font size></p>
+
+<aside class="notes">
+  <ul>
+<li>Can we do the calculation numerically, to bypass the algebraic complexty in the intermediate stages, and directly access the compact analytical final result?</li>
+</ul>
+</aside>
 
 <h2 id="section"></section></h2>
 
@@ -219,7 +237,7 @@ $σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b
 
 <p><section></p>
 
-<h3 id="1-2-color-ordering">1.2 Color Ordering</h3>
+<h1 id="1-2-color-ordering-br-font-size-7-and-font-size-br-master-integrals">1.2 Color Ordering <br/> <font size=7> and </font size> <br/> master integrals</h1>
 
 
     </section>
@@ -232,18 +250,22 @@ $σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b
     
       
 
-<p><font size=6>Relation to the full amplitude @ tree level:</font size></p>
+<p>Relation to the full amplitude @ tree level:</p>
 
 <p><font size=5>$\mathcal{A}^{tree}_{n}({p_i, λ_i, a_i}) = \; g^{n-2} ∑_{σ\in S_n/Z_n} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A^{tree}_n(σ(1^{λ_1}),\dots ,σ(n^{λ_n})).$</font size></p>
 
-<p><font size=6>Color decomposition at one loop:</font size></p>
+<p><br>
+Color decomposition at one loop:</p>
 
-<p><font size=5>
+<p><font size=5; style="margin-left:-20px;">
 $\mathcal{A}^{1-loop}_{n}({p_i, λ_i, a_i}) = \; g^{n} ∑_{σ\in S_n/Z_n} N_{c} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A_{n;1}(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))$
+</font size>
+<font size=5; style="margin-left:-50px;">
 $ + ∑_{c = 2}^{\lfloor n/2 \rfloor + 1}∑_{σ\in S_n/Z_{n;c}} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(c-1)})\text{Tr}(T^{a_σ( c)}\dots T^{a_σ(n)}) A_{n;c}(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))$</font size>
 </font size></p>
 
-<p><font size=6>Decomposition in terms of basis integrals:</font size></p>
+<p><br>
+Decomposition in terms of basis integrals:</p>
 
 <p><font size=5>
 $$A^{1-loop}_{n;1} = \sum_i d_i I^i_{Box} + \sum_i c_i I^i_{Triangle} + \sum_i b_i I^i_{Bubble} + R$$
@@ -264,7 +286,7 @@ $$A^{1-loop}_{n;1} = \sum_i d_i I^i_{Box} + \sum_i c_i I^i_{Triangle} + \sum_i b
 
 <p><section></p>
 
-<h3 id="1-3-spinor-helicity">1.3 Spinor Helicity</h3>
+<h1 id="1-3-spinor-helicity">1.3 Spinor Helicity</h1>
 
 
     </section>
@@ -277,8 +299,11 @@ $$A^{1-loop}_{n;1} = \sum_i d_i I^i_{Box} + \sum_i c_i I^i_{Triangle} + \sum_i b
     
       
 
-<p><font size=6> The lowest-laying representations of the Lorentz group</font size>
-<font size=5> $\mathfrak{so}(1, 3)_\mathbb{C} \sim \mathfrak{su}(2) \times \mathfrak{su}(2)$</font size></p>
+<p>The lowest-laying representations of the Lorentz group are:</p>
+
+<p><font size=5>
+(Recall: $\mathfrak{so}(1, 3)_\mathbb{C} \sim \mathfrak{su}(2) \times \mathfrak{su}(2)$)
+</font size></p>
 
 <p><font size=5></p>
 
@@ -349,15 +374,12 @@ $$A^{1-loop}_{n;1} = \sum_i d_i I^i_{Box} + \sum_i c_i I^i_{Triangle} + \sum_i b
     
       
 
-<p><font size=6>Weyl spinors are sufficient for massless particles:</font size></p>
+<p>Weyl spinors are sufficient for massless particles:</p>
 
-<p><font size=5></p>
+<p><font size=5>$\text{det}(P^{\dot\alpha\alpha})=m^2 \rightarrow 0 \quad \Longrightarrow \quad P^{\dot\alpha\alpha} = \bar\lambda^{\dot\alpha}\lambda^\alpha$.</font size></p>
 
-<p>$\text{det}(P^{\dot\alpha\alpha})=m^2 \rightarrow 0 \quad \Longrightarrow \quad P^{\dot\alpha\alpha} = \bar\lambda^{\dot\alpha}\lambda^\alpha$</p>
-
-<p></font size></p>
-
-<p><font size=6>where:</font size></p>
+<p><br>
+In terms of 4-momentum components we have:</p>
 
 <p><font size=5></p>
 
@@ -381,7 +403,7 @@ $$</p>
     
       
 
-<p><font size=6>Some definitions:</font size></p>
+<p>Some definitions:</p>
 
 <p><font size=5>
 $$
@@ -421,7 +443,7 @@ $$</p>
 
 <p><section></p>
 
-<h3 id="2-1-singular-limits">2.1 Singular limits</h3>
+<h1 id="2-1-singular-limits">2.1 Singular limits</h1>
 
 
     </section>
@@ -433,8 +455,6 @@ $$</p>
     <section>
     
       
-
-<p><font size=5></p>
 
 <p>Singular limits give us information about the poles of the amplitude.</p>
 
@@ -442,17 +462,15 @@ $$</p>
 
 <p>We need a set of possible poles of the amplitudes:</p>
 
-<p>$r_i \in \{ ⟨12⟩, ⟨13⟩, \dots, ⟨1|2+3|4], \dots, s_{123}, \dots \}$,</p>
+<p><font size=5>$r_i \in \{ ⟨12⟩, ⟨13⟩, \dots, ⟨1|2+3|4], \dots, s_{123}, \dots \}$,</font size></p>
 
 <p>and let $\mathbb{f}$ be the function we want to reconstruct.</p>
 
 <p><br></p>
 
-<p>$r_i \rightarrow ε \ll 1, \quad r_{j \neq i} \sim \mathcal{O}(1), \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$</p>
+<p><font size=5>$r_i \rightarrow ε \ll 1, \quad r_{j \neq i} \sim \mathcal{O}(1), \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$</font size></p>
 
-<p>$\Rightarrow$ The slope of $\mathbb{f}(ε)$ in a log-log plot gives us the type of singularity, if any exists.</p>
-
-<p></font size></p>
+<p>$\Rightarrow$ The slope of $\mathbb{f}(ε)$ in a log-log plot gives us the type of singularity,<br/> if any exists.</p>
 
 
     </section>
@@ -465,9 +483,9 @@ $$</p>
     
       
 
-<p><font size=5></p>
-
 <p>As an example, let us consider following amplitude:</p>
+
+<p><font size=5></p>
 
 <p>$\mathbb{f} = A^{tree}(1^{+}_{g}2^{+}_{g}3^{+}_{g}4^{-}_{g}5^{-}_{g}6^{-}_{g})$</p>
 
@@ -495,10 +513,11 @@ $$</p>
     
       
 
-<p><font size=5>Studying the rest of the limits yields the least common denominator for $\mathbb{f}$:</font size></p>
+<p>Studying the rest of the limits yields the least common denominator for $\mathbb{f}$:</p>
 
-<p><font size=6>$\mathbb{f} = \frac{\mathcal{N_{LCD}}}{\mathcal{D_{LCD}}} = \frac{\mathcal{N_{LCD}}}{⟨12⟩⟨16⟩[16]⟨23⟩⟨34⟩[34][45][56]s_{234}s_{345}}$.</font size>
-<font size=5></p>
+<p>$\mathbb{f} = \frac{\mathcal{N_{LCD}}}{\mathcal{D_{LCD}}} = \frac{\mathcal{N_{LCD}}}{⟨12⟩⟨16⟩[16]⟨23⟩⟨34⟩[34][45][56]s_{234}s_{345}}$.</p>
+
+<p><font size=5></p>
 
 <p><br></p>
 
@@ -510,7 +529,7 @@ $$</p>
 
 <p><br></p>
 
-<p>In this case $\mathcal{N_{LCD}}$ has mass dimension, phase weights: 10, [-1, 0, -1, 1, 0, 1].</p>
+<p><nobr> In this case $\mathcal{N_{LCD}}$ has mass dimension, phase weights: 10, [-1, 0, -1, 1, 0, 1].</nobr></p>
 
 <p>The ansatz has 1326 independent terms.</p>
 
@@ -531,7 +550,7 @@ $$</p>
 
 <p><section></p>
 
-<h3 id="2-2-doubly-singular-limits">2.2 Doubly singular limits</h3>
+<h1 id="2-2-doubly-singular-limits">2.2 Doubly singular limits</h1>
 
 
     </section>
@@ -544,13 +563,11 @@ $$</p>
     
       
 
-<p><font size=5></p>
-
 <p>Except for the easiest cases, we should really think about $\mathbb{f}$ as:</p>
 
 <p>$\mathbb{f} = \sum_i \frac{\mathcal{N}_i}{\mathcal{D}_i} = \sum_i \frac{\mathcal{N}_i}{\mathcal{R}_i\mathcal{S}_i}$,</p>
 
-<p>where $\mathcal{R}_i$ are products of subsets of $\mathcal{D_{LCD}}$ (i.e. real poles), <br/> and $\mathcal{s} \in \mathcal{S}_i$ don&rsquo;t appear in $\mathcal{D_{LCD}}$ (i.e. spurious poles and cancel in the sum).</p>
+<p>where $\mathcal{R}_i$ are products of subsets of $\mathcal{D_{LCD}}$ (i.e. real poles), <br/> and $\mathcal{S}_i$ are products of factors not in $\mathcal{D_{LCD}}$ (i.e. spurious poles).</p>
 
 <p><br></p>
 
@@ -560,8 +577,6 @@ $$</p>
 
 <p>Note: now in general we cannot guarantee $\;r_{k \neq i, j} \sim \mathcal{O}(1)$</p>
 
-<p></font size></p>
-
 
     </section>
     
@@ -573,9 +588,9 @@ $$</p>
     
       
 
-<p><font size=5>Reconstructing the behaviour in the limit involves again the slope of a log-log plot:</font size></p>
+<p>Information from taking the doubly singular limits:</p>
 
-<p><font size=4></p>
+<p><font size=5></p>
 
 <table border="1" class="dataframe">
   <thead>
@@ -597,54 +612,54 @@ $$</p>
     <tr>
       <th>⟨1|2⟩</th>
       <td>1</td>
-      <td>1/30/5</td>
-      <td>1/3/2</td>
-      <td>1/31/4</td>
-      <td>1/2/2</td>
-      <td>2/12/3</td>
-      <td>2/3/2</td>
-      <td>2/10/3</td>
-      <td>1/2/2</td>
-      <td>2/10/3</td>
+      <td>1/30</td>
+      <td>1/3</td>
+      <td>1/31</td>
+      <td>1/2</td>
+      <td>2/12</td>
+      <td>2/3</td>
+      <td>2/10</td>
+      <td>1/2</td>
+      <td>2/10</td>
     </tr>
     <tr>
       <th>⟨1|6⟩</th>
-      <td>1/30/5</td>
+      <td>1/30</td>
       <td>1</td>
-      <td>1/2/2</td>
-      <td>1/2/2</td>
-      <td>1/10/2</td>
-      <td>2/4/2</td>
-      <td>2/12/3</td>
-      <td>1/3/2</td>
-      <td>2/10/3</td>
-      <td>2/10/3</td>
+      <td>1/2</td>
+      <td>1/2</td>
+      <td>1/10</td>
+      <td>2/4</td>
+      <td>2/12</td>
+      <td>1/3</td>
+      <td>2/10</td>
+      <td>2/10</td>
     </tr>
     <tr>
       <th>[1|6]</th>
-      <td>1/3/2</td>
-      <td>1/2/2</td>
+      <td>1/3</td>
+      <td>1/2</td>
       <td>1</td>
-      <td>2/12/3</td>
-      <td>2/4/2</td>
-      <td>1/10/2</td>
-      <td>1/2/2</td>
-      <td>1/30/6</td>
-      <td>2/10/3</td>
-      <td>2/10/3</td>
+      <td>2/12</td>
+      <td>2/4</td>
+      <td>1/10</td>
+      <td>1/2</td>
+      <td>1/30</td>
+      <td>2/10</td>
+      <td>2/10</td>
     </tr>
     <tr>
       <th>⟨2|3⟩</th>
-      <td>1/31/4</td>
-      <td>1/2/2</td>
-      <td>2/12/3</td>
+      <td>1/31</td>
+      <td>1/2</td>
+      <td>2/12</td>
       <td>1</td>
-      <td>1/30/6</td>
-      <td>1/3/2</td>
-      <td>2/12/3</td>
-      <td>2/3/2</td>
-      <td>2/10/3</td>
-      <td>1/2/2</td>
+      <td>1/30</td>
+      <td>1/3</td>
+      <td>2/12</td>
+      <td>2/3</td>
+      <td>2/10</td>
+      <td>1/2</td>
     </tr>
     <tr>
       <td colspan="11"> <center> $\dots$ </center> </td>
@@ -654,13 +669,12 @@ $$</p>
 
 <p></font size></p>
 
-<p><font size=5>
-The first number if the slope of the log-log plot in the limit.<br/>
-The second number is the degeneracy of the phase space in the limit.<br/>
-The third number is the degeneracy of the &lsquo;cleaned&rsquo; phase space.<br/>
-For instance:<br/>
-$⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s_{345}, ⟨2|1+6|5], \dots \rightarrow \epsilon$
-</font size></p>
+<p>The first number if the slope of the log-log plot in the limit, <br/> the second number is the degeneracy of the phase space in the limit.</p>
+
+<p><br>
+For instance:</p>
+
+<p>$⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s_{345}, ⟨2|1+6|5], \dots \rightarrow \epsilon$</p>
 
 
     </section>
@@ -673,11 +687,11 @@ $⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s
     
       
 
-<p><font size=5>The slope in the doubly singular limit tells us whether two poles should be in the same denominator and/or how to separate them.</font size></p>
+<p>The slope in the doubly singular limit tells us whether two poles should be in the same denominator and the degeneracy how to separate them.</p>
 
-<p><font size=4></p>
+<p><font size=5></p>
 
-<p><style  type="text/css" >
+<p><style type="text/css">
     #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col0 {
             background:  tomato;
             background:  tomato;
@@ -739,7 +753,7 @@ $⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s
             background:  tomato;
             background:  tomato;
         }</style><br />
-<table id="T_67e20e68_9da2_11e9_b9bf_0242a8af999f" ><caption>Green: forced. Red: Forbidden. Blue: optional (at least one). Light blue: optional.</caption>
+<table id="T_67e20e68_9da2_11e9_b9bf_0242a8af999f" style="margin-top:-30px;" ><caption>Green: forced. Red: forbidden. Blue: optional (at least one). Light blue: optional.</caption>
 <thead>    <tr>
         <th class="blank level0" ></th>
         <th class="col_heading level0 col0" >⟨1|2⟩</th>
@@ -770,7 +784,112 @@ $⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s
 
 <p></font size></p>
 
-<p><img src="Graph.gv.svg"; style="max-width:720px;float:center;border:none;"></p>
+<p><img src="Graph.gv.svg"; style="max-width:720px;float:center;border:none;margin-bottom:-30px;"></p>
+
+<p><font size=5> Diagramatic representation of relation between poles</font size></p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p>Let us briefly consider the coefficient of a three mass triangle:</p>
+
+<p><img src="three_mass_triangle.svg"; width=25%; height=25%; style="float:center;border:none;margin-bottom:0px;"></p>
+
+<p>$\mathcal{D_{LCD}} = ⟨12⟩[12]⟨34⟩[34]⟨56⟩[56]⟨1|3+4|2]^4⟨3|1+2|4]^4⟨5|1+2|6]^4Δ_{135}^3$</p>
+
+<p><font size=4></p>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>⟨12⟩</th>
+      <th>[12]</th>
+      <th>⟨34⟩</th>
+      <th>[34]</th>
+      <th>⟨56⟩</th>
+      <th>[56]</th>
+      <th>⟨1|3+4|2]</th>
+      <th>⟨3|1+2|4]</th>
+      <th>⟨5|1+2|6]</th>
+      <th>Δ_135</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>⟨1|2⟩</th>
+      <td>1</td>
+      <td>1/2</td>
+      <td>1/2</td>
+      <td>2/12</td>
+      <td>1/2</td>
+      <td>2/12</td>
+      <td>4/4</td>
+      <td>5/6</td>
+      <td>2/10</td>
+      <td>2/4</td>
+    </tr>
+    <tr>
+      <td colspan="11"> <center> $\dots$ </center> </td>
+    </tr>
+    <tr>
+      <th>⟨3|1+2|4]</th>
+      <td>5/6</td>
+      <td>2/10</td>
+      <td>4/4</td>
+      <td>4/4</td>
+      <td>2/10</td>
+      <td>5/6</td>
+      <td>4/2</td>
+      <td>4</td>
+      <td>4/2</td>
+      <td style="background:yellow">3.5/4</td>
+    </tr>
+    <tr>
+      <td colspan="11"> <center> $\dots$ </center> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p></font size></p>
+
+<p>Do we need square roots of momentum invariants?</p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p>All branch cuts should have been taken care of by unitarity cuts.</p>
+
+<p>We should be able to explain this without using square roots.</p>
+
+<p><br>
+The culprit is $\Delta$, which first appears in the <br/> three mass triangle momentum parametrisation:</p>
+
+<p><font size=5>$\Delta_{135} = (K_1 \cdot K_2)^2 - K_1^2 K_2^2$</font size></p>
+
+<p><br>
+Solution:<br/>
+In some limits $\Delta$ behaves like the square of some quantity</p>
+
+<p><font size=5 style="margin-left:-50px;">$(\Omega_{351})^2 \equiv (2s_{12}s_{56}-(s_{12}+s_{56}-s_{45})s_{123})^2 = 4s_{123}^2\Delta_{135}-4s_{12}s_{56}\langle 4|1+2|3]\langle 3|1+2|4]$</font size></p>
+
+<p><font size=5>$(\Pi_{351})^2 \equiv (s_{123}-s_{124})^2 = 4\Delta_{135}-4\langle 4|1+2|3]\langle 3|1+2|4]$</font size></p>
 
 <h2 id="section-4"></section></h2>
 
@@ -787,7 +906,7 @@ $⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s
 
 <p><section></p>
 
-<h3 id="3-1-partial-fraction-decomposition">3.1 Partial fraction decomposition</h3>
+<h1 id="3-1-partial-fraction-decomposition">3.1 Partial fraction decomposition</h1>
 
 
     </section>
@@ -800,7 +919,22 @@ $⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s
     
       
 
+<p>Going back to our tree level example,<br/> let&rsquo;s see how we can group together the pols of the amplitude:</p>
+
 <p><img src="Graph2.gv.svg"; style="max-width:720px;float:center;border:none;"></p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><img src="Graph3.gv.svg"; style="max-width:720px;float:center;border:none;"></p>
 
 <h2 id="section-5"></section></h2>
 
@@ -817,7 +951,7 @@ $⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s
 
 <p><section></p>
 
-<h3 id="3-2-fitting-of-ansatz">3.2 Fitting of ansatz</h3>
+<h1 id="3-2-fitting-of-ansatz">3.2 Fitting of ansatz</h1>
 
 
     </section>
@@ -832,16 +966,13 @@ $⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s
 
 <p>How big is the ansatz?</p>
 
+<p>Easiest to count at constant null phase weights;<br/> the size of the ansatz is a function of:<br/><br/>1. its mass dimension ($d$) $\quad\quad$ 2.  multiplicity of phase space ($m$).</p>
 
-    </section>
-    
+<p><br>
+If we allow only for a polynomial in the numerator, then:<br/><br/> $|s_{ij}| = \frac{m(m-3)}{2}$ $\quad\quad$ $|tr_5| = {m-1 \choose 4}$</p>
 
-    
-    
-    
-    <section>
-    
-      
+<p><br>
+$\left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, d/2 \,} \mkern -9mu \right) \leq$ ansatz size $\leq \left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, d/2 \,} \mkern -9mu \right) + |tr_5| \left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, (d-4)/2 \,} \mkern -9mu \right)$</p>
 
 <h2 id="section-6"></section></h2>
 
@@ -858,7 +989,7 @@ $⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s
 
 <p><section></p>
 
-<h3 id="4-1-a-real-application">4.1 A real application</h3>
+<h1 id="4-1-a-real-application">4.1 A real application</h1>
 
 
     </section>
@@ -878,23 +1009,17 @@ Let us briefly consider the following quantity:</p>
 </font size></p>
 
 <p><font size=4>
-$\mathcal{D_{LCD}} =$</p>
-
-<p>$⟨12⟩[12]⟨13⟩^2⟨15⟩^2⟨16⟩[16]⟨23⟩[23][24]^2[26]^2⟨34⟩[34]⟨35⟩^2⟨45⟩[45][46]^2⟨56⟩[56]$</p>
-
-<p>$⟨1|2+3|1]^2⟨1|5+6|1]^2⟨1|3+4|2]^2⟨1|2+3|6]^2⟨2|1+6|2]^2⟨2|3+4|2]^2$</p>
-
-<p>$⟨3|1+6|2]^2⟨3|1+2|3]^2⟨3|4+5|3]^2⟨3|1+2|4]^2⟨4|2+3|4]^2⟨4|5+6|4]^2$</p>
-
-<p>$⟨5|1+6|4]^2⟨5|1+6|5]^2⟨5|3+4|5]^2⟨5|1+2|6]^2⟨6|1+2|6]^2⟨6|4+5|6]^2$</p>
-
-<p>$s_{123}s_{234}s_{345}Δ_{135}^2Δ_{624}^2$</p>
-
-<p></font size></p>
+$\mathcal{D_{LCD}} =$
+$⟨12⟩[12]⟨13⟩^2⟨15⟩^2⟨16⟩[16]⟨23⟩[23][24]^2[26]^2⟨34⟩[34]⟨35⟩^2⟨45⟩[45][46]^2⟨56⟩[56]$
+$⟨1|2+3|1]^2⟨1|5+6|1]^2⟨1|3+4|2]^2⟨1|2+3|6]^2⟨2|1+6|2]^2⟨2|3+4|2]^2$
+$⟨3|1+6|2]^2⟨3|1+2|3]^2⟨3|4+5|3]^2⟨3|1+2|4]^2⟨4|2+3|4]^2⟨4|5+6|4]^2$
+$⟨5|1+6|4]^2⟨5|1+6|5]^2⟨5|3+4|5]^2⟨5|1+2|6]^2⟨6|1+2|6]^2⟨6|4+5|6]^2$
+$s_{123}s_{234}s_{345}Δ_{135}^2Δ_{624}^2$
+</font size></p>
 
 <p><font size=5>
-The mass dimension is now MD,<br/>
-which would imply an ansatz with size between X and Y.
+The mass dimension is now 116,<br/>
+which would imply an ansatz with size roughly $10^{10}$
 </font size></p>
 
 

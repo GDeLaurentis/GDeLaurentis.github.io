@@ -1,0 +1,29 @@
+table td[rowspan] {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 1%;
+}
+
+#rot90
+{
+    -webkit-transform: rotate(90deg); 
+    -moz-transform: rotate(90deg);
+}
+
+.reveal section p {
+    font-size: 28px;
+}
+
+.reveal section pre code {
+    font-size: 24px;
+}
+
+.reveal h1 {
+    font-size: 54px;
+}
+.reveal h2 {
+    font-size: 48px;
+}
+.reveal h3 {
+    font-size: 42px;
+}
