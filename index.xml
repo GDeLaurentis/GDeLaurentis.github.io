@@ -406,7 +406,7 @@ $σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b
 
 &lt;hr /&gt;
 
-&lt;p&gt;Relation to the full amplitude @ tree level:&lt;/p&gt;
+&lt;p&gt;Relation to the full amplitude at tree level:&lt;/p&gt;
 
 &lt;p&gt;&lt;font size=5&gt;$\mathcal{A}^{tree}_{n}({p_i, λ_i, a_i}) = \; g^{n-2} ∑_{σ\in S_n/Z_n} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A^{tree}_n(σ(1^{λ_1}),\dots ,σ(n^{λ_n})).$&lt;/font size&gt;&lt;/p&gt;
 
@@ -729,9 +729,9 @@ $$&lt;/p&gt;
 &lt;p&gt;The first number if the slope of the log-log plot in the limit, &lt;br/&gt; the second number is the degeneracy of the phase space in the limit.&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;
-For instance:&lt;/p&gt;
+Eg: $\{r_i | ⟨12⟩ \rightarrow \epsilon \, \wedge \, ⟨16⟩ \rightarrow \epsilon \, \wedge \, r_i \rightarrow \epsilon \}$&lt;/p&gt;
 
-&lt;p&gt;$⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s_{345}, ⟨2|1+6|5], \dots \rightarrow \epsilon$&lt;/p&gt;
+&lt;p&gt;yields: $\{ ⟨12⟩, ⟨16⟩, ⟨26⟩, s_{345}, ⟨2|1+6|5], \dots \text{25 more} \dots \}$&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -931,13 +931,73 @@ In some limits $\Delta$ behaves like the square of some quantity&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;Going back to our tree level example,&lt;br/&gt; let&amp;rsquo;s see how we can group together the pols of the amplitude:&lt;/p&gt;
+&lt;p&gt;Going back to our tree level example,&lt;br/&gt; let&amp;rsquo;s see how we can group together the poles of the amplitude.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;Graph2.gv.svg&#34;; style=&#34;max-width:720px;float:center;border:none;&#34;&gt;&lt;/p&gt;
+&lt;table width=100% border=&#34;1&#34; frame=&#34;void&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34;&gt;
+  &lt;tr class=&#34;greenline&#34;&gt;
+    &lt;td&gt; &lt;center&gt; &lt;img src=&#34;Graph2.gv.svg&#34;; style=&#34;max-width:540px;float:center;border:none;&#34;&gt; &lt;/center&gt; &lt;/td&gt;
+    &lt;td&gt;
+      &lt;center&gt;
+        &lt;font size=6&gt;
+      $\frac{\mathcal{N_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s_{234}}+\\
+        \frac{\mathcal{N_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s_{345}}\phantom{+}$
+        &lt;/font size&gt;
+      &lt;/center&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;font size=5&gt;(Spoiler: $ \quad \small \mathcal{N_1} = 1i⟨4|2+3|1]^3, \quad \mathcal{N_2} = -1i⟨6|1+2|3]^3$)&lt;/font size&gt;&lt;/p&gt;
+
+&lt;p&gt;Where does &lt;font size=5&gt; $⟨2|1+6|5]$ &lt;/font size&gt; come from?&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=5&gt;$\{⟨12⟩, [56]\}_{\epsilon} \, \cap \, \{⟨16⟩, s_{234}\}_{\epsilon} \, \cap \, \{⟨23⟩, [45]\}_{\epsilon} \, \cap \, \{[34], s_{234}\}_{\epsilon} \, \dots$ &lt;/font size&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&#34;Graph3.gv.svg&#34;; style=&#34;max-width:720px;float:center;border:none;&#34;&gt;&lt;/p&gt;
+&lt;table width=100% border=&#34;1&#34; frame=&#34;void&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34;&gt;
+  &lt;tr class=&#34;greenline&#34;&gt;
+    &lt;td&gt; &lt;center&gt; &lt;img src=&#34;Graph3.gv.svg&#34;; style=&#34;max-width:540px;float:center;border:none;&#34;&gt; &lt;/center&gt; &lt;/td&gt;
+    &lt;td&gt;
+      &lt;center&gt;
+        &lt;font size=6&gt;
+      $\frac{\mathcal{N_1}}{⟨16⟩[34]⟨1|2+3|4]⟨5|1+6|2]s_{234}}+\\$
+      $\frac{\mathcal{N_2}}{[16]⟨34⟩⟨3|1+2|6]⟨5|1+6|2]s_{345}}+\\$
+      $\frac{\mathcal{N_3}}{⟨12⟩⟨23⟩[45][56]⟨1|2+3|4]⟨3|1+2|6]}$
+        &lt;/font size&gt;
+      &lt;/center&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;font size=5&gt;(Spoiler: $ \quad \small \mathcal{N_1} = 1i[23]^3⟨56⟩^3, \quad \mathcal{N_2} = -1i[12]^3⟨45⟩^3, \quad \mathcal{N_3} = 1is_{123}^3 $)&lt;/font size&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+Both of these partial fractions correspond to some BCFW shift,&lt;br/&gt; but we are not limited to these representations.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;table width=100% border=&#34;1&#34; frame=&#34;void&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34;&gt;
+  &lt;tr class=&#34;greenline&#34;&gt;
+    &lt;td&gt; &lt;center&gt; &lt;img src=&#34;Graph.gv.svg&#34;; style=&#34;max-width:540px;float:center;border:none;&#34;&gt; &lt;/center&gt; &lt;/td&gt;
+    &lt;td&gt;
+      &lt;center&gt;
+        &lt;font size=6&gt;
+      $\frac{\mathcal{N_1}}{[16]⟨23⟩⟨34⟩[56]s_{234}s_{345}}+\\$
+      $\frac{\mathcal{N_2}}{⟨12⟩⟨16⟩[34][45]s_{234}s_{345}}+\\$
+      $\frac{\mathcal{N_3}}{⟨12⟩⟨23⟩[45][56]s_{234}s_{345}}$
+        &lt;/font size&gt;
+      &lt;/center&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;font size=5&gt; &lt;nobr&gt; ($\small \mathcal{N_1} = 1i[12]⟨45⟩⟨4|2+3|1]^2, \, \mathcal{N_2} = 1i[23]⟨56⟩⟨6|1+2|3]^2, \, \mathcal{N_3} = 1i⟨4|2+3|1]⟨6|1+2|3]s_{123}$) &lt;/nobr&gt; &lt;/font size&gt;&lt;/p&gt;
+
+&lt;p&gt;We now have overlap between the different partial fractions, &lt;br/&gt;
+but no spurious poles.&lt;/p&gt;
+
+&lt;p&gt;Note that the $s_{ijk}$ appear in the same denominator, although the doubly singular limit suggests they shouldn&amp;rsquo;t.&lt;/p&gt;
 
 &lt;h2 id=&#34;section-5&#34;&gt;&lt;/section&gt;&lt;/h2&gt;
 
@@ -946,6 +1006,42 @@ In some limits $\Delta$ behaves like the square of some quantity&lt;/p&gt;
 &lt;p&gt;&lt;section&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;3-2-fitting-of-ansatz&#34;&gt;3.2 Fitting of ansatz&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Let&amp;rsquo;s consider the first representation:&lt;/p&gt;
+
+&lt;p&gt;$\frac{\mathcal{N_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s_{234}}+$
+$\frac{\mathcal{N_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s_{345}}$&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+$\mathcal{N_1}$ has mass dimension: 10, and phase weights: [-3, 0, 0, 3, 0, 0].&lt;br/&gt;
+We generate all possible products of spinor products compatible with this infomation. The ansatz has size 10:&lt;/p&gt;
+
+&lt;p&gt;$[⟨24⟩⟨24⟩⟨24⟩[12][12][12],$
+$⟨24⟩⟨24⟩⟨34⟩[12][12][13],$
+$⟨24⟩⟨24⟩⟨45⟩[12][12][15],$
+$⟨24⟩⟨34⟩⟨34⟩[12][13][13],$
+$⟨24⟩⟨34⟩⟨45⟩[12][13][15],$
+$⟨24⟩⟨45⟩⟨45⟩[12][15][15],$
+$⟨34⟩⟨34⟩⟨34⟩[13][13][13],$
+$⟨34⟩⟨34⟩⟨45⟩[13][13][15],$
+$⟨34⟩⟨45⟩⟨45⟩[13][15][15],$
+$⟨45⟩⟨45⟩⟨45⟩[15][15][15]]$,&lt;/p&gt;
+
+&lt;p&gt;much smaller than the one for $\mathcal{N_{LCD}}$&lt;br/&gt; which had more than 1000 terms!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;$\frac{\mathcal{N_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s_{234}}+$
+$\frac{\mathcal{N_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s_{345}}$&lt;/p&gt;
+
+&lt;p&gt;We can isolate the first term by generating phase space points &lt;br/&gt; in the limit of, say, $s_{234} \rightarrow \epsilon$.&lt;/p&gt;
+
+&lt;p&gt;$⟨24⟩⟨24⟩⟨24⟩[12][12][12]: 1i$&lt;br/&gt;
+$⟨24⟩⟨24⟩⟨34⟩[12][12][13]: 3i$&lt;br/&gt;
+$⟨24⟩⟨34⟩⟨34⟩[12][13][13]: 3i$&lt;br/&gt;
+$⟨34⟩⟨34⟩⟨34⟩[13][13][13]: 1i$&lt;/p&gt;
 
 &lt;hr /&gt;
 
