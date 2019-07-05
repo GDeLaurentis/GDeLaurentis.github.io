@@ -70,6 +70,8 @@
 
 <h1 id="analytical-nbsp-amplitudes-nbsp-from-nbsp-numerical-nbsp-evaluations">Analytical &nbsp; amplitudes &nbsp; from &nbsp; numerical &nbsp; evaluations</h1>
 
+<p><a href="https://arxiv.org/pdf/1904.04067.pdf" target="_blank">arXiv:1904.04067</a></p>
+
 <p><br>
 Giuseppe De Laurentis</p>
 
@@ -203,6 +205,41 @@ $σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b
     
       
 
+<p>We can split dynamics from kinematics with the following identities.</p>
+
+<p><br>
+Color ordering at tree level and one loop []:</p>
+
+<p><font size=5>$\mathcal{A}^{tree}_{n}({p_i, λ_i, a_i}) = \; g^{n-2} ∑_{σ\in S_n/Z_n} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A^{tree}_n(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))$</font size></p>
+
+<p><font size=5; style="margin-left:-20px;">
+$\mathcal{A}^{1-loop}_{n}({p_i, λ_i, a_i}) = \; g^{n} ∑_{σ\in S_n/Z_n} N_{c} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A_{n;1}(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))$
+</font size>
+<font size=5; style="margin-left:-50px;">
+$ + ∑_{c = 2}^{\lfloor n/2 \rfloor + 1}∑_{σ\in S_n/Z_{n;c}} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(c-1)})\text{Tr}(T^{a_σ( c)}\dots T^{a_σ(n)}) A_{n;c}(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))$</font size>
+</font size></p>
+
+<p><br>
+Decomposition in terms of basis integrals:</p>
+
+<p><font size=5>
+$$A^{1-loop}_{n;1} = \sum_i d_i I^i_{Box} + \sum_i c_i I^i_{Triangle} + \sum_i b_i I^i_{Bubble} + R$$</p>
+
+<p><nobr>$A^{tree},\, d_i,\, c_i,\, b_i,$ and $R$ are rational functions of kinematic invariants only.</nobr></p>
+
+<p></font size></p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
 <p>Brute force calculations are a mess:</p>
 
 <p><img src="Five_gluons_mess.png"; style="max-width:500px;float:center;border:none;margin-top:-5px;"></p>
@@ -216,11 +253,33 @@ $σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b
 
 <p></font size></p>
 
-<aside class="notes">
-  <ul>
-<li>Can we do the calculation numerically, to bypass the algebraic complexty in the intermediate stages, and directly access the compact analytical final result?</li>
-</ul>
-</aside>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><em>Numerical</em> calculations bypass any amount of algebraic complexity, see:<br/>
+BlackHat [], CutTools [], MadLoop [], Rocket [], Samurai [], NGluon [], etc&hellip;</p>
+
+<p><br></p>
+
+<p>But <em>analytical</em> results can still be useful, they provide:</p>
+
+<p>$\cdot$ better understanding of the analytical structure<br/>
+$\cdot$ faster computation<br/>
+$\cdot$ better numerical stability<br/>
+$\cdot$ easier to parallelise and distribute<br/>
+$\dots$</p>
+
+<p><br>
+The use of numerical samples to reconstruct analytical expressions is beginning to find direct applications to scattering amplitude calculations:
+see for example calculations over finite fields [].</p>
 
 <h2 id="section"></section></h2>
 
@@ -237,56 +296,7 @@ $σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b
 
 <p><section></p>
 
-<h1 id="1-2-color-ordering-br-font-size-7-and-font-size-br-master-integrals">1.2 Color Ordering <br/> <font size=7> and </font size> <br/> master integrals</h1>
-
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-
-<p>Relation to the full amplitude at tree level:</p>
-
-<p><font size=5>$\mathcal{A}^{tree}_{n}({p_i, λ_i, a_i}) = \; g^{n-2} ∑_{σ\in S_n/Z_n} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A^{tree}_n(σ(1^{λ_1}),\dots ,σ(n^{λ_n})).$</font size></p>
-
-<p><br>
-Color decomposition at one loop:</p>
-
-<p><font size=5; style="margin-left:-20px;">
-$\mathcal{A}^{1-loop}_{n}({p_i, λ_i, a_i}) = \; g^{n} ∑_{σ\in S_n/Z_n} N_{c} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A_{n;1}(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))$
-</font size>
-<font size=5; style="margin-left:-50px;">
-$ + ∑_{c = 2}^{\lfloor n/2 \rfloor + 1}∑_{σ\in S_n/Z_{n;c}} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(c-1)})\text{Tr}(T^{a_σ( c)}\dots T^{a_σ(n)}) A_{n;c}(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))$</font size>
-</font size></p>
-
-<p><br>
-Decomposition in terms of basis integrals:</p>
-
-<p><font size=5>
-$$A^{1-loop}_{n;1} = \sum_i d_i I^i_{Box} + \sum_i c_i I^i_{Triangle} + \sum_i b_i I^i_{Bubble} + R$$
-</font size></p>
-
-<h2 id="section-1"></section></h2>
-
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-
-<p><section></p>
-
-<h1 id="1-3-spinor-helicity">1.3 Spinor Helicity</h1>
+<h1 id="1-2-spinor-helicity">1.2 Spinor Helicity</h1>
 
 
     </section>
@@ -428,7 +438,10 @@ $$</p>
 
 <p></font size></p>
 
-<h2 id="section-2"></section></h2>
+<p><br>
+In particular, we need complex momenta to be able to lift the degeneracy between the angle and the square brackets.</p>
+
+<h2 id="section-1"></section></h2>
 
 
     </section>
@@ -470,7 +483,10 @@ $$</p>
 
 <p><font size=5>$r_i \rightarrow ε \ll 1, \quad r_{j \neq i} \sim \mathcal{O}(1), \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$</font size></p>
 
-<p>$\Rightarrow$ The slope of $\mathbb{f}(ε)$ in a log-log plot gives us the type of singularity,<br/> if any exists.</p>
+<p><nobr>$\Rightarrow$ The slope of $\mathbb{f}(ε)$ in a log-log plot gives us the type of singularity,<br/> if it exists.</nobr></p>
+
+<p><br>
+<nobr>Note: the uniqueness of the singular limit is important to avoid ambiguities.</nobr></p>
 
 
     </section>
@@ -513,7 +529,7 @@ $$</p>
     
       
 
-<p>Studying the rest of the limits yields the least common denominator for $\mathbb{f}$:</p>
+<p>Studying all the limits yields the least common denominator for $\mathbb{f}$:</p>
 
 <p>$\mathbb{f} = \frac{\mathcal{N_{LCD}}}{\mathcal{D_{LCD}}} = \frac{\mathcal{N_{LCD}}}{⟨12⟩⟨16⟩[16]⟨23⟩⟨34⟩[34][45][56]s_{234}s_{345}}$.</p>
 
@@ -529,13 +545,13 @@ $$</p>
 
 <p><br></p>
 
-<p><nobr> In this case $\mathcal{N_{LCD}}$ has mass dimension, phase weights: 10, [-1, 0, -1, 1, 0, 1].</nobr></p>
+<p><nobr> In this case $\mathcal{N_{LCD}}$ has mass dimension 10, and phase weights [-1, 0, -1, 1, 0, 1].</nobr></p>
 
 <p>The ansatz has 1326 independent terms.</p>
 
 <p></font size></p>
 
-<h2 id="section-3"></section></h2>
+<h2 id="section-2"></section></h2>
 
 
     </section>
@@ -575,7 +591,7 @@ $$</p>
 
 <p>$r_i \rightarrow ε \ll 1, \quad r_j \rightarrow ε \ll 1, \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$</p>
 
-<p>Note: now in general we cannot guarantee $\;r_{k \neq i, j} \sim \mathcal{O}(1)$</p>
+<p>Note: now in general we cannot guarantee uniqueness,<br/> i.e. that $\;r_{k \neq i, j} \sim \mathcal{O}(1)$.</p>
 
 
     </section>
@@ -669,12 +685,13 @@ $$</p>
 
 <p></font size></p>
 
-<p>The first number if the slope of the log-log plot in the limit, <br/> the second number is the degeneracy of the phase space in the limit.</p>
+<p>The first number is the slope of the log-log plot in the limit, <br/> the second number is the degeneracy of the phase space in the limit.</p>
 
-<p><br>
-Eg: $\{r_i | ⟨12⟩ \rightarrow \epsilon \, \wedge \, ⟨16⟩ \rightarrow \epsilon \, \wedge \, r_i \rightarrow \epsilon \}$</p>
+<p><font size=5>E.g.:  $⟨12⟩,\,⟨16⟩ \rightarrow \epsilon \;$ implies also $\; ⟨26⟩, s_{345}, ⟨2|1+6|5], \dots \rightarrow \epsilon$</font size></p>
 
-<p>yields: $\{ ⟨12⟩, ⟨16⟩, ⟨26⟩, s_{345}, ⟨2|1+6|5], \dots \text{25 more} \dots \}$</p>
+<p><font size=5>More mathematically:<br/>$\{a, b\}_\epsilon \equiv \{r_i | a \rightarrow \epsilon \, \wedge \, b \rightarrow \epsilon \Rightarrow r_i \rightarrow \epsilon \}$</font size></p>
+
+<p><font size=5>$\{⟨12⟩,\,⟨16⟩\}_\epsilon = \{ ⟨12⟩, ⟨16⟩, ⟨26⟩, s_{345}, ⟨2|1+6|5], \dots \text{25 more} \dots \}$</font size></p>
 
 
     </section>
@@ -891,7 +908,7 @@ In some limits $\Delta$ behaves like the square of some quantity</p>
 
 <p><font size=5>$(\Pi_{351})^2 \equiv (s_{123}-s_{124})^2 = 4\Delta_{135}-4\langle 4|1+2|3]\langle 3|1+2|4]$</font size></p>
 
-<h2 id="section-4"></section></h2>
+<h2 id="section-3"></section></h2>
 
 
     </section>
@@ -1005,7 +1022,7 @@ but no spurious poles.</p>
 
 <p>Note that the $s_{ijk}$ appear in the same denominator, although the doubly singular limit suggests they shouldn&rsquo;t.</p>
 
-<h2 id="section-5"></section></h2>
+<h2 id="section-4"></section></h2>
 
 
     </section>
@@ -1035,11 +1052,12 @@ but no spurious poles.</p>
 
 <p>Let&rsquo;s consider the first representation:</p>
 
-<p>$\frac{\mathcal{N_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s_{234}}+$
+<p>$\mathbb{f}=$
+$\frac{\mathcal{N_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s_{234}}+$
 $\frac{\mathcal{N_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s_{345}}$</p>
 
 <p><br>
-$\mathcal{N_1}$ has mass dimension: 10, and phase weights: [-3, 0, 0, 3, 0, 0].<br/>
+$\mathcal{N_1}$ has mass dimension: 6, and phase weights: [-3, 0, 0, 3, 0, 0].<br/>
 We generate all possible products of spinor products compatible with this infomation. The ansatz has size 10:</p>
 
 <p>$[⟨24⟩⟨24⟩⟨24⟩[12][12][12],$
@@ -1066,10 +1084,13 @@ $⟨45⟩⟨45⟩⟨45⟩[15][15][15]]$,</p>
     
       
 
-<p>$\frac{\mathcal{N_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s_{234}}+$
+<p>We want to isolate the first term in</p>
+
+<p>$\mathbb{f}=$
+$\frac{\mathcal{N_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s_{234}}+$
 $\frac{\mathcal{N_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s_{345}}$</p>
 
-<p>We can isolate the first term by generating phase space points <br/> in the limit of, say, $s_{234} \rightarrow \epsilon$.</p>
+<p>this can be done by generating phase space points <br/> in the limit of, say, $s_{234} \rightarrow \epsilon$.</p>
 
 <p>$⟨24⟩⟨24⟩⟨24⟩[12][12][12]: 1i$<br/>
 $⟨24⟩⟨24⟩⟨34⟩[12][12][13]: 3i$<br/>
@@ -1097,7 +1118,7 @@ If we allow only for a polynomial in the numerator, then:<br/><br/> $|s_{ij}| = 
 <p><br>
 $\left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, d/2 \,} \mkern -9mu \right) \leq$ ansatz size $\leq \left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, d/2 \,} \mkern -9mu \right) + |tr_5| \left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, (d-4)/2 \,} \mkern -9mu \right)$</p>
 
-<h2 id="section-6"></section></h2>
+<h2 id="section-5"></section></h2>
 
 
     </section>
@@ -1171,7 +1192,33 @@ which would imply an ansatz with size roughly $10^{10}$
 
 <iframe src="https://arxiv.org/src/1904.04067v3/anc/AllOneLoop6Gluons/6g_pmpmpm_G/rational.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
 
-<h2 id="section-7"></section></h2>
+<h2 id="section-6"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h1 id="conclusions">Conclusions</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p>to be added</p>
 
     </section>
     
