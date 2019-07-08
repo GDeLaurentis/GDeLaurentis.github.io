@@ -280,7 +280,7 @@ assert(abs(oTerms(oParticles) - oTree(oParticles)) &amp;lt; 10 ** -280)
 
 &lt;h1 id=&#34;analytical-nbsp-amplitudes-nbsp-from-nbsp-numerical-nbsp-evaluations&#34;&gt;Analytical &amp;nbsp; amplitudes &amp;nbsp; from &amp;nbsp; numerical &amp;nbsp; evaluations&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/1904.04067.pdf&#34; target=&#34;_blank&#34;&gt;arXiv:1904.04067&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/1904.04067&#34; target=&#34;_blank&#34;&gt;arXiv:1904.04067&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;
 Giuseppe De Laurentis&lt;/p&gt;
@@ -382,7 +382,7 @@ $σ_{2 \rightarrow n - 2} = ∑_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b
 &lt;p&gt;We can split dynamics from kinematics with the following identities.&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;
-Color ordering at tree level and one loop []:&lt;/p&gt;
+Color ordering at tree level and one loop [&lt;a href=&#34;https://pdf.sciencedirectassets.com/271560/1-s2.0-S0550321300X14241/1-s2.0-0550321387906043/main.pdf?X-Amz-Security-Token=AgoJb3JpZ2luX2VjEAIaCXVzLWVhc3QtMSJGMEQCIGNVZuaBsYoWqvtaF%2BAgxc5mpOVy4bMGH2V9AEodTcd4AiAndJhl3k7SA%2Fe2SXVKYCT1Ul4lUrLqXFWVacr%2B1j4YoyraAwhbEAIaDDA1OTAwMzU0Njg2NSIMZCFFK5U%2BuBvoYbtnKrcDAVoIqqSxnZJyWIxHsBuGbbV8ceVrgQ5eYutSzPdHjcMUaIoJlhOXuu2VWIwI6OyG1X3N8KDE816wZTkqwIJT4sU0I7V60zDOZVuZqwDcIom6o5AOm3gPwFYPUE%2B922vgv%2BJT3XwNiqNtjSC00ZFjbectcM7nJa7YWcWAjkZi3oJkIRPvn5m2oOMWET0jR6ZHWhy2jyM7zyiq1oxrXG4JYKB78hua2lVMc3BPdsSombpNeiebjXU4y2Fl35pz8lYIr3Nyws7P91pJS9%2Fzmqjf9QqVHMhjtMWJvQPsYDx%2BJa3UpXT9jo4r1LIERU5%2BZ%2BmVwpqjUqm3jdmvn1p9A3NaxqjyB%2FxfYp6PxAeFmmFi6hlo3IfqGLVoWsTrz0JfNH3L2ADYZhQW8y8QroshqK97GTQqlYbRORZAQeHEILoSjiVDz%2F%2BvT4UupJjaWpECMUca6%2FmrFA3h9KslrYNS%2BxskX0jxleuKkIfdjwoHcES0VA2nq9ELc%2Bhc9Va5T8Wpix7kANcqwOdZtFT5qQSmFOj4e32hzXfefbtqvC4iVBkWMSnvcE4MP3ulM0ac66RuzXZmFnFFzrIHlDDQnozpBTq1AfOoqS7ORld3jyfBg%2FPRvpifiXb3yYmCI1efBvG1zniZHaUld2etzPTcDEWFMm%2FPPAiA5N3c6cL7qQ4xoNuJu6II%2FCVex8l3pxr1LMZxhjcbu24lIRKPxjmN%2BbnMiCCU8VFhR24vzt8cDyKIyUXFIK7qY3OUqcwGDywoER1Ew1y0QvRwtMY8mCBaLbG5oMNSnj7Uf5fQzeKdXs6Dg6fvv4BtNLCR1wFyNDb1T3oNmpT3JEabGG4%3D&amp;amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Date=20190708T094930Z&amp;amp;X-Amz-SignedHeaders=host&amp;amp;X-Amz-Expires=300&amp;amp;X-Amz-Credential=ASIAQ3PHCVTYZF2Y5ZNJ%2F20190708%2Fus-east-1%2Fs3%2Faws4_request&amp;amp;X-Amz-Signature=e91db2a858f3b014276b08879802905aaa8b6b99a9a2693fb585b8ada55b9148&amp;amp;hash=0a71e9d7ca1ef201e5ba2b048cea87b8566aa5c71a9df0903d2ea6a86c687cdc&amp;amp;host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&amp;amp;pii=0550321387906043&amp;amp;tid=spdf-d25eb1ed-dd86-4e45-80cb-1e3c295697ff&amp;amp;sid=5c9de57e2ed3984ef69997d0bb7d4e65ff39gxrqb&amp;amp;type=client&#34; target=&#34;_blank&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://pdf.sciencedirectassets.com/271560/1-s2.0-S0550321300X15143/1-s2.0-055032139190567H/main.pdf?X-Amz-Security-Token=AgoJb3JpZ2luX2VjEAIaCXVzLWVhc3QtMSJIMEYCIQD3re8xFPROG2g0iYThs9UNoSNDMKhroRYo0TMSTHZPMwIhAIEVIYT2ghbXJ5W1YvREYQ%2BE8agWUgV1vLbq8nv01II4KtoDCFsQAhoMMDU5MDAzNTQ2ODY1Igysg9ZJldbBrlxNevkqtwOKrvNA%2B8nRTloFiexgu%2FS8oCZHTo4dckrAatSr8SX44XC4V8cbhwOWNQw%2BaUCkYN3vXjUyKd5CUFEAMNKtMKWQL12DhZXgmcLRN7TloRABrIVlY1zx7Q15w0dHkFqBqd%2FaNp4tTbDN5KqTZhiyrgFwU6%2BW7YPlWFqhFqQy215RAsWL4noNHf%2B%2Bq4hA6JXZJJSX%2B%2FLcNRR%2FYyPO%2FBLX%2BD0LYfkSqKz9w7lP29C7%2BWxzQmhyKIXgZOL9hcqp2tEZ55WWSmI6N8wWzXuQYhZ4thP368NFMFd8UN133rnrOhew1xJZcEBIRN50U66TkH7mXduwRFoYB%2BkQqve6I0v9sO4XgEVlSAbhr4LjxZJY%2FlYoFUcIl11EJZDGWkid%2Fm2b%2FB25VT8uvAYSFJ4NM9XUNZmskfeoQ1hGVjRs0hSRsC8PfXFSsS9QumI2MFCKV4w4azjdlkR7N3n8IAGlHQi%2BkZ5T%2B9iUSiTt%2F3znT3pwgg4OCsXTd4oWDNjv6peO50NqGk7k9OxlR0UFhvqTT3nHkzliChGcjrI%2FOo32I%2BAPHcWjsv7qB%2FwPKc4T%2FNlkhPWZKXuJMs5k3xrvMK2ajOkFOrMBkz1BJSpBnB2pM2cVxQZSOVyCbY3SLI8NJBKP7nn3qbav%2Bj%2BqrD1IkW5ZxwaN%2B%2FxGNKrr0YZrOwmZmr7GAoBqLGm17gEFdqfy5%2F6yoMOwFu1upyDVlydHvoxNhRliesqqvxNtoAjNQUF%2FfECJZ1IAhHf7DcnmSTyINrWzVgi%2ByQqiTqSJUQWSQ7%2BJMUy97THP7GuQpNCitwnXIo9PwbNTVixfCiy37rxMAFWwpo%2FLEITtpPs%3D&amp;amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Date=20190708T095217Z&amp;amp;X-Amz-SignedHeaders=host&amp;amp;X-Amz-Expires=300&amp;amp;X-Amz-Credential=ASIAQ3PHCVTYRUVXQZXE%2F20190708%2Fus-east-1%2Fs3%2Faws4_request&amp;amp;X-Amz-Signature=35625627d2cae627f9c59d0ea06ec3cf70419b248446a401b304d94cd91a5fd0&amp;amp;hash=b819decaf33c29230d1b66317b3be006fc68534d24f4f0887c6367e38898d15a&amp;amp;host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&amp;amp;pii=055032139190567H&amp;amp;tid=spdf-59fd60cb-6bbb-4016-9779-87c46ad6d585&amp;amp;sid=5c9de57e2ed3984ef69997d0bb7d4e65ff39gxrqb&amp;amp;type=client&#34; target=&#34;_blank&#34;&gt;2&lt;/a&gt;, &amp;hellip;]:&lt;/p&gt;
 
 &lt;p&gt;&lt;font size=5&gt;$\mathcal{A}^{tree}_{n}({p_i, λ_i, a_i}) = \; g^{n-2} ∑_{σ\in S_n/Z_n} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A^{tree}_n(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))$&lt;/font size&gt;&lt;/p&gt;
 
@@ -394,7 +394,7 @@ $ + ∑_{c = 2}^{\lfloor n/2 \rfloor + 1}∑_{σ\in S_n/Z_{n;c}} \text{Tr}(T^{a_
 &lt;/font size&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;
-Decomposition in terms of basis integrals:&lt;/p&gt;
+Decomposition in terms of basis integrals [&lt;a href=&#34;https://pdf.sciencedirectassets.com/271560/1-s2.0-S0550321300X15684/1-s2.0-0550321379906059/main.pdf?X-Amz-Security-Token=AgoJb3JpZ2luX2VjEAIaCXVzLWVhc3QtMSJGMEQCIGNVZuaBsYoWqvtaF%2BAgxc5mpOVy4bMGH2V9AEodTcd4AiAndJhl3k7SA%2Fe2SXVKYCT1Ul4lUrLqXFWVacr%2B1j4YoyraAwhbEAIaDDA1OTAwMzU0Njg2NSIMZCFFK5U%2BuBvoYbtnKrcDAVoIqqSxnZJyWIxHsBuGbbV8ceVrgQ5eYutSzPdHjcMUaIoJlhOXuu2VWIwI6OyG1X3N8KDE816wZTkqwIJT4sU0I7V60zDOZVuZqwDcIom6o5AOm3gPwFYPUE%2B922vgv%2BJT3XwNiqNtjSC00ZFjbectcM7nJa7YWcWAjkZi3oJkIRPvn5m2oOMWET0jR6ZHWhy2jyM7zyiq1oxrXG4JYKB78hua2lVMc3BPdsSombpNeiebjXU4y2Fl35pz8lYIr3Nyws7P91pJS9%2Fzmqjf9QqVHMhjtMWJvQPsYDx%2BJa3UpXT9jo4r1LIERU5%2BZ%2BmVwpqjUqm3jdmvn1p9A3NaxqjyB%2FxfYp6PxAeFmmFi6hlo3IfqGLVoWsTrz0JfNH3L2ADYZhQW8y8QroshqK97GTQqlYbRORZAQeHEILoSjiVDz%2F%2BvT4UupJjaWpECMUca6%2FmrFA3h9KslrYNS%2BxskX0jxleuKkIfdjwoHcES0VA2nq9ELc%2Bhc9Va5T8Wpix7kANcqwOdZtFT5qQSmFOj4e32hzXfefbtqvC4iVBkWMSnvcE4MP3ulM0ac66RuzXZmFnFFzrIHlDDQnozpBTq1AfOoqS7ORld3jyfBg%2FPRvpifiXb3yYmCI1efBvG1zniZHaUld2etzPTcDEWFMm%2FPPAiA5N3c6cL7qQ4xoNuJu6II%2FCVex8l3pxr1LMZxhjcbu24lIRKPxjmN%2BbnMiCCU8VFhR24vzt8cDyKIyUXFIK7qY3OUqcwGDywoER1Ew1y0QvRwtMY8mCBaLbG5oMNSnj7Uf5fQzeKdXs6Dg6fvv4BtNLCR1wFyNDb1T3oNmpT3JEabGG4%3D&amp;amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;amp;X-Amz-Date=20190708T100628Z&amp;amp;X-Amz-SignedHeaders=host&amp;amp;X-Amz-Expires=299&amp;amp;X-Amz-Credential=ASIAQ3PHCVTYZF2Y5ZNJ%2F20190708%2Fus-east-1%2Fs3%2Faws4_request&amp;amp;X-Amz-Signature=d919ed9ae7a1959e538a14b0201a53f55ff2d050c159575173ea8c207d452dc2&amp;amp;hash=566c1a9bb320be2e7a96e7b9501740e9f7a65fb676b3ea2ba759c1154fa6e5c5&amp;amp;host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&amp;amp;pii=0550321379906059&amp;amp;tid=spdf-de178cac-e602-4007-a06a-590f35e6031e&amp;amp;sid=5c9de57e2ed3984ef69997d0bb7d4e65ff39gxrqb&amp;amp;type=client&#34; target=&#34;_blank&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/pdf/hep-ph/9212308.pdf&#34; target=&#34;_blank&#34;&gt;4&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/pdf/0712.1851.pdf&#34; target=&#34;_blank&#34;&gt;5&lt;/a&gt;, &amp;hellip;]:&lt;/p&gt;
 
 &lt;p&gt;&lt;font size=5&gt;
 $$A^{1-loop}_{n;1} = \sum_i d_i I^i_{Box} + \sum_i c_i I^i_{Triangle} + \sum_i b_i I^i_{Bubble} + R$$&lt;/p&gt;
@@ -409,8 +409,8 @@ $$A^{1-loop}_{n;1} = \sum_i d_i I^i_{Box} + \sum_i c_i I^i_{Triangle} + \sum_i b
 
 &lt;p&gt;&lt;img src=&#34;Five_gluons_mess.png&#34;; style=&#34;max-width:500px;float:center;border:none;margin-top:-5px;&#34;&gt;&lt;/p&gt;
 
-&lt;p&gt;Results are often much easier [&lt;a href=&#34;https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.56.2459&#34; target=&#34;_blank&#34;&gt;1&lt;/a&gt;,
-&lt;a href=&#34;https://reader.elsevier.com/reader/sd/pii/0550321388904427?token=EFDF378B5E170FFAF0B1BECE184A1EB6304F7798C481CF3C0E7D93DF6D367AE0E093D4D4942C932C66E8BEB75DAB41FE&#34; target=&#34;_blank&#34;&gt;2&lt;/a&gt;]:&lt;/p&gt;
+&lt;p&gt;Results are often much easier [&lt;a href=&#34;https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.56.2459&#34; target=&#34;_blank&#34;&gt;6&lt;/a&gt;,
+&lt;a href=&#34;https://reader.elsevier.com/reader/sd/pii/0550321388904427?token=EFDF378B5E170FFAF0B1BECE184A1EB6304F7798C481CF3C0E7D93DF6D367AE0E093D4D4942C932C66E8BEB75DAB41FE&#34; target=&#34;_blank&#34;&gt;7&lt;/a&gt;]:&lt;/p&gt;
 
 &lt;p&gt;&lt;font size=5&gt;&lt;/p&gt;
 
@@ -421,11 +421,10 @@ $$A^{1-loop}_{n;1} = \sum_i d_i I^i_{Box} + \sum_i c_i I^i_{Triangle} + \sum_i b
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;em&gt;Numerical&lt;/em&gt; calculations bypass any amount of algebraic complexity, see:&lt;br/&gt;
-BlackHat [], CutTools [], MadLoop [], Rocket [], Samurai [], NGluon [], etc&amp;hellip;&lt;/p&gt;
+&lt;font size=4&gt; &lt;nobr&gt; BlackHat [&lt;a href=&#34;https://arxiv.org/abs/0803.4180&#34; target=&#34;_blank&#34;&gt;8&lt;/a&gt;], CutTools [&lt;a href=&#34;https://arxiv.org/abs/0711.3596&#34; target=&#34;_blank&#34;&gt;9&lt;/a&gt;], MadGraph [&lt;a href=&#34;https://arxiv.org/abs/1106.0522&#34; target=&#34;_blank&#34;&gt;10&lt;/a&gt;], Rocket [&lt;a href=&#34;https://arxiv.org/abs/0805.2152&#34; target=&#34;_blank&#34;&gt;11&lt;/a&gt;], Samurai [&lt;a href=&#34;https://arxiv.org/abs/1006.0710&#34; target=&#34;_blank&#34;&gt;12&lt;/a&gt;], NGluon [&lt;a href=&#34;https://arxiv.org/abs/1011.2900&#34; target=&#34;_blank&#34;&gt;13&lt;/a&gt;], OpenLoops [&lt;a href=&#34;https://arxiv.org/pdf/1111.5206.pdf&#34; target=&#34;_blank&#34;&gt;14&lt;/a&gt;]&amp;hellip; &lt;/nobr&gt; &lt;/font size&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;But &lt;em&gt;analytical&lt;/em&gt; results can still be useful, they provide:&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;
+But &lt;em&gt;analytical&lt;/em&gt; results can still be useful, they can provide:&lt;/p&gt;
 
 &lt;p&gt;$\cdot$ better understanding of the analytical structure&lt;br/&gt;
 $\cdot$ faster computation&lt;br/&gt;
@@ -434,8 +433,7 @@ $\cdot$ easier to parallelise and distribute&lt;br/&gt;
 $\dots$&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;
-The use of numerical samples to reconstruct analytical expressions is beginning to find direct applications to scattering amplitude calculations:
-see for example calculations over finite fields [].&lt;/p&gt;
+How can we access a (relatively) compact analytical final expression from numerical evaluations?&lt;/p&gt;
 
 &lt;h2 id=&#34;section&#34;&gt;&lt;/section&gt;&lt;/h2&gt;
 
@@ -989,8 +987,10 @@ In some limits $\Delta$ behaves like the square of some quantity&lt;/p&gt;
 
 &lt;p&gt;&lt;font size=5&gt;(Spoiler: $ \quad \small \mathcal{N_1} = 1i[23]^3⟨56⟩^3, \quad \mathcal{N_2} = -1i[12]^3⟨45⟩^3, \quad \mathcal{N_3} = 1is_{123}^3 $)&lt;/font size&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br&gt;
-Both of these partial fractions correspond to some BCFW shift,&lt;br/&gt; but we are not limited to these representations.&lt;/p&gt;
+&lt;p&gt;&lt;font size=5&gt;$⟨1|2+3|4] = \{⟨12⟩, [34]\}_{\epsilon} \, \cap \, \{⟨23⟩, s_{234}\}_{\epsilon} \, \cap \, \{⟨16⟩, [45]\}_{\epsilon} \, \cap \, \dots$&lt;/font size&gt;
+&lt;font size=5&gt;$⟨3|1+2|6] = \{⟨23⟩, [16]\}_{\epsilon} \, \cap \, \{⟨12⟩, s_{345}\}_{\epsilon} \, \cap \, \{⟨34⟩, [56]\}_{\epsilon} \, \cap \, \dots$&lt;/font size&gt;&lt;/p&gt;
+
+&lt;p&gt;Both of these partial fractions correspond to some BCFW shift,&lt;br/&gt; but we are not limited to these representations.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -1011,10 +1011,11 @@ Both of these partial fractions correspond to some BCFW shift,&lt;br/&gt; but we
 
 &lt;p&gt;&lt;font size=5&gt; &lt;nobr&gt; ($\small \mathcal{N_1} = 1i[12]⟨45⟩⟨4|2+3|1]^2, \, \mathcal{N_2} = 1i[23]⟨56⟩⟨6|1+2|3]^2, \, \mathcal{N_3} = 1i⟨4|2+3|1]⟨6|1+2|3]s_{123}$) &lt;/nobr&gt; &lt;/font size&gt;&lt;/p&gt;
 
-&lt;p&gt;We now have overlap between the different partial fractions, &lt;br/&gt;
-but no spurious poles.&lt;/p&gt;
+&lt;p&gt;We now have no spurious poles, but $s_{234}$ and $s_{345}$ appear in the same denominator, although the doubly singular limit suggests they shouldn&amp;rsquo;t.&lt;/p&gt;
 
-&lt;p&gt;Note that the $s_{ijk}$ appear in the same denominator, although the doubly singular limit suggests they shouldn&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;This means that in the limit of $\{s_{234}, s_{345}\} \rightarrow \epsilon$ the individual terms will behave like $\epsilon^{-2}$ but the sum as $\epsilon^{-1}$.&lt;/p&gt;
+
+&lt;p&gt;Different representations can be exploited to ensure numerical stability.&lt;/p&gt;
 
 &lt;h2 id=&#34;section-4&#34;&gt;&lt;/section&gt;&lt;/h2&gt;
 
@@ -1059,10 +1060,18 @@ $\frac{\mathcal{N_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s_{345}}$&lt;/p&gt;
 
 &lt;p&gt;this can be done by generating phase space points &lt;br/&gt; in the limit of, say, $s_{234} \rightarrow \epsilon$.&lt;/p&gt;
 
-&lt;p&gt;$⟨24⟩⟨24⟩⟨24⟩[12][12][12]: 1i$&lt;br/&gt;
-$⟨24⟩⟨24⟩⟨34⟩[12][12][13]: 3i$&lt;br/&gt;
-$⟨24⟩⟨34⟩⟨34⟩[12][13][13]: 3i$&lt;br/&gt;
-$⟨34⟩⟨34⟩⟨34⟩[13][13][13]: 1i$&lt;/p&gt;
+&lt;p&gt;Then we can reconstruct the numerical coefficient of the ansatz entries by Gaussian elimination.&lt;/p&gt;
+
+&lt;p&gt;$$
+M_{ij}c_j = \mathbb{f}(P_i) \quad \text{i.e.} \quad \begin{pmatrix} \leftarrow ansatz(P_1) \rightarrow \\ \leftarrow ansatz(P_2) \rightarrow \\ \dots \end{pmatrix} \cdot \begin{pmatrix} c_1 \\ c_2 \\ \dots \end{pmatrix} = \begin{pmatrix} \mathbb{f}(P_1) \\ \mathbb{f}(P_2) \\ \dots \end{pmatrix}
+$$&lt;/p&gt;
+
+&lt;p&gt;We get:&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=5&gt;
+$⟨24⟩⟨24⟩⟨24⟩[12][12][12]: 1i$,  $⟨24⟩⟨24⟩⟨34⟩[12][12][13]: 3i$, &lt;br/&gt;
+$⟨24⟩⟨34⟩⟨34⟩[12][13][13]: 3i$,  $⟨34⟩⟨34⟩⟨34⟩[13][13][13]: 1i$
+&lt;/font size&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -1071,10 +1080,15 @@ $⟨34⟩⟨34⟩⟨34⟩[13][13][13]: 1i$&lt;/p&gt;
 &lt;p&gt;Easiest to count at constant null phase weights;&lt;br/&gt; the size of the ansatz is a function of:&lt;br/&gt;&lt;br/&gt;1. its mass dimension ($d$) $\quad\quad$ 2.  multiplicity of phase space ($m$).&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;
-If we allow only for a polynomial in the numerator, then:&lt;br/&gt;&lt;br/&gt; $|s_{ij}| = \frac{m(m-3)}{2}$ $\quad\quad$ $|tr_5| = {m-1 \choose 4}$&lt;/p&gt;
+If we allow only for a polynomial in the numerator, then:&lt;/p&gt;
 
-&lt;p&gt;&lt;br&gt;
-$\left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, d/2 \,} \mkern -9mu \right) \leq$ ansatz size $\leq \left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, d/2 \,} \mkern -9mu \right) + |tr_5| \left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, (d-4)/2 \,} \mkern -9mu \right)$&lt;/p&gt;
+&lt;p&gt;$|s_{ij}| = \frac{m(m-3)}{2}$ $\quad\quad$ $|tr_5| = {m-1 \choose 4}$&lt;/p&gt;
+
+&lt;p&gt;$\left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, d/2 \,} \mkern -9mu \right) \leq$ ansatz size $\leq \left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, d/2 \,} \mkern -9mu \right) + |tr_5| \left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, (d-4)/2 \,} \mkern -9mu \right)$&lt;/p&gt;
+
+&lt;p&gt;The upper bound is saturated for $(\forall m \wedge d \leq 4)$ and for $(\forall d \wedge m \leq 5)$.&lt;br/&gt;
+Otherwise it is an overcounting due to Schouten identity for 4-momenta:
+&lt;font size=5&gt;$tr_5(2345)1_\mu - tr_5(1345)2_\mu + tr_5(1245)3_\mu - tr_5(1235)4_\mu + tr_5(1234)5_\mu = 0$&lt;/font size&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;section-5&#34;&gt;&lt;/section&gt;&lt;/h2&gt;
 
@@ -1082,14 +1096,58 @@ $\left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, d/2 \,} \mkern -9mu \right) \leq$ a
 
 &lt;p&gt;&lt;section&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;4-1-a-real-application&#34;&gt;4.1 A real application&lt;/h1&gt;
+&lt;h1 id=&#34;4-1-application-and-results&#34;&gt;4.1 Application and Results&lt;/h1&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;font size=5&gt;
-Let us briefly consider the following quantity:&lt;/p&gt;
+&lt;p&gt;As an application we obtained analytical expressions for all parts of the six-gluon amplitude with a gluon in the loop.&lt;/p&gt;
 
-&lt;p&gt;$R^{1-loop}_6(1^{+}_{g}2^{-}_{g}3^{+}_{g}4^{-}_{g}5^{+}_{g}6^{-}_{g})$
+&lt;p&gt;&lt;br&gt;
+All independent coefficients are available as anchillary files at: &lt;a href=&#34;https://arxiv.org/abs/1904.04067&#34; target=&#34;_blank&#34;&gt;arXiv:1904.04067&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+These expression were already present in the litterature, but with different structures. We did not use any information from those papers for the reconstruction.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+For a summary of the litterature see Ref.&lt;a href=&#34;https://arxiv.org/pdf/0901.1202.pdf&#34; target=&#34;_blank&#34;&gt;15&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;For the three mass triangle mentioned in an earlier section, which was previously obtained in [&lt;a href=&#34;https://arxiv.org/pdf/hep-ph/0602178.pdf&#34; target=&#34;_blank&#34;&gt;16&lt;/a&gt;], the poles are:&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=5&gt;$\mathcal{D_{LCD}} = ⟨12⟩[12]⟨34⟩[34]⟨56⟩[56]⟨1|3+4|2]^4⟨3|1+2|4]^4⟨5|1+2|6]^4Δ_{135}^3$&lt;/font size&gt;&lt;/p&gt;
+
+&lt;table width=90% border=&#34;1&#34; frame=&#34;void&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34;&gt;
+  &lt;tr class=&#34;greenline&#34;&gt;
+    &lt;td&gt; &lt;center&gt; &lt;img src=&#34;Graph5.gv.svg&#34;; style=&#34;max-width:360px;float:center;border:none;&#34;&gt; &lt;/center&gt; &lt;/td&gt;
+    &lt;td&gt;
+      &lt;center&gt;
+        &lt;font size=5&gt;
+    Symmetries:&lt;br/&gt;
+      $123456$&lt;br/&gt;
+      $\overline{216543}$&lt;br/&gt;
+      $345612$&lt;br/&gt;
+      $\overline{432165}$&lt;br/&gt;
+      $561234$&lt;br/&gt;
+      $\overline{654321}$&lt;br/&gt;
+        &lt;/font size&gt;
+      &lt;/center&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;We obtain an explicitly rational expression, like for $\mathcal{N}=1$ SUSY in [&lt;a href=&#34;https://arxiv.org/pdf/0709.2086.pdf&#34; target=&#34;_blank&#34;&gt;17&lt;/a&gt;].&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;iframe src=&#34;https://arxiv.org/src/1904.04067v3/anc/AllOneLoop6Gluons/6g_pmpmpm_G/triangle_19_.pdf&amp;embedded=true&#34; style=&#34;width:718px; height:700px;&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Another interesting piece is the rational part:&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=5&gt;
+$R^{1-loop}_6(1^{+}_{g}2^{-}_{g}3^{+}_{g}4^{-}_{g}5^{+}_{g}6^{-}_{g})$
 &lt;/font size&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;font size=4&gt;
@@ -1103,10 +1161,14 @@ $s_{123}s_{234}s_{345}Δ_{135}^2Δ_{624}^2$
 
 &lt;p&gt;&lt;font size=5&gt;
 The mass dimension is now 116,&lt;br/&gt;
-which would imply an ansatz with size roughly $10^{10}$
+which would imply an ansatz with size roughly $10^{10}$.&lt;/p&gt;
+
+&lt;p&gt;An analytical expression for this component was previously obtained in [&lt;a href=&#34;https://arxiv.org/pdf/hep-ph/0607017.pdf&#34; target=&#34;_blank&#34;&gt;18&lt;/a&gt;] from Feynman diagrams.
 &lt;/font size&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
+
+&lt;p&gt;The pole structure is a bit of a mess:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;GraphRational.gv.svg&#34;; style=&#34;maxwidth:1000px; float:center; border:none;&#34;&gt;&lt;/p&gt;
 
@@ -1118,11 +1180,34 @@ which would imply an ansatz with size roughly $10^{10}$
 
 &lt;hr /&gt;
 
+&lt;p&gt;&lt;section&gt;&lt;/p&gt;
+
 &lt;h1 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h1&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;to be added&lt;/p&gt;
+&lt;p&gt;The aim of this talk was to show that it is possible to reconstruct an analytical expression from numerical evaluations only.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+We discussed a general framework to perform these operations, &lt;br/&gt;
+and strategies to tame the complexity of the problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+We hope the application given as an example, although already considered in the litterature, demonstrates the viability of this approach.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+Outlook:&lt;br/&gt;
+We have now almost finished reconstructing the six-gluon one-loop amplitude with a fermion loop, and we are considering applications to processes with external quarks and photons, as well as to coefficients of two-loop integrals.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Thank you very much!&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;br&gt;
+Questions?&lt;/p&gt;
+
+&lt;h2 id=&#34;section-7&#34;&gt;&lt;/section&gt;&lt;/h2&gt;
 </description>
     </item>
     
