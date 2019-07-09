@@ -304,7 +304,7 @@ QCD@LHC 2019
 
 &lt;hr /&gt;
 
-&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h1&gt;
+&lt;h1 id=&#34;table-nbsp-of-nbsp-contents&#34;&gt;Table &amp;nbsp;of &amp;nbsp;Contents&lt;/h1&gt;
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
@@ -320,7 +320,7 @@ QCD@LHC 2019
 
 &lt;p&gt;&lt;section&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;1-1-motivation&#34;&gt;1.1 Motivation&lt;/h1&gt;
+&lt;h1 id=&#34;1-1-nbsp-motivation&#34;&gt;1.1 &amp;nbsp;Motivation&lt;/h1&gt;
 
 &lt;hr /&gt;
 
@@ -424,13 +424,25 @@ $$A^{1-loop}_{n;1} = \sum_i d_i I^i_{Box} + \sum_i c_i I^i_{Triangle} + \sum_i b
 &lt;font size=4&gt; &lt;nobr&gt; BlackHat [&lt;a href=&#34;https://arxiv.org/abs/0803.4180&#34; target=&#34;_blank&#34;&gt;8&lt;/a&gt;], CutTools [&lt;a href=&#34;https://arxiv.org/abs/0711.3596&#34; target=&#34;_blank&#34;&gt;9&lt;/a&gt;], MadGraph [&lt;a href=&#34;https://arxiv.org/abs/1106.0522&#34; target=&#34;_blank&#34;&gt;10&lt;/a&gt;], Rocket [&lt;a href=&#34;https://arxiv.org/abs/0805.2152&#34; target=&#34;_blank&#34;&gt;11&lt;/a&gt;], Samurai [&lt;a href=&#34;https://arxiv.org/abs/1006.0710&#34; target=&#34;_blank&#34;&gt;12&lt;/a&gt;], NGluon [&lt;a href=&#34;https://arxiv.org/abs/1011.2900&#34; target=&#34;_blank&#34;&gt;13&lt;/a&gt;], OpenLoops [&lt;a href=&#34;https://arxiv.org/pdf/1111.5206.pdf&#34; target=&#34;_blank&#34;&gt;14&lt;/a&gt;]&amp;hellip; &lt;/nobr&gt; &lt;/font size&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;
-But &lt;em&gt;analytical&lt;/em&gt; results can still be useful, they can provide:&lt;/p&gt;
-
-&lt;p&gt;$\cdot$ better understanding of the analytical structure&lt;br/&gt;
-$\cdot$ faster computation&lt;br/&gt;
-$\cdot$ better numerical stability&lt;br/&gt;
-$\cdot$ easier to parallelise and distribute&lt;br/&gt;
-$\dots$&lt;/p&gt;
+But &lt;em&gt;analytical&lt;/em&gt; results can still be useful, they can provide:
+&lt;table width=100% border=&#34;1&#34; frame=&#34;void&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34;&gt;
+  &lt;tr&gt;
+      &lt;td&gt;
+    &lt;font size=5&gt;
+    $\cdot$ faster computation&lt;br/&gt;
+        $\cdot$ better numerical stability&lt;br/&gt;
+        $\cdot$ easier to distribute than a program&lt;br/&gt;
+    &lt;/font size&gt;
+      &lt;/td&gt;
+      &lt;td&gt;
+      &lt;font size=5&gt;
+        $\cdot$ possible to compile on a GPU&lt;br/&gt;
+        $\cdot$ explicit analytical structure&lt;br/&gt;
+        $&amp;hellip;$
+      &lt;/font size&gt;
+      &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;
 How can we access a (relatively) compact analytical final expression from numerical evaluations?&lt;/p&gt;
@@ -441,7 +453,7 @@ How can we access a (relatively) compact analytical final expression from numeri
 
 &lt;p&gt;&lt;section&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;1-2-spinor-helicity&#34;&gt;1.2 Spinor Helicity&lt;/h1&gt;
+&lt;h1 id=&#34;1-2-nbsp-spinor-nbsp-helicity&#34;&gt;1.2 &amp;nbsp;Spinor &amp;nbsp;Helicity&lt;/h1&gt;
 
 &lt;hr /&gt;
 
@@ -518,16 +530,14 @@ How can we access a (relatively) compact analytical final expression from numeri
 &lt;p&gt;&lt;br&gt;
 In terms of 4-momentum components we have:&lt;/p&gt;
 
-&lt;p&gt;&lt;font size=5&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=5&gt;$$
+\lambda_\alpha=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\ p^1+ip^2\end{pmatrix} \, , \;\;\; \lambda^\alpha=\epsilon^{\alpha\beta} \lambda_\beta =\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^1+ip^2 \\ -p^0+p^3\end{pmatrix}
+$$&lt;/font size&gt;&lt;/p&gt;
 
-&lt;p&gt;$$
-\lambda_\alpha=\begin{pmatrix}\sqrt{p^0+p^3} \\ \frac{p^1+ip^2}{\sqrt{p^0+p^3}}\end{pmatrix} \, , \;\;\; \lambda^\alpha=\epsilon^{\alpha\beta} \lambda_\beta =\begin{pmatrix}\frac{p^1+ip^2}{\sqrt{p^0+p^3}} \\ -\sqrt{p^0+p^3}\end{pmatrix}
-$$&lt;/p&gt;
+&lt;p&gt;&lt;font size=5&gt;$\bar\lambda_{\dot\alpha}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\ p^1-ip^2\end{pmatrix} \, , \;\;\; \bar\lambda^{\dot\alpha}=\epsilon^{\dot\alpha\dot\beta}\bar\lambda_{\dot\beta}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^1-ip^2 \\ -p^0+p^3\end{pmatrix}$&lt;/font size&gt;&lt;/p&gt;
 
-&lt;p&gt;$\bar\lambda_{\dot\alpha}=\begin{pmatrix}\sqrt{p^0+p^3} \\ \frac{p^1-ip^2}{\sqrt{p^0+p^3}}\end{pmatrix} \, , \;\;\; \bar\lambda^{\dot\alpha}=\epsilon^{\dot\alpha\dot\beta}\bar\lambda_{\dot\beta}=\begin{pmatrix}\frac{p^1-ip^2}{\sqrt{p^0+p^3}} \\ -\sqrt{p^0+p^3}\end{pmatrix}$&lt;/p&gt;
-
-&lt;p&gt;$ \bar\lambda_{\dot\alpha} = (\lambda_\alpha)^\dagger \;\;\; if \;\;\; p^i \in \mathbb{R}$
-&lt;/font size&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;
+The left and right Weyl spinors are related by complex conjugation in the case of real momenta, but are independent for complex momenta.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -556,16 +566,13 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;/font size&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br&gt;
-In particular, we need complex momenta to be able to lift the degeneracy between the angle and the square brackets.&lt;/p&gt;
-
 &lt;h2 id=&#34;section-1&#34;&gt;&lt;/section&gt;&lt;/h2&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;section&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;2-1-singular-limits&#34;&gt;2.1 Singular limits&lt;/h1&gt;
+&lt;h1 id=&#34;2-1-nbsp-singular-nbsp-limits&#34;&gt;2.1 &amp;nbsp;Singular &amp;nbsp;limits&lt;/h1&gt;
 
 &lt;hr /&gt;
 
@@ -577,26 +584,30 @@ In particular, we need complex momenta to be able to lift the degeneracy between
 
 &lt;p&gt;&lt;font size=5&gt;$r_i \in \{ ⟨12⟩, ⟨13⟩, \dots, ⟨1|2+3|4], \dots, s_{123}, \dots \}$,&lt;/font size&gt;&lt;/p&gt;
 
-&lt;p&gt;and let $\mathbb{f}$ be the function we want to reconstruct.&lt;/p&gt;
+&lt;p&gt;and let $\, \mathbb{f} \,$ be the function we want to reconstruct.&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;font size=5&gt;$r_i \rightarrow ε \ll 1, \quad r_{j \neq i} \sim \mathcal{O}(1), \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$&lt;/font size&gt;&lt;/p&gt;
+&lt;p&gt;&lt;nobr&gt; We want to build phase space points where &lt;u style=&#34;text-decoration: underline;
+  text-decoration-color: red;&#34;&gt; a single invariant vanishes&lt;/u&gt;: &lt;/nobr&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;nobr&gt;$\Rightarrow$ The slope of $\mathbb{f}(ε)$ in a log-log plot gives us the type of singularity,&lt;br/&gt; if it exists.&lt;/nobr&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=5&gt; $r_i \rightarrow ε \ll 1, \quad r_{j \neq i} \sim \mathcal{O}(1), \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$&lt;/font size&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;nobr&gt;$\Rightarrow$ The slope of the log-log plot gives us the type of singularity, if it exists.&lt;/nobr&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;
-&lt;nobr&gt;Note: the uniqueness of the singular limit is important to avoid ambiguities.&lt;/nobr&gt;&lt;/p&gt;
+&lt;nobr&gt;The uniqueness of the singular limit is important to avoid ambiguities,&lt;/nobr&gt;
+and it can be guaranteed only with complex momenta.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;As an example, let us consider following amplitude:&lt;/p&gt;
+&lt;p&gt;As an example, let us consider the following amplitude:&lt;/p&gt;
 
 &lt;p&gt;&lt;font size=5&gt;&lt;/p&gt;
 
 &lt;p&gt;$\mathbb{f} = A^{tree}(1^{+}_{g}2^{+}_{g}3^{+}_{g}4^{-}_{g}5^{-}_{g}6^{-}_{g})$&lt;/p&gt;
 
-&lt;table width=100% border=&#34;1&#34; frame=&#34;void&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34;&gt;
+&lt;table width=100% border=&#34;1&#34; frame=&#34;void&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34; style=&#34;margin-bottom:-20px&#34;&gt;
   &lt;tr class=&#34;greenline&#34;&gt;
     &lt;td&gt; &lt;center&gt; $\lim_{⟨12⟩ \rightarrow \epsilon} \mathbb{f} \propto \epsilon^{-1}$ &lt;/center&gt; &lt;/td&gt;
     &lt;td&gt; &lt;center&gt; $\lim_{⟨13⟩ \rightarrow \epsilon} \mathbb{f} \propto \epsilon^0$ &lt;/center&gt; &lt;/td&gt;
@@ -608,6 +619,8 @@ In particular, we need complex momenta to be able to lift the degeneracy between
 &lt;/table&gt;
 
 &lt;p&gt;&lt;/font size&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=5&gt; Note: the invariant on the x-axis gets smaller from left to right.&lt;/font size&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -639,7 +652,7 @@ In particular, we need complex momenta to be able to lift the degeneracy between
 
 &lt;p&gt;&lt;section&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;2-2-doubly-singular-limits&#34;&gt;2.2 Doubly singular limits&lt;/h1&gt;
+&lt;h1 id=&#34;2-2-nbsp-doubly-nbsp-singular-nbsp-limits&#34;&gt;2.2 &amp;nbsp;Doubly &amp;nbsp;singular &amp;nbsp;limits&lt;/h1&gt;
 
 &lt;hr /&gt;
 
@@ -651,11 +664,14 @@ In particular, we need complex momenta to be able to lift the degeneracy between
 
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;This information can be accessed by studying doubly singular limits:&lt;/p&gt;
+&lt;p&gt;This information can be accessed by studying doubly singular limits.&lt;/p&gt;
+
+&lt;p&gt;We now want phase space points where &lt;u style=&#34;text-decoration: underline;
+  text-decoration-color: red;&#34;&gt; two invariants vanish&lt;/u&gt;:&lt;/p&gt;
 
 &lt;p&gt;$r_i \rightarrow ε \ll 1, \quad r_j \rightarrow ε \ll 1, \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$&lt;/p&gt;
 
-&lt;p&gt;Note: now in general we cannot guarantee uniqueness,&lt;br/&gt; i.e. that $\;r_{k \neq i, j} \sim \mathcal{O}(1)$.&lt;/p&gt;
+&lt;p&gt;In general we cannot guarantee uniqueness anymore,&lt;br/&gt; even with complex momenta.&lt;br/&gt; $\exists \;r_{k \neq i, j} \sim \epsilon$.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -707,33 +723,33 @@ In particular, we need complex momenta to be able to lift the degeneracy between
       &lt;td&gt;2/10&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th&gt;[1|6]&lt;/th&gt;
-      &lt;td&gt;1/3&lt;/td&gt;
-      &lt;td&gt;1/2&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;2/12&lt;/td&gt;
-      &lt;td&gt;2/4&lt;/td&gt;
-      &lt;td&gt;1/10&lt;/td&gt;
-      &lt;td&gt;1/2&lt;/td&gt;
-      &lt;td&gt;1/30&lt;/td&gt;
-      &lt;td&gt;2/10&lt;/td&gt;
-      &lt;td&gt;2/10&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;⟨2|3⟩&lt;/th&gt;
-      &lt;td&gt;1/31&lt;/td&gt;
-      &lt;td&gt;1/2&lt;/td&gt;
-      &lt;td&gt;2/12&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;1/30&lt;/td&gt;
-      &lt;td&gt;1/3&lt;/td&gt;
-      &lt;td&gt;2/12&lt;/td&gt;
-      &lt;td&gt;2/3&lt;/td&gt;
-      &lt;td&gt;2/10&lt;/td&gt;
-      &lt;td&gt;1/2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
       &lt;td colspan=&#34;11&#34;&gt; &lt;center&gt; $\dots$ &lt;/center&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;s_234&lt;/th&gt;
+      &lt;td&gt;1/2&lt;/td&gt;
+      &lt;td&gt;2/10&lt;/td&gt;
+      &lt;td&gt;2/10&lt;/td&gt;
+      &lt;td&gt;2/10&lt;/td&gt;
+      &lt;td&gt;2/10&lt;/td&gt;
+      &lt;td&gt;2/10&lt;/td&gt;
+      &lt;td&gt;1/2&lt;/td&gt;
+      &lt;td&gt;2/10&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1/2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;s_345&lt;/th&gt;
+      &lt;td&gt;2/10&lt;/td&gt;
+      &lt;td&gt;2/10&lt;/td&gt;
+      &lt;td&gt;2/10&lt;/td&gt;
+      &lt;td&gt;1/2&lt;/td&gt;
+      &lt;td&gt;2/10&lt;/td&gt;
+      &lt;td&gt;2/10&lt;/td&gt;
+      &lt;td&gt;2/10&lt;/td&gt;
+      &lt;td&gt;1/2&lt;/td&gt;
+      &lt;td&gt;1/2&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -742,17 +758,17 @@ In particular, we need complex momenta to be able to lift the degeneracy between
 
 &lt;p&gt;The first number is the slope of the log-log plot in the limit, &lt;br/&gt; the second number is the degeneracy of the phase space in the limit.&lt;/p&gt;
 
-&lt;p&gt;&lt;font size=5&gt;E.g.:  $⟨12⟩,\,⟨16⟩ \rightarrow \epsilon \;$ implies also $\; ⟨26⟩, s_{345}, ⟨2|1+6|5], \dots \rightarrow \epsilon$&lt;/font size&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=5&gt;More mathematically:&lt;br/&gt;$\{a, b\}_\epsilon \equiv \{r_i | a \rightarrow \epsilon \, \wedge \, b \rightarrow \epsilon \Rightarrow r_i \rightarrow \epsilon \}$&lt;/font size&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=5&gt;$\{⟨12⟩,\,⟨16⟩\}_\epsilon = \{ ⟨12⟩, ⟨16⟩, ⟨26⟩, s_{345}, ⟨2|1+6|5], \dots \text{25 more} \dots \}$&lt;/font size&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;
+Let&amp;rsquo;s introduce the following notation, which we&amp;rsquo;ll need later: $\{a, b\}_\epsilon$.&lt;br/&gt;
+It represents the set of all invariants that vanish when $a$ and $b$ vanish.&lt;br/&gt; For example:&lt;br/&gt;
+&lt;font size=5&gt;$\{⟨12⟩,\,⟨16⟩\}_\epsilon = \{ ⟨12⟩, ⟨16⟩, ⟨26⟩, s_{345}, ⟨2|1+6|5], \dots \text{25 more} \dots \}$&lt;/font size&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;The slope in the doubly singular limit tells us whether two poles should be in the same denominator and the degeneracy how to separate them.&lt;/p&gt;
 
-&lt;p&gt;&lt;font size=5&gt;&lt;/p&gt;
+&lt;p&gt;The following is single line of the table in the previous slide:
+&lt;font size=5&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;style type=&#34;text/css&#34;&gt;
     #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col0 {
@@ -816,7 +832,7 @@ In particular, we need complex momenta to be able to lift the degeneracy between
             background:  tomato;
             background:  tomato;
         }&lt;/style&gt;&lt;br /&gt;
-&lt;table id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999f&#34; style=&#34;margin-top:-30px;&#34; &gt;&lt;caption&gt;Green: forced. Red: forbidden. Blue: optional (at least one). Light blue: optional.&lt;/caption&gt;
+&lt;table id=&#34;T_67e20e68_9da2_11e9_b9bf_0242a8af999f&#34; style=&#34;margin-top:-70px;&#34; &gt;&lt;caption align=&#34;bottom&#34;&gt;Green: forced. Red: forbidden. Blue: optional (at least one). Light blue: optional.&lt;/caption&gt;
 &lt;thead&gt;    &lt;tr&gt;
         &lt;th class=&#34;blank level0&#34; &gt;&lt;/th&gt;
         &lt;th class=&#34;col_heading level0 col0&#34; &gt;⟨1|2⟩&lt;/th&gt;
@@ -942,7 +958,7 @@ In some limits $\Delta$ behaves like the square of some quantity&lt;/p&gt;
 
 &lt;p&gt;&lt;section&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;3-1-partial-fraction-decomposition&#34;&gt;3.1 Partial fraction decomposition&lt;/h1&gt;
+&lt;h1 id=&#34;3-1-nbsp-partial-nbsp-fraction-nbsp-decomposition&#34;&gt;3.1 &amp;nbsp;Partial &amp;nbsp;fraction &amp;nbsp;decomposition&lt;/h1&gt;
 
 &lt;hr /&gt;
 
@@ -1023,7 +1039,7 @@ In some limits $\Delta$ behaves like the square of some quantity&lt;/p&gt;
 
 &lt;p&gt;&lt;section&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;3-2-fitting-of-ansatz&#34;&gt;3.2 Fitting of ansatz&lt;/h1&gt;
+&lt;h1 id=&#34;3-2-nbsp-fitting-nbsp-of-nbsp-ansatz&#34;&gt;3.2 &amp;nbsp;Fitting &amp;nbsp;of &amp;nbsp;ansatz&lt;/h1&gt;
 
 &lt;hr /&gt;
 
@@ -1075,7 +1091,7 @@ $⟨24⟩⟨34⟩⟨34⟩[12][13][13]: 3i$,  $⟨34⟩⟨34⟩⟨34⟩[13][13][1
 
 &lt;hr /&gt;
 
-&lt;p&gt;How big is the ansatz?&lt;/p&gt;
+&lt;p&gt;&lt;b&gt; How big is the ansatz? &lt;/b&gt;&lt;/p&gt;
 
 &lt;p&gt;Easiest to count at constant null phase weights;&lt;br/&gt; the size of the ansatz is a function of:&lt;br/&gt;&lt;br/&gt;1. its mass dimension ($d$) $\quad\quad$ 2.  multiplicity of phase space ($m$).&lt;/p&gt;
 
@@ -1084,7 +1100,7 @@ If we allow only for a polynomial in the numerator, then:&lt;/p&gt;
 
 &lt;p&gt;$|s_{ij}| = \frac{m(m-3)}{2}$ $\quad\quad$ $|tr_5| = {m-1 \choose 4}$&lt;/p&gt;
 
-&lt;p&gt;$\left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, d/2 \,} \mkern -9mu \right) \leq$ ansatz size $\leq \left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, d/2 \,} \mkern -9mu \right) + |tr_5| \left(\mkern -9mu \binom{\, |s_{ij}| \,}{\, (d-4)/2 \,} \mkern -9mu \right)$&lt;/p&gt;
+&lt;p&gt;$\left(\mkern -9mu \begin{pmatrix}\, |s_{ij}| \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right) \leq$ ansatz size $\leq \left(\mkern -9mu  \begin{pmatrix} \, |s_{ij}| \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right) + |tr_5| \left(\mkern -9mu  \begin{pmatrix} \, |s_{ij}| \, \\ \, (d-4)/2 \, \end{pmatrix} \mkern -9mu \right)$&lt;/p&gt;
 
 &lt;p&gt;The upper bound is saturated for $(\forall m \wedge d \leq 4)$ and for $(\forall d \wedge m \leq 5)$.&lt;br/&gt;
 Otherwise it is an overcounting due to Schouten identity for 4-momenta:
@@ -1096,7 +1112,7 @@ Otherwise it is an overcounting due to Schouten identity for 4-momenta:
 
 &lt;p&gt;&lt;section&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;4-1-application-and-results&#34;&gt;4.1 Application and Results&lt;/h1&gt;
+&lt;h1 id=&#34;4-1-nbsp-application-nbsp-and-nbsp-results&#34;&gt;4.1 &amp;nbsp;Application &amp;nbsp;and &amp;nbsp;Results&lt;/h1&gt;
 
 &lt;hr /&gt;
 
@@ -1182,7 +1198,7 @@ which would imply an ansatz with size roughly $10^{10}$.&lt;/p&gt;
 
 &lt;p&gt;&lt;section&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h1&gt;
+&lt;h1 id=&#34;4-2-nbsp-conclusions&#34;&gt;4.2 &amp;nbsp;Conclusions&lt;/h1&gt;
 
 &lt;hr /&gt;
 
@@ -1193,7 +1209,7 @@ We discussed a general framework to perform these operations, &lt;br/&gt;
 and strategies to tame the complexity of the problem.&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;
-We hope the application given as an example, although already considered in the litterature, demonstrates the viability of this approach.&lt;/p&gt;
+The application given as an example is representative of the complexity of high multiplicity processes and demonstrates the viability of this approach.&lt;/p&gt;
 
 &lt;p&gt;&lt;br&gt;
 Outlook:&lt;br/&gt;
