@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gdelaurentis.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CHY</title>
+      <link>https://gdelaurentis.github.io/tags/chy/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/tags/chy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scattering Amplitudes</title>
+      <link>https://gdelaurentis.github.io/tags/scattering-amplitudes/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/tags/scattering-amplitudes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Loop Calculations</title>
@@ -30,29 +48,11 @@
     </item>
     
     <item>
-      <title>Scattering Amplitudes</title>
-      <link>https://gdelaurentis.github.io/tags/scattering-amplitudes/</link>
-      <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/tags/scattering-amplitudes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Demo</title>
       <link>https://gdelaurentis.github.io/tags/demo/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://gdelaurentis.github.io/tags/demo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CHY</title>
-      <link>https://gdelaurentis.github.io/tags/chy/</link>
-      <pubDate>Tue, 12 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/tags/chy/</guid>
       <description></description>
     </item>
     

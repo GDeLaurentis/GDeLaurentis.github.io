@@ -6,10 +6,19 @@
     <description>Recent content in Scattering Amplitudes on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gdelaurentis.github.io/tags/scattering-amplitudes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Analytical amplitudes from numerical solutions of the scattering equations</title>
+      <link>https://gdelaurentis.github.io/publication/arxiv1910.11355/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/publication/arxiv1910.11355/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Extracting analytical one-loop amplitudes from numerical evaluations</title>

@@ -6,10 +6,19 @@
     <description>Recent content in Authors on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jul 2019 13:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gdelaurentis.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://gdelaurentis.github.io/authors/admin/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/authors/admin/</guid>
+      <description>I lived in Milano until the end of high school. I then moved to Oxford for my undergraduate and master studies. I am currently studying for a PhD in Durham.</description>
+    </item>
     
     <item>
       <title>Giuseppe De Laurentis</title>
@@ -18,15 +27,6 @@
       
       <guid>https://gdelaurentis.github.io/authors/giuseppe-de-laurentis/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://gdelaurentis.github.io/authors/admin/</link>
-      <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/authors/admin/</guid>
-      <description>I lived in Milano until the end of high school. I then moved to Oxford for my undergraduate and master studies. I am currently studying for a PhD in Durham.</description>
     </item>
     
     <item>
