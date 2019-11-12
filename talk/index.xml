@@ -6,10 +6,19 @@
     <description>Recent content in Recent &amp; Upcoming Talks on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jul 2019 13:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Nov 2019 14:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Analytical amplitudes and the CHY formalism</title>
+      <link>https://gdelaurentis.github.io/talk/ippp-internal-seminar/</link>
+      <pubDate>Fri, 22 Nov 2019 14:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/talk/ippp-internal-seminar/</guid>
+      <description>IPPP Internal Seminar</description>
+    </item>
     
     <item>
       <title>Analytical amplitudes from numerical evaluations</title>
