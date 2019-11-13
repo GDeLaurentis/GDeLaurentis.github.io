@@ -108,13 +108,13 @@
 
 <p><strong>A. &nbsp; Reconstruction of analytical spinor-helicity amplitudes</strong></p>
 
-<p><em>1. Motivation</em> &nbsp; &nbsp; <em>2. Method</em> &nbsp; &nbsp; <em>3. Results in QCD</em></p>
+<p><em>1. Motivation</em> &nbsp; &nbsp; <em>2. Method</em> &nbsp; &nbsp; <em>3. Rational coefficients in QCD</em></p>
 
 <p><br></p>
 
 <p><strong>B. &nbsp; Tree amplitudes from the CHY formalism</strong></p>
 
-<p><em>1. Motivation</em> &nbsp; &nbsp; <em>2. The scattering equations</em> &nbsp; &nbsp; <em>3. CHY-Integrands</em> &nbsp; &nbsp; <em>4. Results</em></p>
+<p><em>1. Motivation</em> &nbsp; &nbsp; <em>2. Scattering equations</em> &nbsp; &nbsp; <em>3. CHY-Integrands</em> &nbsp; &nbsp; <em>4. Amplitudes</em></p>
 
 
     </section>
@@ -1881,23 +1881,49 @@ $$
 <p>Now we have the same number of equations and variables, write:</p>
 
 <p><font size=5>
+<p class="fragment">
 $$
-\det \left(
-        \begin{array}{cc}
-        H &amp; H^{z_2} &amp; H^{z_3} &amp; H^{z_2z_3} &amp; 0 &amp; 0 \\<br />
-        0 &amp; 0 &amp; H &amp; H^{z_2} &amp; H^{z_3} &amp; H^{z_2z_3} \\<br />
-        \end{array}
-        \right)\Big|_{z_2=0, z_3=0} \cdot
-        \left(\begin{array}{c}
-        1\\<br />
-        {z_2}\\<br />
-        {z_3}\\<br />
-        {z_2 z_3}\\<br />
-        {z_3^2}\\<br />
-        {z_2 z_3^2}\\<br />
-        \end{array}
-        \right) = 0
+    \left(
+    \begin{array}{cc}
+    H &amp; H^{z_2} &amp; H^{z_3} &amp; H^{z_2z_3} &amp; 0 &amp; 0 \\<br />
+    0 &amp; 0 &amp; H &amp; H^{z_2} &amp; H^{z_3} &amp; H^{z_2z_3} \\<br />
+    \end{array}
+    \right)\Big|_{z_2=0, z_3=0} \cdot
+    \left(\begin{array}{c}
+    1\\<br />
+    {z_2}\\<br />
+    {z_3}\\<br />
+    {z_2 z_3}\\<br />
+    {z_3^2}\\<br />
+    {z_2 z_3^2}\\<br />
+    \end{array}
+    \right) = 0
 $$
+</p>
+</font size></p>
+
+<p><font size=2>
+<p class="fragment">
+$$
+$$
+$$
+\left(\begin{matrix}s_{14} z_{4} + s_{15} z_{5} &amp; s_{12} &amp; s_{13} &amp; 0 &amp; 0 &amp; 0\\<br />
+s_{145} z_{4} z_{5} &amp; s_{124} z_{4} + s_{125} z_{5} &amp; s_{134} z_{4} + s_{135} z_{5} &amp; s_{123} &amp; 0 &amp; 0\\<br />
+0 &amp; s_{1245} z_{4} z_{5} &amp; s_{1345} z_{4} z_{5} &amp; s_{1234} z_{4} + s_{1235} z_{5} &amp; 0 &amp; 0\\<br />
+0 &amp; 0 &amp; s_{14} z_{4} + s_{15} z_{5} &amp; s_{12} &amp; s_{13} &amp; 0\\<br />
+0 &amp; 0 &amp; s_{145} z_{4} z_{5} &amp; s_{124} z_{4} + s_{125} z_{5} &amp; s_{134} z_{4} + s_{135} z_{5} &amp; s_{123}\\<br />
+0 &amp; 0 &amp; 0 &amp; s_{1245} z_{4} z_{5} &amp; s_{1345} z_{4} z_{5} &amp; s_{1234} z_{4} + s_{1235} z_{5}\end{matrix}\right) \cdot
+    \left(\begin{array}{c}
+    1\\<br />
+    {z_2}\\<br />
+    {z_3}\\<br />
+    {z_2 z_3}\\<br />
+    {z_3^2}\\<br />
+    {z_2 z_3^2}\\<br />
+    \end{array}
+    \right) = 0
+$$
+</p>
 </font size></p>
 
 
@@ -1941,7 +1967,7 @@ $$
 </code></pre>
 
 <pre><code class="language-python">&gt;&gt;&gt; oParticles = Particles(6)
-&gt;&gt;&gt; num_ss = {str(s): oPs.compute(str(s)) for s in mandelstams(6)}
+&gt;&gt;&gt; num_ss = {str(s): oParticles.compute(str(s)) for s in mandelstams(6)}
 </code></pre>
 
 <pre><code class="language-python">&gt;&gt;&gt; sols = solve_scattering_equations(6, num_ss)
@@ -1953,7 +1979,79 @@ $$
  'z5': mpc(real='#nbr', imag='#nbr')}
 </code></pre>
 
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b> Recursion for the elimination theory matrix </b></p>
+
+<p><br></p>
+
+<p><font size=5>
+$$
+\mkern -24mu M_i=
+  \left(
+    \begin{array}{ccccccc}
+      M_{i-1} &amp; M_{i-1}^{z_{i-3}} &amp; 0 &amp; \dots &amp; 0 &amp; 0\\<br />
+      0 &amp; M_{i-1} &amp; M_{i-1}^{z_{i-3}} &amp; \dots &amp; 0 &amp; 0\\<br />
+      \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots\\<br />
+      0 &amp; 0 &amp; 0 &amp; \dots &amp; M_{i-1} &amp; M_{i-1}^{z_{i-3}}\\<br />
+    \end{array}
+  \right), \quad
+  M_4=H, \quad
+  H =
+  \left(
+    \begin{array}{c}
+      h_1\\<br />
+      h_2\\<br />
+      \vdots\\<br />
+      h_{n-3}\\<br />
+    \end{array}
+  \right)
+$$
+</font size></p>
+
+<p><br></p>
+
+<p>$M_i$ is of dimensions $(i−4)×(i−3)$ when written in terms of $M_{i−1}$.
+After a derivative is taken the relevant $z_i$ is assumed to be set to zero.</p>
+
 <h2 id="section-10"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><section></p>
+
+<h1 id="4-2-nbsp-chy-integrands">4.2 &nbsp;CHY-Integrands</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="section-11"></section></h2>
 
 
     </section>
@@ -2011,7 +2109,7 @@ We have now almost finished reconstructing the six-gluon one-loop amplitude with
 <br>
 Questions?</p>
 
-<h2 id="section-11"></section></h2>
+<h2 id="section-12"></section></h2>
 
     </section>
     
