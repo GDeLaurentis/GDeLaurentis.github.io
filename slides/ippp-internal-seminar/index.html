@@ -1760,7 +1760,7 @@ $\prod&rsquo;_{a \in A} = (z_i-z_j)(z_j-z_k)(z_k-z_i)\prod_{a \in A \backslash \
 
 <p><section></p>
 
-<h1 id="b-nbsp-2-1-nbsp-the-scattering-equations">B&nbsp;2.1 &nbsp; The scattering equations</h1>
+<h1 id="b-nbsp-2-nbsp-the-scattering-equations">B&nbsp;2. &nbsp; The scattering equations</h1>
 
 
     </section>
@@ -2169,7 +2169,7 @@ After a derivative is taken the relevant $z_i$ is assumed to be set to zero.</p>
 
 <p><section></p>
 
-<h1 id="b-nbsp-2-2-nbsp-chy-integrands">B&nbsp;2.2 &nbsp;CHY-Integrands</h1>
+<h1 id="b-nbsp-3-nbsp-chy-integrands">B&nbsp;3. &nbsp;CHY-Integrands</h1>
 
 
     </section>
@@ -2361,13 +2361,81 @@ $$
     
       
 
-<p><b> The reduced Pfaffian </b>
+<p><b> The Pfaffian </b>
 <br></p>
 
 <p>The determinant of anti-symmetric matrices can be written as the square of a polynomial.
 This polynomial is called the Pfaffian.</p>
 
+<p><br></p>
+
+<p><font size=5>
+$
+\text{e.g.} \quad A = \left(
+\begin{matrix}
+0 &amp; a \\<br />
+-a &amp; 0
+\end{matrix}
+\right) \, , \quad
+\det(A) = a ^ 2 \, , \quad
+\text{Pf}(A) = a
+$
+</font size></p>
+
+<p><br></p>
+
 <p>Note: non trivial to get the Pfaffian from the determinant, <br> due to sign ambiguity.</p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b> The reduced Pfaffian </b>
+<br></p>
+
+<p>The matrices $A$ and $\Psi$ have two null vectors, <br> therefore their determinant and Pfaffian are zero.</p>
+
+<p><br></p>
+
+<p>Instead use:</p>
+
+<p><font size=5>
+$
+\text{Pf&rsquo;}(\Psi) = \frac{(-1)^{i+j}}{z_i - z_j} \text{Pf}(\Psi_{ij}^{ij}) \; ,
+$
+</font size></p>
+
+<p>$\Psi_{ij}^{ij}$ denotes deletion of rows and columns $i$ and $j$.</p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b> An easy identity to spot </b></p>
+
+<p>Born-Infeld, non linear sigma model and Galileon amplitudes involve the Pfaffian of the <font size=5>$n\times n$</font size> matrix $A$.</p>
+
+<p><br></p>
+
+<p>The Pfaffian of an odd-size matrix is zero, <br> meaning in these theories only even point functions are non-vanishing.</p>
+
+<p><br></p>
+
+<p>More specifically, for Born-Infeld amplitudes this is a consequence of helicity conservation.</p>
 
 <h2 id="section-11"></section></h2>
 
@@ -2384,7 +2452,68 @@ This polynomial is called the Pfaffian.</p>
 
 <p><section></p>
 
-<h1 id="4-2-nbsp-conclusions">4.2 &nbsp;Conclusions</h1>
+<h1 id="4-amplitudes">4. Amplitudes</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b> Numerical amplitudes </b>
+<br></p>
+
+<p>We now have all the building blocks to compute amplitudes.</p>
+
+<p><br></p>
+
+<p>With the open source packages this is straightforward:</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; from seampy import theories, NumericalAmplitude
+&gt;&gt;&gt; from lips import Particles
+
+&gt;&gt;&gt; theories
+[YM, EG, BS, BI, NLSM, Galileon, CG, DF2]
+
+&gt;&gt;&gt; oDF2Amp = NumericalAmplitude(theory=&quot;DF2&quot;, helconf=&quot;+++++&quot;)
+&gt;&gt;&gt; oParticles = Particles(5)
+
+&gt;&gt;&gt; oDF2Amp(oParticles)
+mpc(real='#nbr', imag='#nbr')
+</code></pre>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="section-12"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><section></p>
+
+<h1 id="summary">Summary</h1>
 
 
     </section>
@@ -2427,7 +2556,7 @@ We have now almost finished reconstructing the six-gluon one-loop amplitude with
 <br>
 Questions?</p>
 
-<h2 id="section-12"></section></h2>
+<h2 id="section-13"></section></h2>
 
     </section>
     
