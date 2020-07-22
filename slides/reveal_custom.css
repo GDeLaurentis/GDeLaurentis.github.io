@@ -1,3 +1,7 @@
+@import url('http://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.google.com/specimen/Source+Serif+Pro');
+
+
 table td[rowspan] {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
@@ -10,6 +14,17 @@ table td[rowspan] {
     -moz-transform: rotate(90deg);
 }
 
+.reveal,
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: "Source Serif Pro";
+}
+
+
 .reveal section p {
     font-size: 28px;
 }
@@ -20,17 +35,23 @@ table td[rowspan] {
 
 .reveal h1 {
     font-size: 54px;
-    font-family: sans-serif;
+    letter-spacing: 0.05em;
 }
 .reveal h2 {
     font-size: 48px;
+    letter-spacing: 0.05em;
 }
 .reveal h3 {
     font-size: 42px;
+    letter-spacing: 0.05em;
 }
 
 .reveal section pre code {
     font-size: 16px;
+}
+
+.MathJax  {
+    font-size: 110%;
 }
 
 .fragment.visible:not(.current-fragment) {

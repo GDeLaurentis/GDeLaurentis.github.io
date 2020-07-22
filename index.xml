@@ -6,7 +6,7 @@
     <description>Recent content on Giuseppe De Laurentis</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Nov 2019 14:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 17:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://gdelaurentis.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://gdelaurentis.github.io/talk/</link>
-      <pubDate>Fri, 22 Nov 2019 14:00:00 +0000</pubDate>
+      <pubDate>Thu, 30 Jul 2020 17:00:00 +0000</pubDate>
       
       <guid>https://gdelaurentis.github.io/talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://gdelaurentis.github.io/publication/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/publication/</guid>
       <description></description>
     </item>
     
@@ -26,15 +35,6 @@
       <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://gdelaurentis.github.io/slides/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://gdelaurentis.github.io/publication/</link>
-      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/publication/</guid>
       <description></description>
     </item>
     

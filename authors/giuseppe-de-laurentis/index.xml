@@ -6,10 +6,19 @@
     <description>Recent content on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Nov 2019 14:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 17:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gdelaurentis.github.io/authors/giuseppe-de-laurentis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Analytical Amplitudes from Numerical Exploration</title>
+      <link>https://gdelaurentis.github.io/talk/summer-meeting-july2020/</link>
+      <pubDate>Thu, 30 Jul 2020 17:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/talk/summer-meeting-july2020/</guid>
+      <description>Freiburg Summer Meeting</description>
+    </item>
     
     <item>
       <title>Reconstruction of analytical amplitudes across loops, legs and theories</title>
@@ -18,6 +27,19 @@
       
       <guid>https://gdelaurentis.github.io/talk/ippp-internal-seminar/</guid>
       <description>IPPP Internal Seminar</description>
+    </item>
+    
+    <item>
+      <title>Analytical Amplitudes from Numerical Exploration</title>
+      <link>https://gdelaurentis.github.io/slides/summer-meeting-july2020/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/slides/summer-meeting-july2020/</guid>
+      <description>Analytical &amp;nbsp; Amplitudes from &amp;nbsp; Numerical &amp;nbsp; Exploration  arXiv:1904.04067 (JHEP) &amp;nbsp; G. De Laurentis, D. Maître arXiv:1910.11355 (JHEP) &amp;nbsp; G. De Laurentis arXiv:2002.04018 (JHEP) &amp;nbsp; L. Budge, J. M. Campbell, G. De Laurentis, R. K. Ellis, S. Seth 
+Giuseppe De Laurentis
+PhD supervisor: Daniel Maître
+Summer Meeting - Freiburg
+These slides at my github pages  Only speaker can read these. Press S to view.</description>
     </item>
     
     <item>

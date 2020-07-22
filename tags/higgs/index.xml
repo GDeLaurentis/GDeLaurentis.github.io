@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Higgs on Giuseppe De Laurentis</title>
+    <link>https://gdelaurentis.github.io/tags/higgs/</link>
+    <description>Recent content in Higgs on Giuseppe De Laurentis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gdelaurentis.github.io/tags/higgs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The one-loop amplitudes for Higgs &#43; 4 partons with full mass effects</title>
+      <link>https://gdelaurentis.github.io/publication/arxiv2002.04018/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/publication/arxiv2002.04018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
