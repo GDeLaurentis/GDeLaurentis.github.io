@@ -6,10 +6,19 @@
     <description>Recent content in Daniel Maitre on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gdelaurentis.github.io/authors/daniel-maitre/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Two-Loop Five-Parton Leading-Colour Finite Remainders in the Spinor-Helicity Formalism</title>
+      <link>https://gdelaurentis.github.io/publication/arxiv2010.14525/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/publication/arxiv2010.14525/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Extracting analytical one-loop amplitudes from numerical evaluations</title>
