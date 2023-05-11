@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Giuseppe De Laurentis</title>
@@ -6,10 +6,19 @@
     <description>Recent content in Authors on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 May 2023 15:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gdelaurentis.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Giuseppe De Laurentis</title>
+      <link>https://gdelaurentis.github.io/authors/giuseppe-de-laurentis/</link>
+      <pubDate>Sun, 14 May 2023 15:30:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/authors/giuseppe-de-laurentis/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>
@@ -17,7 +26,7 @@
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gdelaurentis.github.io/authors/admin/</guid>
-      <description>Hi there! I&amp;rsquo;m a postdoc at Uni Freiburg working on high energy physics theory and phenomenology. I did my PhD studies at the IPPP in Durham and my undergrand and master studies in Oxford.</description>
+      <description>Hello! I am a postdoctoral researcher at PSI, working on high energy physics theory and phenomenology.</description>
     </item>
     
     <item>
@@ -53,15 +62,6 @@
       <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://gdelaurentis.github.io/authors/daniel-maitre/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Giuseppe De Laurentis</title>
-      <link>https://gdelaurentis.github.io/authors/giuseppe-de-laurentis/</link>
-      <pubDate>Thu, 30 Jul 2020 17:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/authors/giuseppe-de-laurentis/</guid>
       <description></description>
     </item>
     

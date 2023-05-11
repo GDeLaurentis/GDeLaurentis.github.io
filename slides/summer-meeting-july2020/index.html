@@ -1810,29 +1810,23 @@ $I_{CHY, Yang Mills} = C_n \; PF&rsquo;(\Psi) \quad \quad I_{CHY, Biadjoint Scal
 <p><b> Numerical amplitudes</b></p>
 
 <p>Developed two python packages:</p>
-
-<pre><code class="language-python">&gt;&gt;&gt; pip install seampy
-&gt;&gt;&gt; pip install lips
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> pip install seampy
+<span style="color:#f92672">&gt;&gt;&gt;</span> pip install lips</code></pre></div>
 <p>seampy from Scatterin Equations and AMplitudes with PYthon<br>
 lips from Lorentz Invarinat Phase Space</p>
 
 <p>Arbitrary-precision floating-point amplitudes with a couple of lines of code</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> seampy <span style="color:#f92672">import</span> theories, NumericalAmplitude
+<span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> lips <span style="color:#f92672">import</span> Particles
 
-<pre><code class="language-python">&gt;&gt;&gt; from seampy import theories, NumericalAmplitude
-&gt;&gt;&gt; from lips import Particles
-
-&gt;&gt;&gt; theories
+<span style="color:#f92672">&gt;&gt;&gt;</span> theories
 [YM, EG, BS, BI, NLSM, Galileon, CG, DF2]
 
-&gt;&gt;&gt; oDF2Amp = NumericalAmplitude(theory=&quot;DF2&quot;, helconf=&quot;+++++&quot;)
-&gt;&gt;&gt; oParticles = Particles(5)
+<span style="color:#f92672">&gt;&gt;&gt;</span> oDF2Amp <span style="color:#f92672">=</span> NumericalAmplitude(theory<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;DF2&#34;</span>, helconf<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;+++++&#34;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> oParticles <span style="color:#f92672">=</span> Particles(<span style="color:#ae81ff">5</span>)
 
-&gt;&gt;&gt; oDF2Amp(oParticles)
-mpc(real='#nbr', imag='#nbr')
-</code></pre>
-
+<span style="color:#f92672">&gt;&gt;&gt;</span> oDF2Amp(oParticles)
+mpc(real<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>, imag<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>)</code></pre></div>
 
     </section>
     
@@ -2596,26 +2590,17 @@ $$
 <p><b> Solution: use a numerical root-finding algorithm </b></p>
 
 <p>Two open source packages: <a href="https://github.com/GDeLaurentis/seampy" target="_blank">seampy</a>, <a href="https://github.com/GDeLaurentis/lips" target="_blank">lips</a></p>
-
-<pre><code class="language-python">&gt;&gt;&gt; hms(6)
-⎡                     s₁₂⋅z₂ + s₁₃⋅z₃ + s₁₄⋅z₄ + s₁₅⋅z₅                     ⎤
-⎢s₁₂₃⋅z₂⋅z₃ + s₁₂₄⋅z₂⋅z₄ + s₁₂₅⋅z₂⋅z₅ + s₁₃₄⋅z₃⋅z₄ + s₁₃₅⋅z₃⋅z₅ + s₁₄₅⋅z₄⋅z₅⎥
-⎣     s₁₂₃₄⋅z₂⋅z₃⋅z₄ + s₁₂₃₅⋅z₂⋅z₃⋅z₅ + s₁₂₄₅⋅z₂⋅z₄⋅z₅ + s₁₃₄₅⋅z₃⋅z₄⋅z₅     ⎦
-</code></pre>
-
-<pre><code class="language-python">&gt;&gt;&gt; oParticles = Particles(6)
-&gt;&gt;&gt; num_ss = {str(s): oParticles.compute(str(s)) for s in mandelstams(6)}
-</code></pre>
-
-<pre><code class="language-python">&gt;&gt;&gt; sols = solve_scattering_equations(6, num_ss)
-&gt;&gt;&gt; len(sols)
-6
-&gt;&gt;&gt; sols[0]
-{'z3': mpc(real='#nbr', imag='#nbr'),
- 'z4': mpc(real='#nbr', imag='#nbr'),
- 'z5': mpc(real='#nbr', imag='#nbr')}
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> hms(<span style="color:#ae81ff">6</span>)
+<span style="color:#960050;background-color:#1e0010">⎡</span>                     s<span style="color:#960050;background-color:#1e0010">₁₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₂</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₃</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₄</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span>                     <span style="color:#960050;background-color:#1e0010">⎤</span>
+<span style="color:#960050;background-color:#1e0010">⎢</span>s<span style="color:#960050;background-color:#1e0010">₁₂₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₃</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₂₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₄</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₂₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₃₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₄</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₃₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₄₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₅⎥</span>
+<span style="color:#960050;background-color:#1e0010">⎣</span>     s<span style="color:#960050;background-color:#1e0010">₁₂₃₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₄</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₂₃₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₂₄₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₃₄₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span>     <span style="color:#960050;background-color:#1e0010">⎦</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> oParticles <span style="color:#f92672">=</span> Particles(<span style="color:#ae81ff">6</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> num_ss <span style="color:#f92672">=</span> {str(s): oParticles<span style="color:#f92672">.</span>compute(str(s)) <span style="color:#66d9ef">for</span> s <span style="color:#f92672">in</span> mandelstams(<span style="color:#ae81ff">6</span>)}</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> sols <span style="color:#f92672">=</span> solve_scattering_equations(<span style="color:#ae81ff">6</span>, num_ss)
+<span style="color:#f92672">&gt;&gt;&gt;</span> len(sols)
+<span style="color:#ae81ff">6</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> sols[<span style="color:#ae81ff">0</span>]
+{<span style="color:#e6db74">&#39;z3&#39;</span>: mpc(real<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>, imag<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>),
+ <span style="color:#e6db74">&#39;z4&#39;</span>: mpc(real<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>, imag<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>),
+ <span style="color:#e6db74">&#39;z5&#39;</span>: mpc(real<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>, imag<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>)}</code></pre></div>
 
     </section>
     

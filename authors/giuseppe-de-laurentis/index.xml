@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Giuseppe De Laurentis</title>
@@ -6,10 +6,19 @@
     <description>Recent content on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2020 17:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 May 2023 15:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gdelaurentis.github.io/authors/giuseppe-de-laurentis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Modern Methods for the Computation of Scattering Amplitudes</title>
+      <link>https://gdelaurentis.github.io/talk/psi-ltp-seminar/</link>
+      <pubDate>Sun, 14 May 2023 15:30:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/talk/psi-ltp-seminar/</guid>
+      <description>Theory Group Seminar</description>
+    </item>
     
     <item>
       <title>Analytical Amplitudes from Numerical Exploration</title>
@@ -82,7 +91,7 @@ A. &amp;nbsp; Reconstruction of analytical spinor-helicity amplitudes
       <pubDate>Tue, 21 May 2019 19:16:01 +0100</pubDate>
       
       <guid>https://gdelaurentis.github.io/post/a-simple-tree-level-example/</guid>
-      <description>&lt;a href=&#34;https://arxiv.org/abs/1904.04067&#34; target=&#34;_blank&#34;&gt;https://arxiv.org/abs/1904.04067&lt;/a&gt;</description>
+      <description>&lt;a href=&#34;https://arxiv.org/abs/1904.04067&#34;&gt;https://arxiv.org/abs/1904.04067&lt;/a&gt;</description>
     </item>
     
     <item>
@@ -104,6 +113,19 @@ QCD@LHC 2019 IPPP - Durham University
 4. Some results (Yang-Mills in the Standard Model)
 
 1.1 &amp;nbsp;Motivation Cross sections at hadron colliders are given by:</description>
+    </item>
+    
+    <item>
+      <title>Modern Methods for the Computation of Scattering Amplitudes</title>
+      <link>https://gdelaurentis.github.io/slides/psi-ltp-seminar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/slides/psi-ltp-seminar/</guid>
+      <description>Modern Methods for the Computation of Scattering Amplitudes  
+Giuseppe De Laurentis
+LTP Seminar These slides at gdelaurentis.github.io/slides/psi-ltp-seminar  Only speaker can read these. Press S to view.   
+What are Scattering Amplitudes? Amplitudes and the $\boldsymbol{S}$-Matrix 
+$$\langle \text{final state} | S | \text{initial state} \rangle = \underbrace{\delta_{fi}}_{\text{no scattering}} + \underbrace{i(2\pi)^4\delta(p_f-p_i)}_{\text{4-momentum conservation}} \quad \times \; \underbrace{\mathcal{A}_{fi}}_{\text{scattering amplitude}}$$ Or simply: $\; S = 1 + i \, T$</description>
     </item>
     
   </channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Giuseppe De Laurentis</title>
@@ -17,7 +17,7 @@
       <pubDate>Tue, 21 May 2019 19:16:01 +0100</pubDate>
       
       <guid>https://gdelaurentis.github.io/post/a-simple-tree-level-example/</guid>
-      <description>&lt;a href=&#34;https://arxiv.org/abs/1904.04067&#34; target=&#34;_blank&#34;&gt;https://arxiv.org/abs/1904.04067&lt;/a&gt;</description>
+      <description>&lt;a href=&#34;https://arxiv.org/abs/1904.04067&#34;&gt;https://arxiv.org/abs/1904.04067&lt;/a&gt;</description>
     </item>
     
   </channel>

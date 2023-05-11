@@ -6,10 +6,19 @@
     <description>Recent content on Giuseppe De Laurentis</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 May 2023 15:30:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://gdelaurentis.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://gdelaurentis.github.io/talk/</link>
+      <pubDate>Sun, 14 May 2023 15:30:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/talk/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Publications</title>
@@ -17,15 +26,6 @@
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://gdelaurentis.github.io/publication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recent &amp; Upcoming Talks</title>
-      <link>https://gdelaurentis.github.io/talk/</link>
-      <pubDate>Thu, 30 Jul 2020 17:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/talk/</guid>
       <description></description>
     </item>
     
@@ -48,29 +48,20 @@
     </item>
     
     <item>
+      <title>Courses</title>
+      <link>https://gdelaurentis.github.io/courses/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/courses/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Projects</title>
       <link>https://gdelaurentis.github.io/project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://gdelaurentis.github.io/project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link></link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid></guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Courses</title>
-      <link>https://gdelaurentis.github.io/courses/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/courses/</guid>
       <description></description>
     </item>
     

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Slides on Giuseppe De Laurentis</title>
@@ -68,6 +68,19 @@ QCD@LHC 2019 IPPP - Durham University
       
       <guid>https://gdelaurentis.github.io/slides/example/</guid>
       <description>An introduction to using Academic&amp;rsquo;s Slides feature.</description>
+    </item>
+    
+    <item>
+      <title>Modern Methods for the Computation of Scattering Amplitudes</title>
+      <link>https://gdelaurentis.github.io/slides/psi-ltp-seminar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/slides/psi-ltp-seminar/</guid>
+      <description>Modern Methods for the Computation of Scattering Amplitudes  
+Giuseppe De Laurentis
+LTP Seminar These slides at gdelaurentis.github.io/slides/psi-ltp-seminar  Only speaker can read these. Press S to view.   
+What are Scattering Amplitudes? Amplitudes and the $\boldsymbol{S}$-Matrix 
+$$\langle \text{final state} | S | \text{initial state} \rangle = \underbrace{\delta_{fi}}_{\text{no scattering}} + \underbrace{i(2\pi)^4\delta(p_f-p_i)}_{\text{4-momentum conservation}} \quad \times \; \underbrace{\mathcal{A}_{fi}}_{\text{scattering amplitude}}$$ Or simply: $\; S = 1 + i \, T$</description>
     </item>
     
   </channel>

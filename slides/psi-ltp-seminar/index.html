@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://gdelaurentis.github.io/slides/psi-ltp-seminar/">
+
+  <title>Modern Methods for the Computation of Scattering Amplitudes | Giuseppe De Laurentis</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/sky.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous">
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/reveal_custom.min.css">
+
+  
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/pdf.css' : 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+
+<p><html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+        <link rel="stylesheet" href="../reveal_custom.css">
+    </head>
+</html></p>
+
+
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="PSI-aerialview.jpg"
+  >
+
+
+<p><br><br></p>
+
+<h3 id="b-modern-methods-for-the-computation-of-scattering-amplitudes-b"><b> Modern Methods for the Computation of Scattering Amplitudes </b></h3>
+
+<p><br></p>
+
+<p>Giuseppe De Laurentis</p>
+
+<p>LTP Seminar <br />
+<br />
+<p style="line-height: 0.05;"> <img src="paul-scherrer-institute-psi-logo-vector-transparent.png"; style="max-width:280px;float:center;border:none;"><br />
+<br />
+<font size=2> These slides at <a href="/slides/psi-ltp-seminar/#/">gdelaurentis.github.io/slides/psi-ltp-seminar</a> </font size> </p></p>
+
+<aside class="notes">
+  <ul>
+<li>Only speaker can read these.</li>
+<li>Press S to view.</li>
+</ul>
+</aside>
+
+
+    </section>
+    
+
+    
+    
+    
+      
+
+<p><section></p>
+
+
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="LHCXSection.jpg"
+  >
+
+
+<h1 id="what-are-br-scattering-amplitudes">What are <br> Scattering Amplitudes?</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large"> Amplitudes and the $\boldsymbol{S}$-Matrix </b></p>
+
+<div style="font-size: x-large">
+$$\langle \text{final state} | S | \text{initial state} \rangle = \underbrace{\delta_{fi}}_{\text{no scattering}} + \underbrace{i(2\pi)^4\delta(p_f-p_i)}_{\text{4-momentum conservation}} \quad \times \; \underbrace{\mathcal{A}_{fi}}_{\text{scattering amplitude}}$$
+
+Or simply: $\; S = 1 + i \, T$<br><br>
+
+In practice, we want <span style="background-color: #FFFF007F">fully-connected, amputated Feynman diagrams</span>
+</div>
+
+<p><img src="ScatteringAmplitudeFeynmanDiagramTransparent.png"; style="max-width:300px;float:center;border:none;margin-top:-5px;"></p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large"> Amplitudes and Cross Sections </b>
+<br></p>
+
+<div style="text-align: left; font-size: x-large">
+Cross sections at hadron colliders take the form:
+
+$$\displaystyle σ_{2 \rightarrow n - 2} = \sum_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b/h_2}(x_b, μ_F) \;\hat{σ}_{ab→n-2}(x_a, x_b, μ_F, μ_R) \\[2mm]
+\displaystyle \hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\text{LIPS} \prod_{n-2}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,μ_F, μ_R)}|^2$$
+</div>
+
+<div style="display:block; width:100%;">
+  <div style="width:50%; float: left; display: inline-block;">
+       <img src="HiggsDiscoveryPlotTransparent.png"; style="max-width:430px; float:center; border:none; margin-top: 1mm; margin-bottom: -5mm;">
+       <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1207.7214>
+          ATLAS Collaboration ('12)
+       </a>
+  </div>
+  <div style="width:50%; float: center; display: inline-block; font-size: x-large;">
+       <img src="HiggsDiagramTransparent.png"; style="max-width:200px;float:center;border:none;margin-top:5mm;margin-bottom:0mm">
+       $$\mathcal{A}_{pp\rightarrow h \rightarrow \gamma\gamma} \sim \frac{1}{m_{\gamma\gamma}^2 - m^2_h + i m_h \Gamma_h}$$
+       $$\Rightarrow\; \text{Breit–Wigner distribution}$$
+  </div>
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: -2mm; margin-top: -5mm;"> Perturbation Theory </b></p>
+
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$$\displaystyle \mathcal{A}_n = \underbrace{\mathcal{A}_n^{\text{tree}}}_{\kern-40mm \text{comulative error:} \quad \sim 30\%} + \left(\frac{\alpha_S}{2\pi}\right) \underbrace{\mathcal{A}_n^{1-\text{loop}}}_{\sim 10\%} + \left(\frac{\alpha_S}{2\pi}\right)^2 \underbrace{\mathcal{A}_n^{2-\text{loop}}}_{\sim 1\%} + \dots$$
+
+Better predictions require both <span style="background-color: #FFFF007F">more loops</span> and <span style="background-color: #FFFF007F">higher multiplicity</span>.
+</div>
+
+<!---
+<table width=50% border="1" cellspacing="0" cellpadding="0" style="margin-bottom: 8mm; margin-top: 8mm">
+  <tr class="greenline">
+    <td colspan="2", rowspan="2"> <div id="rot90"> <center> <b> $\mathcal{A}_{n-gluons}^{\ell-loops} \propto g_s^{n-2+2\ell} $ </b> </center> </div> </td>
+    <td colspan="4"> <center> multiplicity $(n)$ </center> </td>
+  </tr>
+  <tr>
+    <td><b>4</b></td>
+    <td><b>5</b></td>
+    <td><b>6</b></td>
+    <td><b>7</b></td>
+  </tr>
+  <tr>
+    <td rowspan="3"> <center> loops ($\ell$) </center> </td>
+    <td><b>0</b></td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td><b>1</b></td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td><b>2</b></td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+  </tr>
+</table>
+--->
+
+<div style="width:100%; float: center; display: inline-block; text-align: center; margin-top: 2mm;">
+     <img src="ModSquareAmplitude.png"; style="max-width:550px; float:center; border:none; margin-top: 1mm; margin-bottom: -5mm;">
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
+Processes with additional soft or collinear radiation are indistinguishable from the Born.
+</div>
+
+<div style="text-align: center; font-size: x-large; margin-top: 8mm;">
+More loops $\rightarrow$ analytical complexity; &nbsp more legs $\rightarrow$ algebraic complexity.
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large">
+   State-of-the-Art
+</b></p>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 7mm;">
+     $\circ\,$ Focus on all-gluon scattering, as a representative example.
+</div>
+
+<p><br></p>
+
+<table width=60% border="1" cellspacing="0" cellpadding="0" style="margin-bottom: 8mm; margin-top: 2mm; font-size: 16pt;">
+  <tr class="greenline">
+    <td colspan="2", rowspan="2"> <div id="rot90"> <center> <b> $\mathcal{A}_{n-gluons}^{\ell-loops}$ </b> </center> </div> </td>
+    <td colspan="5"> <center> multiplicity $(n)$ </center> </td>
+  </tr>
+  <tr>
+    <td><b>4</b></td>
+    <td><b>5</b></td>
+    <td><b>6</b></td>
+    <td><b>7</b></td>
+    <td><b>8</b></td>
+  </tr>
+  <tr>
+    <td rowspan="4"> <center> loops ($\ell$) </center> </td>
+    <td><b>0</b></td>
+    <td bgcolor="green"></td>
+    <td bgcolor="green"></td>
+    <td bgcolor="green"></td>
+    <td bgcolor="green"></td>
+    <td bgcolor="green"></td>
+  </tr>
+  <tr>
+    <td><b>1</b></td>
+    <td bgcolor="green"></td>
+    <td bgcolor="green" ></td>
+    <td bgcolor="green"></td>
+    <td bgcolor="yellow"></td>
+    <td bgcolor="yellow"></td>
+  </tr>
+  <tr>
+    <td><b>2</b></td>
+    <td bgcolor="green"></td>
+    <td bgcolor="99FF00"></td>
+    <td bgcolor="red"></td>
+    <td bgcolor="red"></td>
+    <td bgcolor="red"></td>
+  </tr>
+  <tr>
+    <td><b>3</b></td>
+    <td bgcolor="green"></td>
+    <td bgcolor="red"></td>
+    <td bgcolor="red"></td>
+    <td bgcolor="red"></td>
+    <td bgcolor="red"></td>
+  </tr>
+</table>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: -3mm; margin-bottom: 0mm;">
+     $\circ\,$Three-loop four-point (analytic)
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2112.11097>
+   Caola, Chakraborty, Gambuti, von Manteuffel, Tancredi ('21)
+</a>
+
+<br>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: -3mm; margin-bottom: 0mm;">
+     $\circ\,$Two-loop five-point (analytic)
+</div>
+<div style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;">
+     &nbsp (Leading Color)
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
+   Abreu, Dormans, Febres Cordero, Ita (PSI), Page ('18)
+</a>
+
+<br>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: -3mm; margin-bottom: 0mm;">
+     $\circ\,$One-loop six-point (analytic)
+</div>
+<div style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;">
+     &nbsp (Previous results involve taking limits, sqrts, etc..)
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1904.04067>
+   GDL, Maître ('19)
+</a>
+
+<br>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: -3mm; margin-bottom: 0mm;">
+     $\circ\,$One-loop beyond six-point (solved, but only numerically)
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1907.13071>
+   OpenLoops,&nbsp$\dots$
+</a>
+<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1112.3940>
+   BlackHat,&nbsp
+</a>
+<div style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;">
+     Several programs:&nbsp
+</div>
+
+<p><br></p>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: -10mm; margin-bottom: 0mm;">
+     $\circ\,$Tree (solved analytically)
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -10mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1010.3991>
+   Dixon, Henn, Plefka, Schuster ('10)
+</a>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+</div>
+
+<h2 id="section"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+      
+
+<p><section></p>
+
+
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="Feynman-Diagrams-transparent.png"
+  >
+
+
+<h1 id="the-structure-of-br-scattering-amplitudes">The structure of <br> Scattering Amplitudes</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 30mm;"> <span style="color: green">Dynamics</span> and <span style="color: red">Kinematics</span> </b></p>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 10mm;">Color ordering at tree level ($T$'s are $SU(N_c)$ generators)</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: 5mm; margin-bottom: 5mm;" href=https://www.sciencedirect.com/science/article/pii/0550321387906043?ref=pdf_download&fr=RR-2&rr=7c49373aad8e3b51>
+   Berends, Giele ('80s)
+</a>
+
+<div style="font-size: x-large; margin-top: 1mm;">
+$$\displaystyle \mathcal{A}^{tree}_{n}({p_i, λ_i, a_i}) = \; g^{n-2} \sum_{σ\in S_n/Z_n} \color{green}{\text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)})} \; \color{red}{A^{tree}_n(σ(p_1^{λ_1}),\dots ,σ(p_n^{λ_n}))}\\[8mm]$$
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 10mm;">and one loop</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: 5mm; margin-bottom: 5mm;" href=https://www.sciencedirect.com/science/article/pii/055032139190567H?ref=pdf_download&fr=RR-2&rr=7c4937405f2d3b51>Bern, Kosower ('91)</a>
+
+<div style="font-size: x-large; margin-top: 1mm;">
+$$\displaystyle\mathcal{A}^{1-loop}_{n}({p_i, λ_i, a_i}) = \; g^{n} \sum_{σ\in S_n/Z_n} \color{green}{N_{c}\text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)})} \; \color{red}{A^1_{n;1}(σ(p_1^{λ_1}),\dots ,σ(p_n^{λ_n}))} \\
+\displaystyle + \sum_{c = 2}^{\lfloor n/2 \rfloor + 1}\sum_{σ\in S_n/Z_{n;c}} \color{green}{\text{Tr}(T^{a_σ(1)}\dots T^{a_σ(c-1)})\text{Tr}(T^{a_σ( c)}\dots T^{a_σ(n)})} \;  \color{red}{A^1_{n;c}(σ(p_1^{λ_1}),\dots ,σ(p_n^{λ_n}))}$$
+</div>
+
+<div style="text-align: center; font-size: x-large; margin-top: 10mm;">We will focus on <span style="background-color: #FFFF007F"><i>color-ordered</i> amplitudes</span> $A^\ell_n$</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 20mm;"> <span style="color: orange">Rational</span> and <span style="color: red">Transcendental</span> </b></p>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm; margin-top: 10mm">Decomposition in terms of master integrals</div>
+<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/0712.1851>Ellis, Zanderighi</a>
+<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/hep-ph/9212308>Bern, Dixon, Kosower;&nbsp</a>
+<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://www.sciencedirect.com/science/article/pii/0550321379906059?ref=pdf_download&fr=RR-2&rr=7c4afcac1f343b58>'t Hooft, Veltman;&nbsp</a>
+
+<div style="font-size: x-large; margin-top: 10mm;">
+$$A^{1-\text{loop}}_{n} = \sum_i \color{orange}{d_i} \color{red}{I^i_{Box}} + \sum_i \color{orange}{c_i} \color{red}{I^i_{Triangle}} + \sum_i \color{orange}{b_i} \color{red}{I^i_{Bubble}} + \sum_i \color{orange}{a_i} \color{red}{I^i_{Tadpoles}} + \color{orange}{R}$$
+</div>
+
+<div style="width:90%; float: center; display: inline-block;">
+       <img src="one-loop-decomposition-transparent.png"; style="max-width:750px;float:center;border:none;margin-top:-5px;">
+  </div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm;">
+     In general, in $D= 4- 2 \epsilon$, for a suitable choice of master integrals
+</div>
+
+<div style="font-size: x-large; margin-top: 10mm; margin-bottom:10mm">
+$$A^{\ell-loop}_n = \sum_{i \in \text{masters}} \frac{\color{orange}{c_i}(\vec p, \vec \lambda, \epsilon) \, \color{red}{I_i}(\vec p, \epsilon)}{\prod_j (\epsilon - a_{ij})}\;, \quad \text{with} \quad a_{ij} \in \mathbb{Q}$$
+</div>
+
+<!---
+<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm;">
+    $\kern30mm \cdot$ the coefficients $c_i$ are <span style="color: orange">rational</span> in $p_i$ and polynomial in $\epsilon$, <br>
+    $\kern30mm \cdot$ the master integrals $I_i$ are <span style="color: red">transcendental</span>, <br>
+    $\kern30mm \cdot$ the $a_{ij}$ are rational numbers ($a_{ij} \in \mathbb{Q}$)
+</div>
+--->
+
+<p></font size></p>
+
+
+    </section>
+    
+
+    
+    
+    
+      
+
+
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="Five_gluons_mess-transparent-background.png"
+  >
+
+
+<p><b style="font-variant: small-caps; font-size: xxx-large"> Feynman diagram by Feynman diagram </b>
+<br></p>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">     
+     $\circ\,$ Analytic computations can get very complicated very quickly, even at tree level. <br>
+     $\phantom{\circ}\,$ But final results can still be very compact, with appropriate simplifications. <br><br>
+
+     $\circ\,$ Each term in the expression in the background reads something like:
+</div>
+
+<p><br><br><br><br></p>
+
+<div style="text-align: center; font-size: x-large; float: center; margin-top: 5mm; margin-bottom: 5mm;">     
+     $(k_1 \cdot k_4) (\varepsilon_2 \cdot k_2) (\varepsilon_1 \cdot \varepsilon_3) (\varepsilon_4 \cdot \varepsilon_5)$
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
+     $\phantom{\circ}\,$ with $k_i$ 4-momenta, and $\varepsilon_i$ polarization tensors. <br><br>
+     $\circ\,$ This is for a tree-level 5-gluon amplitude, which can be simplified to
+</div>
+
+<div style="text-align: center; font-size: 22pt; margin-top: 0mm; margin-bottom: 5mm;">
+$A^{tree}(1^{+}_{g}2^{+}_{g}3^{+}_{g}4^{-}_{g}5^{-}_{g}) = \frac{i\,⟨45⟩^{4}}{⟨12⟩⟨23⟩⟨34⟩⟨45⟩⟨51⟩}$
+</div>
+
+<p><font size=5>
+      <a href="https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.56.2459" target="_blank">Parke, Taylor (&lsquo;86);</a>
+      <a href="https://www.sciencedirect.com/science/article/pii/0550321388904427" target="_blank">Berends, Giele (&lsquo;88)</a>
+</font size></p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large"> Spinor Helicity Basics </b>
+<br></p>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 10mm;">
+     $\circ\,$ The spinors $\lambda, \bar\lambda$ can be expressed in terms of 4-momentum components as:
+</div>
+
+<p><font size=5>$$
+\lambda_\alpha=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\ p^1+ip^2\end{pmatrix} \, , \;\;
+\bar\lambda_{\dot\alpha}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\ p^1-ip^2\end{pmatrix}
+$$</font size></p>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 10mm;">
+     $\circ\,$ Indices are raised with the metric $\epsilon^{\alpha\beta}=\epsilon^{\dot\alpha\dot\beta}$, which is the Levi-Civita symbol.
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 7mm;">
+     $\circ\,$ Lorentz-invariant <i> spinor brackets </i> are built by contracting the Lorentz-covariant spinor
+</div>
+
+<p><font size=5>
+$$
+⟨ij⟩ = λ_iλ_j = (λ_i)^α(λ_j)_α \quad \quad \quad [ij] = \barλ_i\barλ_j = (\barλ_i)_\dotα(\barλ_j)^\dotα
+$$
+</font size></p>
+
+<h2 id="section-1"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+      
+
+<p><section></p>
+
+
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="ComputingClusterImage.jpg"
+  >
+
+
+<h1 id="how-do-we-compute-scattering-amplitudes-efficiently">How do we compute Scattering Amplitudes efficiently?</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large"> Recursion Relations for Trees </b></p>
+
+<div style="font-size: x-large; float: left;">
+$\circ$ Off-mass-shell recursion for tree (Berends-Giele)
+</div>
+
+<div style="font-size: x-large; float: left;">
+$\circ$ On-mass-shell recursion for tree (Britto-Chacazo-Feng-Witten)
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large"> Multi-Loop Amplitudes from Trees </b></p>
+
+<div style="font-size: x-large; float: left; margin-bottom: 0mm;">
+$\circ$ Generalized unitarity relates products of tree amplitudes to loop amplitudes
+</div>
+
+<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: -5mm; margin-left: 5mm;">
+    <div style="font-size: x-large; width:50%; float: left; text-align: center; display: inline-block; margin-top: 0mm;">
+         $$
+         \require{color}
+         \displaystyle \prod_{\text{trees}} A^{\text{tree}}(\vec k, \vec\ell) = \sum_{\substack{\text{topologies}\, \Gamma, \\ i \in M_\Gamma \cup S_\Gamma}} \colorbox{yellow}{$c_{i,\Gamma}(\vec k)$} \frac{m_{i,\Gamma}(\vec k, \vec\ell)}{\displaystyle \prod_{\text{props}\,j} \rho_{j}(\vec k, \vec\ell)}
+         $$
+         $$
+         \left. \begin{aligned}
+         \underline{\text{Master integrals}}: \; & \int d^{D}\vec \ell \; m_{i\in M_\Gamma} \neq 0 \\
+         \underline{\text{Surface terms}}: \; & \int d^{D}\vec \ell \; m_{i\in S_\Gamma} = 0 \\
+         \end{aligned} \right\} \; \begin{aligned} & \text{Complex} \\ & \text{problem!} \end{aligned}
+         $$
+    </div>
+    <div style="width:50%; float: right; display: inline-block;">
+         <div style="font-size: x-large; width:50%; float: center; text-align: center; display: inline-block; margin-top: 5mm;">
+              <tt> C++ code </tt>
+         </div><br>
+         <img src="CaravelLogo.png"; style="max-width:150px; float:center; border:none; margin-top: 0mm; margin-bottom: -5mm;">
+         <br>
+         <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
+            href=https://www.sciencedirect.com/science/article/pii/0550321387906043?ref=pdf_download&fr=RR-2&rr=7c49373aad8e3b51>
+        H. Ita (PSI) et al. ('20)
+         </a>
+    </div>
+</div>
+
+<p><br><br><br><br><br><br><br><br></p>
+
+<div style="display:block; width:100%; margin-top: 5mm; margin-bottom: 0mm;">
+    <div style="font-size: x-large; width:50%; float: left; text-align: left; display: inline-block; margin-top: 10mm;">
+         $\circ$ The diagram on the right shows as example a one-loop box coefficient. <br><br>
+             $\circ$ In general, need to solve linear systems for the coefficients $c_{i,\Gamma}$. <br>
+    </div>
+    <div style="width:50%; float: right; display: inline-block;">
+         <img src="BoxCoefficient.png"; style="max-width:350px; float:center; border:none; margin-top: 0mm; margin-left: 0mm; margin-bottom: 0mm;">
+    </div>
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large"> Choosing a Number Field </b></p>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">     
+     $\circ\,$ Double-precision floating-point evaluations ($\mathbb{R}$ or $\mathbb{C}$) are too unstable, <br>
+     $\phantom{\circ}\,$ and arbitrary precision evaluations are <b> very </b> slow. <br><br>
+
+     $\circ\,$ Could try rational inputs ($\mathbb{Q}$), but integers grow way too large at intermediate stages. <br><br>
+
+     $\circ\,$ Finite fields ($\mathbb{F}_p$) come to the rescue. These are integers modulo a prime number $p$: <br>
+     <div style="text-align: center; float: center; margin-top: 5mm;">
+          $\phantom{\circ}\,$ $\mathbb{F}_p = \{0, 1, 2, \dots, p-1, p\} \cup \{+, -, \times, \div \}$
+     </div>
+     <br>
+     $\phantom{\circ}\,$ The prime $p$ needs to be large, to avoid accidental <tt> DivisionByZero </tt>. <br><br>
+     
+     $\circ\,$ But we can't do phenomenology with $\mathbb{F}_p$ ! <br><br>
+     
+     <div style="text-align: center; font-size: x-large; margin-bottom: 5mm; " >  <!--- background-color: #FFFF007F; --->
+      Sample $c_{i,\Gamma}(\lambda,\tilde\lambda)$ over $\mathbb{F}_p^{4n}$ $\;\Rightarrow\;$ obtain analytic $c_{i,\Gamma}(\lambda,\tilde\lambda)$
+     </div>
+
+<p></div></p>
+
+<h2 id="section-2"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+      
+
+<p><section></p>
+
+
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="matrix.png"
+  >
+
+
+<h1 id="analytic-reconstruction">Analytic Reconstruction</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large"> Common-Denominator Ansatz </b>
+<br></p>
+
+<!---
+<div style="text-align: left; font-size: x-large; margin-bottom: 4mm;">
+$\circ\,$ In least-common-denominator (LCD) form, we have
+</div>
+--->
+
+<div style="text-align: center; font-size: x-large; margin-bottom: 5mm;">
+$\displaystyle c_{i,\Gamma}(\lambda,\tilde\lambda) = \frac{\text{Num. poly}(\lambda, \tilde\lambda)}{\text{Denom. poly}(\lambda, \tilde\lambda)} \quad \text{with} \quad
+\text{Denom. poly}(\lambda, \tilde\lambda) = \prod_j \underbrace{W_j(\lambda, \tilde\lambda)}_{\text{alphabet letters}}$
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 4mm;">
+$\circ\,$ Build a line through phase space, parametrized by $t$
+</div>
+<div style="text-align: center; font-size: x-large; margin-bottom: 5mm;">
+$\lambda \rightarrow \lambda(t) \quad \text{and/or} \quad \tilde\lambda \rightarrow \tilde\lambda(t)$
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: -5mm;">
+     $\circ\,$ Univariate interpolation as continued fraction
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: 5mm; margin-bottom: -5mm;" href=https://arxiv.org/abs/1608.01902>
+   Peraro (2016)
+</a>
+<a style="font-size: large; text-align: right; float: right; margin-top: 5mm; margin-bottom: -5mm;" href=https://en.wikipedia.org/wiki/Thiele%27s_interpolation_formula>
+   Thiele (1909),&nbsp
+</a>
+<br><br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -10mm; margin-bottom: 5mm;">
+$c_{i,\Gamma}(t) = c_{i,\Gamma}(t_0) + \frac{t-t_0}{\frac{t_0 - t_1}{c_{i,\Gamma}(t_0)-c_{i,\Gamma}(t_1)}+\frac{t-t_1}{\dots + \frac{t-t_3}{\dots}}}$
+</div>
+<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
+$\phantom{\circ}\,$ match denominator factors of $c_{i,\Gamma}(t)$ to $W_j(t)$ $\Rightarrow$ obtain the denominator.
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm; ">
+$\circ\,$ The numerator is <b> much </b> more complicated, in general
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -10mm; margin-bottom: 5mm;" href=https://arxiv.org/abs/1904.04067>
+   GDL, Maître (2019)
+</a>
+<div style="text-align: center; font-size: x-large; margin-bottom: 5mm;">
+$\displaystyle \text{Num. poly}(\lambda, \tilde\lambda) = \sum_{\vec \alpha, \vec \beta} c_{\alpha,\beta} \; \underbrace{\langle 12 \rangle^{\alpha_{\text{first}}} \dots \langle (n-1)n \rangle^{\alpha_{\text{last}}}}_{\frac{n(n-1)}{2} \text{terms}} \; \underbrace{[12]^{\beta_{\text{first}}} \dots [(n-1)n]^{\beta_{\text{last}}}}_{\frac{n(n-1)}{2} \text{terms}}$
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large"> Obtaining and Fitting the Ansatz </b>
+<br></p>
+
+<div style="text-align: left; font-size: x-large">
+$\circ\,$ Efficient enumeration of independent spinor monomials (contraints on $\vec \alpha$ and $\vec \beta$)
+</div>
+
+<div style="display:block; width:100%; margin-top: 5mm;">
+    <div style="width:50%; font-size: x-large; float: left; display: inline-block;">
+         Gröbner bases computations
+         <img src="SingularLogo.png"; style="max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;"> <br>
+         <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
+         href=https://www.singular.uni-kl.de/index.php.html>
+        Decker, Greuel, Pfister, Schönemann
+         </a>       
+    </div>
+    <div style="width:50%; font-size: x-large; float: right; display: inline-block;">
+         Integer programming problem <br>
+         <img src="GoogleORToolsLogo.png"; style="max-width:350px; float:center; border:none; margin-top: 7mm; margin-bottom: 0mm;"> <br>
+         <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
+         href=https://www.singular.uni-kl.de/index.php.html>
+        Perron and Furnon (Google optimization team)
+         </a>
+    </div>
+</div>
+
+<p><br><br><br><br><br></p>
+
+<div style="text-align: left; font-size: x-large; margin-top: 1mm;">
+$\circ\,$ Solving linear systems with CUDA in $\mathbb{C}$ or $\mathbb{F}_{p\leq 2^{31}-1}$
+</div>
+
+<div style="display:block; width:100%; margin-top: 5mm;">
+    <div style="width:50%; font-size: x-large; float: left; display: inline-block;">
+         Currently private code <br><br>
+         <table>
+         <tr>
+         <th style="text-align:center">System Size</th>
+         <th style="text-align:center">Timing</th>
+         </tr>
+         <tr>
+         <td style="text-align:center">8192</td>
+         <td style="text-align:center">8 s</td>
+         </tr>
+         <tr>
+         <td style="text-align:center">16384</td>
+         <td style="text-align:center">51 s</td>
+         </tr>
+         <tr>
+         <td style="text-align:center">32768</td>
+         <td style="text-align:center">6m 30s</td>
+         </tr>
+         </table>
+    </div>
+    <div style="width:50%; font-size: x-large; float: right; display: inline-block;">
+         with RTX 2080ti 11GB (thanks gMerlin!) <br>
+         <img src="2080ti.png"; style="max-width:200px; float:center; border:none; margin-top: 7mm; margin-bottom: 0mm;"> <br>
+         up to 52440 unknowns <br>
+    </div>
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large"> Complexity Scaling </b>
+<br></p>
+
+<div style="text-align: left; font-size: x-large">
+Least common-denominator form is <b> extremely </b> inefficient (factorial growth). <br>
+As the polynomial degree increases, the number of terms can easily exceed 1 million.
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 4mm; margin-top: 5mm;">
+$\circ\,$ Instead write in partial-fraction form
+<div style="text-align: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
+$\displaystyle c_{i,\Gamma} = \frac{N_{LCD}(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ij}}} = \sum_k \frac{N_k(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ijk}}} \, , \quad \text{with} \quad q_{ijk} \leq q_{ij}$
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 4mm; margin-top: 5mm;">
+$\circ\,$ $c_{i,\Gamma}$ diverges as $W_{j} \rightarrow 0$.
+The partial fraction form tells us that $c_{i,\Gamma}$ should not diverge too fast as multiple $W_{j}$'s vanish simultaneously.
+</div>
+
+<h2 id="section-3"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+      
+
+<p><section></p>
+
+
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="varieties-no-background.png"
+  >
+
+
+<h1 id="the-geometry-of-phase-space">The Geometry of Phase Space</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large"> Common Denominator Redux </b></p>
+
+<div style="text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 7mm;">
+$\circ\,$ Can't draw pictures in $4n$ dimensions, so let's consider the simplified case $\mathbb{R}[x, y, z]$
+</div>
+
+<div style="text-align: left; font-size: x-large">
+$\circ\,$ Denominator factors $W_j$ correspond to <i> singular surfaces </i>.
+</div>
+
+<div style="display:block; width:100%; margin-top: 5mm; font-size: x-large;">
+    <div style="width:50%; float: left; display: inline-block;">
+         <img src="V1.png"; style="max-width:250px; float:center; border:none; margin-top: 5px;"> <br>
+         ${\color{orange}W_1 = (xy^2 + y^3 - z^2)}$
+    </div>
+    <div style="width:50%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm;">
+         Say we have:
+    </div>
+    <div style="width:50%; float: right; text-align: center; display: inline-block; margin-bottom: 5mm;">
+         $W_1 = xy^2 + y^3 - z^2$ <br>
+    </div>
+    <div style="width:50%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm;">
+         A function $c_i(x,y,z)$ may or may not have $W_1$ as a pole, depending on what happens on the orange surface
+    </div>
+    <div style="width:50%; float: right; text-align: center; display: inline-block; margin-bottom: 5mm;">
+         $\displaystyle \lim_{W_j \rightarrow \epsilon} c_i(x,y,z) \sim \epsilon^{-q_{ij}} $
+    </div>
+</div>
+
+<p><br><br><br><br><br><br><br><br></p>
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
+$\circ\,$ The LCD tells us about what happens on surfaces with one less dimension then the full space.  </i>
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large"> Multivariate Partial Fractions </b></p>
+
+<div style="text-align: left; font-size: x-large">
+$\circ\,$ Analogously, partial fractions are related to what happens on surfaces of lower dimension. </i>
+</div>
+
+<div style="display:block; width:100%; margin-top: 5mm; font-size: x-large;">
+    <div style="width:33%; float: left; display: inline-block;">
+         <img src="V1.png"; style="max-width:230px; float:center; border:none; margin-top: 5px;"> <br>
+         ${\color{orange}W_1 = (xy^2 + y^3 - z^2)}$
+    </div>
+    <div style="width:33%; float: center; display: inline-block;  font-size: x-large;">
+         <img src="V2.png"; style="max-width:230px; float:center; border:none; margin-top: 5px;"> <br>
+         ${\color{blue}W_2 = (x^3 + y^3 - z^2)}$
+    </div>
+    <div style="width:33%; float: right; display: inline-block;">
+         <img src="V3.png"; style="max-width:230px; float:center; border:none; margin-top: 5px;"> <br>
+         $W_1 \cup W_2$
+    </div>
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
+$\circ\,$ $\displaystyle \frac{1}{W_1W_2}$ and $\displaystyle \frac{1}{W_1} + \frac{1}{W_2}$ behave very differently on $W_1 \cup W_2$.
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
+$\circ\,$ <i> Primary decompositions </i> of sets of polynomials (<i> ideals </i>), anogous to integers:
+</div>
+
+<div style="display:block; width:100%; margin-top: 5mm; font-size: x-large;">
+    <div style="width:30%; float: left; display: inline-block;">
+         $60 = 5 \times 3 \times 2^2$
+    </div>
+    <div style="width:70%; float: right; display: inline-block;">
+         $({\color{orange}xy^2 + y^3 - z^2}, {\color{blue}x^3 + y^3 - z^2}) = \\
+         {\color{magenta}(z^2,x+y)} \cup {\color{green}(y^3-z^2,x)} \cup {\color{red}(2y^3-z^2,x-y)}$
+    </div>
+</div>
+
+<!---
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> $\boldsymbol p\,$-adic Numbers </b>
+
+<div style="text-align: left; font-size: x-large">
+Laurent expansion in powers of the prime $p$
+</div>
+
+--->
+
+<h2 id="section-4"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><section></p>
+
+<p><b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 5mm;">
+   Upcoming Results
+</b></p>
+
+<div style="text-align: left; font-size: x-large">
+$\circ\,$ First two-loop computation in full color ($N_c$ dependence) for $q\bar q \rightarrow \gamma \gamma \gamma$ <br>
+</div>
+<table width=110% border="1" cellspacing="0" cellpadding="0" style="margin-left: -12mm; margin-bottom: 8mm; margin-top: 8mm; font-size: x-large;">
+  <tr>
+    <td><b>Kinematics</b></td>
+    <td><b># Poles ($W$)</b></td>
+    <td><b>LCD Ansatz</b></td>
+    <td><b>Partial-Fraction Ansatz</b></td>
+    <td><b>Rational Functions</b></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">5-point massless</td>
+    <td style="text-align: center;">30</td>
+    <td style="text-align: center;">29k</td>
+    <td style="text-align: center;">4k</td>
+    <td style="text-align: center;">$\sim$ 200 KB</td>
+  </tr>
+</table>
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
+$\circ\,$ Updated two-loop leading-color amplitudes for $pp \rightarrow Wjj$, now in spinor helicity
+</div>
+<table width=100% border="1" cellspacing="0" cellpadding="0" style="margin-bottom: 8mm; margin-top: 8mm; font-size: x-large;">
+  <tr>
+    <td><b>Kinematics</b></td>
+    <td><b># Poles ($W$)</b></td>
+    <td><b>LCD Ansatz</b></td>
+    <td><b>Partial-Fraction Ansatz</b></td>
+    <td><b>Rational Functions</b></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">5-point 1-mass</td>
+    <td style="text-align: center;">>200</td>
+    <td style="text-align: center;">>5M</td>
+    <td style="text-align: center;">$\sim$40k</td>
+    <td style="text-align: center;">$\sim$25 MB</td>
+  </tr>
+</table>
+<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
+$\phantom{\circ\,}$ First computed in
+<a  href=https://arxiv.org/abs/2110.07541>
+Abreu, Febres Cordero, Ita (PSI), Klinkert, Page, Sotnikov
+</a> (1.2 GB)
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-size: xx-large"> Thank you! </b></p>
+
+<p><br></p>
+
+<p><b> Questions? </b></p>
+
+<h2 id="section-5"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><section data-visibility="uncounted"></p>
+
+<h1 id="backup-slides">Backup Slides</h1>
+
+<h2 id="section-6"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><section data-visibility="uncounted"></p>
+
+<h1 id="more-spinor-helicity">More Spinor Helicity</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large">  Representations of the Lorentz group </b></p>
+
+<p><font size=5>
+(Recall: $\mathfrak{so}(1, 3)_\mathbb{C} \sim \mathfrak{su}(2) \times \mathfrak{su}(2)$)
+</font size></p>
+
+<p><font size=5></p>
+
+<table>
+<thead>
+<tr>
+<th align="center">$\boldsymbol{(j_{-},j_{+})}$</th>
+<th align="center">dim.</th>
+<th align="left">name</th>
+<th align="center">quantum field</th>
+<th align="center">kinematic variable</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">(0,0)</td>
+<td align="center">1</td>
+<td align="left">scalar</td>
+<td align="center">$h$</td>
+<td align="center">m</td>
+</tr>
+
+<tr>
+<td align="center">(0,<sup>1</sup>&frasl;<sub>2</sub>)</td>
+<td align="center">2</td>
+<td align="left">right-handed Weyl spinor</td>
+<td align="center">$\chi_{R\,\alpha}$</td>
+<td align="center">$\lambda_\alpha$</td>
+</tr>
+
+<tr>
+<td align="center">(<sup>1</sup>&frasl;<sub>2</sub>,0)</td>
+<td align="center">2</td>
+<td align="left">left-handed Weyl spinor</td>
+<td align="center">$\chi_L^{\,\dot\alpha}$</td>
+<td align="center">$\bar{\lambda}^{\dot\alpha}$</td>
+</tr>
+
+<tr>
+<td align="center">(<sup>1</sup>&frasl;<sub>2</sub>,<sup>1</sup>&frasl;<sub>2</sub>)</td>
+<td align="center">4</td>
+<td align="left">rank-two spinor/four vector</td>
+<td align="center">$A^\mu/A^{\dot\alpha\alpha}$</td>
+<td align="center">$P^\mu/P^{\dot\alpha\alpha}$</td>
+</tr>
+
+<tr>
+<td align="center">(<sup>1</sup>&frasl;<sub>2</sub>,0)$\oplus$(0,<sup>1</sup>&frasl;<sub>2</sub>)</td>
+<td align="center">4</td>
+<td align="left">bispinor (Dirac spinor)</td>
+<td align="center">$\Psi$</td>
+<td align="center">$u, v$</td>
+</tr>
+</tbody>
+</table>
+
+<p></font size></p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large">  Spinor Covariants </b>
+<br></p>
+
+<p>Weyl spinors are sufficient for massless particles:</p>
+
+<p><font size=5>$\text{det}(P^{\dot\alpha\alpha})=m^2 \rightarrow 0 \quad \Longrightarrow \quad P^{\dot\alpha\alpha} = \bar\lambda^{\dot\alpha}\lambda^\alpha$.</font size></p>
+
+<p><br>
+In terms of 4-momentum components we have:</p>
+
+<p><font size=5>$$
+\lambda_\alpha=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\ p^1+ip^2\end{pmatrix} \, , \;\;\; \lambda^\alpha=\epsilon^{\alpha\beta} \lambda_\beta =\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^1+ip^2 \\ -p^0+p^3\end{pmatrix}
+$$</font size></p>
+
+<p><font size=5>$\bar\lambda_{\dot\alpha}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\ p^1-ip^2\end{pmatrix} \, , \;\;\; \bar\lambda^{\dot\alpha}=\epsilon^{\dot\alpha\dot\beta}\bar\lambda_{\dot\beta}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^1-ip^2 \\ -p^0+p^3\end{pmatrix}$</font size></p>
+
+<p><br></p>
+
+<p><font size=5>$$
+\bar\lambda_{\dot\alpha} = (\lambda_\alpha)^* \quad if \quad p^i \in \mathbb{R}; \quad \quad \bar\lambda_{\dot\alpha} \neq (\lambda_\alpha)^* \quad if \quad p^i \in \mathbb{C}
+$$</font size></p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b style="font-variant: small-caps; font-size: xxx-large">  Spinor Invariants </b>
+<br></p>
+
+<p><font size=5>
+$$
+⟨ij⟩ = λ_iλ_j = (λ_i)^α(λ_j)_α \quad \quad \quad [ij] = \barλ_i\barλ_j = (\barλ_i)_\dotα(\barλ_j)^\dotα
+$$</p>
+
+<p>$$
+s_{ij} = ⟨ij⟩[ji]
+$$</p>
+
+<p>$$
+⟨i\;|\;(j+k)\;|\;l] = (λ_i)^α (\not P_j + \not P_k )_{α\dotα} \barλ_l^\dotα
+$$</p>
+
+<p>$$
+⟨i\;|\;(j+k)\;|\;(l+m)\;|\;n⟩ = (λ_i)^α (\not P_j + \not P_k )_{α \dot α} (\bar{\not P_l} + \bar{\not P_m} )^{\dot α α} (λ_n)_α
+$$</p>
+
+<p>$$
+tr_5(ijkl) = tr(\gamma^5 \not P_i \not P_j \not P_k \not P_l) =  [i\,|\,j\,|\,k\,|\,l\,|\,i⟩ - ⟨i\,|\,j\,|\,k\,|\,l\,|\,i]
+$$</p>
+
+<p></font size></p>
+
+<h2 id="section-7"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><section data-visibility="uncounted"></p>
+
+<h1 id="five-parton-two-loop-br-finite-remainders">Five-Parton Two-Loop <br> Finite Remainders</h1>
+
+<p><br></p>
+
+<p>Example Simplifications</p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b> uubggg pmpmp Nf1 #3 </b></p>
+
+<p><img src="uubggg_pmpmp_nf1_nb3.png"; style="max-width:1024px;float:center;border:none;"></p>
+
+<p><font size=5> is equal to </font size></p>
+
+<p><font size=5>
+$
+-\frac{[32]^3 [41]^3}{2 [31]^3 [42]^3}
+$
+</font size></p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b> ggggg mpmpp Nf1 # 9 </b></p>
+
+<p><img src="ggggg_mpmpp_nf1_9.png"; style="max-width:512px;float:center;border:none;"></p>
+
+<p><font size=5> is equal to </font size></p>
+
+<p><font size=5>
+$-1\frac{[12]³[15][23]⟨25⟩³[35]³}{[13]⁴[25]⟨5|1+2|5]³}+\frac{97}{12}\frac{[12]⁴⟨25⟩[35]⁴}{[13]⁴[25]³⟨5|1+2|5]}$
+$+\frac{13}{3}\frac{[12]⁴⟨15⟩[15][35]⁴}{[13]⁴[25]⁴⟨5|1+2|5]}+\frac{1}{4}\frac{[12]⁴⟨15⟩[15]⟨25⟩[35]⁴}{[13]⁴[25]³⟨5|1+2|5]²}$
+$-\frac{3}{2}\frac{[12]²⟨25⟩²[25][35]²}{[13]²[25]⟨5|1+2|5]²}+\frac{7}{4}\frac{[12]³⟨25⟩²[35]³}{[13]³[25]⟨5|1+2|5]²}$
+$-\frac{43}{3}\frac{[12]³⟨25⟩[35]³}{[13]³[25]²⟨5|1+2|5]}$
+$-\frac{25}{3}\frac{[12]³⟨15⟩[15][35]³}{[13]³[25]³⟨5|1+2|5]}$
+$-\frac{3}{2}\frac{[12]⟨25⟩[25][35]}{[13][25]⟨5|1+2|5]}$
+$+4\frac{[12]²⟨25⟩[35]²}{[13]²[25]⟨5|1+2|5]}$
+$-\frac{15}{2}\frac{[12]²[35]²}{[13]²[25]²}$
+$+\frac{7}{2}\frac{[12][35]}{[13][25]}$
+$-\frac{2}{3}$
+</font size></p>
+
+<h2 id="section-8"></section></h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><section data-visibility="uncounted"></p>
+
+<h1 id="higgs-4-parton-amplitude-br-finite-top-mass">Higgs + 4-Parton Amplitude <br> (@ finite top-mass)</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b> Example of cut diagram </b></p>
+
+<p><img src="HiggsBox.png"; style="max-width:300px;float:center;border:none;"></p>
+
+<p>Only singularity involving $m_{top}$ (from pentagon contributions)</p>
+
+<p>$16 |S_{1×2×3×4}| = −s_{12} \, s_{23} \, s_{34} \, \langle 1 |2 + 3|4] \, \langle 4|2 + 3|1] + m^2_{top} \, tr_5(1234)^2$</p>
+
+<p>We can generate point near this singularity in a similar fashion.</p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b> Structure of the coefficients </b></p>
+
+<p>The massive external leg (the Higgs) is easily accomodated by considering it as a pair of massless particles (think decay products). <br>
+In the end all dependance on $P_{Higgs}$ is removed by using momentum conservation.</p>
+
+<p>The coefficients are Taylor expasions in $m_{top}$:</p>
+
+<p>$C^{(0)} + m^2_{top} C^{(2)}$.</p>
+
+<p>with $C^{(0)}$ and $C^{(2)}$ resabling the six-gluon coefficients.</p>
+
+<h2 id="section-9"></section></h2>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/head.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
+
+  <script>
+    window.revealPlugins = { dependencies: [
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/zoom-js/zoom.js', async: true },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/math/math.js', async: true },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/print-pdf/print-pdf.js', async: true },
+      
+      { src: '\/js\/vendor\/reveal.js\/plugin\/notes\/notes.js', async: true }
+    ]};
+
+    let revealDefaults = { center: true, controls: true, history: true, progress: true, transition: 'slide', mouseWheel: true };
+    let revealOptions = Object.assign({}, revealDefaults, revealPlugins);
+    Reveal.initialize(revealOptions);
+  </script>
+
+</body>
+</html>
