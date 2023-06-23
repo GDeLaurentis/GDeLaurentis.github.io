@@ -6,10 +6,19 @@
     <description>Recent content in Recent &amp; Upcoming Talks on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 May 2023 15:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jun 2023 14:25:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Non-planar two-loop QCD corrections to qq̅→γγγ: finite remainders in the spinor-helicity formalism</title>
+      <link>https://gdelaurentis.github.io/talk/loopfestxxi_june2023/</link>
+      <pubDate>Tue, 27 Jun 2023 14:25:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/talk/loopfestxxi_june2023/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Modern Methods for the Computation of Scattering Amplitudes</title>
@@ -17,7 +26,7 @@
       <pubDate>Sun, 14 May 2023 15:30:00 +0000</pubDate>
       
       <guid>https://gdelaurentis.github.io/talk/psi-ltp-seminar/</guid>
-      <description>Theory Group Seminar</description>
+      <description>Laboratory of Particle Physics (LTP) Seminar</description>
     </item>
     
     <item>

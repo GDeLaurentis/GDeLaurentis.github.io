@@ -6,10 +6,19 @@
     <description>Recent content on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 May 2023 15:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jun 2023 14:25:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gdelaurentis.github.io/authors/giuseppe-de-laurentis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Non-planar two-loop QCD corrections to qq̅→γγγ: finite remainders in the spinor-helicity formalism</title>
+      <link>https://gdelaurentis.github.io/talk/loopfestxxi_june2023/</link>
+      <pubDate>Tue, 27 Jun 2023 14:25:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/talk/loopfestxxi_june2023/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Modern Methods for the Computation of Scattering Amplitudes</title>
@@ -17,7 +26,7 @@
       <pubDate>Sun, 14 May 2023 15:30:00 +0000</pubDate>
       
       <guid>https://gdelaurentis.github.io/talk/psi-ltp-seminar/</guid>
-      <description>Theory Group Seminar</description>
+      <description>Laboratory of Particle Physics (LTP) Seminar</description>
     </item>
     
     <item>
@@ -113,6 +122,16 @@ QCD@LHC 2019 IPPP - Durham University
 4. Some results (Yang-Mills in the Standard Model)
 
 1.1 &amp;nbsp;Motivation Cross sections at hadron colliders are given by:</description>
+    </item>
+    
+    <item>
+      <title>Modern Methods for the Computation of Scattering Amplitudes</title>
+      <link>https://gdelaurentis.github.io/slides/loopfestxxi_june2023/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/slides/loopfestxxi_june2023/</guid>
+      <description>Non-planar two-loop QCD corrections to $\boldsymbol{q\bar q \rightarrow \gamma\gamma\gamma}$: finite remainders in the spinor-helicity formalism   Giuseppe De Laurentis in collaboration with: S. Abreu, H. Ita, M. Klinkert, B. Page, V. Sotnikov based on: arXiv:2305.17056 LoopFest XXI Find these slides at gdelaurentis.github.io/slides/loopfestxxi_june2023  
+Introduction State-of-the-Art of $\boldsymbol{\mathcal{A}^{(2-\textbf{loop})}_{\,n}}$ Five-point massless amplitudes in full color: $\circ\,$ $pp\rightarrow \gamma jj$ Badger, Czakon, Hartanto, Moodie, Peraro, Poncelet, Zoia (&#39;23)  $\circ\,$ $pp\rightarrow \gamma\gamma j$ Next talk by Federico  Agarwal, Buccioni, von Manteuffel, Tancredi (&#39;21);&amp;nbsp  $\circ\,$ $pp\rightarrow \gamma\gamma\gamma$ This talk!</description>
     </item>
     
     <item>

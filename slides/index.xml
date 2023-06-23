@@ -72,6 +72,16 @@ QCD@LHC 2019 IPPP - Durham University
     
     <item>
       <title>Modern Methods for the Computation of Scattering Amplitudes</title>
+      <link>https://gdelaurentis.github.io/slides/loopfestxxi_june2023/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/slides/loopfestxxi_june2023/</guid>
+      <description>Non-planar two-loop QCD corrections to $\boldsymbol{q\bar q \rightarrow \gamma\gamma\gamma}$: finite remainders in the spinor-helicity formalism   Giuseppe De Laurentis in collaboration with: S. Abreu, H. Ita, M. Klinkert, B. Page, V. Sotnikov based on: arXiv:2305.17056 LoopFest XXI Find these slides at gdelaurentis.github.io/slides/loopfestxxi_june2023  
+Introduction State-of-the-Art of $\boldsymbol{\mathcal{A}^{(2-\textbf{loop})}_{\,n}}$ Five-point massless amplitudes in full color: $\circ\,$ $pp\rightarrow \gamma jj$ Badger, Czakon, Hartanto, Moodie, Peraro, Poncelet, Zoia (&#39;23)  $\circ\,$ $pp\rightarrow \gamma\gamma j$ Next talk by Federico  Agarwal, Buccioni, von Manteuffel, Tancredi (&#39;21);&amp;nbsp  $\circ\,$ $pp\rightarrow \gamma\gamma\gamma$ This talk!</description>
+    </item>
+    
+    <item>
+      <title>Modern Methods for the Computation of Scattering Amplitudes</title>
       <link>https://gdelaurentis.github.io/slides/psi-ltp-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
