@@ -6,10 +6,19 @@
     <description>Recent content on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Jun 2023 14:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Sep 2023 17:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gdelaurentis.github.io/authors/giuseppe-de-laurentis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mathematical and Physical Structures of Rational Functions in Scattering Amplitudes</title>
+      <link>https://gdelaurentis.github.io/talk/mathemamplitudes_sept2023/</link>
+      <pubDate>Mon, 25 Sep 2023 17:30:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/talk/mathemamplitudes_sept2023/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Non-planar two-loop QCD corrections to qq̅→γγγ: finite remainders in the spinor-helicity formalism</title>
@@ -122,6 +131,16 @@ QCD@LHC 2019 IPPP - Durham University
 4. Some results (Yang-Mills in the Standard Model)
 
 1.1 &amp;nbsp;Motivation Cross sections at hadron colliders are given by:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gdelaurentis.github.io/slides/mathemamplitudes_sept2023/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/slides/mathemamplitudes_sept2023/</guid>
+      <description>Mathematical and Physical Structures of Rational Functions in Scattering Amplitudes   Title for Mathematicians:  Vector Spaces over Fraction Fields of Polynomial Quotient Rings 
+Giuseppe De Laurentis Paul Scherrer Institut / University of Edinburgh  arXiv:2203.04269 (GDL, B. Page)  arXiv:2305.17056 (S. Abreu, GDL, H. Ita, M. Klinkert, B. Page, V. Sotnikov)  MathemAmplitudes 2023 - Padova Find these slides at gdelaurentis.github.io/slides/mathemamplitudes_sept2023</description>
     </item>
     
     <item>

@@ -6,10 +6,19 @@
     <description>Recent content in Recent &amp; Upcoming Talks on Giuseppe De Laurentis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Jun 2023 14:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Sep 2023 17:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mathematical and Physical Structures of Rational Functions in Scattering Amplitudes</title>
+      <link>https://gdelaurentis.github.io/talk/mathemamplitudes_sept2023/</link>
+      <pubDate>Mon, 25 Sep 2023 17:30:00 +0000</pubDate>
+      
+      <guid>https://gdelaurentis.github.io/talk/mathemamplitudes_sept2023/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Non-planar two-loop QCD corrections to qq̅→γγγ: finite remainders in the spinor-helicity formalism</title>
