@@ -89,7 +89,7 @@ Giuseppe De Laurentis
 
 <p>MathemAmplitudes 2023 - Padova
 <br>
-<p style="line-height: 0.05;"> <img src="paul-scherrer-institute-psi-logo-vector-transparent.png"; style="max-width:303px;float:center;border:none;">  <img src="UniPadovaLogo-transparent.png"; style="max-width:120px;float:center;border:none;">
+<p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:303px;float:center;border:none;"> <img src="paul-scherrer-institute-psi-logo-vector-transparent.png"; style="max-width:303px;float:center;border:none;">  <img src="UniPadovaLogo-transparent.png"; style="max-width:120px;float:center;border:none;">
 <br><br>
 <font size=3>Find these slides at  <a href="/slides/mathemamplitudes_sept2023/#/">gdelaurentis.github.io/slides/mathemamplitudes_sept2023</a> </font size>
 </div></p>
@@ -192,13 +192,13 @@ $$
 </div>
 <br><br>
 <div style="font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 0mm;">
-     $1.$ Where are the poles? What is their order?  
+     $1.$ Where are the $\color{red}\text{poles}$? What is their order?  
 </div>
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $2.$ Relation between pole structure, and analytic constriants (e.g. partial fraction decomposition)
+     $2.$ Relation between pole structure, and $\color{red}\text{analytic constriants}$ (e.g. partial fraction decomposition)
 </div>
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $3.$ Reconstructing sets of functions: Why is it easier than reconstructing individual ones?
+     $3.$ Reconstructing $\color{red}\text{sets of functions}$: Why is it easier than reconstructing individual ones?
 </div>
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
      $4.$ Example process @ 2-loop: $\;\;pp \rightarrow \gamma\gamma\gamma\;\;$ and $\;\;pp \rightarrow Wjj\;\;$ (preliminary)
@@ -673,7 +673,7 @@ $\displaystyle \tilde{c}_i = \sum_{j\neq i} q_j \tilde{c}_j + \tilde{c}'_{i}$
 </div>
 <br>
 <div style="font-size: x-large; text-align: center; float: center; display: inline-block; margin-top: 0mm; margin-bottom: 2mm;">
-     $1.$ little group covariant LCD; $\qquad2.$ avoiding parity even/odd split; <br>
+     $1.$ little group covariant LCD (no spurious poles); $\;\;2.$ avoiding parity even/odd split; <br>
      $\Rightarrow\;$ in <u>LCD form</u> we would need $\color{green}29\,059$ evaluations instead of $\color{red}117\,810$ (with $s_{ij}$) for $\mathcal{R}^{(2)}_{2q3\gamma}$ .
 </div>
 
@@ -709,11 +709,11 @@ $\circ$ A posteriori, we find that for the $c_i$ with highest degree LCD the fol
 </b></p>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm;">
-     $0.\,$ Start from analytics of <a style="font-size: large"; href="https://arxiv.org/abs/2110.07541">Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov ('21) </a> - 1.2GB of sorce code.
+     $0.\,$ Start from analytics of <a style="font-size: large"; href="https://arxiv.org/abs/2110.07541">Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov ('21) </a> - 1.2GB of <code>C++</code> source code.
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
-     $1.\,$ Script to split up the expressions, and compile them ($\sim 20$GB of <code>C++</code>) for evaluation over $\mathbb{F}_p$;
+     $1.\,$ Script to split up the expressions, and compile them ($\sim 20$GB binaries) for evaluation over $\mathbb{F}_p$;
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
@@ -774,7 +774,7 @@ Comparison of $q\bar q \rightarrow \gamma \gamma \gamma$ (in full color) to $pp 
    Analytic Structures of 2-loop 5-point 1-mass Amplitudes
 </b></p>
 
-<div style="display:block; width:100%; font-size: 16pt; margin-top: 5mm; margin-bottom: 5mm;">
+<div style="display:block; width:100%; font-size: 16pt; margin-top: 5mm; margin-bottom: 4mm;">
      <div style="width:50%; float: left; display: inline-block; font-size: x-large;">
           $\circ$ The  Ansatz size grows quickly with <br> multiplicity (m) and mass dimension (d): <br><br>
           $\displaystyle \small \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)$ <br><br>
@@ -787,7 +787,7 @@ Comparison of $q\bar q \rightarrow \gamma \gamma \gamma$ (in full color) to $pp 
      </div>
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-top: 3mm; margin-bottom: 2mm;">
+<div style="text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm;">
 $\circ\,$ Compact residues for the new 2-loop (spurious?) pole, $⟨k|j|p\mkern-7.5mu/_V|l|k]-⟨j|i|p\mkern-7.5mu/_V|l|j]$, e.g.:
 $$r^{(5 \text{ of } 54)}_{\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{[12][23]⟨24⟩⟨46⟩^2⟨1|2+3|4]⟨2|1+3|4]}{⟨12⟩⟨23⟩⟨56⟩(⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2])^2}$$
 </div>
@@ -1068,12 +1068,6 @@ $\circ\,$ All linear systems solved with CUDA over $\mathbb{F}_{p\leq 2^{31}-1}$
      All polynomial rings are UFDs, so $R_4$ cannot be isomorphic to one.
 </div>
 
-<p><br></p>
-
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 3mm;">
-    $c_{\Gamma,i}(\lambda,\tilde\lambda) \in \text{Field of Fractions}(R_n)$
-</div>
-
 
     </section>
     
@@ -1093,7 +1087,11 @@ $\circ\,$ All linear systems solved with CUDA over $\mathbb{F}_{p\leq 2^{31}-1}$
 
 <p><br></p>
 
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: center; margin-top: 2mm; margin-bottom: 0mm;">
+     $\langle 12\rangle [23] = \langle 1|2|3] = -\langle 1| 1+3 |3] = 0 \;\text{but}\; \langle 12\rangle \neq 0 \;\text{and}\; [23] \neq 0$
+</div>
+
+<div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
      Hence, one cannot define a field of fractions, as this would not be closed under multiplication.
 </div>
 
