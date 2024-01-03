@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Daniel Maitre on Giuseppe De Laurentis</title>
+    <title>Daniel Maitre | Giuseppe De Laurentis</title>
     <link>https://gdelaurentis.github.io/authors/daniel-maitre/</link>
-    <description>Recent content in Daniel Maitre on Giuseppe De Laurentis</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://gdelaurentis.github.io/authors/daniel-maitre/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://gdelaurentis.github.io/authors/daniel-maitre/index.xml" rel="self" type="application/rss+xml" />
+    <description>Daniel Maitre</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
+      <title>Daniel Maitre</title>
+      <link>https://gdelaurentis.github.io/authors/daniel-maitre/</link>
+    </image>
     
     <item>
       <title>Two-Loop Five-Parton Leading-Colour Finite Remainders in the Spinor-Helicity Formalism</title>
       <link>https://gdelaurentis.github.io/publication/arxiv2010.14525/</link>
       <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://gdelaurentis.github.io/publication/arxiv2010.14525/</guid>
       <description></description>
     </item>
@@ -24,7 +24,6 @@
       <title>Extracting analytical one-loop amplitudes from numerical evaluations</title>
       <link>https://gdelaurentis.github.io/publication/arxiv1904.04067/</link>
       <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://gdelaurentis.github.io/publication/arxiv1904.04067/</guid>
       <description></description>
     </item>

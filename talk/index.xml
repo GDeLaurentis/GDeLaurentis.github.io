@@ -1,21 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recent &amp; Upcoming Talks on Giuseppe De Laurentis</title>
+    <title>Recent &amp; Upcoming Talks | Giuseppe De Laurentis</title>
     <link>https://gdelaurentis.github.io/talk/</link>
-    <description>Recent content in Recent &amp; Upcoming Talks on Giuseppe De Laurentis</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 25 Sep 2023 17:30:00 +0000</lastBuildDate>
+      <atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent &amp; Upcoming Talks</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 07 Dec 2023 11:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://gdelaurentis.github.io/talk/</link>
+    </image>
     
-	<atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Non-Planar Two-Loop Amplitudes for Five-Parton Scattering</title>
+      <link>https://gdelaurentis.github.io/talk/amplitudesmeeting_dec2023/</link>
+      <pubDate>Thu, 07 Dec 2023 11:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/amplitudesmeeting_dec2023/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Mathematical and Physical Structures of Rational Functions in Scattering Amplitudes</title>
       <link>https://gdelaurentis.github.io/talk/mathemamplitudes_sept2023/</link>
       <pubDate>Mon, 25 Sep 2023 17:30:00 +0000</pubDate>
-      
       <guid>https://gdelaurentis.github.io/talk/mathemamplitudes_sept2023/</guid>
       <description></description>
     </item>
@@ -24,7 +32,6 @@
       <title>Non-planar two-loop QCD corrections to qq̅→γγγ: finite remainders in the spinor-helicity formalism</title>
       <link>https://gdelaurentis.github.io/talk/loopfestxxi_june2023/</link>
       <pubDate>Tue, 27 Jun 2023 14:25:00 +0000</pubDate>
-      
       <guid>https://gdelaurentis.github.io/talk/loopfestxxi_june2023/</guid>
       <description></description>
     </item>
@@ -33,45 +40,40 @@
       <title>Modern Methods for the Computation of Scattering Amplitudes</title>
       <link>https://gdelaurentis.github.io/talk/psi-ltp-seminar/</link>
       <pubDate>Sun, 14 May 2023 15:30:00 +0000</pubDate>
-      
       <guid>https://gdelaurentis.github.io/talk/psi-ltp-seminar/</guid>
-      <description>Laboratory of Particle Physics (LTP) Seminar</description>
+      <description></description>
     </item>
     
     <item>
       <title>Analytical Amplitudes from Numerical Exploration</title>
       <link>https://gdelaurentis.github.io/talk/summer-meeting-july2020/</link>
       <pubDate>Thu, 30 Jul 2020 17:00:00 +0000</pubDate>
-      
       <guid>https://gdelaurentis.github.io/talk/summer-meeting-july2020/</guid>
-      <description>Freiburg Summer Meeting</description>
+      <description></description>
     </item>
     
     <item>
       <title>Reconstruction of analytical amplitudes across loops, legs and theories</title>
       <link>https://gdelaurentis.github.io/talk/ippp-internal-seminar/</link>
       <pubDate>Fri, 22 Nov 2019 14:00:00 +0000</pubDate>
-      
       <guid>https://gdelaurentis.github.io/talk/ippp-internal-seminar/</guid>
-      <description>IPPP Internal Seminar</description>
+      <description></description>
     </item>
     
     <item>
       <title>Analytical amplitudes from numerical evaluations</title>
-      <link>https://gdelaurentis.github.io/talk/qcdlhc/</link>
+      <link>https://gdelaurentis.github.io/talk/qcd@lhc/</link>
       <pubDate>Sun, 14 Jul 2019 13:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/talk/qcdlhc/</guid>
-      <description>QCD@LHC 2019</description>
+      <guid>https://gdelaurentis.github.io/talk/qcd@lhc/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>From numerical to analytical amplitudes</title>
       <link>https://gdelaurentis.github.io/talk/qcdmasterclass2019/</link>
       <pubDate>Thu, 13 Jun 2019 21:00:00 +0100</pubDate>
-      
       <guid>https://gdelaurentis.github.io/talk/qcdmasterclass2019/</guid>
-      <description>QCD Master Class 2019</description>
+      <description></description>
     </item>
     
   </channel>

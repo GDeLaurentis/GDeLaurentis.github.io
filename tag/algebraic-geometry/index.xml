@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algebraic Geometry | Giuseppe De Laurentis</title>
+    <link>https://gdelaurentis.github.io/tag/algebraic-geometry/</link>
+      <atom:link href="https://gdelaurentis.github.io/tag/algebraic-geometry/index.xml" rel="self" type="application/rss+xml" />
+    <description>Algebraic Geometry</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 23 May 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
+      <title>Algebraic Geometry</title>
+      <link>https://gdelaurentis.github.io/tag/algebraic-geometry/</link>
+    </image>
+    
+    <item>
+      <title>Lips: $p$-adic and singular phase space</title>
+      <link>https://gdelaurentis.github.io/publication/arxiv2305.14075/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/publication/arxiv2305.14075/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Constructing Compact Ansätze for Scattering Amplitudes</title>
+      <link>https://gdelaurentis.github.io/publication/arxiv2207.10125/</link>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/publication/arxiv2207.10125/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vector boson pair production at one loop: analytic results for the process qq̅ℓℓ̅ℓ&#39;ℓ̅&#39;g</title>
+      <link>https://gdelaurentis.github.io/publication/arxiv2203.17170/</link>
+      <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/publication/arxiv2203.17170/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ansätze for scattering amplitudes from p-adic numbers and algebraic geometry</title>
+      <link>https://gdelaurentis.github.io/publication/arxiv2203.04269/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/publication/arxiv2203.04269/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algebraic geometry and p-adic numbers for scattering amplitude ansätze</title>
+      <link>https://gdelaurentis.github.io/publication/acat-2021/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/publication/acat-2021/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

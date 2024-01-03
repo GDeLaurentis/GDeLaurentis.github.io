@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Harald Ita | Giuseppe De Laurentis</title>
+    <link>https://gdelaurentis.github.io/authors/harald-ita/</link>
+      <atom:link href="https://gdelaurentis.github.io/authors/harald-ita/index.xml" rel="self" type="application/rss+xml" />
+    <description>Harald Ita</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 30 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
+      <title>Harald Ita</title>
+      <link>https://gdelaurentis.github.io/authors/harald-ita/</link>
+    </image>
+    
+    <item>
+      <title>Double-Virtual NNLO QCD Corrections for Five-Parton Scattering: The Quark Channels</title>
+      <link>https://gdelaurentis.github.io/publication/arxiv2311.18752/</link>
+      <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/publication/arxiv2311.18752/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Double-Virtual NNLO QCD Corrections for Five-Parton Scattering: The Gluon Channel</title>
+      <link>https://gdelaurentis.github.io/publication/arxiv2311.10086/</link>
+      <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/publication/arxiv2311.10086/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Two-loop QCD corrections for three-photon production at hadron colliders</title>
+      <link>https://gdelaurentis.github.io/publication/arxiv2305.17056/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/publication/arxiv2305.17056/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
