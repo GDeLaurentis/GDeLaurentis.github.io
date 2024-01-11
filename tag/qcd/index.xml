@@ -54,16 +54,23 @@
     
     <item>
       <title></title>
-      <link>https://gdelaurentis.github.io/slides/amplitudesmeeting_dec2023/</link>
+      <link>https://gdelaurentis.github.io/slides/fivepartons_dec2023/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://gdelaurentis.github.io/slides/amplitudesmeeting_dec2023/</guid>
+      <guid>https://gdelaurentis.github.io/slides/fivepartons_dec2023/</guid>
       <description>
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;FSU-photo.png&#34;
+  &gt;
+
+&lt;!--- 
 &lt;section data-noprocess data-shortcode-slide
   
       
       data-background-image=&#34;EdiCastle.jpg&#34;
   &gt;
-
+ ---&gt;
 &lt;h3 style=&#34;margin-top:5mm; margin-left: -10mm; margin-right: -10mm;&#34;&gt;
 	&lt;b style=&#34;margin-top:15mm; font-size: 24pt;&#34;&gt;
 	   Non-Planar Two-Loop Amplitudes &lt;br&gt;
@@ -77,11 +84,12 @@ Giuseppe De Laurentis
 &lt;br&gt;
 &lt;a href=&#34;https://arxiv.org/abs/2311.10086&#34;&gt;arXiv:2311.10086&lt;/a&gt; &lt;div style=&#34;font-size: large; margin-bottom: 10pt;&#34;&gt; (GDL, H. Ita, M. Klinkert, V. Sotnikov) &lt;/div&gt;
 &lt;A href=&#34;https://arxiv.org/abs/2305.17056&#34;&gt;arXiv:2311.18752&lt;/a&gt; &lt;div style=&#34;font-size: large;&#34;&gt; (GDL, H. Ita, V. Sotnikov) &lt;/div&gt;
-&lt;p&gt;Amplitudes Meeting
+&lt;!--- Amplitudes Meeting ---&gt;
+&lt;p&gt;FSU HEP Seminar
 &lt;br&gt;&lt;/p&gt;
-&lt;p style=&#34;line-height: 0.05;&#34;&gt; &lt;img src=&#34;UniEdinburghLogo-transparent.png&#34;; style=&#34;max-width:303px;float:center;border:none;&#34;&gt;
+&lt;p style=&#34;line-height: 0.05;&#34;&gt; &lt;img src=&#34;UniEdinburghLogo-transparent.png&#34;; style=&#34;max-width:120px;float:center;border:none;&#34;&gt; &lt;img src=&#34;FSU Seal.png&#34;; style=&#34;max-width:120px;float:center;border:none;margin-left:20mm;&#34;&gt;
 &lt;br&gt;&lt;br&gt;
-&lt;span style=&#34;font-size: 11pt&#34;&gt;Find these slides at  &lt;a href=&#34;https://gdelaurentis.github.io/slides/amplitudesmeeting_dec2023/#/&#34;&gt;gdelaurentis.github.io/slides/mathemamplitudes_dec2023&lt;/a&gt; &lt;/span&gt;
+&lt;span style=&#34;font-size: 11pt&#34;&gt;Find these slides at  &lt;a href=&#34;https://gdelaurentis.github.io/slides/fivepartons_dec2023/#/&#34;&gt;gdelaurentis.github.io/slides/fivepartons_dec2023&lt;/a&gt; &lt;/span&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;section&gt;
@@ -150,24 +158,24 @@ $$
           \require{amsmath}
           \hspace{-5mm}
           \begin{align}
-               \mathcal{A}_{\vec{a}}(1_g,2_g,3_g,4_g,5_g) &amp; = \sum_{\sigma \in \mathcal{S}_5/\mathcal{Z}_5} \sigma\Big(\text{tr}(1,2,3,4,5) \; A_{1}(1,2,3,4,5)\Big) \; + \\[2mm]
-               &amp; \quad \sum_{\sigma\in \frac{\mathcal{S}_5}{\mathcal{Z}_2 \times \mathcal{S}_3}} \sigma\Big(\text{tr}(1,2) \text{tr}(3,4,5) \; A_{2}(1,2;3,4,5)\Big) + , \\[8mm]
+               \mathcal{A}_{\vec{a}}(1_g,2_g,3_g,4_g,5_g) &amp; = \sum_{\sigma \in \mathcal{S}_5/\mathcal{Z}_5} \sigma\Big(\text{tr}(T^{a_1}T^{a_2}T^{a_3}T^{a_4}T^{a_5}) \; A_{1}(1,2,3,4,5)\Big) \; + \\[2mm]
+               &amp; \quad \sum_{\sigma\in \frac{\mathcal{S}_5}{\mathcal{Z}_2 \times \mathcal{S}_3}} \sigma\Big(\text{tr}(T^{a_1}T^{a_2}) \text{tr}(T^{a_3}T^{a_4}T^{a_5}) \; A_{2}(1,2,3,4,5)\Big) + , \\[8mm]
                \mathcal{A}_{\vec{a}}(1_u,2_{\bar u},3_g,4_g,5_g) &amp; =
                \sum_{\sigma \in \mathcal{S}_3(3,4,5)} \sigma\Big(
                (T^{a_3}T^{a_4}T^{a_5})^{\,\bar i_2}_{i_1} \; 
                A_{3}(1,2,3,4,5)\Big) \; + \\[2mm]
                &amp; \quad \sum_{\sigma \in \frac{\mathcal{S}_3(3,4,5)}{\mathcal{Z}_2(3,4)}} 
-               \sigma\Big(\text{tr}(3,4) (T^{a_5})^{\,\bar i_2}_{i_1} 
+               \sigma\Big(\text{tr}(T^{a_3}T^{a_4}) (T^{a_5})^{\,\bar i_2}_{i_1} 
                \; A_{4}(1,2,3,4,5)\Big) \; + \\[2mm]
                &amp; \quad \sum_{\sigma \in \frac{\mathcal{S}_3(3,4,5)}{\mathcal{Z}_{3}(3,4,5)}} 
-               \sigma\Big(\text{tr}(3,4,5) \delta^{\bar i_2}_{i_1}
+               \sigma\Big(\text{tr}(T^{a_3}T^{a_4}T^{a_5}) \delta^{\bar i_2}_{i_1}
                A_{5}(1,2,3,4,5)\Big) \; , \\[8mm]
                \mathcal{A}_{\vec{a}}(1_u,2_{\bar u},3_d,4_{\bar d},5_g) &amp;= 
                \sum_{\sigma \in \mathcal{Z}_2(\{1,2\},\{3,4\})} \sigma\Big(
-               \delta^{\bar i_4}_{i_1} (T^{a_6})^{\,\bar i_2}_{i_3} 
+               \delta^{\bar i_4}_{i_1} (T^{a_5})^{\,\bar i_2}_{i_3} 
                \; A_{6}(1,2,3,4,5)\Big) \; + \\[2mm]
                &amp; \quad \sum_{\sigma \in \mathcal{Z}_2(\{1,2\},\{3,4\})} \kern-2mm \sigma\Big(
-               \delta^{\bar i_2}_{i_1} (T^{a_7})^{\,\bar i_4}_{i_3} 
+               \delta^{\bar i_2}_{i_1} (T^{a_5})^{\,\bar i_4}_{i_3} 
                \; A_{7}(1,2,3,4,5)\Big)\,,\kern-1mm
           \end{align}
           \]
@@ -186,7 +194,7 @@ $$
 &lt;div style=&#34;margin-bottom:-3mm;&#34;&gt;
 &lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt;Color Decompositions:&lt;/b&gt; &lt;b style=&#34;font-size: xxx-large&#34;&gt; $N_c^{n_c}N_f^{n_f}$ &lt;/b&gt;  &lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt;Expansion&lt;/b&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;span style=&#34;color: red;&#34;&gt;Red&lt;/span&gt; = New; Notation = $A_{\scriptscriptstyle \#}^{(L),(n_c, n_f)}$&lt;/p&gt;
+&lt;p&gt;Notation = $A_{\scriptscriptstyle \#}^{(L),(n_c, n_f)}$; $\quad$ &lt;span style=&#34;color: red;&#34;&gt;Red&lt;/span&gt; = New;  $\quad$ leading color: $n_c + n_f = L$&lt;/p&gt;
 &lt;div style=&#34;font-size: 14pt; margin-top: 0mm; margin-bottom: 0mm&#34;&gt;
      \[
      \begin{gather}
@@ -194,7 +202,7 @@ $$
      \end{gather}
      \]
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 14pt; margin-top: 0mm; margin-bottom: 0mm&#34;&gt;
+&lt;div style=&#34;font-size: 14pt; margin-top: 0mm; margin-bottom: 0mm; &#34;&gt;
      \[
      \begin{gather}
           A_1^{(0)} = A^{(0),(0,0)} \, , \quad A_2^{(0)} = 0 \, , \qquad
@@ -330,11 +338,11 @@ $$
 &lt;/div&gt;
 &lt;br&gt;
 &lt;div style=&#34;font-size: x-large; float: center; margin-bottom: 0mm; margin-top: -10mm;&#34;&gt;
-     $\circ$  $\Gamma$: topologies $\quad\circ$ $M_\Gamma$: masters $\quad\circ$ $S_\Gamma$: surface terms
+     $\circ$  $\Gamma$: topologies $\quad\circ$ $M_\Gamma$: master integrands $\quad\circ$ $S_\Gamma$: surface terms $\quad\circ$ $D = 4 - 2 \epsilon$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: x-large; float: center; margin-bottom: 0mm; margin-top: 2mm;&#34;&gt;
      $\circ$ Spinors: $\lambda_i = |i\rangle, \tilde\lambda_i =[i|$
-     $\quad\circ$ 4-momenta: $\lambda\tilde\lambda=p\kern-3mm/$
+     $\quad\circ$ External 4-momenta: $\lambda\tilde\lambda=p\kern-3mm/$
      $\quad\circ$ Loop $D$-momenta: $\ell $
 &lt;/div&gt;
 &lt;/section&gt;
@@ -491,26 +499,59 @@ Peraro (&#39;16)
 &lt;img src=&#34;DimRegJunkSizes-transparent.png&#34;; style=&#34;max-width:650px; float:center; border:none; margin-top: -5mm; margin-bottom: 0mm;&#34;&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large;&#34;&gt; Memoization &lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large;&#34;&gt; Technical Interlude: Python Wrapper &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: x-large; text-align: left; margin-top: 3mm;&#34;&gt;
+     $\circ$ &lt;u&gt; Reason 1 &lt;/u&gt;:  The rational reconstruction, $\mathbb{F}_p \rightarrow \text{Rational Function}$, is much cheaper than numerical evaluations. I want to use &lt;tt&gt;&lt;a href=&#34;https://jupyter.org/&#34;&gt;Jupyter&lt;/a&gt;&lt;/tt&gt; for interactive analysis and development.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; text-align: left; margin-top: 3mm;&#34;&gt;
+     $\circ$ &lt;u&gt; Reason 2 &lt;/u&gt;: Evaluations cost up to 1-2 hours, per phase-space point, per partial amplitude! I need up to ~35k points per partial. (Less for the quark channels, see later.)
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; text-align: center; margin-top: 3mm;&#34;&gt;
+     &lt;i&gt; We better have some caching! &lt;/i&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; text-align: left; margin-top: 5mm;&#34;&gt;
+     $\circ$ Pseudo-random squences of phase-space points over $\mathbb{F}_p$ or $\mathbb{Q}_p$ generated using &lt;tt&gt;&lt;a href=https://github.com/GDeLaurentis/lips&gt;lips&lt;/a&gt;&lt;/tt&gt; &amp; &lt;tt&gt;&lt;a href=https://github.com/GDeLaurentis/lips&gt;pyadic&lt;/a&gt;&lt;/tt&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;img src=&#34;Lips.png&#34;; style=&#34;max-width:450px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt; &lt;img src=&#34;Pyadic.png&#34;; style=&#34;max-width:450px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; text-align: left; margin-top: 5mm;&#34;&gt;
+     $\circ$ Custom (for now private) interface to &lt;code&gt;Caravel&lt;/code&gt;, key features: &lt;span style=&#34;font-size: large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt; $\phantom{\circ}\;$ (for Caravel developers see &lt;tt&gt;&lt;a href=https://gitlab.com/caravel-private/pynta&gt;pynta&lt;/a&gt;&lt;/tt&gt;) &lt;/span&gt; &lt;br&gt;
+     $\quad \star$ seamless caching to a SQLite database using &lt;a href=https://pypi.org/project/diskcache&gt; diskcache &lt;/a&gt; via Python decorators; &lt;br&gt;
+     $\quad \star$ and facilities for distributed computing into a slurm cluster; &lt;br&gt;
+     $\quad \star$ functions for IR/UV subtraction, CaravelGraph, and PentagonFunctions parsing.
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;!---
+---
+
+&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large;&#34;&gt; Memoization &lt;/b&gt;
+
 &lt;div&gt;
 &lt;img src=&#34;MemoizationChatGPT.png&#34;; style=&#34;max-width:520px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
 &lt;/div&gt;
+
 &lt;div style=&#34;font-size: x-large; text-align: left; margin-top: 3mm;&#34;&gt;
      $\circ$ Why? Evaluations cost up to 1-2 hours, per phase space point, per partial amplitude! &lt;br&gt;
      $\phantom{\circ}$ And I need up to ~35k points per partial. (Less for the quark channels, see later.)
 &lt;/div&gt;
+
 &lt;div style=&#34;font-size: x-large; text-align: left; margin-top: 5mm;&#34;&gt;
      $\circ$ Pseudo-random squences of phase-space points over finite fields generated using &lt;a href=https://github.com/GDeLaurentis/lips&gt; lips &lt;/a&gt;
 &lt;/div&gt;
 &lt;div&gt;
 &lt;img src=&#34;Lips.png&#34;; style=&#34;max-width:450px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
 &lt;/div&gt;
+
 &lt;div style=&#34;font-size: x-large; text-align: left; margin-top: 5mm;&#34;&gt;
      $\circ$ Custom (for now private) interface to &lt;code&gt;Caravel&lt;/code&gt; with: &lt;br&gt;
      $\quad \star$ caching to a SQLite database using &lt;a href=https://pypi.org/project/diskcache&gt; diskcache &lt;/a&gt; via Python decorators, &lt;br&gt;
      $\quad \star$ and facilities for distributed computing into a slurm cluster.
 &lt;/div&gt;
+
 &lt;/section&gt;
+
+---&gt;
 &lt;hr&gt;
 &lt;section &gt;
 
@@ -714,16 +755,19 @@ GDL, Ita, Page, Sotnikov (to appear)&lt;/p&gt;
      $\circ\,$ We currently have:
 &lt;/div&gt;
 &lt;br&gt;
-&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;&#34;&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 0mm;&#34;&gt;
      $$
      R = r_{i\in \mathcal{B}} M_{ij} h_j \, , \qquad M_{ij} \in \mathbb{Q}
      $$
 &lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}\,$ with $r_{i\in \mathcal{B}} \subset r_i$, i.e. $M_{ij}$ is in reduced row echelon form, up to a permutation of columns.
+&lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
      $\circ\,$ Basic idea: change basis from a subset of pentagon function coefficients, to linear combinations
 &lt;/div&gt;
-&lt;br&gt;
-&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -2mm; margin-bottom: 5mm;&#34;&gt;
      $$
      \tilde{r}_{i&#39;} = O_{i&#39;i} \, r_{i \in \mathcal{B}} \quad \text{s.t.} \quad \text{rank}(O_{i&#39;i}) = \text{dim(span}_{FF(R_5), \mathbb{Q}}(r_{i}))
      $$
@@ -738,12 +782,12 @@ GDL, Ita, Page, Sotnikov (to appear)&lt;/p&gt;
      $$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-     In other words, the &lt;span style=&#34;color: red&#34;&gt;pole residues are correlated&lt;/span&gt;, so we can build linear combinations that &#39;&#39;remove the overlap&#39;&#39;
+     $\phantom{\circ}\,$ I.e., the &lt;span style=&#34;color: red&#34;&gt;pole residues are correlated&lt;/span&gt;, build linear combinations that &lt;i&gt; &#39;&#39;remove the overlap&#39;&#39; &lt;/i&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Correlation of Residues &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
-     $\circ\,$ Build Laurent expansions around $t_{\mathcal{D}_k}$
+     $\circ\,$ Build Laurent expansions around $t_{\mathcal{D}_k}$ &lt;span style=&#34;font-size: 12pt&#34;&gt; (use same kind of slice &lt;a href=&#34;slides/fivepartons_dec2023/#/3/4&#34;&gt;as before&lt;/a&gt;)&lt;/span&gt;
 &lt;/div&gt;
 &lt;br&gt;
 &lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;&#34;&gt;
@@ -751,11 +795,14 @@ GDL, Ita, Page, Sotnikov (to appear)&lt;/p&gt;
      r_{i \in \mathcal{B}} = \sum_{m = 1}^{q_k = \text{max}_i(q_{ik})} \frac{e^k_{im}}{(t-t_{\mathcal{D}_k})^m} + \mathcal{O}((t-t_{\mathcal{D}_k})^0)
      $$
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}\,$ strictly formal over $\mathbb{F}_p$, but convergent over $\mathbb{Q}_p$ for $(t-t_{\mathcal{D}_k}) \propto p$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: -5mm;&#34;&gt;
      $\circ\,$ Repeat for several (anti-)holomorphic slices, build vectors
 &lt;/div&gt;
-&lt;br&gt;
-&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;&#34;&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 0mm;&#34;&gt;
      $$
      \vec{e}^k_{im} = (e^k_m)_{ij} = \{ e^k_{im}(\text{slice}_1), \dots, e^k_{im}(\text{slice}_n)  \}
      $$
@@ -766,11 +813,11 @@ GDL, Ita, Page, Sotnikov (to appear)&lt;/p&gt;
 &lt;br&gt;
 &lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;&#34;&gt;
      $$
-     \text{span}_{\vec{\mathbb{Q}},\mathbb{Q}}(r_i) = \text{column}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_i, D_k^m)) \oplus \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_i, D_k^m))
+     \text{span}_{\vec{\mathbb{Q}},\mathbb{Q}}(r_{i \in \mathcal{B}}) = \text{column}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m)) \oplus \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m))
      $$
 &lt;/div&gt;
-&lt;div style=&#34;border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 4mm;&#34;&gt;
-    Interpretation of $\text{null}_{\mathbb{Q}}(\text{Res}(r_i, D_k^m))$: functions that do &lt;u&gt;not&lt;/u&gt; have a $D_k^m$ singularity
+&lt;div style=&#34;border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;&#34;&gt;
+    Interpretation of $\text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m)) \cdot r_{i \in \mathcal{B}}$: functions that do &lt;u&gt;not&lt;/u&gt; have a $D_k^m$ singularity
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Breadth-First Search &lt;/b&gt;&lt;/p&gt;
@@ -780,7 +827,7 @@ GDL, Ita, Page, Sotnikov (to appear)&lt;/p&gt;
 &lt;br&gt;
 &lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;&#34;&gt;
      $$
-     \tilde{r} \in \text{span}_{FF(R_5),\mathbb{Q}}\Bigg[\Big(\text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_i, D_{k_1}^{m_1})) \cap \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_i, D_{k_2}^{m_2}))\Big)_{i&#39;i} \; \cdot \; r_{i\in \mathcal{B}}\Bigg]
+     \tilde{r} \in \text{span}_{FF(R_5),\mathbb{Q}}\Bigg[\Big(\text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_{k_1}^{m_1})) \cap \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_{k_2}^{m_2}))\Big)_{i&#39;i} \; \cdot \; r_{i\in \mathcal{B}}\Bigg]
      $$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
@@ -789,12 +836,18 @@ GDL, Ita, Page, Sotnikov (to appear)&lt;/p&gt;
 &lt;br&gt;
 &lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;&#34;&gt;
      $$
-     \displaystyle O_{i&#39;i} = \cap_{k, m} \text{nulls}_{\vec{\mathbb{Q}},\mathbb{Q}} \qquad \text{(schematically)}
+     \displaystyle O_{i&#39;i} = \cap_{k, m} \, \text{nulls}_{\vec{\mathbb{Q}},\mathbb{Q}} \qquad \text{(schematically)}
      $$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
-     $\circ\,$ This is done by searching a tree of possibilities of which pole gets dropped to which order, &lt;br&gt;
-     $\phantom{\circ}\,$ several optimizations required to search an otherwise proibitively large space
+     $\circ\,$ This is done by searching a tree of possibilities of which pole gets dropped to which order. &lt;br&gt;
+     $\phantom{\circ}\,$ Several optimizations required to search an otherwise proibitively large space, naively of size
+&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;&#34;&gt;
+     $$
+     \prod_k (m_k + 1) \quad \text{with } \; k \;\text{ enumerating } \; D_k^{m_k}
+     $$
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Least Least-Common-Denominator &lt;/b&gt;
@@ -803,7 +856,7 @@ GDL, Ita, Page, Sotnikov (to appear)&lt;/p&gt;
      $\circ$ In other words, we have reshuffled the $r_i$ by linear combinations of the others $r_{j\neq i}$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
-     $\displaystyle \tilde{r}_i = \sum_{j\neq i} o_{ij} r_j + r_i$
+     $\displaystyle \tilde{r}_i = \sum_{j\neq i} O_{ij} r_j + r_i$
 &lt;/div&gt;
 &lt;br&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
@@ -828,7 +881,7 @@ GDL, Ita, Page, Sotnikov (to appear)&lt;/p&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;
 &lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -8mm; margin-bottom: 0mm;&#34;&gt;
      $$
-     o_{ij} \sim \langle r_i | r_j \rangle \qquad \text{very schematically}
+     O_{ij} \sim \langle r_i | r_j \rangle \qquad \text{(very schematically)}
      $$
 &lt;/div&gt;
 &lt;hr&gt;
@@ -959,7 +1012,7 @@ Comparison of $q\bar q \rightarrow \gamma \gamma \gamma$ (in full color) to $pp 
     &lt;td style=&#34;text-align: center;&#34;&gt;35&lt;/td&gt;
     &lt;td style=&#34;text-align: center;&#34;&gt;29k&lt;/td&gt;
     &lt;td style=&#34;text-align: center;&#34;&gt;4k&lt;/td&gt;
-    &lt;td style=&#34;text-align: center;&#34;&gt;$\sim$300 KB&lt;/td&gt;
+    &lt;td style=&#34;text-align: center;&#34;&gt;$\sim$100 KB&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td style=&#34;text-align: center;&#34;&gt;5-point 1-mass&lt;/td&gt;
