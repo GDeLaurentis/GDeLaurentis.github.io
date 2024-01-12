@@ -165,7 +165,7 @@ Giuseppe De Laurentis
 &lt;div style=&#34;font-size: large;&#34;&gt; University of Edinburgh &lt;/div&gt;
 &lt;br&gt;
 &lt;a href=&#34;https://arxiv.org/abs/2311.10086&#34;&gt;arXiv:2311.10086&lt;/a&gt; &lt;div style=&#34;font-size: large; margin-bottom: 10pt;&#34;&gt; (GDL, H. Ita, M. Klinkert, V. Sotnikov) &lt;/div&gt;
-&lt;A href=&#34;https://arxiv.org/abs/2305.17056&#34;&gt;arXiv:2311.18752&lt;/a&gt; &lt;div style=&#34;font-size: large;&#34;&gt; (GDL, H. Ita, V. Sotnikov) &lt;/div&gt;
+&lt;A href=&#34;https://arxiv.org/abs/2311.18752&#34;&gt;arXiv:2311.18752&lt;/a&gt; &lt;div style=&#34;font-size: large;&#34;&gt; (GDL, H. Ita, V. Sotnikov) &lt;/div&gt;
 &lt;!--- Amplitudes Meeting ---&gt;
 &lt;p&gt;FSU HEP Seminar
 &lt;br&gt;&lt;/p&gt;
@@ -241,7 +241,7 @@ $$
           \hspace{-5mm}
           \begin{align}
                \mathcal{A}_{\vec{a}}(1_g,2_g,3_g,4_g,5_g) &amp; = \sum_{\sigma \in \mathcal{S}_5/\mathcal{Z}_5} \sigma\Big(\text{tr}(T^{a_1}T^{a_2}T^{a_3}T^{a_4}T^{a_5}) \; A_{1}(1,2,3,4,5)\Big) \; + \\[2mm]
-               &amp; \quad \sum_{\sigma\in \frac{\mathcal{S}_5}{\mathcal{Z}_2 \times \mathcal{S}_3}} \sigma\Big(\text{tr}(T^{a_1}T^{a_2}) \text{tr}(T^{a_3}T^{a_4}T^{a_5}) \; A_{2}(1,2,3,4,5)\Big) + , \\[8mm]
+               &amp; \quad \sum_{\sigma\in \frac{\mathcal{S}_5}{\mathcal{Z}_2 \times \mathcal{Z}_3}} \sigma\Big(\text{tr}(T^{a_1}T^{a_2}) \text{tr}(T^{a_3}T^{a_4}T^{a_5}) \; A_{2}(1,2,3,4,5)\Big) + , \\[8mm]
                \mathcal{A}_{\vec{a}}(1_u,2_{\bar u},3_g,4_g,5_g) &amp; =
                \sum_{\sigma \in \mathcal{S}_3(3,4,5)} \sigma\Big(
                (T^{a_3}T^{a_4}T^{a_5})^{\,\bar i_2}_{i_1} \; 
@@ -599,9 +599,10 @@ Peraro (&#39;16)
 &lt;/div&gt;
 &lt;div style=&#34;font-size: x-large; text-align: left; margin-top: 5mm;&#34;&gt;
      $\circ$ Custom (for now private) interface to &lt;code&gt;Caravel&lt;/code&gt;, key features: &lt;span style=&#34;font-size: large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt; $\phantom{\circ}\;$ (for Caravel developers see &lt;tt&gt;&lt;a href=https://gitlab.com/caravel-private/pynta&gt;pynta&lt;/a&gt;&lt;/tt&gt;) &lt;/span&gt; &lt;br&gt;
-     $\quad \star$ seamless caching to a SQLite database using &lt;a href=https://pypi.org/project/diskcache&gt; diskcache &lt;/a&gt; via Python decorators; &lt;br&gt;
-     $\quad \star$ and facilities for distributed computing into a slurm cluster; &lt;br&gt;
-     $\quad \star$ functions for IR/UV subtraction, CaravelGraph, and PentagonFunctions parsing.
+     $\quad \star$ caching to a SQLite database using &lt;a href=https://pypi.org/project/diskcache&gt; diskcache &lt;/a&gt; via Python decorators; &lt;br&gt;
+     $\quad \star$ distributed computing into a slurm cluster (&lt;tt&gt;use_slurm_cluster=True&lt;/tt&gt;); &lt;br&gt;
+     $\quad \star$ functions for IR/UV subtraction, CaravelGraph, and PentagonFunctions parsing; &lt;br&gt;
+     $\quad \star$ permutations of amplitudes w/o changing call to Caravel.
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;!---
@@ -784,7 +785,7 @@ GDL, Ita, Page, Sotnikov (to appear)&lt;/p&gt;
 &lt;br&gt;
 &lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;&#34;&gt;
      $$
-     \displaystyle \ln\left(\lim_{\mathcal{D}_j \rightarrow 0} r_i\right) = \underbrace{\ln(\mathcal{O}(1) \text{ const.})}_{|\dots |\ll | \ln \mathcal{D}_j |}- q_{ij} \ln \mathcal{D}_j
+     \displaystyle \lim_{\mathcal{D}_j \rightarrow 0} r_i = (\mathcal{O}(1) \text{ const.}) \times \mathcal{D}_j^{-q_{ij}}
      $$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
@@ -1049,6 +1050,41 @@ $\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{
      $\circ$ Can now study propertities of the amplitude &lt;br&gt;
      $\phantom{\circ}$ e.g. no function has a $\text{tr}_5$ singularity, nor a pair of $\langle i | j + k | i]$ in the same denominator.
 &lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Quarks from Gluons &lt;/b&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
+     $\circ$ Checking whether a rational function belongs to a given vector space
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $$
+     r_{\text{guess}} \stackrel{?}{\in} \text{span}_{FF(R_5), \mathbb{Q}}(r_{i})
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
+     $\phantom{\circ}$ is much simpler problem than performing a rational reconstruction! &lt;br&gt;
+     $\phantom{\circ}$ It only requires as many evaluations as the dimension of the vector space.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
+     $\circ$ The vector space has uniform mass dimension and phase weights
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $$
+     |i⟩ \rightarrow t^{1/2}|i⟩, \; |i] \rightarrow t^{1/2}|i] \quad \forall \; i \quad \text{and} \quad
+     |i⟩ \rightarrow t|i⟩, \; |i] \rightarrow \frac{1}{t}|i]
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
+     $\circ$ Generate guesses for quark functions by re-scaling gluon functions
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $$
+     \tilde{r}^{-}_{73}(q^+,q^-,g^+,g^+,g^-) = \frac{[14]⟨25⟩⟨45⟩}{⟨24⟩[24]⟨34⟩^2} = \frac{⟨14⟩}{⟨24⟩} \underbrace{\frac{[14]⟨25⟩⟨45⟩}{⟨14⟩[24]⟨34⟩^2}}_{r^{--}_{18}(g^+,g^-,g^+,g^+,g^-)}
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 2mm;&#34;&gt;
+     $\circ$ We obtain most (50% of 2q3g and 90% of 4q1g) quarks functions this way.
+&lt;/div&gt;
 &lt;/section&gt;
 &lt;hr&gt;
 &lt;section&gt;
@@ -1062,7 +1098,7 @@ $\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{
 &lt;h1 id=&#34;outlook&#34;&gt;Outlook&lt;/h1&gt;
 &lt;hr&gt;
 &lt;b style=&#34;font-variant: small-caps; font-size: xxx-large; margin-bottom: 5mm;&#34;&gt;
-  W+2-jets: simplification strategy
+  5-point 1-mass Amplitudes: e.g. Wjj
 &lt;/b&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm;&#34;&gt;
      $0.\,$ Start from analytics of &lt;a style=&#34;font-size: large&#34;; href=&#34;https://arxiv.org/abs/2110.07541&#34;&gt;Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov (&#39;21) &lt;/a&gt; - 1.2GB of &lt;code&gt;C++&lt;/code&gt; source code.
@@ -1079,7 +1115,7 @@ $3.\,$ Perform (rough) PFDs based on expected structures and fit the Ansatze.
 &lt;/div&gt;
 &lt;br&gt;
 &lt;div style=&#34;text-align: center; float:center; font-size: x-large; margin-top: -12mm; margin-bottom: 5mm;&#34;&gt;
-Comparison of $q\bar q \rightarrow \gamma \gamma \gamma$ (in full color) to $pp \rightarrow Wjj$ (at leading color):  &lt;br&gt;
+Comparison of $p\bar p \rightarrow jjj$ (in full color) to $pp \rightarrow Wjj$ (at leading color):  &lt;br&gt;
 &lt;/div&gt;
 &lt;table width=110% border=&#34;1&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34; style=&#34;margin-left: -12mm; margin-bottom: 8mm; margin-top: 8mm; font-size: x-large;&#34;&gt;
   &lt;tr&gt;
@@ -1092,9 +1128,9 @@ Comparison of $q\bar q \rightarrow \gamma \gamma \gamma$ (in full color) to $pp 
   &lt;tr&gt;
     &lt;td style=&#34;text-align: center;&#34;&gt;5-point massless&lt;/td&gt;
     &lt;td style=&#34;text-align: center;&#34;&gt;35&lt;/td&gt;
-    &lt;td style=&#34;text-align: center;&#34;&gt;29k&lt;/td&gt;
-    &lt;td style=&#34;text-align: center;&#34;&gt;4k&lt;/td&gt;
-    &lt;td style=&#34;text-align: center;&#34;&gt;$\sim$100 KB&lt;/td&gt;
+    &lt;td style=&#34;text-align: center;&#34;&gt;~200k&lt;/td&gt;
+    &lt;td style=&#34;text-align: center;&#34;&gt;~4k&lt;/td&gt;
+    &lt;td style=&#34;text-align: center;&#34;&gt;$\sim$200 KB&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td style=&#34;text-align: center;&#34;&gt;5-point 1-mass&lt;/td&gt;
@@ -1109,7 +1145,7 @@ Comparison of $q\bar q \rightarrow \gamma \gamma \gamma$ (in full color) to $pp 
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;b style=&#34;font-variant: small-caps; font-size: xx-large; margin-bottom: 10mm;&#34;&gt;
-   Analytic Structures of 2-loop 5-point 1-mass Amplitudes
+   Complexity of 2-loop 5-point 1-mass Amplitudes
 &lt;/b&gt;
 &lt;div style=&#34;display:block; width:100%; font-size: 16pt; margin-top: 5mm; margin-bottom: 4mm;&#34;&gt;
      &lt;div style=&#34;width:50%; float: left; display: inline-block; font-size: x-large;&#34;&gt;
