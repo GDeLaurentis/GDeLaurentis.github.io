@@ -5,12 +5,21 @@
     <link>https://gdelaurentis.github.io/authors/giuseppe-de-laurentis/</link>
       <atom:link href="https://gdelaurentis.github.io/authors/giuseppe-de-laurentis/index.xml" rel="self" type="application/rss+xml" />
     <description>Giuseppe De Laurentis</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 07 Dec 2023 11:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 06 Feb 2024 11:00:00 +0000</lastBuildDate>
     <image>
       <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
       <title>Giuseppe De Laurentis</title>
       <link>https://gdelaurentis.github.io/authors/giuseppe-de-laurentis/</link>
     </image>
+    
+    <item>
+      <title>Rational Functions of Scattering Amplitudes with Masses</title>
+      <link>https://gdelaurentis.github.io/talk/qcd_meets_ew_feb2024/</link>
+      <pubDate>Tue, 06 Feb 2024 11:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/qcd_meets_ew_feb2024/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Non-Planar Two-Loop Amplitudes for Five-Parton Scattering</title>
@@ -2255,6 +2264,1121 @@ $\circ\,$ All linear systems solved with CUDA over $\mathbb{F}_{p\leq 2^{31}-1}$
 &lt;div style=&#34;font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
      Hence, one cannot define a field of fractions, as this would not be closed under multiplication.
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gdelaurentis.github.io/slides/qcd_meets_ew_feb2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/slides/qcd_meets_ew_feb2024/</guid>
+      <description>
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;particle_tracks.jpg&#34;
+  &gt;
+
+&lt;h3 style=&#34;margin-top:5mm; margin-left: -10mm; margin-right: -10mm;&#34;&gt;
+	&lt;b style=&#34;margin-top:15mm; font-size: 32pt;&#34;&gt;
+	   Rational Functions  &lt;br&gt;
+	   of Scattering Amplitudes  &lt;br&gt;
+        with Masses
+	&lt;/b&gt;
+&lt;/h3&gt;
+&lt;div style=&#34;font-size: x-large; margin-top:10mm;&#34;&gt;
+Giuseppe De Laurentis
+&lt;br&gt;
+&lt;div style=&#34;font-size: large;&#34;&gt; University of Edinburgh &lt;/div&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;!--- 
+&lt;a href=&#34;https://arxiv.org/abs/2311.10086&#34;&gt;arXiv:2311.10086&lt;/a&gt; &lt;div style=&#34;font-size: large; margin-bottom: 10pt;&#34;&gt; (GDL, H. Ita, M. Klinkert, V. Sotnikov) &lt;/div&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2311.18752&#34;&gt;arXiv:2311.18752&lt;/a&gt; &lt;div style=&#34;font-size: large;&#34;&gt; (GDL, H. Ita, V. Sotnikov) &lt;/div&gt;
+---&gt;
+&lt;!--- Amplitudes Meeting ---&gt;
+&lt;p&gt;QCD Meets EW&lt;/p&gt;
+&lt;div style=&#34;font-size: x-large; margin-top: -5mm;&#34;&gt; CERN &lt;/div&gt;
+&lt;br&gt;
+&lt;p style=&#34;line-height: 0.05;&#34;&gt; &lt;img src=&#34;UniEdinburghLogo-transparent.png&#34;; style=&#34;max-width:120px;float:center;border:none;&#34;&gt; &lt;img src=&#34;cern-logo-transparent.png&#34;; style=&#34;max-width:120px;float:center;border:none;margin-left:20mm;&#34;&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;span style=&#34;font-size: 11pt&#34;&gt;Find these slides at  &lt;a href=&#34;https://gdelaurentis.github.io/slides/qcd_meets_ew_feb2024/#/&#34;&gt;gdelaurentis.github.io/slides/qcd_meets_ew_feb2024&lt;/a&gt; &lt;/span&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;section&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;LHCcern.jpg&#34;
+  &gt;
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large; margin-bottom: 20mm;&#34;&gt; Color Ordered Amplitude Coefficients &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
+$\circ\,$ To obtain cross sections we have to compute amplitudes
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+$$
+\require{color}
+\require{amsmath}
+\hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\Pi_{n-2}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R)}|^2
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
+$\circ\,$ The gauge group dependence is fairly well understood, through color decompositions
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+$$
+\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R) = \sum_{\sigma} \mathcal{C}(\sigma \circ a_i) \times A(\sigma \circ \{p_i, h_i\}, \mu_F, \mu_R)
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
+$\circ\,$ So we can deal with either color-ordered amplitudes
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+$$
+\mathcal{A}(\lambda^\alpha, \tilde \lambda^{\,\dot\alpha}) = \sum_{\substack{\Gamma,\\ i \in M_\Gamma}} \frac{ \sum_{k=0}^{\text{finite}} \, {\color{red}c^{(k)}_{\,\Gamma, i}}(\lambda^\alpha, \tilde \lambda^{\,\dot\alpha}) \, \epsilon^k}{\prod_j (\epsilon - a_{ij})} \, I_{\Gamma,i}\left( (\lambda\tilde\lambda)^{\alpha\dot\alpha}, \epsilon\right)  \;, \;\;\text{with} \quad a_{ij} \in \mathbb{Q}
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
+$\phantom{\circ}\,$ or finite remainders (arguably better since they retain all the physical info)
+&lt;/div&gt;
+&lt;div style=&#34;font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+   &lt;a href=https://arxiv.org/abs/hep-ph/9802439&gt; Catani (&#39;98), &lt;/a&gt; &lt;a href=https://arxiv.org/abs/0901.0722&gt; Becher, Neubert (&#39;09), &lt;/a&gt; &lt;a href=https://arxiv.org/abs/0901.1091&gt; Gardi, Magnea (&#39;09) &lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; margin-top: -13mm; margin-bottom: 5mm&#34;&gt;
+$$ 
+\mathcal{R}^{(\ell-loop)} = \mathcal{A}^{(\ell)}_R - \sum_{i=1}^{\ell} I^{(\ell-i)} \mathcal{A}^{(i-1)} + \mathcal{O}(\epsilon) = \sum_i {\color{red}{r_{i}(\lambda,\tilde\lambda)}} \, h_i(\lambda\tilde\lambda)
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large; margin-bottom: -10mm;&#34;&gt; Number of Indep. Functions w/o Subtraction &lt;/b&gt;&lt;/p&gt;
+&lt;div&gt;
+&lt;img src=&#34;DimRegJunkSizes-transparent.png&#34;; style=&#34;max-width:650px; float:center; border:none; margin-top: -5mm; margin-bottom: 0mm;&#34;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large; margin-bottom: 10mm;&#34;&gt;
+   Complexity Swell of Amplitudes Coefficients
+&lt;/b&gt;
+&lt;div style=&#34;display:block; width:100%; font-size: 16pt; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     &lt;div style=&#34;width:50%; float: left; display: inline-block; font-size: x-large; margin-top: 6mm;&#34;&gt;
+          &lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+               $\circ\,$ The rational coefficients take the form
+          &lt;/div&gt;
+          &lt;br&gt;
+          &lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;&#34;&gt;
+          $$
+          \displaystyle r(|i\rangle,[i|) = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j \mathcal{D}_j^{q_{ij}}(|i\rangle,[i|)}
+          $$
+          &lt;/div&gt;
+          &lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+               $\phantom{\circ}\,$ with $\mathcal{N}$ and $\mathcal{D}$ polynomials of spinor brackets.
+          &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div style=&#34;width:50%; float: center; display: inline-block;&#34;&gt;
+          &lt;img src=&#34;AnsatzSizes.png&#34;; style=&#34;max-width:400px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;&#34;&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: -5mm;&#34;&gt;
+$\circ\,$ For example, consider this 2-loop $Vjj$ coefficient &lt;span style=&#34;font-size: large&#34;&gt;
+($s_{56}=p^2_V$ is a zero, $⟨3|1+4|2]^{5}Δ_{23|14|p_V}^{4}$ are poles): &lt;/span&gt;
+&lt;/div&gt;
+&lt;a style=&#34;font-size: 10pt; text-align: right; float: right; margin-top: 0mm; margin-bottom: 4mm;&#34;&gt;
+   GDL, Ita, Page, Sotnikov (W.I.P.)
+&lt;/a&gt;
+&lt;a style=&#34;font-size: 10pt; text-align: right; float: right; margin-top: 0mm; margin-bottom: 4mm;&#34; href=https://arxiv.org/abs/2110.07541&gt;
+   Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov (&#39;21),$\quad$
+&lt;/a&gt;
+&lt;div style=&#34;text-align: left; font-size: large; margin-top: 5mm; margin-bottom: 1mm;&#34;&gt;
+$$ 
+r^{(73 \text{ of } 120)}_{\bar{u}^+g^-g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{105}{128}\frac{⟨2|1+4|3]⟨4|2+3|1]⟨6|1+4|5]s_{14}s_{23}s_{56}(s_{124}-s_{134})(s_{123}-s_{234})(s_{25}+s_{26}+s_{35}+s_{36})}{\color{orange}{⟨3|1+4|2]}\color{red}{Δ_{23|14|56}^4}} + \\
+\Bigg[6\frac{[12]^2⟨13⟩[25]⟨34⟩⟨36⟩s_{56}(s_{124}-s_{134})}{\color{orange}{⟨3|1+4|2]^5}}\Bigg] + \Bigg[ \; \Bigg]_{1234\rightarrow \overline{4321}}+ \mathcal{O}\left(\frac{1}{⟨3|1+4|2]^{4}Δ_{23|14|56}^{3}}\right)
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 8mm;&#34;&gt;
+$\circ\,$ The first fraction has Ansatz(mass dimension: 16, phase weights: [-1, 1, -1, 1, -1, 1]): 
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
+$$ 
+16488 {\small\text{ (six-point massless) }} \rightarrow 4200 {\small \text{ (five-point one-mass) }} \rightarrow 2429 {\small \; (Δ_{23|14|56}-\text{residue})} \rightarrow 1 \; \small{(??)}
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large; margin-bottom: 10mm;&#34;&gt;
+   Plan for this session
+&lt;/b&gt;
+&lt;div style=&#34;text-align: center; font-size: xx-large; margin-top: 10mm;&#34;&gt;
+$1.\,$ Rational Functions w/ Constraints: Algebra and Geometry
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; font-size: xx-large; margin-top: 10mm;&#34;&gt;
+$2.\,$ External and Internal Masses
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; font-size: xx-large; margin-top: 10mm;&#34;&gt;
+$3.\,$ Vector Spaces over Fields of Fractions
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; font-size: xx-large; margin-top: 10mm;&#34;&gt;
+$4.\,$ Analytic Reconstruction
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;varieties-no-background.png&#34;
+  &gt;
+
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&#34;multivariate-rational-functions&#34;&gt;Multivariate Rational Functions&lt;/h1&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;mainly based on: &lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2203.04269&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GDL, Page (JHEP 12 (2022) 140)&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 35pt;&#34;&gt; Polynomials &amp;lsquo;&amp;lsquo;Modulo Equivalence Relations&amp;rsquo;&amp;rsquo;  &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ The most obvious equivalence relation we need to deal with is momentum conservation
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; margin-top: 0mm; margin-bottom: 0mm&#34;&gt;
+$$
+q, r: \text{ polynomials }, \qquad q \sim r \quad \text{if} \quad q - r \propto \sum_i p_i = \sum_i |i⟩[i| = 0
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Then we have Schouten identities, e.g.
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; margin-top: 0mm; margin-bottom: 0mm&#34;&gt;
+$$
+\langle j|k\rangle \langle l|i\rangle + \langle k|i\rangle \langle l|j\rangle + \langle i|j \rangle \langle l|k\rangle = 0
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Note that this happens whenever we have (enough) vectors in the game!
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; margin-top: 0mm; margin-bottom: 0mm&#34;&gt;
+$$
+\text{tr}_5(2345)p^µ_1 - \text{tr}_5(1345)p^µ_2 + \text{tr}_5(1245) p^µ_3 - \text{tr}_5(1235)p^µ_4 + \text{tr}_5(1234)p^µ_5 = 0
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ One more distinct example later ... with masses!
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large;&#34;&gt; Polynomial Quotient Rings  &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Without equivalences, we would have a polynomial ring
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; margin-top: 0mm; margin-bottom: 0mm&#34;&gt;
+     $$\displaystyle \kern-50mm S_n = \mathbb{F}\left[|1⟩, [1|, \dots, |n⟩, [n|\right]$$
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: -14mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}$ the field $\mathbb{F}$ can be any of $\mathbb{Q},\mathbb{R},\mathbb{C},\mathbb{F}_p,\mathbb{Q}_p,\dots$
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: -16mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Equivalence relations define ideals, e.g.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: -8mm;&#34;&gt;
+     $$
+     \displaystyle J_{\Lambda_n} = \Big\langle \sum_i |i⟩[i| \Big\rangle_{S_n}
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;width:40%; float: right; display: inline-block; margin-top: -80mm;&#34;&gt;
+     &lt;img src=&#34;V2.png&#34;; style=&#34;max-width:250px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm; margin-left: 22mm;&#34;&gt;
+     &lt;br&gt;
+     &lt;div style=&#34;font-size: large; width:80%; float: center; text-align: center;  display: inline-block; margin-top: 0mm; margin-left: 22mm;&#34;&gt;
+     	  Artist&#39;s Impression of $V(J_{\Lambda_n})$ &lt;br&gt; I can&#39;t draw in $4n$ dims!
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 9mm;&#34;&gt;
+     $\phantom{\circ}$ Wwo polynomials $q$ and $r$ are equivalent if $q-r\in J_{\Lambda_n}$
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 1mm;&#34;&gt;
+     $\circ$ What we need is a polynomial &lt;b&gt;quotient&lt;/b&gt; ring$\kern-4mm\phantom{x}^{\star}$: $\;R_n = S_n / J_{\Lambda_n} $
+&lt;/div&gt;
+&lt;div style=&#34;border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 4mm;&#34;&gt;
+    $r_i(\lambda, \tilde\lambda)$ at $n$-point belong to the Field of Fractions$\kern-4mm\phantom{x}^{\dagger}$ of $R_n$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: large; float: center; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $\kern-4mm\phantom{x}^\star R_4$ is &#34;weird&#34; (not a UFD), but it proves that polynomial rings are insufficient;
+     $\;\kern-4mm\phantom{x}^\dagger$ The field of fractions of $R_3$ does not exist.
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Singularities of Amplitudes  &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Let us consider a very simple example (at 4-point)
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     $\displaystyle \kern-50mm iA_{g^-g^-g^+g^+}^{\text{tree}} = \frac{\langle 12 \rangle^3}{\langle 23 \rangle \langle 34 \rangle \langle 41 \rangle} = \frac{[34]^3}{[12][23][41]} $
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: -8mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}$ is, say, $\langle 23 \rangle$ a pole of this amplitude?
+&lt;/div&gt;
+&lt;div style=&#34;width:40%; float: right; display: inline-block; margin-top: -43mm;&#34;&gt;
+     &lt;img src=&#34;ReducibleVariety-no-background.png&#34;; style=&#34;max-width:250px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm; margin-left: 22mm;&#34;&gt;
+     &lt;br&gt;
+     &lt;div style=&#34;font-size: large; width:80%; float: center; text-align: center;  display: inline-block; margin-top: 0mm; margin-left: 22mm;&#34;&gt;
+     	  Artist&#39;s Impression of $V(\big\langle \langle 23 \rangle\big\rangle_{R_4})$ &lt;br&gt;
+	  as the union of two irreducibles
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: -8mm; margin-bottom: 1mm;&#34;&gt;
+     $\circ$ The question is ill posed! Let&#39;s consider it geometrically.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 1mm;&#34;&gt;
+     $\phantom{\circ} \langle 23 \rangle$ does not identify an irreducible variety in $R_4$.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: -1mm; margin-bottom: 1mm;&#34;&gt;
+     $\phantom{\circ}$ Algebraically, we can compute &lt;i&gt; primary decompositions &lt;/i&gt;, e.g.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: 26mm; margin-bottom: 0mm;&#34;&gt;
+     $\displaystyle \big\langle \langle 23\rangle \big\rangle_{R_4} = {\color{orange} \big\langle \langle 23\rangle, [14] \big\rangle_{R_4}} \cap {\color{blue} \big\langle \langle 12\rangle, \langle 13 \rangle, \langle 14\rangle, \langle 23\rangle, \langle 24 \rangle, \langle 34 \rangle \big\rangle_{R_4}} $
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: -8mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}$ On the &lt;b style=&#34;color: orange&#34;&gt; first branch &lt;/b&gt; there is a simple pole, on the &lt;b style=&#34;color: blue&#34;&gt; latter branch &lt;/b&gt; the amplitude is regular.
+&lt;/div&gt;
+&lt;div style=&#34;border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm;&#34;&gt;
+    Poles &amp; Zeros $\;\Leftrightarrow\;$ Irreducible Varieties $\;\Leftrightarrow\;$ Prime Ideals &lt;br&gt;
+    &lt;i style=&#34;font-size: 12pt; border-top: -8mm; border-bottom: -2mm;&#34;&gt; Physics $\kern38mm$ Geometry $\kern38mm$ Algebra &lt;/i&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large; margin-top:-10mm;&#34;&gt; Spinor Alphabets &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: x-large; text-align: center; float: center; display: inline-block; margin-top: 0mm; margin-bottom: 2mm;&#34;&gt;
+     $1.$ little group covariant LCD (less spurious poles); $\;\;2.$ avoiding parity even/odd split. &lt;br&gt;
+     $\Rightarrow\;$ fewer and simpler functions to reconstruct compared to Mandelstams or Twistors.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ The denominator factors $\mathcal{D}_j$ are conjectured to be restricted to the letters of the symbol alphabet
+&lt;/div&gt;
+&lt;br&gt; 
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/1812.04586&gt;
+   Abreu, Dormans, Febres Cordero, Ita, Page (&#39;18)
+&lt;/a&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -10mm; margin-bottom: 5mm;&#34;&gt;
+     $$
+     \displaystyle \{\mathcal{D}_{\{1,\dots,35\}}\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_5)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1] \big\} \, , \qquad \text{Aut}(R_5) = \mathcal{P} \times \mathcal{S}_5
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; font-size: x-large; float: center; margin-top: -14mm; margin-bottom: 0mm;&#34;&gt;
+     $\small\qquad\color{green}\text{Identical to 1-loop!}$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $\circ\,$ Beyond 5-point things get tough
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $\displaystyle \kern-10mm \{\mathcal{D}_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\} $
+&lt;/div&gt;
+&lt;div style=&#34;text-align: right; font-size: x-large; float: center; margin-top: -14mm; margin-bottom: 0mm;&#34;&gt;
+     $\small\qquad\color{red}\text{New @ 2-loop planar!}\qquad$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 5mm; margin-bottom: -10mm;&#34;&gt;
+     $$
+     \displaystyle \kern-10mm \{\mathcal{D}_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_7)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{123|45|67},
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -10mm; &#34;&gt;
+     $$
+     \kern130mm\langle1|2+3|4+5|1\rangle, \langle1|3+4|5+6|2\rangle , \dots(?)\big\}
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}$ Non-trivial statement (not proven!): all irreducible polynomials generate prime ideals in $R_{m&gt;4}$.
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Least Common Denominator &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 7mm;&#34;&gt;
+$\circ\,$ Can&#39;t draw pictures in high (complex) dimensions, so let&#39;s consider the simplified case $\mathbb{R}[x, y, z]$.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large&#34;&gt;
+$\circ\,$ Say we have a potential denominator factor $\mathcal{D} = xy^2 + y^3 - z^2$
+&lt;/div&gt;
+&lt;div style=&#34;display:block; width:100%; margin-top: 5mm; font-size: x-large;&#34;&gt;
+	&lt;div style=&#34;width:48%; float: left; display: inline-block;&#34;&gt;
+	     &lt;img src=&#34;V1.png&#34;; style=&#34;max-width:250px; float:center; border:none; margin-top: 5px;&#34;&gt; &lt;br&gt;
+	     ${\color{orange}\mathcal{D} = (xy^2 + y^3 - z^2)}$
+	&lt;/div&gt;
+	&lt;div style=&#34;width:52%; float: right; text-align: left; display: inline-block; margin-top:10mm; margin-bottom: 5mm;&#34;&gt;
+	     A function $f_i(x,y,z)$ may or may not have $\mathcal{D}$ as a pole, depending on what happens on $V(\langle\mathcal{D}\rangle)$
+	&lt;/div&gt;
+	&lt;div style=&#34;width:52%; float: right; text-align: center; display: inline-block; margin-bottom: 5mm;&#34;&gt;
+	     $\displaystyle \lim_{\mathcal{D}_j \rightarrow \epsilon} f_i(x,y,z) \sim \frac{1}{\epsilon^{q_{ij}}} $
+	&lt;/div&gt;
+	&lt;div style=&#34;width:52%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm;&#34;&gt;
+	     $q_{ij}$ is the order of the pole ($\mathbb{Z}^+$) or zero ($\mathbb{Z}^-$).
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm;&#34;&gt;
+    The LCD tells us about what happens on surfaces with one less dimension than the full space.
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Codimension-One Slices &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ What we have reliably available at 2-loop are $\mathbb{F}_p$ evaluations.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: large; text-align: right; float: right; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+   &lt;a href=https://arxiv.org/abs/1406.4513&gt; von Manteuffel, Schabinger (&#39;14), &lt;/a&gt; 
+   &lt;a href=https://arxiv.org/abs/1608.01902&gt; Peraro (&#39;16) &lt;/a&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}\,$ ($\mathbb{Q}_p$ is doable, but potentially very slow / unstable - dependening on the point.)
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ Issue: the limit can be taken in $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Q}_p$ but ${\color{red}\text{not}}$ in $\mathbb{F}_p$ .
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ Solution: univariate Thiele rational interpolation on a line going through each $V(\langle \mathcal{D}_j \rangle)$
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 15mm; margin-bottom: 5mm;&#34;&gt;
+     $$
+     \displaystyle |i\rangle \rightarrow |i\rangle (t) = |i\rangle + t c_i |\eta\rangle ,  \qquad |i] \rightarrow |i] \, , \qquad
+     \text{s.t.} \quad \sum_i c_i |i] = 0
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: large; text-align: right; float: right; margin-top: -8mm; margin-bottom: 2mm;&#34;&gt;
+   &lt;a href=https://indico.desy.de/event/28075/&gt; Page (&#39;21), &lt;/a&gt; 
+   &lt;a href=https://arxiv.org/abs/2305.17056&gt; Abreu, GDL, Ita, Klinkert, Page, Sotnikov (&#39;23) &lt;/a&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ After interpolation on the (anti-)holomorphic slice, the rational functions read
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;&#34;&gt;
+     $$
+     \displaystyle r_i(t) = \frac{\mathcal{N}(t)}{\prod_j (t-t_{\mathcal{D}_j})^{q_{ij}}}
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}\,$ where $t_{\mathcal{D}_j}$ is simply the solution to $\mathcal{D}_j(t) = 0$. We read off the $q_{ij}$.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
+     $\circ\,$ Issue: in $\color{red}\text{LCD}$ form the Ansatz has $\color{red}\text{too many free parameters}$, e.g. $\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)$
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: centre; font-size: x-large; centre: left; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+     size(Ansatz(54, [0, 0, 2, 2, -1, 1])) = $1\,209\,546$
+&lt;/div&gt;    
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Multivariate Partial Fractions &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm;&#34;&gt;
+$\circ\,$ To distinguish $\displaystyle \frac{\mathcal{N}_{12}}{W_1W_2}$ from $\displaystyle \frac{\mathcal{N}_1}{W_1} + \frac{\mathcal{N}_2}{W_2}$, look at $W_1 \sim W_2 \rightarrow \epsilon \ll 1$. Geometrically:
+&lt;/div&gt;
+&lt;div style=&#34;display:block; width:100%; margin-top: 5mm; font-size: x-large;&#34;&gt;
+	&lt;div style=&#34;width:33%; float: left; display: inline-block;&#34;&gt;
+	     &lt;img src=&#34;V1.png&#34;; style=&#34;max-width:230px; float:center; border:none; margin-top: 5px;&#34;&gt; &lt;br&gt;
+	     ${\color{orange}V(W_1) = V(\langle xy^2 + y^3 - z^2 \rangle)}$
+	&lt;/div&gt;
+	&lt;div style=&#34;width:33%; float: center; display: inline-block;  font-size: x-large;&#34;&gt;
+	     &lt;img src=&#34;V2.png&#34;; style=&#34;max-width:230px; float:center; border:none; margin-top: 5px;&#34;&gt; &lt;br&gt;
+	     ${\color{blue}V(W_2) = V(\langle x^3 + y^3 - z^2\rangle )}$
+	&lt;/div&gt;
+	&lt;div style=&#34;width:33%; float: right; display: inline-block;&#34;&gt;
+	     &lt;img src=&#34;V3.png&#34;; style=&#34;max-width:230px; float:center; border:none; margin-top: 5px;&#34;&gt; &lt;br&gt;
+	     $V(W_1) \cap V(W_2)$
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm;&#34;&gt;
+$\circ\,$ &lt;i&gt; Primary decompositions &lt;/i&gt; of sets of polynomials (&lt;i&gt; ideals &lt;/i&gt;), anogous to integers:
+&lt;/div&gt;
+&lt;div style=&#34;display:block; width:100%; margin-top: 5mm; font-size: x-large;&#34;&gt;
+	&lt;div style=&#34;width:30%; float: left; display: inline-block;&#34;&gt;
+	     $60 = 5 \times 3 \times 2^2$
+	&lt;/div&gt;
+	&lt;div style=&#34;width:70%; float: right; display: inline-block;&#34;&gt;
+	     $\langle{\color{orange}xy^2 + y^3 - z^2}, {\color{blue}x^3 + y^3 - z^2}\rangle = \\
+	     {\color{magenta}\langle z^2,x+y\rangle} \cup {\color{green}\langle y^3-z^2,x\rangle} \cup {\color{red}\langle2y^3-z^2,x-y\rangle}$
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm;&#34;&gt;
+$\circ\,$ Whether a partial fraction decomposition is possible depends on the behavior on the 3 lines.
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Beyond Partial Fractions &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ $\color{red}\text{Case 0}$: the ideal does $\color{green}\text{not involve denominator factors}$.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     E.g. a 6-point function $c_i$ has a pole at $⟨1|2+3|4]$ but not at $⟨4|2+3|1]$,
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     yet it is regular on the irreducible surface $V(\big\langle ⟨1|2+3|4], ⟨4|2+3|1] \big\rangle)$. Then
+&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\displaystyle c_i \sim \frac{⟨4|2+3|1]}{⟨1|2+3|4]} + \mathcal{O}(⟨1|2+3|4]^0) \; \text{ instead of } \; c_i \sim \frac{1}{⟨1|2+3|4]}  + \mathcal{O}(⟨1|2+3|4]^0)$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 8mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ $\color{red}\text{Case 1}$: the $\color{green}\text{degree of vanishing is non-uniform}$ across branches, for example:
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+     $\displaystyle \frac{s_{14}-s_{23}}{⟨1|3+4|2]⟨3|1+2|4]}$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+     has a double pole on the first branch, and a simple pole on the second branch of
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: 3mm; margin-bottom: 0mm;&#34;&gt;
+     $\big\langle⟨1|3+4|2], ⟨3|1+2|4]\big\rangle_{R_6} = \big\langle ⟨13⟩, [24] \big\rangle_{R_6} \cap \big\langle ⟨1|3+4|2], ⟨3|1+2|4], (s_{14}-s_{23})\big\rangle_{R_6}$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ $\color{red}\text{Case 2}$: ideal is $\color{green}\text{non-radical}$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: large; text-align: right; float: right; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+   &lt;a href=https://arxiv.org/abs/2203.17170&gt; Campbell, GDL, Ellis (&#39;22) &lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     $\displaystyle \small \kern0mm \sqrt{\big\langle {\color{black}⟨3|1+4|2]}, {\color{black}Δ_{23|14|56}} \big\rangle_{R_6}} = \big\langle {\color{black}⟨3|1+4|2]}, {\color{black}s_{124}-s_{134}} \big\rangle_{R_6} $
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;MexicanHat.jpg&#34;
+  &gt;
+
+&lt;h1 style=&#34;margin-top: -8mm;&#34;&gt; Functions with masses &lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; External Masses &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
+$\circ\,$ Rescale propagators to make them look massless, e.g.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+$$
+\mathcal{A}(pp \rightarrow Vjj) = \frac{p_V^2}{p_V^2-m_V^2}\mathcal{A}(pp \rightarrow Vjj)\Big|_{m_V=0} 
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
+$\circ\,$ Say $p_V^2 = \langle56\rangle[65]$, we observe $\mathcal{N}_i \in \Big\langle \langle56\rangle , [56] \Big\rangle$ for all 2-loop coeffs. in $pp\rightarrow Vjj$.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+   &lt;a&gt;  GDL, Ita, Page, Sotnikov (work in progress) &lt;/a&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 10mm;&#34;&gt;
+$\circ\,$ In general, the singularities of amplitudes w/ massess look like those in the decay kinematics
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+$$
+\text{e.g.:} \qquad \{1,2,3,\boldsymbol{4},\boldsymbol{5}\} \sim \{1,2,3,(\boldsymbol{4}\rightarrow4+5),(\boldsymbol{5}\rightarrow6+7)\} + \text{constraints (e.g. deg. bound.)}
+$$
+&lt;/div&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xx-large&#34;&gt; Modifying the Quotient Ring  &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
+$\circ\,$ $pp\rightarrow hhj$ with exact $m_{top}$ dependence at LO/1-loop, subject to $p_{h_1}^2 = p_{h_2}^2$. &lt;br&gt;
+$\phantom{\circ}\,$ We work in the modified version of the $R_7$ q-ring, namely:
+&lt;/div&gt;
+&lt;div style=&#34;font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 0mm;&#34;&gt;
+   &lt;a&gt;  Campbell, GDL, Ellis (work in progress) &lt;/a&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+$$
+\tilde{R}_7 = \mathbb{Q}_p\Big[ |1\rangle, [1|, \dots, |7\rangle, [7| \Big] \big/ \Big\langle \sum_{i=1}^7 |i\rangle[i|, s_{45} - s_{67} \Big\rangle
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Internal Masses - The Easy Case &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
+$\circ\,$ If the only dependence is in the numerator, then a Laurent expansion is generally enough (like $\epsilon$). &lt;br&gt;
+$\phantom{\circ}\,$ For instance, taking results from $0 \rightarrow q\bar q (V\rightarrow \ell\bar\ell )(V&#39;\rightarrow \ell&#39;\bar\ell&#39;) g$ w/ massive q-loop
+&lt;/div&gt;
+&lt;div style=&#34;font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+   &lt;a href=https://arxiv.org/abs/2203.17170&gt; Campbell, GDL, Ellis (&#39;22) &lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: 17pt; float: center; margin-top: -8mm; margin-bottom: 0mm;&#34;&gt;
+$$
+\begin{eqnarray} \label{basicexpansion}
+d_{\{i\times j\times k\}}&amp;=\;(v_L^2+v_R^2)\, &amp;\big[m^0 d_{\{i\times j\times k\}}^{(0)}+m^2 d_{\{i\times j\times k\}}^{(2)}+m^4 d_{\{i\times j\times k\}}^{(4)}\big] \nonumber \\
+ &amp;\;+\;v_L v_R &amp;\big[ m^2 \tilde{d}_{\{i\times j\times k\}}^{(2)}+m^4 \tilde{d}_{\{i\times j\times k\}}^{(4)} \big] \, .
+\end{eqnarray}
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
+$\circ\,$ Where e.g. $d_{\{12\times34\times56\}}^{(4)}$ is: (using $\Gamma_{34|56} = |3+4|5+6|$, and tilde for anti-symm.)
+&lt;div style=&#34;font-size: 16pt; float: center; margin-top: 9mm; margin-bottom: 0mm;&#34;&gt;
+$$
+d_{\{12\times34\times56\}}^{(4)}=\frac{[2|\tilde\Gamma_{34|12|56}|1\rangle}
+{s_{12}s_{34}s_{56}\langle7|\Gamma_{34|56}|7\rangle}
+\left(\frac{[4|\tilde\Gamma_{34|12|56}|3\rangle[6|\tilde\Gamma_{34|12|56}|5\rangle}
+{\langle7|\Gamma_{34|56}|7\rangle[7|\Gamma_{34|56}|7]}
+-\langle3|5\rangle[4|6]
+\right)
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
+$\circ\,$ Which follows from the following primary decomposition
+&lt;/div     &gt;
+&lt;div style=&#34;font-size: 16pt; float: center; margin-top: 9mm; margin-bottom: 0mm;&#34;&gt;
+$$
+\big\langle ⟨7|\Gamma_{34|56}|7⟩, [7|\Gamma_{34|56}|7] \big\rangle = \big\langle ⟨7|\Gamma_{34}|7], ⟨7|\Gamma_{56}|7], ⟨7|\Gamma_{34|56}|7⟩, [7|\Gamma_{34|56}|7] \big\rangle  \nonumber \\
+\kern50mm \quad \cap  \; \big\langle  ⟨7|\Gamma_{34|56}|7⟩, [7|\Gamma_{34|56}|7], \tilde\Gamma_{12|34|56} \big\rangle \, .
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Internal Masses - The Hard Case &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
+$\circ\,$ The poles have mixed mass-kinematics dependence, e.g.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; float: center; margin-top: 9mm; margin-bottom: 0mm;&#34;&gt;
+$$
+(-s_{12}⟨1|\boldsymbol{5}|\boldsymbol{4}|3⟩[32]⟨23⟩[3|\boldsymbol{4}|\boldsymbol{5}|1]+m_t^2([1|2|3|\boldsymbol{4}|1⟩-⟨1|2|3|\boldsymbol{4}|1])^2) \\
+(-s_{13}⟨1|\boldsymbol{4}|2]⟨2|\boldsymbol{4}|1]⟨2|\boldsymbol{5}|3]⟨3|\boldsymbol{5}|2]+m_t^2([1|2|3|\boldsymbol{4}|1⟩-⟨1|2|3|\boldsymbol{4}|1])^2)
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
+$\phantom{\circ}\,$ For instance, this happens at one loop with $D=4$ cuts and pentagon diagrams.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 4mm;&#34;&gt;
+$\circ\,$ The &#34;proper&#34; approach would probably be to add $m_t$ to the q-ring and compute decompositions. &lt;br&gt;
+$\phantom{\circ}\,$ Highly non-trivial to avoid spurious singularities, e.g. $\text{tr}_5$ or spurious $\langle ij\rangle$.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 4mm;&#34;&gt;
+$\circ\,$ An approach is to use &lt;i&gt;effective pentagon&lt;/i&gt; coeffs., schematically
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
+$$
+\text{Box} = (\text{Reduction coeff.})\times(\text{Effective pentagon}) + (\text{Effective Box})
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 4mm;&#34;&gt;
+$\phantom{\circ}\,$ where only the Effective pentagon has the $m$-dependent pole.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 4mm;&#34;&gt;
+$\circ\,$ (Discussion) When does this happen at 2-loop? Do you need 9 propagators?
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;Feynman-Diagrams-transparent.png&#34;
+  &gt;
+
+&lt;h1 style=&#34;margin-top: 55mm; &#34;&gt; Vector Spaces &lt;br&gt; of Rational Functions &lt;/h1&gt;
+&lt;div style=&#34;text-align: center; font-size: x-large; margin-top: 55mm; margin-bottom: 0mm;&#34;&gt;
+     GDL, Ita, Page, Sotnikov - to appear; $\quad$
+     GDL, Ita, Klinkert, Sotnikov &lt;a href=&#34;https://arxiv.org/abs/2311.10086&#34;&gt;arXiv:2311.10086&lt;/a&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Complexity of the Reconstruction &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ Sort the $r_i$ by mass dimension of $\mathcal{N}$ ($\approx$ Ansatz size), pick simplest subset forming a basis $r_{i \in \mathcal{B}}$
+&lt;/div&gt;
+&lt;div&gt;
+&lt;img src=&#34;ComplexityOfReconstruction-transparent.png&#34;; style=&#34;max-width:650px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Picking a Basis &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ We start from something of the form:
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 0mm;&#34;&gt;
+     $$
+     R = r_{i\in \mathcal{B}} M_{ij} h_j \, , \qquad M_{ij} \in \mathbb{Q}
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}\,$ with $r_{i\in \mathcal{B}} \subset r_i$, i.e. $M_{ij}$ is in reduced row echelon form, up to a permutation of columns.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ Basic idea: change basis from a subset of pentagon function coefficients, to linear combinations
+&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -2mm; margin-bottom: 5mm;&#34;&gt;
+     $$
+     \tilde{r}_{i&#39;} = O_{i&#39;i} \, r_{i \in \mathcal{B}} \quad \text{s.t.} \quad \text{rank}(O_{i&#39;i}) = \text{dim(span}_{FF(R_5), \mathbb{Q}}(r_{i}))
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ Key insight: 
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -4mm; margin-bottom: 5mm;&#34;&gt;
+     $$
+     \text{dim(span}_{FF(R_5), \mathbb{Q}}\left(\lim_{\mathcal{D_j} \rightarrow  0 }r_{i}\right)) \leq \text{dim(span}_{FF(R_5), \mathbb{Q}}(r_{i}))
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}\,$ I.e., the &lt;span style=&#34;color: red&#34;&gt;pole residues are correlated&lt;/span&gt;, build linear combinations that &lt;i&gt; &#39;&#39;remove the overlap&#39;&#39; &lt;/i&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Correlation of Residues &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ Build Laurent expansions around $t_{\mathcal{D}_k}$ &lt;span style=&#34;font-size: 12pt&#34;&gt; (use same kind of slice &lt;a href=&#34;slides/fivepartons_dec2023/#/3/4&#34;&gt;as before&lt;/a&gt;)&lt;/span&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;&#34;&gt;
+     $$
+     r_{i \in \mathcal{B}} = \sum_{m = 1}^{q_k = \text{max}_i(q_{ik})} \frac{e^k_{im}}{(t-t_{\mathcal{D}_k})^m} + \mathcal{O}((t-t_{\mathcal{D}_k})^0)
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}\,$ strictly formal over $\mathbb{F}_p$, but convergent over $\mathbb{Q}_p$ for $(t-t_{\mathcal{D}_k}) \propto p$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: -5mm;&#34;&gt;
+     $\circ\,$ Repeat for several (anti-)holomorphic slices, build vectors
+&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 0mm;&#34;&gt;
+     $$
+     \vec{e}^k_{im} = (e^k_m)_{ij} = \{ e^k_{im}(\text{slice}_1), \dots, e^k_{im}(\text{slice}_n)  \}
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ By Gaussian elimination on the matrix $(e^k_m)_{ij}$ we can partition the space:
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;&#34;&gt;
+     $$
+     \text{span}_{\vec{\mathbb{Q}},\mathbb{Q}}(r_{i \in \mathcal{B}}) = \text{column}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m)) \oplus \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;&#34;&gt;
+    Interpretation of $\text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m)) \cdot r_{i \in \mathcal{B}}$: functions that do &lt;u&gt;not&lt;/u&gt; have a $D_k^m$ singularity
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Breadth-First Search &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ If a function $\tilde{r}$ does not have poles $D_{k_1}^{m_1}$ and $D_{k_2}^{m_2}$, then
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;&#34;&gt;
+     $$
+     \tilde{r} \in \text{span}_{FF(R_5),\mathbb{Q}}\Bigg[\Big(\text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_{k_1}^{m_1})) \cap \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_{k_2}^{m_2}))\Big)_{i&#39;i} \; \cdot \; r_{i\in \mathcal{B}}\Bigg]
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ Build linear combination that remove as many singularities as possible, without dropping rank
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;&#34;&gt;
+     $$
+     \displaystyle O_{i&#39;i} = \cap_{k, m} \, \text{nulls}_{\vec{\mathbb{Q}},\mathbb{Q}} \qquad \text{(schematically)}
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ This is done by searching a tree of possibilities of which pole gets dropped to which order. &lt;br&gt;
+     $\phantom{\circ}\,$ Several optimizations required to search an otherwise proibitively large space, naively of size
+&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;&#34;&gt;
+     $$
+     \prod_k (m_k + 1) \quad \text{with } \; k \;\text{ enumerating } \; D_k^{m_k}
+     $$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Least Least-Common-Denominator &lt;/b&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;&#34;&gt;
+     $\circ$ In other words, we have reshuffled the $r_i$ by linear combinations of the others $r_{j\neq i}$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
+     $\displaystyle \tilde{r}_i = \sum_{j\neq i} O_{ij} r_j + r_i$
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ The rational functions now take the form
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;&#34;&gt;
+     $$
+     \displaystyle \tilde{r}_i(|i\rangle,[i|) = \frac{\tilde{\mathcal{N}}(|i\rangle,[i|)}{\prod_j D_j^{\tilde{q}_{ij}}(|i\rangle,[i|)}
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}\,$ where we have minimized $\sum_j \tilde{q}_{ij}$, compared to the $r_i$.
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ This is the closest thing that I am aware of to a Gram–Schmidt procedure for vector spaces over fields that are not number fields, but in this case fields of fractions over polynomial quotient rings.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 2mm;&#34;&gt;
+     $\circ\,$ Can we think of this as defining an inner product on the space of rational functions?
+&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -7mm; margin-bottom: 0mm;&#34;&gt;
+     $$
+     O_{ij} \sim \langle r_i | r_j \rangle \qquad \text{(very schematically)}
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     (Discussion) Is there a connection to intersection theory?
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;spinor_coeffs.png&#34;
+  &gt;
+
+&lt;h1 id=&#34;analytic-reconstruction&#34;&gt;Analytic Reconstruction&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; The Numerator Ansatz &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
+$\circ\,$ The numerator Ansatz takes the form
+&lt;/div&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 4mm;&#34; href=https://arxiv.org/abs/1904.04067&gt;
+   GDL, Maître (&#39;19)
+&lt;/a&gt;
+&lt;div style=&#34;text-align: center; font-size: x-large; margin-bottom: 5mm; margin-top: 1mm;&#34;&gt;
+$\displaystyle \text{Num. poly}(\lambda, \tilde\lambda) = \sum_{\vec \alpha, \vec \beta} c_{(\vec\alpha,\vec\beta)} \prod_{j=1}^n\prod_{i=1}^{j-1} \langle ij\rangle^{\alpha_{ij}} [ij]^{\beta_{ij}}$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}$ subject to constraints on $\vec\alpha,\vec\beta$ due to: 1) mass dimension; 2) little group; 3) linear independence.
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; &#34;&gt;
+$\circ\,$ Construct the Ansatz via the algorithm from Section 2.2 of &lt;a href=https://arxiv.org/abs/2203.04269&gt;GDL, Page (&#39;22)&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; display: inline-block; font-size: x-large;&#34;&gt;
+Linear independence = irreducibility by the Gröbner basis of a specific ideal.
+&lt;/div&gt;
+&lt;!---
+&lt;div style=&#34;text-align: center; font-size: x-large; margin-bottom: 5mm; margin-top: 5mm;&#34;&gt;
+$
+\begin{align}
+	\textstyle \sum_{j=1}^n\sum_{i=1}^{j-1} (\alpha_{ij} + \beta_{ij}) &amp; = d \quad \text{: mass dimension} \\[2mm]
+	\textstyle \sum_{j=1}^n\sum_{i=1}^{j-1} \alpha_{ij}\underbrace{\{\langle ij \rangle\}_k}_{\delta_{ik}+\delta_{jk}} + \beta_{ij}\underbrace{\{[ij]\}_k}_{-\delta_{ik}-\delta_{jk}} &amp; = \phi_k \quad \text{: k}^{th}\text{ little group weight}
+\end{align}
+$
+&lt;/div&gt;
+---&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Efficient implementation using open-source software only
+&lt;/div&gt;
+&lt;div style=&#34;display:block; width:100%; margin-left: -10mm; margin-top: 0mm;&#34;&gt;
+     &lt;!---
+	&lt;div style=&#34;width:15%; font-size: x-large; float: left; display: inline-block;&#34;&gt;
+	     &lt;div style=&#34;margin-top: 10mm; margin-bottom: 6mm;&#34;&gt; &lt;code&gt; Lips &lt;/code&gt; &lt;/div&gt;
+	     &lt;div style=&#34;margin-top: 0mm; margin-bottom: 0mm;&#34;&gt; Spinor ideal &lt;/div&gt;
+	     &lt;a style=&#34;font-size: large; text-align: center; float: center; margin-top: 0mm; margin-bottom: 5mm;&#34;
+	     href=https://arxiv.org/abs/2305.14075&gt;
+		GDL (&#39;23)
+	     &lt;/a&gt;	    
+	&lt;/div&gt;
+    ---&gt;
+	&lt;div style=&#34;width:50%; font-size: x-large; float: left; display: inline-block;&#34;&gt;
+	     &lt;img src=&#34;SingularLogo.png&#34;; style=&#34;max-width:300px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt; &lt;br&gt;
+	     Gröbner bases $\rightarrow$ constrain $\vec\alpha,\vec\beta$ &lt;br&gt;
+	     &lt;a style=&#34;font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;&#34;
+	     href=https://www.singular.uni-kl.de/index.php.html&gt;
+		Decker, Greuel, Pfister, Schönemann
+	     &lt;/a&gt;	    
+	&lt;/div&gt;
+	&lt;div style=&#34;width:50%; font-size: x-large; float: right; display: inline-block; &#34;&gt;
+	     &lt;img src=&#34;GoogleORToolsLogo.png&#34;; style=&#34;max-width:300px; float:center; border:none; margin-top: 7mm; margin-bottom: 2mm;&#34;&gt; &lt;br&gt;
+	     Integer programming $\rightarrow$ enumerate sols. $\vec\alpha,\vec\beta$ &lt;br&gt;
+	     &lt;a style=&#34;font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;&#34;
+	     href=https://www.singular.uni-kl.de/index.php.html&gt;
+		Perron and Furnon (Google optimization team)
+	     &lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: -2mm;&#34;&gt;
+$\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{solving}} \ll t_{\text{sampling}}$) w/ &lt;a href=https://github.com/GDeLaurentis/linac-dev&gt; linac &lt;/a&gt; &lt;span style=&#34;text-align: left; font-size: small;&#34;&gt; (coming soon-ish) &lt;/span&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Five-Parton Results in Full Color &lt;/b&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;div&gt;
+&lt;img src=&#34;VSSizeTable-transparent.png&#34;; style=&#34;max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: -2mm;&#34;&gt;
+$\circ\,$ The basis of the vector space is now quite easy! ($r_{115}^{--}$ is the most complicated function)
+&lt;/div&gt;
+&lt;div style=&#34;width:50%; font-size: x-large; float: left; display: inline-block;&#34;&gt;
+     &lt;img src=&#34;five-partons.png&#34;; style=&#34;max-width:500px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+&lt;/div&gt;
+&lt;div style=&#34;width:50%; font-size: x-large; float: right; display: inline-block; &#34;&gt;
+     &lt;img src=&#34;five-partons-last.png&#34;; style=&#34;max-width:500px; float:center; border:none; margin-top: 7mm; margin-bottom: 2mm;&#34;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Quarks from Gluons &lt;/b&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
+     $\circ$ Checking whether a rational function belongs to a given vector space
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $$
+     r_{\text{guess}} \stackrel{?}{\in} \text{span}_{FF(R_5), \mathbb{Q}}(r_{i})
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
+     $\phantom{\circ}$ is much simpler problem than performing a rational reconstruction! &lt;br&gt;
+     $\phantom{\circ}$ It only requires as many evaluations as the dimension of the vector space.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
+     $\circ$ The vector space has uniform mass dimension and phase weights
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $$
+     |i⟩ \rightarrow t^{1/2}|i⟩, \; |i] \rightarrow t^{1/2}|i] \quad \forall \; i \quad \text{and} \quad
+     |i⟩ \rightarrow t|i⟩, \; |i] \rightarrow \frac{1}{t}|i]
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
+     $\circ$ Generate guesses for quark functions by re-scaling gluon functions
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $$
+     \tilde{r}^{-}_{73}(q^+,q^-,g^+,g^+,g^-) = \frac{[14]⟨25⟩⟨45⟩}{⟨24⟩[24]⟨34⟩^2} = \frac{⟨14⟩}{⟨24⟩} \underbrace{\frac{[14]⟨25⟩⟨45⟩}{⟨14⟩[24]⟨34⟩^2}}_{r^{--}_{18}(g^+,g^-,g^+,g^+,g^-)}
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 2mm;&#34;&gt;
+     $\circ$ We obtain most (50% of 2q3g and 90% of 4q1g) quarks functions this way.
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;3y_and_Wjj_diagrams.png&#34;
+  &gt;
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+&lt;hr&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm;&#34;&gt;
+     We talked about:
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm; margin-left: 10mm;&#34;&gt;
+     $1.\,$ Rational Functions in the Field of Fractions of Polynomial Quotient Rings: &lt;br&gt;
+     $\qquad\circ\,$ How to enforce constraints on polynomials; &lt;br&gt;
+     $\qquad\circ\,$ The relation between physics $\leftrightarrow$ algebra $\leftrightarrow$ geomtry; &lt;br&gt;
+     $\qquad\circ\,$ The role of the Least Common Denominator, and how to obtain it &lt;br&gt;
+     $\qquad\circ\,$ Partial fraction decompositions from higher-codimension information
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm; margin-left: 10mm;&#34;&gt;
+     $2.\,$ Different cases where masses appear: &lt;br&gt;
+     $\qquad\circ\,$ External masses &lt;br&gt;
+     $\qquad\circ\,$ Internal masses (simple Laurent expansion) &lt;br&gt;
+     $\qquad\circ\,$ Internal masses (mass- and kinematic-dependent poles)
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm; margin-left: 10mm;&#34;&gt;
+     $3.\,$ Vector Spaces over Fields of Fractions &lt;br&gt;
+     $\qquad\circ\,$ Correlation between residues, a.k.a. basis change; &lt;br&gt;
+     $\qquad\circ\,$ Its consequences on what functions need to be obtained.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm; margin-left: 10mm;&#34;&gt;
+     $4.\,$ Analytic Reconstructions from an Ansatz
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+&lt;!---
+&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large; margin-bottom: 10mm;&#34;&gt;
+   Conclusions
+&lt;/b&gt;
+
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ Full-color 5-point massless amplitudes are well within reach, 
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ Subleading color corrections can be fairly sizable
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ The reconstruction can be peformed in spinor-helicity variables, which yield compact results
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ Understanding the partial fraction structure of amplitudes is essential to tame their complexity
+&lt;/div&gt;
+
+---
+---&gt;
+&lt;div style=&#34;margin-top: 50mm; margin-bottom: 30mm;&#34;&gt;
+&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large;&#34;&gt; Thank you! &lt;/b&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;!---
+&lt;b style=&#34;font-variant: small-caps; font-size: xx-large;&#34;&gt; Questions? &lt;/b&gt;
+---&gt;
+&lt;/div&gt;
+&lt;span style=&#34;font-size: 11pt; &#34;&gt;
+    These slides are powered by:&lt;br&gt;
+    &lt;span style=&#34;display: block; margin-top: 2mm;&#34;&gt;
+        &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;markdown&lt;/a&gt;, 
+        &lt;a href=&#34;https://en.wikipedia.org/wiki/HTML&#34;&gt;html&lt;/a&gt;, 
+        &lt;a href=&#34;https://revealjs.com/&#34;&gt;revealjs&lt;/a&gt;, 
+        &lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;, 
+        &lt;a href=&#34;https://www.mathjax.org/&#34;&gt;mathjax&lt;/a&gt;, 
+        &lt;a href=&#34;https://github.com/&#34;&gt;github&lt;/a&gt;
+    &lt;/span&gt;
+&lt;/span&gt;
+&lt;!---
+&lt;br&gt;
+&lt;font size=3&gt;
+     For open source packages: 
+     &lt;code&gt;
+          $   $ pip install [lips](https://github.com/GDeLaurentis/lips) [pyadic](https://github.com/GDeLaurentis/pyadic)
+     &lt;/code&gt;
+&lt;/font size&gt;
+---&gt;
+&lt;/section&gt;
+&lt;!---
+---
+
+&lt;section&gt;
+
+# Backup Slides
+
+---
+
+&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large; margin-bottom: -5mm;&#34;&gt; Constraints from Poles &lt;/b&gt;
+&lt;br&gt;
+&lt;b style=&#34;font-variant: small-caps; font-size: x-large; margin-top: -16mm;&#34;&gt; Bootstrapping trees (?) &lt;/b&gt;
+
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 8mm;&#34;&gt;
+     $\circ$ The degree of divergence / vanishing on various surfaces imposes strong constraints, e.g.
+&lt;/div&gt;
+
+&lt;div style=&#34;font-size: 20pt; float: center; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $ A^{\text{tree}}_{q^+g^+g^+\bar q^-g^-g^-} = \frac{\mathcal{N(\text{m.d.} = 6\,,\; \text{p.w.} = [-1, 0, 0, 1, 0, 0])}}{\langle 12\rangle\langle 23\rangle\langle 34\rangle [45][56][61]s_{345}}$
+&lt;/div&gt;
+
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $\circ$ Pretend this is un unknown integral coefficient, $\mathcal{N}$ has 143 free parameters.
+&lt;/div&gt;
+
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;&#34;&gt;
+     $\circ$ List the various prime ideal, such as
+&lt;/div&gt;
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;div style=&#34;font-size: 20pt; float: center; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
+     $ \big\langle \langle 12\rangle, \langle 23\rangle, \langle 13\rangle \big\rangle, \; \big\langle |1\rangle \big\rangle, \; \big\langle \langle 12\rangle, |1+2|3]\big\rangle, \dots$
+&lt;/div&gt;
+
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 2mm;&#34;&gt;
+     $\phantom{\circ}$ and impose that $\mathcal{N}$ vanishes to the correct order. We determine it up to an overall constant.
+&lt;/div&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -2mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/2207.10125&gt;
+     GDL, Page (&#39;22)
+&lt;/a&gt;
+
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $\circ$ Likewise, the ansatz for $A^{\text{tree}}_{g^+g^+g^+ g^-g^-g^-}$ shrinks $1326 \rightarrow 1$, etc..
+&lt;/div&gt;
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
+     &lt;i&gt; Effectively, we can &lt;b&gt; compute &lt;/b&gt; trees, just from their &lt;u&gt;poles orders&lt;/u&gt;. &lt;br&gt; Note: compared to BCFW there is &lt;u&gt;no&lt;/u&gt; information about &lt;u&gt;residues&lt;/u&gt;. &lt;/i&gt;
+&lt;/div&gt;
+
+---
+
+&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Partial Fraction Decompositions &lt;/b&gt;
+
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ For true integral coefficients, we can&#39;t rely on the Ansatz to shrinks to an overall constant.
+&lt;/div&gt;
+
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 3mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Partial fraction decompositions (PFDs) are a popular method to tame algebraic complexity.
+&lt;/div&gt;
+
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 3mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ In my opinion, a PFD algorithm needs
+&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: -3mm; margin-bottom: 5mm;&#34;&gt;
+     $1.$ to say if two poles $W_a$ and $W_b$ are separable into different fractions; &lt;br&gt;
+     $2.$ ideally, to answer $(1.)$ without having access to an analytic expression. 
+&lt;/div&gt;
+
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ &lt;span style=&#34;color: green&#34;&gt;Hilbert&#39;s nullstellensatz&lt;/span&gt;: if $\mathcal{N}$ vanishes on all branches of $\langle W_a, W_b \rangle$, then the PFD is possible$\kern-3mm\phantom{x}^\dagger$.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Generalizing to powers $&gt;\kern-1mm 1$ can be done via &lt;span style=&#34;color: green&#34;&gt;symbolic powers&lt;/span&gt; and the &lt;span style=&#34;color: green&#34;&gt;Zariski-Nagata Theorem&lt;/span&gt;.
+&lt;/div&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: 1mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/.&gt;
+   GDL, Page (&#39;22)
+&lt;/a&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Similarly, generalizing to non-radical ideals requires &lt;span style=&#34;color: green&#34;&gt;ring extensions&lt;/span&gt;.
+&lt;/div&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm; margin-right: 33mm;&#34; href=https://arxiv.org/abs/.&gt;
+   Campbell, GDL, Ellis (&#39;22)
+&lt;/a&gt;
+
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 7mm; margin-bottom: 0mm;&#34;&gt;
+     &lt;b&gt; Issue: &lt;/b&gt;evaluations on singular surfaces are expensive, but are not always needed!
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 0mm;&#34;&gt;
+     &lt;b&gt; Opportunity: &lt;/b&gt;we get more than partial fraction decompositions.
+&lt;/div&gt;
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;div style=&#34;font-size: large; float: center; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $\kern-4mm\phantom{x}^\dagger$ $\langle W_a, W_b\rangle$ needs to be radical.
+&lt;/div&gt;
+
+&lt;/section&gt;
+
+---&gt;
+&lt;!-- REVEAL.JS CUSTOMIZATION --&gt;
+&lt;!-- Include MathJax library --&gt;
+&lt;script type=&#34;text/javascript&#34; async
+  src=&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML&#34;&gt;
+&lt;/script&gt;
+&lt;!-- Include Reveal.js and the Math plugin --&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/reveal.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/plugin/math/math.js&#34;&gt;&lt;/script&gt;
+&lt;!-- Initialize Reveal.js with the MathJax plugin --&gt;
+&lt;script&gt;
+  Reveal.initialize({
+    history: true,
+    slideNumber: false,
+    plugins: [ RevealMath ],
+    math: {
+      inlineMath: [ [&#39;\\(&#39;, &#39;\\)&#39;] ],
+      displayMath: [ [&#39;\\[&#39;, &#39;\\]&#39;] ],
+      mathjax: &#39;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js&#39;,
+      config: &#39;TeX-MML-AM_CHTML&#39;,
+      CommonHTML: {
+        scale: 100, // Adjust the font size as needed
+      },
+    }
+  });
+&lt;/script&gt;
 </description>
     </item>
     

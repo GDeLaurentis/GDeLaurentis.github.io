@@ -5,12 +5,21 @@
     <link>https://gdelaurentis.github.io/talk/</link>
       <atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 07 Dec 2023 11:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 06 Feb 2024 11:00:00 +0000</lastBuildDate>
     <image>
       <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://gdelaurentis.github.io/talk/</link>
     </image>
+    
+    <item>
+      <title>Rational Functions of Scattering Amplitudes with Masses</title>
+      <link>https://gdelaurentis.github.io/talk/qcd_meets_ew_feb2024/</link>
+      <pubDate>Tue, 06 Feb 2024 11:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/qcd_meets_ew_feb2024/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Non-Planar Two-Loop Amplitudes for Five-Parton Scattering</title>
