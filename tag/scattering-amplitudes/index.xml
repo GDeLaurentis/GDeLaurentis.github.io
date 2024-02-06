@@ -2082,7 +2082,7 @@ $\circ\,$ All linear systems solved with CUDA over $\mathbb{F}_{p\leq 2^{31}-1}$
 &lt;h3 style=&#34;margin-top:5mm; margin-left: -10mm; margin-right: -10mm;&#34;&gt;
 	&lt;b style=&#34;margin-top:15mm; font-size: 32pt;&#34;&gt;
 	   Rational Functions  &lt;br&gt;
-	   of Scattering Amplitudes  &lt;br&gt;
+	   in MultiLeg QCD Amplitudes  &lt;br&gt;
         with Masses
 	&lt;/b&gt;
 &lt;/h3&gt;
@@ -2160,6 +2160,100 @@ $$
 &lt;img src=&#34;DimRegJunkSizes-transparent.png&#34;; style=&#34;max-width:650px; float:center; border:none; margin-top: -5mm; margin-bottom: 0mm;&#34;&gt;
 &lt;/div&gt;
 &lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Numerical Generalized Unitarity &lt;/b&gt;
+&lt;br&gt;
+&lt;a style=&#34;font-size: large; text-align: center; float: center; margin-right: 0mm; margin-top: 0mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/1510.05626&gt;
+Ita (&amp;lsquo;15)
+&lt;/a&gt;
+&lt;a style=&#34;font-size: large; text-align: center; float: center; margin-left:2mm; margin-right: 0mm; margin-top: 0mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/1712.03946&gt;
+Abreu, Febres Cordero, Ita, Page, Zeng (&amp;lsquo;17)
+&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-bottom: 0mm;&#34;&gt;
+$\circ$ We have an Ansatz for the loop integrand
+&lt;/div&gt;&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; text-align: center; display: inline-block; margin-top: -5mm; margin-bottom: 2mm;&#34;&gt;
+$$
+\require{color}
+\displaystyle A(\lambda, \tilde\lambda, \ell) = \sum_{\Gamma} \, \sum_{i \in M_\Gamma \cup S_\Gamma} \, c_{\,\Gamma,i}(\lambda, \tilde\lambda) \, \frac{m_{\Gamma,i}(\lambda\tilde\lambda, \ell)}{\textstyle \prod_{j} \rho_{\,\Gamma,j}(\lambda\tilde\lambda, \ell)}
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-bottom: 0mm; margin-top: 2mm;&#34;&gt;
+$\circ$ Generalized unitarity relates cuts of loop amplitudes to products of trees
+&lt;/div&gt;
+&lt;div style=&#34;display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;&#34;&gt;
+     &lt;div style=&#34;font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: 3mm;&#34;&gt;
+	     $$
+	     \require{color}
+	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell)\big|_{\text{cut}_{\Gamma}} = \sum_{\substack{\Gamma&#39; \ge \Gamma, \\ i \in M_\Gamma&#39; \cup S_\Gamma&#39;}} \kern-2mm c_{\,\Gamma&#39;,i}(\lambda, \tilde\lambda) \, \frac{m_{\Gamma&#39;,i}(\lambda\tilde\lambda, \ell)}{\displaystyle \prod_{j\in P_{\Gamma&#39;} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell)}\Bigg|_{\text{cut}_\Gamma}
+	     $$
+	&lt;/div&gt;
+     &lt;div style=&#34;width:25%; float: right; display: inline-block; margin-top: -15mm;&#34;&gt;
+	     &lt;div style=&#34;font-size: x-large; width:50%; float: center; text-align: center;  display: inline-block; margin-top: 0mm;&#34;&gt;
+	     	  &lt;code&gt; C++ code &lt;/code&gt;
+	     &lt;/div&gt;&lt;br&gt;
+	     &lt;img src=&#34;CaravelLogo.png&#34;; style=&#34;max-width:150px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+	     &lt;br&gt;
+	     &lt;a style=&#34;font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;&#34;
+	     	href=https://arxiv.org/abs/2009.11957&gt;
+		&lt;div style=&#34;margin-top:0mm&#34;&gt; Abreu, Dormans, &lt;/div&gt;
+		&lt;div&gt; Febres Cordero, Ita  &lt;/div&gt;
+		&lt;div&gt; Kraus, Page, Pascual, &lt;/div&gt;
+		&lt;div&gt; Ruf, Sotnikov (&#39;20) &lt;/div&gt;
+	     &lt;/a&gt;
+	&lt;/div&gt;
+     &lt;div style=&#34;font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: 5mm;&#34;&gt;
+	     Numerical Berends-Giele recursion for LHS, solve for coeffs. in RHS.
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Six-Gluon Box Example in D=4 &lt;/b&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;display:block; width:100%; font-size: 16pt; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     &lt;div style=&#34;width:50%; float: left; display: inline-block; margin-top: 10mm; margin-left: -15mm;&#34;&gt;
+          &lt;img src=&#34;tree_product.png&#34;; style=&#34;max-width:640px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;&#34;&gt;
+     &lt;/div&gt;
+     &lt;div style=&#34;width:50%; float: right; display: inline-block; margin-right:-10mm;&#34;&gt;
+          &lt;img src=&#34;6ptbox.png&#34;; style=&#34;max-width:300px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;&#34;&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;width:100%; float: center; display: inline-block; margin-top:-15mm;&#34;&gt;
+     &lt;img src=&#34;onshellsolutions.png&#34;; style=&#34;max-width:600px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;&#34;&gt;
+&lt;/div&gt;
+&lt;div style=&#34;width:100%; float: left; display: inline-block; margin-left: -30mm; margin-top: -5mm;&#34;&gt;
+     &lt;img src=&#34;boxresult.png&#34;; style=&#34;max-width:600px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;&#34;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Integration By Parts Reduction &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Master / surface decomposition for non-planar topologies
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; text-align: center; display: inline-block; margin-top: 1mm; margin-bottom: 1mm;&#34;&gt;
+$$
+\require{color}
+\begin{align}
+\kern-25mm \text{IBP-generating vectors: } &amp; \quad \displaystyle \int d^D \ell \frac{\partial }{\partial \ell^\mu_a} \frac{v^\mu_a(\ell)}{\rho_1 \dots \rho_N} = 0 \quad (\text{in dim. reg.}) \\[2mm]
+\kern-25mm \text{No propagator doubling: } &amp; \quad \displaystyle \sum_{a, \mu} v^\mu_a(\ell) \frac{\partial \rho_i}{\partial \ell^\mu_a} - f_i(\ell)\rho_i = 0
+\end{align}
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-bottom: 10mm;&#34;&gt;
+     $(v^\mu_a, f_i)$ form a &lt;i&gt;syzygy module&lt;/i&gt;, solved for in &lt;i&gt;embedding space&lt;/i&gt; using &lt;code&gt;Singular&lt;/code&gt; + linear algebra.
+&lt;/div
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: left; marign-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Semi-numerical surface terms: $\quad m_{i\in S_\Gamma}(\ell \leftarrow \text{analytical}, s_{ij} \leftarrow \text{numerical})$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $\kern20mm\star$ dependance on external kinematics ($s_{ij}$) obtained from sparse linear systems.
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 5mm;&#34;&gt;
+     $\circ$ Little group information retained throughout the computation
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $\kern20mm\star$ genuine $c_{\Gamma,i}(\lambda, \tilde\lambda)$ instead of $c_{\Gamma,i}(\lambda\tilde\lambda)$ + conventions for the polarization states.
+&lt;/div&gt;
+&lt;hr&gt;
 &lt;b style=&#34;font-variant: small-caps; font-size: xxx-large; margin-bottom: 10mm;&#34;&gt;
    Complexity Swell of Amplitudes Coefficients
 &lt;/b&gt;
@@ -2199,7 +2293,7 @@ r^{(73 \text{ of } 120)}_{\bar{u}^+g^-g^+d^-(V\rightarrow \ell^+ \ell^-)} = \fra
 $$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 8mm;&#34;&gt;
-$\circ\,$ The first fraction has Ansatz(mass dimension: 16, phase weights: [-1, 1, -1, 1, -1, 1]): 
+$\circ\,$ The first fraction has Ansatz(mass dimension: 16, phase weights: [-1, 1, -1, 1, -1, 1]) of size: 
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
 $$ 
@@ -2208,7 +2302,7 @@ $$
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;b style=&#34;font-variant: small-caps; font-size: xxx-large; margin-bottom: 10mm;&#34;&gt;
-   Plan for this session
+   Plan for this talk
 &lt;/b&gt;
 &lt;div style=&#34;text-align: center; font-size: xx-large; margin-top: 10mm;&#34;&gt;
 $1.\,$ Rational Functions w/ Constraints: Algebra and Geometry
@@ -2235,7 +2329,7 @@ $4.\,$ Analytic Reconstruction
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h1 id=&#34;multivariate-rational-functions&#34;&gt;Multivariate Rational Functions&lt;/h1&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;mainly based on: &lt;br&gt;
+&lt;p&gt;mostly based on: &lt;br&gt;
 &lt;a href=&#34;https://arxiv.org/abs/2203.04269&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GDL, Page (JHEP 12 (2022) 140)&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 35pt;&#34;&gt; Polynomials &amp;lsquo;&amp;lsquo;Modulo Equivalence Relations&amp;rsquo;&amp;rsquo;  &lt;/b&gt;&lt;/p&gt;
@@ -2601,7 +2695,7 @@ $$
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Internal Masses - The Easy Case &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 0mm;&#34;&gt;
-$\circ\,$ If the only dependence is in the numerator, then a Laurent expansion is generally enough (like $\epsilon$). &lt;br&gt;
+$\circ\,$ If the only dependence is in the numerator, then a Taylor expansion is generally enough (like $\epsilon$). &lt;br&gt;
 $\phantom{\circ}\,$ For instance, taking results from $0 \rightarrow q\bar q (V\rightarrow \ell\bar\ell )(V&#39;\rightarrow \ell&#39;\bar\ell&#39;) g$ w/ massive q-loop
 &lt;/div&gt;
 &lt;div style=&#34;font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
@@ -2653,7 +2747,7 @@ $\phantom{\circ}\,$ For instance, this happens at one loop with $D=4$ cuts and p
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 4mm;&#34;&gt;
 $\circ\,$ The &#34;proper&#34; approach would probably be to add $m_t$ to the q-ring and compute decompositions. &lt;br&gt;
-$\phantom{\circ}\,$ Highly non-trivial to avoid spurious singularities, e.g. $\text{tr}_5$ or spurious $\langle ij\rangle$.
+$\phantom{\circ}\,$ This is highly non-trivial; also hard to avoid spurious singularities, e.g. $\text{tr}_5$ or spurious $\langle ij\rangle$.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 4mm;&#34;&gt;
 $\circ\,$ An approach is to use &lt;i&gt;effective pentagon&lt;/i&gt; coeffs., schematically
@@ -2908,10 +3002,21 @@ $\circ\,$ Efficient implementation using open-source software only
 $\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{solving}} \ll t_{\text{sampling}}$) w/ &lt;a href=https://github.com/GDeLaurentis/linac-dev&gt; linac &lt;/a&gt; &lt;span style=&#34;text-align: left; font-size: small;&#34;&gt; (coming soon-ish) &lt;/span&gt;
 &lt;/div&gt;
 &lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Some Public Computational Tools &lt;/b&gt;&lt;/p&gt;
+&lt;div&gt;
+&lt;img src=&#34;demos.png&#34;; style=&#34;max-width:1150px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm; margin-left: -25mm;&#34;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Five-Parton Results in Full Color &lt;/b&gt;
 &lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: 13pt; text-align: right; float: right; margin-top: -5mm; margin-bottom: 0mm; margin-left: -5mm&#34;&gt;
+   &lt;a href=https://arxiv.org/abs/2311.10086&gt; GDL, Ita, Klinkert, Sotnikov (&#39;23), &lt;/a&gt;
+   &lt;a href=https://arxiv.org/abs/2311.18752&gt; GDL, Ita, Sotnikov (&#39;23); &lt;/a&gt;
+   see also
+   &lt;a href=https://arxiv.org/abs/2311.09870&gt; Agarwal, Buccioni, Devoto, Gambuti, von Manteuffel, Tancredi (&#39;23) &lt;/a&gt;
+&lt;/div&gt;
 &lt;div&gt;
-&lt;img src=&#34;VSSizeTable-transparent.png&#34;; style=&#34;max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+&lt;img src=&#34;VSSizeTable-transparent.png&#34;; style=&#34;max-width:350px; float:center; border:none; margin-top: 3mm; margin-bottom: 0mm;&#34;&gt;
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: -2mm;&#34;&gt;
 $\circ\,$ The basis of the vector space is now quite easy! ($r_{115}^{--}$ is the most complicated function)
@@ -2923,39 +3028,17 @@ $\circ\,$ The basis of the vector space is now quite easy! ($r_{115}^{--}$ is th
      &lt;img src=&#34;five-partons-last.png&#34;; style=&#34;max-width:500px; float:center; border:none; margin-top: 7mm; margin-bottom: 2mm;&#34;&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Quarks from Gluons &lt;/b&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Outlook: More Legs and/or Masses &lt;/b&gt;
 &lt;br&gt;&lt;/p&gt;
-&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
-     $\circ$ Checking whether a rational function belongs to a given vector space
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 2mm;&#34;&gt;
+$\circ\,$ New mathematical tools help tackle the increasing complexity of amplitudes in the precision era.
 &lt;/div&gt;
-&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
-     $$
-     r_{\text{guess}} \stackrel{?}{\in} \text{span}_{FF(R_5), \mathbb{Q}}(r_{i})
-     $$
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm;&#34;&gt;
+$\circ\,$ Preliminary results for $pp\rightarrow Wjj$ are around $25 MB$ (down from $1.2GB$    ), &lt;br&gt;
+$\phantom{\circ}\,$ with the quark-channel basis functions down to $125 KB$, of which 25 of 92 functions are:
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
-     $\phantom{\circ}$ is much simpler problem than performing a rational reconstruction! &lt;br&gt;
-     $\phantom{\circ}$ It only requires as many evaluations as the dimension of the vector space.
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
-     $\circ$ The vector space has uniform mass dimension and phase weights
-&lt;/div&gt;
-&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
-     $$
-     |i⟩ \rightarrow t^{1/2}|i⟩, \; |i] \rightarrow t^{1/2}|i] \quad \forall \; i \quad \text{and} \quad
-     |i⟩ \rightarrow t|i⟩, \; |i] \rightarrow \frac{1}{t}|i]
-     $$
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
-     $\circ$ Generate guesses for quark functions by re-scaling gluon functions
-&lt;/div&gt;
-&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
-     $$
-     \tilde{r}^{-}_{73}(q^+,q^-,g^+,g^+,g^-) = \frac{[14]⟨25⟩⟨45⟩}{⟨24⟩[24]⟨34⟩^2} = \frac{⟨14⟩}{⟨24⟩} \underbrace{\frac{[14]⟨25⟩⟨45⟩}{⟨14⟩[24]⟨34⟩^2}}_{r^{--}_{18}(g^+,g^-,g^+,g^+,g^-)}
-     $$
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 2mm;&#34;&gt;
-     $\circ$ We obtain most (50% of 2q3g and 90% of 4q1g) quarks functions this way.
+&lt;div&gt;
+&lt;img src=&#34;quarksW.png&#34;; style=&#34;max-width:1000px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm; margin-left: -5mm;&#34;&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;hr&gt;
@@ -2969,6 +3052,8 @@ $\circ\,$ The basis of the vector space is now quite easy! ($r_{115}^{--}$ is th
 
 &lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 &lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Summary &lt;/b&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm;&#34;&gt;
      We talked about:
 &lt;/div&gt;
