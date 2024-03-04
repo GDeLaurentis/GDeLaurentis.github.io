@@ -61,9 +61,16 @@
 &lt;section data-noprocess data-shortcode-slide
   
       
-      data-background-image=&#34;FSU-photo.png&#34;
+      data-background-image=&#34;LiverpoolAerial.png&#34;
   &gt;
 
+&lt;!--- 
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;FSU-photo.png&#34;
+  &gt;
+  ---&gt;
 &lt;!--- 
 &lt;section data-noprocess data-shortcode-slide
   
@@ -85,9 +92,9 @@ Giuseppe De Laurentis
 &lt;a href=&#34;https://arxiv.org/abs/2311.10086&#34;&gt;arXiv:2311.10086&lt;/a&gt; &lt;div style=&#34;font-size: large; margin-bottom: 10pt;&#34;&gt; (GDL, H. Ita, M. Klinkert, V. Sotnikov) &lt;/div&gt;
 &lt;A href=&#34;https://arxiv.org/abs/2311.18752&#34;&gt;arXiv:2311.18752&lt;/a&gt; &lt;div style=&#34;font-size: large;&#34;&gt; (GDL, H. Ita, V. Sotnikov) &lt;/div&gt;
 &lt;!--- Amplitudes Meeting ---&gt;
-&lt;p&gt;FSU HEP Seminar
+&lt;p&gt;Liverpool HEP Seminar
 &lt;br&gt;&lt;/p&gt;
-&lt;p style=&#34;line-height: 0.05;&#34;&gt; &lt;img src=&#34;UniEdinburghLogo-transparent.png&#34;; style=&#34;max-width:120px;float:center;border:none;&#34;&gt; &lt;img src=&#34;FSU Seal.png&#34;; style=&#34;max-width:120px;float:center;border:none;margin-left:20mm;&#34;&gt;
+&lt;p style=&#34;line-height: 0.05;&#34;&gt; &lt;img src=&#34;UniEdinburghLogo-transparent.png&#34;; style=&#34;max-width:120px;float:center;border:none;&#34;&gt; &lt;img src=&#34;LiverpoolLogo.png&#34;; style=&#34;max-width:120px;float:center;border:none;margin-left:20mm;&#34;&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;span style=&#34;font-size: 11pt&#34;&gt;Find these slides at  &lt;a href=&#34;https://gdelaurentis.github.io/slides/fivepartons_dec2023/#/&#34;&gt;gdelaurentis.github.io/slides/fivepartons_dec2023&lt;/a&gt; &lt;/span&gt;
 &lt;/div&gt;
