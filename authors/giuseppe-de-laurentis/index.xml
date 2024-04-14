@@ -1992,7 +1992,16 @@ $$
 \underbrace{\mathcal{R}^{(2)}}_{\text{finite remainder}} = \mathcal{A}^{(2)}_R \underbrace{- \quad I^{(1)}\mathcal{A}^{(1)}_R \quad - \quad I^{(2)}\mathcal{A}^{(0)}_R}_{\text{divergent + convention-dependent finite part}} + \mathcal{O}(\epsilon)
 $$
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 0mm;&#34;&gt;
+&lt;a style=&#34;font-size: 13pt; float:right; text-align:right; margin-top:-14mm;&#34; href=https://www.sciencedirect.com/science/article/abs/pii/S0370269398003323?via%3Dihub&gt;
+Catani (&#39;98)
+&lt;/a&gt;
+&lt;a style=&#34;font-size: 13pt; float:right; margin-top:-9mm;&#34; href=https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.102.162001&gt;
+Becher, Neubert (&#39;09)
+&lt;/a&gt;
+&lt;a style=&#34;font-size: 13pt; float:right; text-align:right; margin-top:-4mm;&#34; href=https://arxiv.org/abs/0901.1091&gt;
+Gardi, Magnea (&#39;09)
+&lt;/a&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 0mm; margin-top:0mm;&#34;&gt;
      $\phantom{\circ}$ $\mathcal{A}^{(1)}_R$ to order $\epsilon^2$ is still needed to build $\mathcal{R}^{(2)}$, but there is no real reason to reconstruct it.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
@@ -2180,7 +2189,7 @@ $\circ$ The SLC cut-hierarchy is significantly larger than the LC one, e.g.
           &lt;br&gt;&lt;br&gt;
           &lt;div style=&#34;font-size:16pt; float: center; margin-top: -3mm; margin-bottom: 0mm&#34;&gt;
                $$
-               \displaystyle r_i(|i\rangle,[i|) = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j D_j^{q_{ij}}(|i\rangle,[i|)}
+               \displaystyle r_i(|i\rangle,[i|) = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j \mathcal{D}_j^{q_{ij}}(|i\rangle,[i|)}
                $$
           &lt;/div&gt;
           &lt;div style=&#34;font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 1mm;&#34;&gt;
