@@ -1626,7 +1626,7 @@ Giuseppe De Laurentis
   &lt;div style=&#34;width:43%; font-size: 14pt; float: left; display: inline-block; margin-left:-12mm;&#34;&gt;
        Subtraction &lt;br&gt; &lt;span style=&#34;font-size: 12pt; color: green;&#34;&gt; Pikelner, Pedron, Guadagni, Magnea, van Hameren, Vicini, $\dots$&lt;/span&gt; &lt;br&gt;
        Renomalization / $\gamma^5$-schemes &lt;br&gt; &lt;span style=&#34;font-size: 12pt; color: green;&#34;&gt; Gracey, Heinrich, Weißwange, Kühler, Stöckinger$\dots$&lt;/span&gt; &lt;br&gt;
-       Feynman Integrals &lt;br&gt; &lt;span style=&#34;font-size: 12pt; color: green;&#34;&gt; Chaubey, Behring, Nega, Jones, Page, Broadhurst, $\dots$ &lt;span&gt;
+       Feynman Integrals &lt;br&gt; &lt;span style=&#34;font-size: 12pt; color: green; margin-left:-10mm; margin-right: -10mm;&#34;&gt; Chaubey, Behring, Nega, Jones, Zoia, Banik, Page, Broadhurst, $\dots$ &lt;span&gt;
   &lt;/div&gt;
   &lt;div style=&#34;width:33%; font-size: 14pt; float: right; display: inline-block; margin-right:-10mm;&#34;&gt;
        Three / Four / Five Loops  &lt;br&gt; &lt;span style=&#34;font-size: 12pt; color: green;&#34;&gt; Bluemlein, Yang, Moch, Schönwald, Maier, $\dots$ &lt;/span&gt; &lt;br&gt;
@@ -1666,7 +1666,7 @@ Giuseppe De Laurentis
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
-     $\circ\,$ High-multiplicity two-loop amplitudes required because:
+     $\circ\,$ High-multiplicity two-loop amplitudes required also because:
 &lt;/div&gt; &lt;br&gt;
 &lt;div style=&#34;display:block; width:100%;margin-top:0mm;&#34;&gt;
   &lt;div style=&#34;width:100%; font-size: 16pt; float: left; text-align: left; &#34;&gt;
@@ -1680,7 +1680,7 @@ Giuseppe De Laurentis
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 25mm;&#34;&gt; Status of Two-Loop Five-Point Amplitudes &lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Status of Two-Loop Five-Point Amplitudes &lt;/b&gt;&lt;/p&gt;
 &lt;style&gt;
     table {
         width: 100%;
@@ -1704,7 +1704,7 @@ Giuseppe De Laurentis
           border-bottom: 2px double black; /* Adjust the width and color as needed */
     }
 &lt;/style&gt;
-&lt;div style=&#34;max-width: 800px; margin: 0 auto;&#34;&gt;
+&lt;div style=&#34;max-width: 800px; margin: 0 auto; margin-top:-4mm;&#34;&gt;
 &lt;table&gt;
     &lt;thead&gt;
         &lt;tr&gt;
@@ -1739,31 +1739,31 @@ Giuseppe De Laurentis
             &lt;td&gt;$pp \rightarrow jjj$&lt;/td&gt;
             &lt;td&gt;[11$^\dagger$, &lt;b&gt;12&lt;/b&gt;, &lt;b&gt;13&lt;/b&gt;, &lt;b&gt;14&lt;/b&gt;]&lt;/td&gt;
             &lt;td&gt;[11$^\dagger$,&lt;b&gt;14&lt;/b&gt;]&lt;/td&gt;
-            &lt;td&gt;[15$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
+            &lt;td&gt;[15$\kern-2.2mm\phantom{x}^\dagger$, 16$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr class=&#34;double-line&#34;&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;$pp \rightarrow Wb\bar b$&lt;/td&gt;
-            &lt;td&gt;[16$\kern-2.2mm\phantom{x}^\dagger$, 17$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
+            &lt;td&gt;[17$\kern-2.2mm\phantom{x}^\dagger$, 18$\kern-2.2mm\phantom{x}^{\dagger\ast}$, 19a$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
             &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;[18$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
+            &lt;td&gt;[19a$\kern-2.2mm\phantom{x}^\dagger$, 19b$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;$pp \rightarrow Hb\bar b$&lt;/td&gt;
-            &lt;td&gt;[19$^{\dagger\ast}$]&lt;/td&gt;
+            &lt;td&gt;[20$^{\dagger\ast}$]&lt;/td&gt;
             &lt;td&gt;&lt;/td&gt;
             &lt;td&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;$pp \rightarrow Wj\gamma$&lt;/td&gt;
-            &lt;td&gt;[20$^\star$]&lt;/td&gt;
+            &lt;td&gt;[21$^\star$]&lt;/td&gt;
             &lt;td&gt;&lt;/td&gt;
             &lt;td&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td&gt;$pp \rightarrow Wjj$&lt;/td&gt;
-            &lt;td&gt;[16$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
+            &lt;td&gt;[17$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
             &lt;td&gt;&lt;/td&gt;
             &lt;td&gt;&lt;/td&gt;
         &lt;/tr&gt;
@@ -1773,15 +1773,15 @@ Giuseppe De Laurentis
             &lt;td&gt;$pp \rightarrow ttH$&lt;/td&gt;
             &lt;td&gt;&lt;/td&gt;
             &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;[21]&lt;/td&gt;
+            &lt;td&gt;[22]&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
         &lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 14pt; float: center; margin-top: 2mm; margin-bottom: 4mm;&#34;&gt;
-Legend: &lt;b&gt;bold&lt;/b&gt; = full color; $\star$ = planar $\neq$ leading color; $\dagger$ = planar = leading color; $\ast$ = ($y_b \neq 0$, $m_b = 0$)
+&lt;div style=&#34;font-size: 14pt; float: center; margin-top: 2mm; margin-bottom: 3mm;&#34;&gt;
+Legend: &lt;b&gt;bold&lt;/b&gt; = full color; $\star$ = planar $\neq$ leading color; $\dagger$ = planar = leading color; $\ast$ = ($y_b \neq 0$, $m_b = 0; \text{or } W-\text{onshell}$)
 &lt;/div&gt;&lt;br&gt;
 &lt;style&gt;
     .two-col {
@@ -1797,31 +1797,32 @@ Legend: &lt;b&gt;bold&lt;/b&gt; = full color; $\star$ = planar $\neq$ leading co
         text-align: center;
     }
 &lt;/style&gt;
-&lt;div class=&#34;two-col&#34; style=&#34;margin-top:-16mm; margin-left:-12mm;margin-right:-12mm;&#34;&gt;
+&lt;div class=&#34;two-col&#34; style=&#34;margin-top:-12mm; margin-left:-12mm;margin-right:-12mm;&#34;&gt;
     &lt;div class=&#34;column&#34;&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1762583&#34; style=&#34;font-size: 13pt;&#34;&gt;[1] Chawdhry, Czakon, Mitov, Poncelet &#39;19&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1827330&#34; style=&#34;font-size: 13pt;&#34;&gt;[3] Abreu, Page, Pascual, Sotnikov &#39;20&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2663067&#34; style=&#34;font-size: 13pt;&#34;&gt;[5] Abreu, GDL, Ita, Klinkert, Page, Sotnikov &#39;23&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1850624&#34; style=&#34;font-size: 13pt;&#34;&gt;[7] Chawdhry, Czakon, Mitov, Poncelet &#39;21&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1862813&#34; style=&#34;font-size: 13pt;&#34;&gt;[9] Agarwal, Buccioni, von Manteuffel, Tancredi &#39;21&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1849070&#34; style=&#34;font-size: 13pt;&#34;&gt;[11] Abreu, Febres Cordero, Ita, Page, Sotnikov&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2723256&#34; style=&#34;font-size: 13pt;&#34;&gt;[13] GDL, Ita, Klinkert, Sotnikov &#39;23&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1868437&#34; style=&#34;font-size: 13pt;&#34;&gt;[15] Czakon, Mitov, Poncelet &#39;21&#39;&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;jj - xsection LC ---&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1844767&#34; style=&#34;font-size: 13pt;&#34;&gt;[17] Badger, Hartanto, Zoia &#39;21&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Wbb---&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1896584&#34; style=&#34;font-size: 13pt;&#34;&gt;[19] Badger, Hartanto, Kryś, Zoia &#39;21&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Hbb---&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2165654&#34; style=&#34;font-size: 13pt;&#34;&gt;[21] Catani, Devoto, Grazzini, Kallweit, Mazzitelli, Savoini &#39;22&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Hbb---&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1762583&#34; style=&#34;font-size: 13pt;&#34;&gt;[1] Chawdhry, Czakon, Mitov, Poncelet &#39;19&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1827330&#34; style=&#34;font-size: 13pt;&#34;&gt;[3] Abreu, Page, Pascual, Sotnikov &#39;20&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2663067&#34; style=&#34;font-size: 13pt;&#34;&gt;[5] Abreu, GDL, Ita, Klinkert, Page, Sotnikov &#39;23&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1850624&#34; style=&#34;font-size: 13pt;&#34;&gt;[7] Chawdhry, Czakon, Mitov, Poncelet &#39;21&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1862813&#34; style=&#34;font-size: 13pt;&#34;&gt;[9] Agarwal, Buccioni, von Manteuffel, Tancredi &#39;21&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1849070&#34; style=&#34;font-size: 13pt;&#34;&gt;[11] Abreu, Febres Cordero, Ita, Page, Sotnikov&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2723256&#34; style=&#34;font-size: 13pt;&#34;&gt;[13] GDL, Ita, Klinkert, Sotnikov &#39;23&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1868437&#34; style=&#34;font-size: 13pt;&#34;&gt;[15] Czakon, Mitov, Poncelet &#39;21&#39;&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;jjj - xsection LC ---&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1944964&#34; style=&#34;font-size: 13pt;&#34;&gt;[17] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov &#39;21&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Wjj---&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2077368&#34; style=&#34;font-size: 13pt;&#34;&gt;[19a, &lt;/a&gt;&lt;a href=&#34;https://inspirehep.net/literature/2148214&#34; style=&#34;font-size: 13pt;&#34;&gt; 19b] Hartanto, Poncelet, Popescu, Zoia &#39;22&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Wbb-xsection---&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2008918&#34; style=&#34;font-size: 13pt;&#34;&gt;[21] Badger, Hartanto, Kryś, Zoia &#39;22&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Wjy---&gt;  
     &lt;/div&gt;
     &lt;div class=&#34;column&#34; style=&#34;margin-left:-5mm;&#34;&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1822188&#34; style=&#34;font-size: 13pt;&#34;&gt;[2] Kallweit, Sotnikov, Wiesemann &#39;20&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1838380&#34; style=&#34;font-size: 13pt;&#34;&gt;[4] Chawdhry, Czakon, Mitov, Poncelet &#39;20&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1844579&#34; style=&#34;font-size: 13pt;&#34;&gt;[6] Agarwal, Buccioni, von Manteuffel, Tancredi &#39;21&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1863379&#34; style=&#34;font-size: 13pt;&#34;&gt;[8] Chawdhry, Czakon, Mitov, Poncelet &#39;21&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2651109&#34; style=&#34;font-size: 13pt;&#34;&gt;[10] Badger, Czakon, Hartanto, Moodie, Peraro, Poncelet, Zoia &#39;23&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2723232&#34; style=&#34;font-size: 13pt;&#34;&gt;[12] Agarwal, Buccioni, Devoto, Gambuti, von Manteuffel, Tancredi &#39;23&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2728739&#34; style=&#34;font-size: 13pt;&#34;&gt;[14] GDL, Ita, Sotnikov &#39;23&lt;/a&gt;&lt;/p&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1944964&#34; style=&#34;font-size: 13pt;&#34;&gt;[16] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov &#39;21&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Wjj---&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2077368&#34; style=&#34;font-size: 13pt;&#34;&gt;[18] Hartanto, Poncelet, Popescu, Zoia &#39;22&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Wbb-xsection---&gt;
-        &lt;p style=&#34;margin-bottom:-3mm; margin-top:-3mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2008918&#34; style=&#34;font-size: 13pt;&#34;&gt;[20] Badger, Hartanto, Kryś, Zoia &#39;22&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Wjy---&gt;  
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1822188&#34; style=&#34;font-size: 13pt;&#34;&gt;[2] Kallweit, Sotnikov, Wiesemann &#39;20&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1838380&#34; style=&#34;font-size: 13pt;&#34;&gt;[4] Chawdhry, Czakon, Mitov, Poncelet &#39;20&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1844579&#34; style=&#34;font-size: 13pt;&#34;&gt;[6] Agarwal, Buccioni, von Manteuffel, Tancredi &#39;21&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1863379&#34; style=&#34;font-size: 13pt;&#34;&gt;[8] Chawdhry, Czakon, Mitov, Poncelet &#39;21&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2651109&#34; style=&#34;font-size: 13pt;&#34;&gt;[10] Badger, Czakon, Hartanto, Moodie, Peraro, Poncelet, Zoia &#39;23&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2723232&#34; style=&#34;font-size: 13pt;&#34;&gt;[12] Agarwal, Buccioni, Devoto, Gambuti, von Manteuffel, Tancredi &#39;23&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2728739&#34; style=&#34;font-size: 13pt;&#34;&gt;[14] GDL, Ita, Sotnikov &#39;23&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2058537&#34; style=&#34;font-size: 13pt;&#34;&gt;[16] Chen, Gehrmann, Glover, Huss, Marcoli &#39;22&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1844767&#34; style=&#34;font-size: 13pt;&#34;&gt;[18] Badger, Hartanto, Zoia &#39;21&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Wbb---&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1896584&#34; style=&#34;font-size: 13pt;&#34;&gt;[20] Badger, Hartanto, Kryś, Zoia &#39;21&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Hbb---&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2165654&#34; style=&#34;font-size: 13pt;&#34;&gt;[22] Catani, Devoto, Grazzini, Kallweit, Mazzitelli, Savoini &#39;22&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Hbb---&gt;
     &lt;/div&gt;     
 &lt;/div&gt;
 &lt;hr&gt;
@@ -2071,9 +2072,57 @@ $\circ$ The SLC cut-hierarchy is significantly larger than the LC one, e.g.
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;based on: &lt;br&gt;
 &lt;a href=&#34;https://arxiv.org/abs/2203.04269&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GDL, Page (JHEP 12 (2022) 140)&lt;/a&gt;&lt;/p&gt;
+&lt;!---
+---
+
+&lt;b style=&#34;font-variant: small-caps; font-size: 33pt;&#34;&gt; Flavors of Analytic Reconstruction  &lt;/b&gt;
+
+&lt;div style=&#34;float:left; font-size: x-large; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
+     $\circ$ Two distinct but related reconstruction problems:
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;display:block; width:100%; margin-top: 2mm; margin-bottom: 0mm; margin-left: 0mm; margin-right: 0mm;&#34;&gt;
+     &lt;div style=&#34;width:50%; float: left; text-align: center; font-size: x-large;  margin-top: 0mm;&#34;&gt;
+          $\star$ individual functions &lt;br&gt;
+          &lt;span style=&#34;font-size: 15pt;&#34;&gt; see tomorrow&#39;s talk by &lt;span style=&#34;color: green; &#34;&gt; Chawdhry &lt;/span&gt; &lt;br&gt;&lt;br&gt;
+          Eventually have to face this. &lt;/span&gt; 
+     &lt;/div&gt;
+     &lt;div style=&#34;width:50%; float: right; text-align: center; font-size: x-large; margin-top: 0mm;&#34;&gt;
+          $\star$ functions within vector spaces &lt;br&gt;
+          &lt;span style=&#34;font-size: 15pt;&#34;&gt; see tomorrow&#39;s talk by &lt;span style=&#34;color: green; &#34;&gt; Liu &lt;/span&gt; &lt;br&gt;&lt;br&gt;
+          &lt;p style=&#34;margin-top:-4mm; font-size: 15pt;&#34;&gt;
+          Relations + choice of basis &lt;br&gt;   
+          help the reconstruction &lt;/p&gt;
+          &lt;/span&gt; 
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;div style=&#34;float:left; font-size: x-large; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
+     $\circ$ Two main approaches to analytic reconstruction
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;display:block; width:100%; margin-top: 2mm; margin-bottom: 0mm; margin-left: 0mm; margin-right: 0mm;&#34;&gt;
+     &lt;div style=&#34;width:50%; float: left; text-align: center; font-size: x-large; margin-top: 0mm;&#34;&gt;
+          $\star$ interpolation &lt;br&gt;
+          &lt;span style=&#34;font-size: 15pt;&#34;&gt; 
+          No Gaussian elimination required; &lt;br&gt;
+          but not clear how to handle redundant variables
+          &lt;/span&gt; 
+	&lt;/div&gt;
+     &lt;div style=&#34;width:50%; float: right; text-align: center; font-size: x-large;  margin-top: 0mm;&#34;&gt;
+          $\star$ Ansatzing &lt;br&gt;
+          &lt;span style=&#34;font-size: 15pt;&#34;&gt;
+          Requires Gaussian elimination; &lt;br&gt;
+          but works with redundant variables
+          &lt;/span&gt; 
+     &lt;/div&gt;
+&lt;/div&gt;
+---&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 33pt;&#34;&gt; Fieds of Fractions of Polynomial Quotient Rings  &lt;/b&gt;&lt;/p&gt;
-&lt;div style=&#34;display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: -4mm; margin-right: -4mm;&#34;&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 33pt; margin-bottom: 10mm;&#34;&gt; Fieds of Fractions of Polynomial Quotient Rings  &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;display:block; width:100%; margin-top: 10mm; margin-bottom: 0mm; margin-left: -4mm; margin-right: -4mm;&#34;&gt;
      &lt;div style=&#34;font-size: x-large; width:50%; float: left; text-align: center; display: inline-block; margin-top: 3mm;&#34;&gt;
 	     &lt;div style=&#34;font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
                $\circ$ Starting from polynomials, we have
@@ -2170,7 +2219,7 @@ $\circ$ The SLC cut-hierarchy is significantly larger than the LC one, e.g.
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: 3mm&#34;&gt;
-     &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Partial Fraction Decompositions &lt;/b&gt;
+     &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Multivariate Partial Fraction Decompositions &lt;/b&gt;
      &lt;p style=&#34;margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;&#34;&gt;
      (i.e. what happens at codimension greater than one)
      &lt;/p&gt;
@@ -2241,9 +2290,12 @@ $\circ$ The SLC cut-hierarchy is significantly larger than the LC one, e.g.
 
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h1 id=&#34;analytic-reconstruction&#34;&gt;Analytic Reconstruction&lt;/h1&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;also based on: &lt;br&gt;
-GDL, Ita, Page, Sotnikov (to appear)&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: 16pt;&#34;&gt; see also tomorrow&amp;rsquo;s talks by &lt;span style=&#34;color: green; &#34;&gt; Chawdhry &lt;/span&gt; and &lt;span style=&#34;color: green; &#34;&gt; Liu &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-top:13mm; font-size: 16pt;&#34;&gt;
+also based on: &lt;br&gt;
+GDL, Ita, Page, Sotnikov (to appear)
+&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Vector Spaces of Rational Functions &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
@@ -2275,7 +2327,7 @@ GDL, Ita, Page, Sotnikov (to appear)&lt;/p&gt;
      $$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 0mm;&#34;&gt;
-     $\phantom{\circ}\,$ i.e., the &lt;span style=&#34;color: red&#34;&gt;pole residues are correlated&lt;/span&gt;, build linear combinations that &lt;i&gt; &#39;&#39;remove the overlap&#39;&#39; &lt;/i&gt;
+     $\phantom{\circ}\,$ i.e., the &lt;span style=&#34;color: red&#34;&gt;pole residues are correlated&lt;/span&gt;, build linear combinations that &lt;i&gt; de-correlate&lt;/i&gt; them
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large; margin-bottom: -2mm;&#34;&gt; De-correlating the Residues &lt;/b&gt;&lt;/p&gt;
@@ -2361,10 +2413,10 @@ p(z)-adic expansion - Fontana, Peraro (&#39;23)$\phantom{; }$
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Quarks from Gluons &lt;/b&gt;
 &lt;br&gt;&lt;/p&gt;
-&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 2mm;&#34;&gt;
      $\circ$ Checking whether a rational function belongs to a given vector space
 &lt;/div&gt;
-&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -2mm; margin-bottom: -2mm;&#34;&gt;
      $$
      r_{\text{guess}} \stackrel{?}{\in} \text{span}_{FF(R_5), \mathbb{Q}}(r_{i})
      $$
@@ -2376,7 +2428,7 @@ p(z)-adic expansion - Fontana, Peraro (&#39;23)$\phantom{; }$
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
      $\circ$ The vector space has uniform mass dimension and phase weights, which depend on helicities
 &lt;/div&gt;
-&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
      $$
      |i⟩ \rightarrow t^{1/2}|i⟩, \; |i] \rightarrow t^{1/2}|i] \quad \forall \; i \quad \text{and} \quad
      |i⟩ \rightarrow t|i⟩, \; |i] \rightarrow \frac{1}{t}|i]
@@ -2385,12 +2437,19 @@ p(z)-adic expansion - Fontana, Peraro (&#39;23)$\phantom{; }$
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
      $\circ$ Rescale gluon amplitudes in a way reminiscent of supersymmetry Ward identities
 &lt;/div&gt;
-&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+&lt;a style=&#34;font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm;&#34; href=https://inspirehep.net/literature/1247066&gt;
+     Elvang, Huang &#39;13 $\;$ 
+&lt;/a&gt;
+&lt;p style=&#34;font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm&#34;&gt;
+     see e.g. $\;$
+&lt;/p&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: x-large; margin-top: -10mm; margin-bottom: 0mm;&#34;&gt;
      $$
      \tilde{r}^{-}_{73}(q^+,q^-,g^+,g^+,g^-) = \frac{[14]⟨25⟩⟨45⟩}{⟨24⟩[24]⟨34⟩^2} = \frac{⟨14⟩}{⟨24⟩} \underbrace{\frac{[14]⟨25⟩⟨45⟩}{⟨14⟩[24]⟨34⟩^2}}_{r^{--}_{18}(g^+,g^-,g^+,g^+,g^-)}
      $$
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 2mm;&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 0mm;&#34;&gt;
      $\circ$ We obtain most (50% of 2q3g and 90% of 4q1g) quarks functions this way.
 &lt;/div&gt;
 &lt;/section&gt;
@@ -2421,13 +2480,12 @@ $\phantom{\circ}\,$ from the point of view of the coefficients, this is closer t
 &lt;/div&gt;
 &lt;br&gt;
 &lt;div style=&#34;display:block; width:100%; font-size: 16pt; margin-top: -5mm; margin-bottom: 4mm;&#34;&gt;
-     &lt;div style=&#34;width:50%; text-align: left; float: left; display: font-size: x-large;&#34;&gt;
-          $\circ$ The  Ansatz size grows quickly with &lt;br&gt; multiplicity (m) and mass dimension (d): &lt;br&gt;&lt;br&gt;
-          $\displaystyle \kern40mm \small \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)$ &lt;br&gt;&lt;br&gt;
-          is a lower bound. &lt;br&gt;
-          &lt;a style=&#34;font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -5mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/2010.14525&gt;
+     &lt;div style=&#34;width:50%; text-align: left; float: left; display: font-size: x-large; margin-top:8mm;&#34;&gt;
+          $\circ$ The LCD Ansatz size grows quickly with &lt;br&gt; multiplicity (m) and mass dimension (d): &lt;br&gt;&lt;br&gt;
+          &lt;a style=&#34;font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -8mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/2010.14525&gt;
                GDL, Maître (&#39;20)
-          &lt;/a&gt;
+          &lt;/a&gt; &lt;br&gt;
+          $\displaystyle \kern20mm \text{Ansatz size} \geq \small \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)$ &lt;br&gt;
      &lt;/div&gt;
      &lt;div style=&#34;width:50%; float: right; display: inline-block;&#34;&gt;
           &lt;img src=&#34;AnsatzSizes.png&#34;; style=&#34;max-width:440px;float:center;border:none;margin-top:-10pt;margin-bottom: 0mm;&#34;&gt;
@@ -2435,7 +2493,7 @@ $\phantom{\circ}\,$ from the point of view of the coefficients, this is closer t
 &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
-$\circ\,$ We can still achieve compact results, e.g. for the new 2-loop pole, $⟨k|j|p\mkern-7.5mu/_V|l|k]-⟨j|i|p\mkern-7.5mu/_V|l|j]$
+$\circ\,$ We can still achieve compact results, e.g. for the new (spurious?) 2-loop pole, $⟨k|j|p\mkern-7.5mu/_V|l|k]-⟨j|i|p\mkern-7.5mu/_V|l|j]$
 $$r^{(5 \text{ of } 54)}_{\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{[12][23]⟨24⟩⟨46⟩^2⟨1|2+3|4]⟨2|1+3|4]}{⟨12⟩⟨23⟩⟨56⟩(⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2])^2}$$
 &lt;/div&gt;
 &lt;hr&gt;
@@ -2465,7 +2523,6 @@ $\circ\,$ In general results are much more complicated, but we can retain contro
 $$ 
 \begin{alignedat}{2}
 &amp; r^{(139 \text{ of } 139)}_{\bar{u}^+g^+g^-d^-(V\rightarrow \ell^+ \ell^-)} = &amp; \qquad\qquad &amp; \text{Variety (scheme?) to isolate term(s)} \\[2mm]
-&amp; \frac{-7/8⟨16⟩⟨1|2+3|5]⟨3|1+4|2](s_{13}-s_{24} )(s_{123}-s_{234})}{⟨14⟩⟨1|2+3|4]^2⟨2|1+4|3]Δ_{14|23|56}} &amp; \qquad\qquad &amp; \Big\langle ⟨1|2+3|4]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
 &amp; +\frac{7/4(s_{24}-s_{13})⟨6|1+4|5]s_{123}(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]^2 Δ_{14|23|56}} &amp; \qquad\qquad &amp; \Big\langle ⟨2|1+4|3]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
 &amp; -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} &amp; \qquad\qquad &amp; \Big\langle Δ_{14|23|56} \Big\rangle \\[1mm]
 &amp; +\frac{1/4[12]^3⟨14⟩[45]⟨46⟩}{[13][23]⟨1|2+3|1]⟨4|5+6|4]^2} &amp; \qquad\qquad &amp; \Big\langle ⟨1|2+3|1], ⟨4|5+6|4]^2 \Big\rangle \\[1mm]
@@ -2475,15 +2532,19 @@ $$
 $$
 &lt;/div&gt;
 &lt;!--- 
+&amp; \frac{-7/8⟨16⟩⟨1|2+3|5]⟨3|1+4|2](s_{13}-s_{24} )(s_{123}-s_{234})}{⟨14⟩⟨1|2+3|4]^2⟨2|1+4|3]Δ_{14|23|56}} &amp; \qquad\qquad &amp; \Big\langle ⟨1|2+3|4]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
 &amp; +\frac{7/2⟨13⟩^3[15]⟨16⟩[23]}{⟨12⟩⟨14⟩⟨1|2+3|1]⟨1|2+3|4]^2}+\frac{7/2⟨13⟩^2⟨16⟩[25]}{⟨12⟩⟨14⟩⟨1|2+3|4]^2} &amp; \qquad\qquad &amp; \Big\langle ⟨1|2+3|4] \Big\rangle \\[1mm]
 &amp; -\frac{7⟨24⟩[25][35]s_{123}}{⟨12⟩[23][56]⟨2|1+4|3]^2} &amp; \qquad\qquad &amp; \Big\langle ⟨2|1+4|3] \Big\rangle \\[1mm]
 ---&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm;&#34;&gt;
 $\circ\,$ Preliminary results (originally around 1.3GB of source code, compiled in almost 20GB of C++ binaries):
 &lt;/div&gt;
-&lt;div style=&#34;text-align: center; font-size: 16pt; margin-top: 2mm;&#34;&gt;
-$pp\rightarrow Vq\bar q : \; 120\text{KB} \; r_i, \; 500\text{KB} \; M_{ij} \qquad pp\rightarrow Vgg \text{(MHV)}: \; 170\text{KB} \; r_i, \; 33\text{KB} \; M_{ij}; $ &lt;br&gt;
-$pp\rightarrow Vgg \text{(NMHV)}: \; 13\text{MB} \; r_i, \; 1\text{MB} \; M_{ij}.$
+&lt;div style=&#34;text-align: center; font-size: 15pt; margin-top: 2mm;&#34;&gt;
+$pp\rightarrow Vq\bar q : \; 120\text{KB} \; r_i, \; 500\text{KB} \; M_{ij} \qquad pp\rightarrow Vgg\; \text{(MHV)}: \; 170\text{KB} \; r_i, \; 33\text{KB} \; M_{ij}; $ &lt;br&gt;
+$pp\rightarrow Vgg\; \text{(NMHV)}: \; 13\text{MB} \; r_i, \; 1\text{MB} \; M_{ij}.$
+&lt;/div&gt;
+&lt;div style=&#34;border: 1px solid black;  display: inline-block; text-align: center; float:center; font-size: 17pt; margin-top: 5mm;&#34;&gt;
+Compact results are still achievable, but advancements will be required to make this sustainable.
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;hr&gt;
