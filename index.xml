@@ -2199,11 +2199,11 @@ $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: x-large; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
 $$ 
-\textstyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{orange}{r_{i}(\lambda,\tilde\lambda)} \, \color{red}{h_i(\lambda\tilde\lambda)}
+\textstyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{red}{r_{i}(\lambda,\tilde\lambda)} \, \color{orange}{h_i(\lambda\tilde\lambda)}
 $$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 3mm; margin-bottom: 0mm;&#34;&gt;
-     $\circ$  Goal: reconstruct $\color{orange}{r_{i}(\lambda,\tilde\lambda)}$ from $\mathbb{F}_p$ samples
+     $\circ$  Goal: reconstruct $\color{red}{r_{i}(\lambda,\tilde\lambda)}$ from $\mathbb{F}_p$ samples
 &lt;/div&gt;
 &lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -10mm; margin-bottom: -10mm;&#34; href=https://arxiv.org/abs/1406.4513&gt;
 von Manteuffel, Schabinger (&#39;14)
