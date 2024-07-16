@@ -5,12 +5,22 @@
     <link>https://gdelaurentis.github.io/talk/</link>
       <atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2024 12:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 20 Jul 2024 16:45:00 +0000</lastBuildDate>
     <image>
       <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://gdelaurentis.github.io/talk/</link>
     </image>
+    
+    <item>
+      <title>Two-Loop Five-Point Amplitudes in the Spinor Helicity Formalism</title>
+      <link>https://gdelaurentis.github.io/talk/ichep_jul2024/</link>
+      <pubDate>Sat, 20 Jul 2024 16:45:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/ichep_jul2024/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I present recent efforts to tame the algebraic complexity of two-loop five-point scattering amplitudes in the spinor helicity formalism. These amplitudes are required, for instance, to obtain next-to-next-to-leading order predictions for the production of three jets or of a massive vector boson with two jets at the Large Hadron Collider. I review the method of numerical generalized and the integrand decomposition technique employed to generate finite-field or p-adic samples of the amplitudes. I then focus on the study of the analytic properties of the rational coefficients and their reconstruction from said numerical samples. I show how to exploit correlations among codimension-one residues to simplify the calculation. I touch upon various interdisciplinary aspects, including elements of number theory, computational algebraic geometry, constraint programming, memoization, and GPU acceleration.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Non-Planar Two-Loop Amplitudes for Five-Parton Scattering</title>

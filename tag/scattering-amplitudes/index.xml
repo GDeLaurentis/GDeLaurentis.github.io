@@ -1358,6 +1358,963 @@ $$ r^{(73 \text{ of } 120)}_{\bar{u}^+g^-g^+d^-(V\rightarrow \ell^+ \ell^-)} = \
     
     <item>
       <title></title>
+      <link>https://gdelaurentis.github.io/slides/ichep_jul2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/slides/ichep_jul2024/</guid>
+      <description>
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;particle_tracks.jpg&#34;
+  &gt;
+
+&lt;h3 style=&#34;margin-top:5mm; margin-left: -10mm; margin-right: -10mm;&#34;&gt;
+	&lt;b style=&#34;margin-top:15mm; font-size: 28pt;&#34;&gt;
+	   Two-Loop Five-Point Amplitudes &lt;br&gt;
+	   in the Spinor Helicity Formalism
+	&lt;/b&gt;
+&lt;/h3&gt;
+&lt;div style=&#34;font-size: x-large; margin-top:10mm;&#34;&gt;
+Giuseppe De Laurentis
+&lt;br&gt;
+&lt;div style=&#34;font-size: large;&#34;&gt; University of Edinburgh &lt;/div&gt;
+&lt;br&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2311.10086&#34;&gt;arXiv:2311.10086&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2311.18752&#34;&gt;arXiv:2311.18752&lt;/a&gt; &lt;div style=&#34;font-size: large; margin-bottom: 10pt;&#34;&gt; (GDL, H. Ita, M. Klinkert, V. Sotnikov) &lt;/div&gt;
+&lt;a href=&#34;https://arxiv.org/abs/24xx.xxxxx&#34;&gt;arXiv:24xx.xxxxx&lt;/a&gt; &lt;div style=&#34;font-size: large;&#34;&gt; (GDL, H. Ita, B. Page, V. Sotnikov) &lt;/div&gt;
+&lt;p&gt;ICHEP 2024
+&lt;br&gt;&lt;/p&gt;
+&lt;p style=&#34;line-height: 0.05;&#34;&gt; &lt;img src=&#34;UniEdinburghLogo-transparent.png&#34;; style=&#34;max-width:120px;float:center;border:none;margin-bottom:5mm;&#34;&gt; 
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style=&#34;font-size: 11pt;&#34;&gt;Find these slides at  &lt;a href=&#34;https://gdelaurentis.github.io/slides/fivepartons_dec2023/#/&#34;&gt;gdelaurentis.github.io/slides/ichep_jul2024&lt;/a&gt; &lt;/span&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;section&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;LHCcern.jpg&#34;
+  &gt;
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;&#34;&gt; Cross Sections at the Large Hadron Collider &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;display: flex; justify-content: center; margin-top: 0mm;&#34;&gt;
+    &lt;div style=&#34;margin: 0 10px;&#34;&gt;
+        &lt;img src=&#34;LHC_map.jpg&#34; style=&#34;max-width:480px; border:none; margin-top: 8.5mm; margin-bottom: 0mm;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;margin: 0 10px;&#34;&gt;
+        &lt;img src=&#34;ATLAS-XSections-transparent.png&#34; style=&#34;max-width:450px; border:none; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 18pt; float: left; margin-top: -2mm; margin-bottom: 4mm;&#34;&gt;
+     $\circ\,$ Observations at the LHC are beautifully predicted by the Standard Model through,
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; float: center; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+$$
+\require{color}
+\require{amsmath}
+σ_{2 \rightarrow n - 2} = \sum_{a,b} \int dx_a dx_b f_{a/h_1}(x_a, \mu_F) \, f_{b/h_2}(x_b, \mu_F) \;\hat{\sigma}_{ab\rightarrow n-2}(x_a, x_b, \mu_F, \mu_R) \, , \\
+\hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\Pi_{n-2}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R)}|^2 \, .
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; float:center; font-size: 18pt; margin-top: -3mm; margin-bottom: 4mm;&#34;&gt;
+    $\phantom{\circ}\,$ At least to the extent with which we can compute &lt;span style=&#34;font-size: 15pt&#34;&gt; $\mathcal{A} = \mathcal{A}^{(0)} + \alpha_{(s)}\mathcal{A}^{(1)} + \alpha^2_{(s)}\mathcal{A}^{(2)} + \dots$&lt;/span&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Precision Physics Requires NNLO Corrections &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; float: left; margin-top: -1mm; margin-bottom: 4mm;&#34;&gt;
+     $\circ\,$ NNLO corrections can still be large! Especially in the presence of loop-induced channels,
+&lt;/div&gt;
+&lt;div style=&#34;display:block; width:100%; margin-top:4mm;&#34;&gt;
+     &lt;div style=&#34;width:50%; float: left; display: inline-block;&#34;&gt;
+          &lt;div style=&#34;width:100%; font-size: 14pt; float: centre; text-align: centre; margin-top:12mm; &#34;&gt;
+              $\sigma^{\text{NNLO}}_{pp\rightarrow \gamma\gamma\gamma}$
+          &lt;/div&gt;
+          &lt;img src=&#34;1911.00479.crosssection.png&#34;; style=&#34;max-width:450px;float:center;border:none;margin-top:0px;margin-bottom:-5mm;&#34;&gt;
+          &lt;a style=&#34;font-size: 12pt; text-align: center; float: center; margin-top: -10mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/1911.00479&gt;
+               Chawdhry, Czakon, Mitov, Poncelet (&#39;19)
+          &lt;/a&gt;
+      &lt;/div&gt;
+     &lt;div style=&#34;width:50%; float: center; display: inline-block;&#34;&gt;
+          &lt;div style=&#34;width:100%; font-size: 14pt; float: centre; text-align: centro; &#34;&gt;
+              $d\sigma^{\text{NNLO}}_{pp\rightarrow W(\rightarrow \ell\nu)\gamma}/dy_\gamma$
+          &lt;/div&gt; 
+          &lt;img src=&#34;NNLODifferential.png&#34;; style=&#34;max-width:360px;float:center;border:none;margin-top:0px;margin-bottom: -10mm;&#34;&gt; &lt;br&gt;
+          &lt;a style=&#34;font-size: 12pt; text-align: center; float: center; margin-top: -15mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/2105.00954&gt;
+               Campbell, GDL, Ellis, Seth (&#39;21)
+          &lt;/a&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; float: left; margin-top: 0mm; margin-bottom: -2mm;&#34;&gt;
+     $\circ\,$ High-multiplicity two-loop amplitudes required also because:
+&lt;/div&gt; &lt;br&gt;
+&lt;div style=&#34;display:block; width:100%;margin-top:-2mm;&#34;&gt;
+  &lt;div style=&#34;width:100%; font-size: 16pt; float: left; text-align: left; &#34;&gt;
+       $\qquad\star$ At high energy, some radiation is more likely than no radiation (captured by resummation);
+  &lt;/div&gt;
+  &lt;div style=&#34;width:100%; font-size: 16pt; float: left; text-align: left; &#34;&gt;
+       $\qquad\star$ As real-virtual-virtual contributions to emerging N$^{3}$LO computations;
+  &lt;/div&gt;
+  &lt;div style=&#34;width:100%; font-size: 16pt; float: left; text-align: left; &#34;&gt;
+       $\qquad\star$ Many interesting kinematic regions are only accessible with extra radiation (e.g. $p_T$ distributions).
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Status of Two-Loop Five-Point Amplitudes &lt;/b&gt;&lt;/p&gt;
+&lt;style&gt;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 3px;
+        text-align: center !important;
+    }
+    th {
+        font-size: 18px; /* Adjust the font size for table headers */
+    }
+    td {
+        font-size: 15px; /* Adjust the font size for table data */
+    }
+    tr:last-child td {
+        border-bottom: 1px solid black; /* Add border to bottom of last row */
+    }
+    .double-line { 
+          border-bottom: 2px double black; /* Adjust the width and color as needed */
+    }
+&lt;/style&gt;
+&lt;div style=&#34;max-width: 800px; margin: 0 auto; margin-top:-4mm; width: 90%; height: 90%;&#34;&gt;
+&lt;table style=&#34;width: 90%; height: 80%; border-collapse: collapse;&#34;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Process&lt;/th&gt;
+            &lt;th&gt;Analytical Amplitudes&lt;/th&gt;
+            &lt;th&gt;Numerical Codes&lt;/th&gt;
+            &lt;th&gt;Cross Sections&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr class=&#34;double-line&#34;&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;$pp \rightarrow \gamma\gamma\gamma$&lt;/td&gt;
+            &lt;td&gt;[3$\kern-2.2mm\phantom{x}^\star$, 4$\kern-2.2mm\phantom{x}^\star$, &lt;b&gt;5&lt;/b&gt;]&lt;/td&gt;
+            &lt;td&gt;[3$\kern-2.2mm\phantom{x}^\star$, &lt;b&gt;5&lt;/b&gt;]&lt;/td&gt;
+            &lt;td&gt;[1$\kern-2.2mm\phantom{x}^\star$, 2$\kern-2.2mm\phantom{x}^\star$]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;$pp \rightarrow \gamma\gamma j$&lt;/td&gt;
+            &lt;td&gt;[6$\kern-2.2mm\phantom{x}^\dagger$, 7$\kern-2.2mm\phantom{x}^\dagger$, &lt;b&gt;9&lt;/b&gt;]&lt;/td&gt;
+            &lt;td&gt;[6$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
+            &lt;td&gt;[8$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;$pp \rightarrow \gamma jj$&lt;/td&gt;
+            &lt;td&gt;[&lt;b&gt;10&lt;/b&gt;]&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;[&lt;b&gt;10&lt;/b&gt;]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;$pp \rightarrow jjj$&lt;/td&gt;
+            &lt;td&gt;[11$^\dagger$, &lt;b&gt;12&lt;/b&gt;, &lt;b&gt;13&lt;/b&gt;, &lt;b&gt;14&lt;/b&gt;]&lt;/td&gt;
+            &lt;td&gt;[11$^\dagger$,&lt;b&gt;14&lt;/b&gt;]&lt;/td&gt;
+            &lt;td&gt;[15$\kern-2.2mm\phantom{x}^\dagger$, 16$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&#34;double-line&#34;&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;$pp \rightarrow Wb\bar b$&lt;/td&gt;
+            &lt;td&gt;[17$\kern-2.2mm\phantom{x}^\dagger$, 18$\kern-2.2mm\phantom{x}^{\dagger\ast}$, 19a$\kern-2.2mm\phantom{x}^\dagger$, 23$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
+            &lt;td&gt;[23$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
+            &lt;td&gt;[19a$\kern-2.2mm\phantom{x}^\dagger$, 19b$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;$pp \rightarrow Hb\bar b$&lt;/td&gt;
+            &lt;td&gt;[20$^{\dagger\ast}$]&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;$pp \rightarrow Wj\gamma$&lt;/td&gt;
+            &lt;td&gt;[21$^\star$]&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;$pp \rightarrow Wjj$&lt;/td&gt;
+            &lt;td&gt;[17$\kern-2.2mm\phantom{x}^\dagger$, 23$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
+            &lt;td&gt;[23$\kern-2.2mm\phantom{x}^\dagger$]&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&#34;double-line&#34;&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;$pp \rightarrow t\bar tH$&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;[22]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 14pt; float: center; margin-top: 2mm; margin-bottom: 3mm; &#34;&gt;
+Legend: &lt;b&gt;bold&lt;/b&gt; = full color; $\star$ = planar $\neq$ leading color; $\dagger$ = planar = leading color; $\ast$ = ($y_b \neq 0$, $m_b = 0; \text{or } W-\text{onshell}$)
+&lt;/div&gt;&lt;br&gt;
+&lt;style&gt;
+    .two-col {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .column {
+        flex: 1;
+        width: 50%;
+        padding: 1px;
+        margin: 0 1px;
+        text-align: center;
+    }
+&lt;/style&gt;
+&lt;div class=&#34;two-col&#34; style=&#34;margin-top:-14mm; margin-left:-12mm;margin-right:-12mm;&#34;&gt;
+    &lt;div class=&#34;column&#34;&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1762583&#34; style=&#34;font-size: 12pt;&#34;&gt;[1] Chawdhry, Czakon, Mitov, Poncelet &#39;19&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1827330&#34; style=&#34;font-size: 12pt;&#34;&gt;[3] Abreu, Page, Pascual, Sotnikov &#39;20&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2663067&#34; style=&#34;font-size: 12pt;&#34;&gt;[5] Abreu, &lt;span style=&#34;color: green; font-weight: bold;&#34;&gt;GDL&lt;/span&gt;, Ita, Klinkert, Page, Sotnikov &#39;23&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1850624&#34; style=&#34;font-size: 12pt;&#34;&gt;[7] Chawdhry, Czakon, Mitov, Poncelet &#39;21&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1862813&#34; style=&#34;font-size: 12pt;&#34;&gt;[9] Agarwal, Buccioni, von Manteuffel, Tancredi &#39;21&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1849070&#34; style=&#34;font-size: 12pt;&#34;&gt;[11] Abreu, Febres Cordero, Ita, Page, Sotnikov&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2723256&#34; style=&#34;font-size: 12pt;&#34;&gt;[13] &lt;span style=&#34;color: green; font-weight: bold;&#34;&gt;GDL&lt;/span&gt;, Ita, Klinkert, Sotnikov &#39;23&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1868437&#34; style=&#34;font-size: 12pt;&#34;&gt;[15] Czakon, Mitov, Poncelet &#39;21&#39;&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;jjj - xsection LC ---&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1944964&#34; style=&#34;font-size: 12pt;&#34;&gt;[17] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov &#39;21&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Wjj---&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2077368&#34; style=&#34;font-size: 12pt;&#34;&gt;[19a, &lt;/a&gt;&lt;a href=&#34;https://inspirehep.net/literature/2148214&#34; style=&#34;font-size: 12pt;&#34;&gt; 19b] Hartanto, Poncelet, Popescu, Zoia &#39;22&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Wbb-xsection---&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2008918&#34; style=&#34;font-size: 12pt;&#34;&gt;[21] Badger, Hartanto, Kryś, Zoia &#39;22&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Wjy---&gt;  
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/&#34; style=&#34;font-size: 12pt;&#34;&gt;[23] &lt;span style=&#34;color: green; font-weight: bold;&#34;&gt;GDL&lt;/span&gt;, Ita, Page, Sotnikov - To appear &#39;24 &lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Wjy---&gt;  
+    &lt;/div&gt;
+    &lt;div class=&#34;column&#34; style=&#34;margin-left:-5mm;&#34;&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1822188&#34; style=&#34;font-size: 12pt;&#34;&gt;[2] Kallweit, Sotnikov, Wiesemann &#39;20&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1838380&#34; style=&#34;font-size: 12pt;&#34;&gt;[4] Chawdhry, Czakon, Mitov, Poncelet &#39;20&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1844579&#34; style=&#34;font-size: 12pt;&#34;&gt;[6] Agarwal, Buccioni, von Manteuffel, Tancredi &#39;21&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1863379&#34; style=&#34;font-size: 12pt;&#34;&gt;[8] Chawdhry, Czakon, Mitov, Poncelet &#39;21&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2651109&#34; style=&#34;font-size: 12pt;&#34;&gt;[10] Badger, Czakon, Hartanto, Moodie, Peraro, Poncelet, Zoia &#39;23&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2723232&#34; style=&#34;font-size: 12pt;&#34;&gt;[12] Agarwal, Buccioni, Devoto, Gambuti, von Manteuffel, Tancredi &#39;23&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2728739&#34; style=&#34;font-size: 12pt;&#34;&gt;[14] &lt;span style=&#34;color: green; font-weight: bold;&#34;&gt;GDL&lt;/span&gt;, Ita, Sotnikov &#39;23&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2058537&#34; style=&#34;font-size: 12pt;&#34;&gt;[16] Chen, Gehrmann, Glover, Huss, Marcoli &#39;22&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1844767&#34; style=&#34;font-size: 12pt;&#34;&gt;[18] Badger, Hartanto, Zoia &#39;21&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Wbb---&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/1896584&#34; style=&#34;font-size: 12pt;&#34;&gt;[20] Badger, Hartanto, Kryś, Zoia &#39;21&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Hbb---&gt;
+        &lt;p style=&#34;margin-bottom:-4mm; margin-top:-4mm;&#34;&gt;&lt;a href=&#34;https://inspirehep.net/literature/2165654&#34; style=&#34;font-size: 12pt;&#34;&gt;[22] Catani, Devoto, Grazzini, Kallweit, Mazzitelli, Savoini &#39;22&lt;/a&gt;&lt;/p&gt; &lt;!--- pp-&gt;Hbb---&gt;
+    &lt;/div&gt;     
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;Feynman-Diagrams-transparent.png&#34;
+  &gt;
+
+&lt;h1 style=&#34;margin-top: -2mm;&#34;&gt; Numerical Computation &lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 34pt; magin-bottom: -5mm;&#34;&gt; Numerical Generalized Unitarity @ 2 Loops &lt;/b&gt; &lt;br&gt;
+&lt;a style=&#34;font-size: large; text-align: center; float: center; margin-right: 0mm; margin-top: -10mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/1510.05626&gt;
+Ita (&amp;lsquo;15)
+&lt;/a&gt;
+&lt;a style=&#34;font-size: large; text-align: center; float: center; margin-left:2mm; margin-right: 0mm; margin-top: -2mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/1712.03946&gt;
+Abreu, Febres Cordero, Ita, Page, Zeng (&amp;lsquo;17)
+&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: 18pt; float: left; margin-bottom: 0mm; margin-top: 2mm;&#34;&gt;
+$\circ$ The integrand Ansatz is matched to products of trees on cuts
+&lt;/div&gt;
+&lt;div style=&#34;display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;&#34;&gt;
+     &lt;div style=&#34;font-size: 16pt; width:75%; float: left; text-align: center; display: inline-block; margin-top: 3mm;&#34;&gt;
+	     $$
+	     \require{color}
+	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell)\big|_{\text{cut}_{\Gamma}} = \sum_{\substack{\Gamma&#39; \ge \Gamma, \\ i \in M_\Gamma&#39; \cup S_\Gamma&#39;}} \kern-2mm {\color{red}{c_{\,\Gamma&#39;,i}(\lambda, \tilde\lambda)}} \, \frac{m_{\Gamma&#39;,i}(\lambda\tilde\lambda, \ell)}{\displaystyle \prod_{j\in P_{\Gamma&#39;} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell)}\Bigg|_{\text{cut}_\Gamma}
+	     $$
+	&lt;/div&gt;
+     &lt;div style=&#34;width:25%; float: right; display: inline-block; margin-top: -15mm;&#34;&gt;
+	     &lt;div style=&#34;font-size: x-large; width:50%; float: center; text-align: center;  display: inline-block; margin-top: 0mm;&#34;&gt;
+	     	  &lt;code&gt; C++ code &lt;/code&gt;
+	     &lt;/div&gt;&lt;br&gt;
+	     &lt;img src=&#34;CaravelLogo.png&#34;; style=&#34;max-width:150px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+	     &lt;br&gt;
+	     &lt;a style=&#34;font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;&#34;
+	     	href=https://arxiv.org/abs/2009.11957&gt;
+		&lt;div style=&#34;margin-top:0mm&#34;&gt; Abreu, Dormans, &lt;/div&gt;
+		&lt;div&gt; Febres Cordero, Ita  &lt;/div&gt;
+		&lt;div&gt; Kraus, Page, Pascual, &lt;/div&gt;
+		&lt;div&gt; Ruf, Sotnikov (&#39;20) &lt;/div&gt;
+	     &lt;/a&gt;
+	&lt;/div&gt;
+     &lt;div style=&#34;font-size: 18pt; width:75%; float: left; text-align: center; display: inline-block; margin-top: 5mm;&#34;&gt;
+	     $\star$ Numerical Berends-Giele recursion for LHS, &lt;span style= &#34;color:red&#34;&gt; solve for coeffs. in RHS. &lt;/span&gt;
+	&lt;/div&gt;
+     &lt;div style=&#34;font-size: 18pt; width:75%; float: left; text-align: center; display: inline-block; margin-top: 5mm;&#34;&gt;
+	     $\star$ IBP reduction = decomposition on RHS, $\; m_{\Gamma,i} \in M_\Gamma \cup S_\Gamma $
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; float: left; margin-bottom: 4mm; margin-top: 8mm;&#34;&gt;
+$\circ$ The SLC (non-planar) cut-hierarchy is significantly larger than the LC (planar) one, e.g.
+&lt;/div&gt;
+&lt;div&gt;
+&lt;img src=&#34;NbrOfDiagramsTable-transparent.png&#34;; style=&#34;max-width:800px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Partial Amplitudes &amp;amp; Finite Remainders &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: 18pt; float: left; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Amplitude (integrands) can be written as (for a suitable choice of master integrals)
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: 14.5pt; margin-top: 0mm;  margin-bottom: 2mm&#34;&gt;
+     $$
+     \displaystyle A(\lambda, \tilde\lambda, \ell) =
+\sum_{\substack{\Gamma,\\ i \in M_\Gamma \cup S_\Gamma}} \, c_{\,\Gamma,i}(\lambda, \tilde\lambda, \epsilon) \,		\frac{m_{\Gamma,i}(\lambda\tilde\lambda, \ell)}{\textstyle \prod_{j} \rho_{\,\Gamma,j}(\lambda\tilde\lambda, \ell)} \;\; \xrightarrow[]{\int d^D\ell} \;\; \sum_{\substack{\Gamma,\\ i \in M_\Gamma}} \frac{ \sum_{k=0}^{\text{finite}} \, {\color{red}c^{(k)}_{\,\Gamma, i}}(\lambda, \tilde\lambda) \, \epsilon^k}{\prod_j (\epsilon - a_{ij})} \, {\color{orange}I_{\Gamma, i}}(\lambda\tilde\lambda, \epsilon)
+$$  
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 14pt; float: center; margin-bottom: 5mm; margin-top: 5mm;&#34;&gt;
+     $\circ$  $\Gamma$: topologies $\quad\circ$ $M_\Gamma$: master integrands $\quad\circ$ $S_\Gamma$: surface terms 
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ &lt;u&gt;All physical information&lt;/u&gt; is contained in the &lt;i&gt;finite remainders&lt;/i&gt;, at two loops
+&lt;/div&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;&#34; href=https://inspirehep.net/literature/920274&gt;
+Weinzierl (&#39;11)
+&lt;/a&gt;
+&lt;div style=&#34;font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
+$$ 
+\underbrace{\mathcal{R}^{(2)}}_{\text{finite remainder}} = \mathcal{A}^{(2)}_R \underbrace{- \quad I^{(1)}\mathcal{A}^{(1)}_R \quad - \quad I^{(2)}\mathcal{A}^{(0)}_R}_{\text{divergent + convention-dependent finite part}} + \mathcal{O}(\epsilon)
+$$
+&lt;/div&gt;
+&lt;a style=&#34;font-size: 13pt; float:right; text-align:right; margin-top:-14mm;&#34; href=https://www.sciencedirect.com/science/article/abs/pii/S0370269398003323?via%3Dihub&gt;
+Catani (&#39;98)
+&lt;/a&gt;
+&lt;a style=&#34;font-size: 13pt; float:right; margin-top:-9mm;&#34; href=https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.102.162001&gt;
+Becher, Neubert (&#39;09)
+&lt;/a&gt;
+&lt;a style=&#34;font-size: 13pt; float:right; text-align:right; margin-top:-4mm;&#34; href=https://arxiv.org/abs/0901.1091&gt;
+Gardi, Magnea (&#39;09)
+&lt;/a&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 0mm; margin-top:0mm;&#34;&gt;
+     $\phantom{\circ}$ $\mathcal{A}^{(1)}_R$ to order $\epsilon^2$ is still needed to build $\mathcal{R}^{(2)}$, but there is no real reason to reconstruct it.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 18pt; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $\circ$ Finite remainder as a weighted sum of &lt;i&gt;pentagon functions&lt;/i&gt; &lt;a style=&#34;font-size: large; display: inline-block; text-align: right; float: right; margin-top: 0mm; margin-left: 4mm; &#34; href=https://arxiv.org/abs/2009.07803&gt; Chicherin, Sotnikov (&#39;20) &lt;/a&gt; &lt;a style=&#34;font-size: large; display: inline-block; text-align: right; float: right; margin-top: -3mm; margin-left: 4mm; &#34; href=https://arxiv.org/abs/2110.10111&gt; Chicherin, Sotnikov, Zoia (&#39;21) &lt;/a&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
+$$ 
+\textstyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{red}{r_{i}(\lambda,\tilde\lambda)} \, \color{orange}{h_i(\lambda\tilde\lambda)}
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$  Goal: reconstruct &lt;span style=&#34;font-size: 14pt&#34;&gt;$\color{red}{r_{i}(\lambda,\tilde\lambda)}$&lt;/span&gt; from numerical samples in a field $\mathbb{F}$
+&lt;/div&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -10mm; margin-bottom: -10mm; margin-right: 24mm;&#34; href=https://arxiv.org/abs/1406.4513&gt;
+$\mathbb{F}_p$: von Manteuffel, Schabinger (&#39;14); 
+&lt;/a&gt; &lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -10mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/1608.01902&gt;
+$\phantom{\mathbb{F}_p}$ Peraro (&#39;16)
+&lt;/a&gt;&lt;br&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -17mm; margin-bottom: -10mm; margin-right: 43mm;&#34; href=https://arxiv.org/abs/1406.4513&gt;
+$\mathbb{C}$: GDL, Maitre (&#39;19);
+&lt;/a&gt; &lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -16.7mm; margin-bottom: -10mm;&#34; href=https://arxiv.org/abs/1406.4513&gt;
+$\mathbb{Q}_p$: GDL, Page (&#39;22)
+&lt;/a&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section &gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;varieties-no-background.png&#34;
+  &gt;
+
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&#34;analytic--geometric-structure&#34;&gt;Analytic &amp;amp; Geometric Structure&lt;/h1&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: 18pt&#34;&gt;based on:&lt;span&gt; &lt;br&gt;
+&lt;span style=&#34;font-size: 18pt&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2203.04269&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GDL, Page (JHEP 12 (2022) 140)&lt;/a&gt;&lt;span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;div style=&#34;margin-top: 2mm; margin-bottom: 3mm&#34;&gt;
+     &lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Least Common Denominator &lt;/b&gt;
+     &lt;p style=&#34;margin-top: -2mm; margin-bottom: 2mm; font-size: 16pt;&#34;&gt;
+     (i.e. geometry at codimension one)
+     &lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 16pt; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Polynomials belong to the the covariant quotient ring of spinors,
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size:15pt; float: center; margin-top: -6mm; margin-bottom: -10mm&#34;&gt;
+     $$\displaystyle \kern10mm R_n = \mathbb{F}\big[|1⟩, [1|, \dots, |n⟩, [n|\big] \big/ \big\langle \sum_i |i⟩[i| \big\rangle$$
+&lt;/div&gt;
+&lt;div style=&#34;display:block; width:100%; margin-top: -6mm; margin-bottom: 0mm; margin-left: 0mm;&#34;&gt;
+     &lt;div style=&#34;font-size: x-large; width:60%; float: left; text-align: center; display: inline-block; margin-top: 3mm;&#34;&gt;
+	     &lt;div style=&#34;font-size: 16pt; float: left; margin-top: 4mm; margin-bottom: 1mm;&#34;&gt;
+                $\circ\,$ The rational function &lt;span style=&#34;font-size: 15pt&#34;&gt;$r_i$&lt;/span&gt; belong to the field of fractions of &lt;span style=&#34;font-size: 14pt&#34;&gt;$R_n$&lt;/span&gt;,
+          &lt;/div&gt;
+          &lt;br&gt;&lt;br&gt;
+          &lt;div style=&#34;font-size:16pt; float: center; margin-top: -3mm; margin-bottom: 0mm&#34;&gt;
+               $$
+               \displaystyle r_i(|i\rangle,[i|) = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j \mathcal{D}_j^{q_{ij}}(|i\rangle,[i|)}
+               $$
+          &lt;/div&gt;
+          &lt;div style=&#34;font-size: 16pt; float: left; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
+               $\circ\,$ The &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{D}_j$&lt;/span&gt; are related to the letters of the symbol alphabet
+          &lt;/div&gt;
+          &lt;br&gt;
+          &lt;a style=&#34;font-size: 13pt; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/1812.04586&gt;
+          Abreu, Dormans, Febres Cordero, Ita, Page (&#39;18)
+          &lt;/a&gt;
+          &lt;br&gt;
+          &lt;div style=&#34;font-size:14pt; float: center; margin-top: 1mm; margin-bottom: 0mm&#34;&gt;
+               $$
+               \displaystyle \{\mathcal{D}_{\{1,\dots,35\}}\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_5)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1] \big\}
+               $$
+          &lt;/div&gt;
+          &lt;div style=&#34;font-size:13pt; float: right; margin-top: -10mm; margin-bottom: 0mm;&#34;&gt;
+               $\kern0mm\color{green}\text{Identical to 1-loop!}$
+          &lt;/div&gt;
+	&lt;/div&gt;
+     &lt;div style=&#34;width:40%; float: right; display: inline-block; margin-top: 6mm;&#34;&gt;
+          &lt;img src=&#34;V2.png&#34;; style=&#34;max-width:260px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+          &lt;div style=&#34;width:100%; font-size: 14pt; margin-top: -2mm; margin-bottom: 1mm;&#34;&gt;
+               The codimension one variety 
+          &lt;/div&gt;
+          &lt;div style=&#34;width:100%; font-size: 14pt; margin-top: 1mm; margin-bottom: 1mm;&#34;&gt;
+               $\langle x^3 + y^3 - z^2 \rangle$ in $\mathbb{R}[x,y,z]$
+          &lt;/div&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; float: left; font-size: 14pt; margin-top: -5mm; margin-bottom: -2mm;&#34;&gt;
+     $$
+     \displaystyle \kern5mm \{D_j\} = \kern-3mm \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\}
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;font-size:13pt; float: right; margin-top: -10mm; margin-bottom: 1mm;&#34;&gt;
+     $\kern0mm\color{green}\text{New letter! Can we get rid of it?}$
+&lt;/div&gt;
+&lt;div style=&#34;border: 2px solid black; font-size: 16pt; padding: 10px; display: inline-block; margin-top: 2mm;&#34;&gt;
+    Poles &amp; Zeros $\;\Leftrightarrow\;$ Irreducible Varieties $\;\Leftrightarrow\;$ Prime Ideals &lt;br&gt;
+    &lt;i style=&#34;font-size: 14pt; border-top: -8mm; border-bottom: -2mm;&#34;&gt; Physics $\kern18mm$ Geometry $\kern18mm$ Algebra &lt;/i&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div style=&#34;margin-top: 2mm; margin-bottom: 3mm&#34;&gt;
+     &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Multivariate Partial Fraction Decompositions &lt;/b&gt;
+     &lt;p style=&#34;margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;&#34;&gt;
+     (i.e. geometry at codimension greater than one)
+     &lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&#34;display: flex; margin-top:-6mm;&#34;&gt;
+    &lt;div style=&#34;flex: 1;&#34;&gt;
+        &lt;img src=&#34;V1.png&#34; style=&#34;max-width:60%; height:auto;&#34;&gt;
+        &lt;div style=&#34;width:100%; font-size: 14pt; margin-top: -3mm; margin-bottom: 1mm;&#34;&gt;
+          $\langle xy^2 + y^3 - z^2 \rangle$
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;flex: 1; max-width:3%; margin-top:20mm;&#34;&gt;
+        $\cap$
+    &lt;/div&gt;
+    &lt;div style=&#34;flex: 1;&#34;&gt;
+        &lt;img src=&#34;V2.png&#34; style=&#34;max-width:60%; height:auto;&#34;&gt;
+        &lt;div style=&#34;width:100%; font-size: 14pt; margin-top: -3mm; margin-bottom: 1mm;&#34;&gt;
+          $\langle x^3 + y^3 - z^2 \rangle$
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;flex: 1; max-width:3%; margin-top:20mm;&#34;&gt;
+        $=$
+    &lt;/div&gt;
+    &lt;div style=&#34;flex: 1;&#34;&gt;
+        &lt;img src=&#34;V3.png&#34; style=&#34;max-width:60%; height:auto;&#34;&gt;
+        &lt;div style=&#34;width:100%; font-size: 14pt; margin-top: -3mm; margin-bottom: 1mm;&#34;&gt;
+          $\begin{gather}\langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \\ \cap \langle z^2, x+y \rangle\end{gather}$ 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size:16pt; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ When is a partial fraction decomposition possible? (an example)
+&lt;/div&gt;&lt;br&gt;
+&lt;div style=&#34;font-size:14pt; float: center; margin-top: -6mm; margin-bottom: 1mm;&#34;&gt;
+     $$
+     \frac{\mathcal{N}}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 4|1+3|4]\langle 5|1+4|5]} \stackrel{?}{=} \frac{\mathcal{N}_1}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 4|1+3|4]} + \frac{\mathcal{N}_2}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 5|1+4|5]}
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size:16pt; float: left; margin-top: 2mm; margin-bottom: -4mm;&#34;&gt;
+     $\circ$ Compute primary decompositions and check if &lt;span style=&#34;font-size: 14p&#34;&gt;$\mathcal{N}$&lt;/span&gt; vanishes on all branches (Hilbert&#39;s Nullstellensatz)
+&lt;/div&gt;&lt;br&gt;
+&lt;div style=&#34;font-size:14pt; float: center; margin-top: -4mm; margin-bottom: 1mm;&#34;&gt;
+     $$
+     J = K \cap \bar K \cap L \cap \bar L \cap M \quad \text{or} \quad V(J) = V(K) \cup V(\bar K) \cup V(L) \cup V(\bar L) \cap V(M)
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;font-size:14pt; float: center; margin-top: 1mm; margin-bottom: 1mm;&#34;&gt;
+     $$
+     J = \big\langle \langle 4|1+3|4], \langle 5|1+4|5] \big\rangle \qquad
+     K = \big\langle \langle14\rangle,\langle15\rangle,\langle45\rangle,[23] \big\rangle \quad
+     L = \big\langle \langle ij\rangle \; \forall \; i,j\in\{1,\dots 5\} \big\rangle \\[2mm]
+     M = \big\langle \langle 4|1+3|4], \langle 5|1+4|5], |1+4|5\rangle\langle14\rangle + |5|4\rangle\langle15\rangle, \langle\rangle \leftrightarrow [] \big\rangle
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: 16pt; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     For a fleshed out example with open-source code see &lt;a href=https://inspirehep.net/literature/2661970&gt; GDL (ACAT &#39;22) &lt;/a&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;spinor_coeffs.png&#34;
+  &gt;
+
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1 id=&#34;analytic-reconstruction&#34;&gt;Analytic Reconstruction&lt;/h1&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-top:13mm; font-size: 16pt;&#34;&gt;
+also based on: &lt;br&gt;
+GDL, Ita, Page, Sotnikov (to appear)
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Decorrelating Kinematic Residues &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; float: left; margin-top: -2mm; margin-bottom: -2mm;&#34;&gt;
+     $\circ\,$ Change basis from a subset of the pentagon coefficients $r_{i \in \mathcal{B}}$ to &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathbb{Q}$&lt;/span&gt;-linear combinations $\tilde r$,
+&lt;/div&gt;&lt;br&gt;
+&lt;div style=&#34;text-align: center; float: center; font-size: 15pt; margin-top: -8mm; margin-bottom: 0mm;&#34;&gt;
+     $$
+     R = r_j h_j = r_{i\in \mathcal{B}} M_{ij} h_j = \tilde{r}_{i} \, O_{ii&#39;}M_{i&#39;j} \, h_j \, , \qquad O_{ii&#39;}, M_{ij}\in \mathbb{Q}
+     $$
+&lt;/div&gt;
+&lt;div&gt;
+&lt;img src=&#34;BasisChangeEffectWjj.png&#34;; style=&#34;max-width:800px; float:center; border:none; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; font-size: 14pt; float: center; margin-top: -6mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}\,$ Notation: [mass dimension], {Little-group weights}
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; float: left; margin-top: 3mm; margin-bottom: -2mm;&#34;&gt;
+     $\circ\,$ By Gaussian elimination, partition the space:
+&lt;/div&gt; &lt;br&gt;
+&lt;div style=&#34;text-align: center; font-size: 15pt; float: center; margin-top: -2mm; margin-bottom: 2mm;&#34;&gt;
+     $$
+     \text{span}(r_{i \in \mathcal{B}}) = \underbrace{\text{column}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions with the singularity}} \;\;\; \oplus \, \underbrace{\text{null}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions without the singularity}}
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;display:block; width:100%; margin-top: -4mm; margin-bottom: 0mm; margin-left: 0mm;&#34;&gt;
+     &lt;div style=&#34;font-size: 17pt; width:50%; float: left; text-align: center; display: inline-block; margin-top: 3mm;&#34;&gt;
+	     &lt;div style=&#34;font-size: 17pt; float: left; margin-top: 4mm; margin-bottom: 1mm;&#34;&gt;
+               $\circ\,$ Search for linear combinations that remove as many singularities as possible
+          &lt;/div&gt;
+          &lt;br&gt;
+          &lt;div style=&#34;font-size:15pt; float: left; margin-top: 0mm; margin-bottom: 0mm&#34;&gt;
+               $$
+               \kern12mm \displaystyle O_{i&#39;i} = \bigcap_{k, m} \, \text{nulls}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))
+               $$
+          &lt;/div&gt;
+	&lt;/div&gt;
+     &lt;div style=&#34;width:50%; float: right; display: inline-block; margin-top: 0mm;&#34;&gt;
+          &lt;img src=&#34;search_tree.png&#34;; style=&#34;max-width:400px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 36pt; margin-bottom: -6mm;&#34;&gt; Spinor-Helicity Results &lt;/b&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: -4mm;&#34;&gt;
+     $\circ$ The 5-gluon MHV rational functions fit in 3 pages of the appendix,
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; float:center; font-size: x-large; margin-bottom: 1mm; margin-top: -2mm;&#34;&gt;
+&lt;img src=&#34;VSSizeTable-transparent.png&#34;; style=&#34;max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+&lt;img src=&#34;quarks_vs_sizes.png&#34;; style=&#34;max-width:340px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 13pt; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
+     $$ \tilde{r}^{\text{MHV}}_{\text{first 5 of 115}} = \left\{ \frac{⟨45⟩^2}{⟨12⟩⟨13⟩⟨23⟩}, \frac{⟨45⟩^3}{⟨12⟩^2⟨34⟩⟨35⟩}, \frac{⟨45⟩^3}{⟨12⟩⟨15⟩⟨23⟩⟨34⟩}, \frac{[14][12][35]}{⟨23⟩[45]^3}, \frac{⟨45⟩^2⟨24⟩}{⟨12⟩^2⟨23⟩⟨34⟩}, \dots \right\} \text{+ symmetries}$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 1mm; margin-top: 5mm;&#34;&gt;
+     $\circ$ The &lt;span style=&#34;font-size: 14pt;&#34;&gt;$pp\rightarrow Wjj$&lt;/span&gt; functions are now 1.9 MB (from 1.3 GB),
+&lt;/div&gt;
+&lt;div style=&#34;display: flex; justify-content: center; margin-top: -10mm;&#34;&gt;
+    &lt;div style=&#34;margin: 0 10px;&#34;&gt;
+        &lt;img src=&#34;W_vs_sizes.png&#34;; style=&#34;max-width:400px; float:center; border:none; margin-top: 18mm; margin-bottom: 0mm;&#34;&gt;
+    &lt;/div&gt;
+    $\kern4mm$
+    &lt;div style=&#34;margin: 0 10px;&#34;&gt;
+        &lt;img src=&#34;CoefficientSizes.png&#34;; style=&#34;max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 1mm; margin-top: -4mm;&#34;&gt;
+     $\phantom{\circ}$ Since &lt;code style=&#34;font-size: 14pt;&#34;&gt;PentagonsFunction++&lt;/code&gt; can take permutations of the 1-mass basis we only need one &lt;span style=&#34;font-size: 14pt;&#34;&gt;$M_{ij}$&lt;/span&gt; per partial &lt;br&gt; $\phantom{\circ}$ (another 2 MB overall). We now have fast and stable floating-point evaluations in double precision!
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;Wjj_diagrams.png&#34;
+  &gt;
+
+&lt;h1 id=&#34;outlook&#34;&gt;Outlook&lt;/h1&gt;
+&lt;hr&gt;
+&lt;b style=&#34;font-variant: small-caps; font-size: 30pt; margin-bottom: 4mm;&#34;&gt;
+   Taming the Complexity Growth
+&lt;/b&gt;
+&lt;div style=&#34;display:block; width:100%; font-size: 16pt; margin-top: 4mm; margin-bottom: 4mm;&#34;&gt;
+     &lt;div style=&#34;width:50%; text-align: left; float: left; display: font-size: x-large; margin-top:8mm;&#34;&gt;
+          $\circ$ For every leg or mass, the number of letters in the spinor alphabet grows, as well their mass dimension;  &lt;br&gt;&lt;br&gt;
+          $\circ$ The LCD Ansatz size also grows quickly with &lt;br&gt; multiplicity (m) and mass dimension (d): &lt;br&gt;&lt;br&gt;
+          &lt;a style=&#34;font-size: 12pt; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -12mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/2010.14525&gt;
+               GDL, Maître (&#39;20)
+          &lt;/a&gt; &lt;br&gt;
+          &lt;div style=&#34;text-align: left; font-size: 14pt; margin-top: -12mm; margin-bottom: 1mm;&#34;&gt;
+               $$
+               \displaystyle \kern2mm \text{Ansatz size} \geq \small \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)
+               $$
+          &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div style=&#34;width:50%; float: right; display: inline-block; margin-top: 4mm;&#34;&gt;
+          &lt;img src=&#34;AnsatzSizes.png&#34;; style=&#34;max-width:430px;float:center;border:none;margin-top:-10pt;margin-bottom: 0mm;&#34;&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: -6mm; margin-bottom: -4mm;&#34;&gt;
+$\circ\,$ We can retain control by iterating surface by surface
+&lt;/div&gt;
+&lt;a style=&#34;font-size: 12pt; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -3mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/fix&gt;
+     Campbell, GDL, Ellis, (&#39;22)$\;$
+&lt;/a&gt;
+&lt;a style=&#34;font-size: 12pt; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -3mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/2203.04269&gt;
+     GDL, Page (&#39;22);$\;$
+&lt;/a&gt;
+&lt;a style=&#34;font-size: 12pt; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -3mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/1904.04067&gt;
+     GDL, Maître (&#39;19);$\;$
+&lt;/a&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: -8mm; margin-bottom: 1mm;&#34;&gt;
+$$ 
+\begin{alignedat}{2}
+&amp; r^{(139 \text{ of } 139)}_{\bar{u}^+g^+g^-d^-(V\rightarrow \ell^+ \ell^-)} = &amp; \qquad\qquad &amp; {\small \text{Variety (scheme?) to isolate term(s)}} \\[2mm]
+&amp; +\frac{7/4(s_{24}-s_{13})⟨6|1+4|5]s_{123}(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]^2 Δ_{14|23|56}} &amp; \qquad\qquad &amp; \Big\langle ⟨2|1+4|3]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
+&amp; -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} + \dots &amp; \qquad\qquad &amp; \Big\langle Δ_{14|23|56} \Big\rangle
+\end{alignedat}
+$$
+&lt;/div&gt;
+&lt;!--- 
+ \\[1mm]
+&amp; + {\small \dots \text{more than 30 other fractions} \dots } &amp;&amp;
+&amp; +\frac{1/4[12]^3⟨14⟩[45]⟨46⟩}{[13][23]⟨1|2+3|1]⟨4|5+6|4]^2} &amp; \qquad\qquad &amp; \Big\langle ⟨1|2+3|1], ⟨4|5+6|4]^2 \Big\rangle \\[1mm]
+&amp; -\frac{1/4[12]2⟨13⟩⟨24⟩[45]⟨46⟩}{⟨12⟩[13]⟨2|1+3|2]⟨4|5+6|4]^2}-\frac{3/4⟨34⟩2[45]⟨46⟩⟨3|1+2|4]}{⟨14⟩⟨23⟩⟨2|1+3|4]⟨4|5+6|4]^2} &amp; \qquad\qquad &amp; \Big\langle ⟨4|5+6|4] \Big\rangle \\[1mm]
+&amp; \frac{-7/8⟨16⟩⟨1|2+3|5]⟨3|1+4|2](s_{13}-s_{24} )(s_{123}-s_{234})}{⟨14⟩⟨1|2+3|4]^2⟨2|1+4|3]Δ_{14|23|56}} &amp; \qquad\qquad &amp; \Big\langle ⟨1|2+3|4]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
+&amp; +\frac{7/2⟨13⟩^3[15]⟨16⟩[23]}{⟨12⟩⟨14⟩⟨1|2+3|1]⟨1|2+3|4]^2}+\frac{7/2⟨13⟩^2⟨16⟩[25]}{⟨12⟩⟨14⟩⟨1|2+3|4]^2} &amp; \qquad\qquad &amp; \Big\langle ⟨1|2+3|4] \Big\rangle \\[1mm]
+&amp; -\frac{7⟨24⟩[25][35]s_{123}}{⟨12⟩[23][56]⟨2|1+4|3]^2} &amp; \qquad\qquad &amp; \Big\langle ⟨2|1+4|3] \Big\rangle \\[1mm]
+---&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: -4mm; margin-bottom: -4mm;&#34;&gt;
+$\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 12pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
+     $$
+     \sqrt{\big\langle ⟨2|1+4|3], Δ_{14|23|56} \big\rangle} = \big\langle s_{124}-s_{134}, ⟨2|1+4|3] \big\rangle \, , \\[1mm] 
+     \big\langle ⟨1|2+3|4], ⟨2|1+4|3] \big\rangle = \big\langle ⟨1|2+3|4], ⟨2|1+4|3], (s_{13}-s_{24})\big\rangle \cap \big\langle ⟨12⟩, [34] \big\rangle
+     $$
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+&lt;!---
+&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large; margin-bottom: 10mm;&#34;&gt;
+   Conclusions
+&lt;/b&gt;
+
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ Full-color 5-point massless amplitudes are well within reach, 
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ Subleading color corrections can be fairly sizable
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ The reconstruction can be peformed in spinor-helicity variables, which yield compact results
+&lt;/div&gt;
+
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ\,$ Understanding the partial fraction structure of amplitudes is essential to tame their complexity
+&lt;/div&gt;
+
+---
+---&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;Prague.jpeg&#34;
+  &gt;
+
+&lt;div style=&#34;margin-top: 50mm; margin-bottom: 30mm;&#34;&gt;
+&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large;&#34;&gt; Thank you &lt;br&gt; for your attention! &lt;/b&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;!---
+&lt;b style=&#34;font-variant: small-caps; font-size: xx-large;&#34;&gt; Questions? &lt;/b&gt;
+---&gt;
+&lt;/div&gt;
+&lt;span style=&#34;font-size: 11pt; &#34;&gt;
+    These slides are powered by:&lt;br&gt;
+    &lt;span style=&#34;display: block; margin-top: 2mm;&#34;&gt;
+        &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;markdown&lt;/a&gt;, 
+        &lt;a href=&#34;https://en.wikipedia.org/wiki/HTML&#34;&gt;html&lt;/a&gt;, 
+        &lt;a href=&#34;https://revealjs.com/&#34;&gt;revealjs&lt;/a&gt;, 
+        &lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;, 
+        &lt;a href=&#34;https://www.mathjax.org/&#34;&gt;mathjax&lt;/a&gt;, 
+        &lt;a href=&#34;https://github.com/&#34;&gt;github&lt;/a&gt;
+    &lt;/span&gt;
+&lt;/span&gt;
+&lt;!---
+&lt;br&gt;
+&lt;font size=3&gt;
+     For open source packages: 
+     &lt;code&gt;
+          $   $ pip install [lips](https://github.com/GDeLaurentis/lips) [pyadic](https://github.com/GDeLaurentis/pyadic)
+     &lt;/code&gt;
+&lt;/font size&gt;
+---&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+&lt;h1 id=&#34;backup-slides&#34;&gt;Backup Slides&lt;/h1&gt;
+&lt;hr&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top:4mm;&#34;&gt;
+&lt;/div&gt;
+&lt;div style=&#34;display: flex; justify-content: center;&#34;&gt;
+    &lt;div style=&#34;margin: 0 10px;&#34;&gt;
+        &lt;div style=&#34;margin-top: 2mm; margin-bottom: 4mm&#34;&gt;
+          &lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Full $N_C $ motivation&lt;/b&gt;
+        &lt;/div&gt;
+        &lt;div style=&#34;font-size: 16pt;&#34;&gt;
+        3 is not that big! And certainly not close to $\infty$
+        &lt;/div&gt;
+        &lt;img src=&#34;correction_sizes_catani.png&#34; style=&#34;max-width:500px; border:none; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+        &lt;div style=&#34;font-size: 15pt; margin-bottom: 3mm;&#34;&gt;
+        Slc contributions to $pp\rightarrow jjj$ should be similar to blue curve.
+        &lt;/div&gt;
+        &lt;div style=&#34;font-size: 15pt; margin-bottom: 3mm;&#34;&gt;
+        Expect $\mathcal{O}(10\%)$ effect on duble-virtual hard function, &lt;br&gt; this is scheme dependant.
+        &lt;/div&gt;
+        &lt;div style=&#34;font-size: 15pt;&#34;&gt;
+        Effect on $\sigma^{\text{NNLO}}$ depends on size of $\mathcal{H}^{(2)}$.
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&#34;margin: 0 10px;&#34;&gt;
+        &lt;div style=&#34;margin-top: 2mm; margin-bottom: 4mm&#34;&gt;
+          &lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Pheno. Goal&lt;/b&gt;
+        &lt;/div&gt;
+        &lt;div style=&#34;font-size: 16pt; margin-bottom:2mm;&#34;&gt;
+        Stable and fast evaluations for cross sections
+        &lt;/div&gt;
+        &lt;img src=&#34;h2_5g.png&#34; style=&#34;max-width:490px; border:none; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+        &lt;div style=&#34;font-size: 15pt; margin-bottom:-4mm;&#34;&gt;
+        &lt;code&gt; C++ &lt;/code&gt; Code available at
+        &lt;/div&gt;
+        &lt;a href=&#34;https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp&#34; style=&#34;font-size: 14pt;&#34;&gt;gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp&lt;/a&gt;
+        &lt;div style=&#34;font-size: 15pt; margin-bottom:-4mm;&#34;&gt;
+        Analytics available at
+        &lt;/div&gt;
+        &lt;a href=&#34;https://zenodo.org/records/10142295&#34; style=&#34;font-size: 14pt;&#34;&gt;zenodo.org/records/10142295&lt;/a&gt; &lt;span style=&#34;font-size: 16pt&#34;&gt;&amp;&lt;/span&gt;
+        &lt;a href=&#34;https://zenodo.org/records/10231547&#34; style=&#34;font-size: 14pt;&#34;&gt;zenodo.org/records/10231547&lt;/a&gt;
+        &lt;div style=&#34;font-size: 15pt; margin-bottom:-4mm;&#34;&gt;
+        with &lt;code style=&#34;font-size: 14pt;&#34;&gt;Mathematica&lt;/code&gt;, &lt;code style=&#34;font-size: 14pt;&#34;&gt;Python&lt;/code&gt; and &lt;code style=&#34;font-size: 14pt;&#34;&gt;C++&lt;/code&gt; scripts.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large; margin-bottom: -5mm;&#34;&gt; Constraints from Poles &lt;/b&gt;
+&lt;br&gt;
+&lt;b style=&#34;font-variant: small-caps; font-size: x-large; margin-top: -16mm;&#34;&gt; Bootstrapping trees (?) &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 8mm;&#34;&gt;
+     $\circ$ The degree of divergence / vanishing on various surfaces imposes strong constraints, e.g.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 20pt; float: center; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $ A^{\text{tree}}_{q^+g^+g^+\bar q^-g^-g^-} = \frac{\mathcal{N(\text{m.d.} = 6\,,\; \text{p.w.} = [-1, 0, 0, 1, 0, 0])}}{\langle 12\rangle\langle 23\rangle\langle 34\rangle [45][56][61]s_{345}}$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $\circ$ Pretend this is un unknown integral coefficient, $\mathcal{N}$ has 143 free parameters.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;&#34;&gt;
+     $\circ$ List the various prime ideal, such as
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: 20pt; float: center; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
+     $ \big\langle \langle 12\rangle, \langle 23\rangle, \langle 13\rangle \big\rangle, \; \big\langle |1\rangle \big\rangle, \; \big\langle \langle 12\rangle, |1+2|3]\big\rangle, \dots$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 2mm;&#34;&gt;
+     $\phantom{\circ}$ and impose that $\mathcal{N}$ vanishes to the correct order. We determine it up to an overall constant.
+&lt;/div&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -2mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/2207.10125&gt;
+     GDL, Page (&#39;22)
+&lt;/a&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $\circ$ Likewise, the ansatz for $A^{\text{tree}}_{g^+g^+g^+ g^-g^-g^-}$ shrinks $1326 \rightarrow 1$, etc..
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
+     &lt;i&gt; Effectively, we can &lt;b&gt; compute &lt;/b&gt; trees, just from their &lt;u&gt;poles orders&lt;/u&gt;. &lt;br&gt; Note: compared to BCFW there is &lt;u&gt;no&lt;/u&gt; information about &lt;u&gt;residues&lt;/u&gt;. &lt;/i&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Partial Fraction Decompositions &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ For integral coefficients, we can&#39;t rely on the Ansatz to shrinks to an overall constant.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 3mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Partial fraction decompositions (PFDs) are a popular method to tame algebraic complexity.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 3mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ In my opinion, a PFD algorithm needs
+&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: -3mm; margin-bottom: 5mm;&#34;&gt;
+     $1.$ to say if two poles $W_a$ and $W_b$ are separable into different fractions; &lt;br&gt;
+     $2.$ ideally, to answer $(1.)$ without having access to an analytic expression. 
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ &lt;span style=&#34;color: green&#34;&gt;Hilbert&#39;s nullstellensatz&lt;/span&gt;: if $\mathcal{N}$ vanishes on all branches of $\langle W_a, W_b \rangle$, then the PFD is possible$\kern-3mm\phantom{x}^\dagger$.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Generalizing to powers $&gt;\kern-1mm 1$ can be done via &lt;span style=&#34;color: green&#34;&gt;symbolic powers&lt;/span&gt; and the &lt;span style=&#34;color: green&#34;&gt;Zariski-Nagata Theorem&lt;/span&gt;.
+&lt;/div&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: 1mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/.&gt;
+   GDL, Page (&#39;22)
+&lt;/a&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Similarly, generalizing to non-radical ideals requires &lt;span style=&#34;color: green&#34;&gt;ring extensions&lt;/span&gt;.
+&lt;/div&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm; margin-right: 33mm;&#34; href=https://arxiv.org/abs/.&gt;
+   Campbell, GDL, Ellis (&#39;22)
+&lt;/a&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 7mm; margin-bottom: 0mm;&#34;&gt;
+     &lt;b&gt; Issue: &lt;/b&gt;evaluations on singular surfaces are expensive, but are not always needed!
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 0mm;&#34;&gt;
+     &lt;b&gt; Opportunity: &lt;/b&gt;we get more than partial fraction decompositions.
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: large; float: center; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
+     $\kern-4mm\phantom{x}^\dagger$ $\langle W_a, W_b\rangle$ needs to be radical.
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Beyond Partial Fractions &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ $\color{red}\text{Case 0}$: the ideal does $\color{green}\text{not involve denominator factors}$.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     E.g. a 6-point function $c_i$ has a pole at $⟨1|2+3|4]$ but not at $⟨4|2+3|1]$,
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     yet it is regular on the irreducible surface $V(\big\langle ⟨1|2+3|4], ⟨4|2+3|1] \big\rangle)$. Then
+&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+     $\displaystyle c_i \sim \frac{⟨4|2+3|1]}{⟨1|2+3|4]} + \mathcal{O}(⟨1|2+3|4]^0) \; \text{ instead of } \; c_i \sim \frac{1}{⟨1|2+3|4]}  + \mathcal{O}(⟨1|2+3|4]^0)$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 8mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ $\color{red}\text{Case 1}$: the $\color{green}\text{degree of vanishing is non-uniform}$ across branches, for example:
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+     $\displaystyle \frac{s_{14}-s_{23}}{⟨1|3+4|2]⟨3|1+2|4]}$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+     has a double pole on the first branch, and a simple pole on the second branch of
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: 3mm; margin-bottom: 0mm;&#34;&gt;
+     $\big\langle⟨1|3+4|2], ⟨3|1+2|4]\big\rangle_{R_6} = \big\langle ⟨13⟩, [24] \big\rangle_{R_6} \cap \big\langle ⟨1|3+4|2], ⟨3|1+2|4], (s_{14}-s_{23})\big\rangle_{R_6}$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: x-large; float: left; margin-top: 10mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ $\color{red}\text{Case 2}$: ideal is $\color{green}\text{non-radical}$ (example on last slide)
+&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;div style=&#34;font-size: x-large; float: center; margin-top: -3mm; margin-bottom: 0mm;&#34;&gt;
+     $\displaystyle \small \kern0mm \sqrt{\big\langle {\color{black}⟨3|1+4|2]}, {\color{black}Δ_{23|14|56}} \big\rangle_{R_6}} = \big\langle {\color{black}⟨3|1+4|2]}, {\color{black}s_{124}-s_{134}} \big\rangle_{R_6} $
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; The Numerator Ansatz &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
+$\circ\,$ The numerator Ansatz takes the form
+&lt;/div&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 4mm;&#34; href=https://arxiv.org/abs/1904.04067&gt;
+   GDL, Maître (&#39;19)
+&lt;/a&gt;
+&lt;div style=&#34;text-align: center; font-size: x-large; margin-bottom: 5mm; margin-top: 1mm;&#34;&gt;
+$\displaystyle \text{Num. poly}(\lambda, \tilde\lambda) = \sum_{\vec \alpha, \vec \beta} c_{(\vec\alpha,\vec\beta)} \prod_{j=1}^n\prod_{i=1}^{j-1} \langle ij\rangle^{\alpha_{ij}} [ij]^{\beta_{ij}}$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}$ subject to constraints on $\vec\alpha,\vec\beta$ due to: 1) mass dimension; 2) little group; 3) linear independence.
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; &#34;&gt;
+$\circ\,$ Construct the Ansatz via the algorithm from Section 2.2 of &lt;a href=https://arxiv.org/abs/2203.04269&gt;GDL, Page (&#39;22)&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; display: inline-block; font-size: x-large;&#34;&gt;
+Linear independence = irreducibility by the Gröbner basis of a specific ideal.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Efficient implementation using open-source software only
+&lt;/div&gt;
+&lt;div style=&#34;display:block; width:100%; margin-left: -10mm; margin-top: 0mm;&#34;&gt;
+	&lt;div style=&#34;width:50%; font-size: x-large; float: left; display: inline-block;&#34;&gt;
+	     &lt;img src=&#34;SingularLogo.png&#34;; style=&#34;max-width:300px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt; &lt;br&gt;
+	     Gröbner bases $\rightarrow$ constrain $\vec\alpha,\vec\beta$ &lt;br&gt;
+	     &lt;a style=&#34;font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;&#34;
+	     href=https://www.singular.uni-kl.de/index.php.html&gt;
+		Decker, Greuel, Pfister, Schönemann
+	     &lt;/a&gt;	    
+	&lt;/div&gt;
+	&lt;div style=&#34;width:50%; font-size: x-large; float: right; display: inline-block; &#34;&gt;
+	     &lt;img src=&#34;GoogleORToolsLogo.png&#34;; style=&#34;max-width:300px; float:center; border:none; margin-top: 7mm; margin-bottom: 2mm;&#34;&gt; &lt;br&gt;
+	     Integer programming $\rightarrow$ enumerate sols. $\vec\alpha,\vec\beta$ &lt;br&gt;
+	     &lt;a style=&#34;font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;&#34;
+	     href=https://www.singular.uni-kl.de/index.php.html&gt;
+		Perron and Furnon (Google optimization team)
+	     &lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: x-large; margin-top: -2mm;&#34;&gt;
+$\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{solving}} \ll t_{\text{sampling}}$) w/ &lt;a href=https://github.com/GDeLaurentis/linac-dev&gt; linac &lt;/a&gt; &lt;span style=&#34;text-align: left; font-size: small;&#34;&gt; (coming soon-ish) &lt;/span&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- REVEAL.JS CUSTOMIZATION --&gt;
+&lt;!-- Include MathJax library --&gt;
+&lt;script type=&#34;text/javascript&#34; async
+  src=&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML&#34;&gt;
+&lt;/script&gt;
+&lt;!-- Include Reveal.js and the Math plugin --&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/reveal.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/plugin/math/math.js&#34;&gt;&lt;/script&gt;
+&lt;!-- Initialize Reveal.js with the MathJax plugin --&gt;
+&lt;script&gt;
+  Reveal.initialize({
+    history: true,
+    slideNumber: false,
+    plugins: [ RevealMath ],
+    math: {
+      inlineMath: [ [&#39;\\(&#39;, &#39;\\)&#39;] ],
+      displayMath: [ [&#39;\\[&#39;, &#39;\\]&#39;] ],
+      mathjax: &#39;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js&#39;,
+      config: &#39;TeX-MML-AM_CHTML&#39;,
+      CommonHTML: {
+        scale: 100, // Adjust the font size as needed
+      },
+    }
+  });
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://gdelaurentis.github.io/slides/loopslegs_apr2024/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://gdelaurentis.github.io/slides/loopslegs_apr2024/</guid>
