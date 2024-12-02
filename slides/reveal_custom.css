@@ -51,7 +51,7 @@ table td[rowspan] {
 }
 
 .MathJax  {
-    font-size: 110%;
+    font-size: 100%;
 }
 
 .fragment.visible:not(.current-fragment) {

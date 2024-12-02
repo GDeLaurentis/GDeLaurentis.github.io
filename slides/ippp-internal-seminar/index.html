@@ -563,28 +563,75 @@ $$
 <p><!-- raw HTML omitted --> Problem: the determinant is sextic <!-- raw HTML omitted --></p>
 <p>&lt;img src=&quot;det6.png&rdquo;; style=&quot;max-width:1020px;float:center;border:none;&ldquo;&gt;</p>
 <p>Abel–Ruffini theorem: no algebraic solution for order higher than 4.</p>
-<p>In general: $;$ order det $;\sim;$ # of SE solutions $;\sim;$ $(n-3)!$</p>
-<hr>
-<p><!-- raw HTML omitted --> Solution: use a numerical root-finding algorithm <!-- raw HTML omitted --></p>
-<p>Two open source packages: <a href="https://github.com/GDeLaurentis/seampy">seampy</a>, <a href="https://github.com/GDeLaurentis/lips">lips</a></p>
+
+<p>In general: $\;$ order det $\;\sim\;$ # of SE solutions $\;\sim\;$ $(n-3)!$</p>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b> Solution: use a numerical root-finding algorithm </b></p>
+
+<p>Two open source packages: <a href="https://github.com/GDeLaurentis/seampy" target="_blank">seampy</a>, <a href="https://github.com/GDeLaurentis/lips" target="_blank">lips</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> hms(<span style="color:#ae81ff">6</span>)
 <span style="color:#960050;background-color:#1e0010">⎡</span>                     s<span style="color:#960050;background-color:#1e0010">₁₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₂</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₃</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₄</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span>                     <span style="color:#960050;background-color:#1e0010">⎤</span>
 <span style="color:#960050;background-color:#1e0010">⎢</span>s<span style="color:#960050;background-color:#1e0010">₁₂₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₃</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₂₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₄</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₂₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₃₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₄</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₃₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₄₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₅⎥</span>
-<span style="color:#960050;background-color:#1e0010">⎣</span>     s<span style="color:#960050;background-color:#1e0010">₁₂₃₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₄</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₂₃₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₂₄₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₃₄₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span>     <span style="color:#960050;background-color:#1e0010">⎦</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> oParticles <span style="color:#f92672">=</span> Particles(<span style="color:#ae81ff">6</span>)
-<span style="color:#f92672">&gt;&gt;&gt;</span> num_ss <span style="color:#f92672">=</span> {str(s): oParticles<span style="color:#f92672">.</span>compute(str(s)) <span style="color:#66d9ef">for</span> s <span style="color:#f92672">in</span> mandelstams(<span style="color:#ae81ff">6</span>)}
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> sols <span style="color:#f92672">=</span> solve_scattering_equations(<span style="color:#ae81ff">6</span>, num_ss)
+<span style="color:#960050;background-color:#1e0010">⎣</span>     s<span style="color:#960050;background-color:#1e0010">₁₂₃₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₄</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₂₃₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₂₄₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₂⋅</span>z<span style="color:#960050;background-color:#1e0010">₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span> <span style="color:#f92672">+</span> s<span style="color:#960050;background-color:#1e0010">₁₃₄₅⋅</span>z<span style="color:#960050;background-color:#1e0010">₃⋅</span>z<span style="color:#960050;background-color:#1e0010">₄⋅</span>z<span style="color:#960050;background-color:#1e0010">₅</span>     <span style="color:#960050;background-color:#1e0010">⎦</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> oParticles <span style="color:#f92672">=</span> Particles(<span style="color:#ae81ff">6</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> num_ss <span style="color:#f92672">=</span> {str(s): oParticles<span style="color:#f92672">.</span>compute(str(s)) <span style="color:#66d9ef">for</span> s <span style="color:#f92672">in</span> mandelstams(<span style="color:#ae81ff">6</span>)}</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> sols <span style="color:#f92672">=</span> solve_scattering_equations(<span style="color:#ae81ff">6</span>, num_ss)
 <span style="color:#f92672">&gt;&gt;&gt;</span> len(sols)
 <span style="color:#ae81ff">6</span>
 <span style="color:#f92672">&gt;&gt;&gt;</span> sols[<span style="color:#ae81ff">0</span>]
 {<span style="color:#e6db74">&#39;z3&#39;</span>: mpc(real<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>, imag<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>),
  <span style="color:#e6db74">&#39;z4&#39;</span>: mpc(real<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>, imag<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>),
- <span style="color:#e6db74">&#39;z5&#39;</span>: mpc(real<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>, imag<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>)}
-</code></pre></div><hr>
-<p><!-- raw HTML omitted --> Recursion for the elimination theory matrix <!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+ <span style="color:#e6db74">&#39;z5&#39;</span>: mpc(real<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>, imag<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>)}</code></pre></div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b> Recursion for the elimination theory matrix </b></p>
+
+<p><br></p>
+
+<p><font size=5>
+$$
+\mkern -24mu M_i=
+  \left(
+    \begin{array}{ccccccc}
+      M_{i-1} &amp; M_{i-1}^{z_{i-3}} &amp; 0 &amp; \dots &amp; 0 &amp; 0\\<br />
+      0 &amp; M_{i-1} &amp; M_{i-1}^{z_{i-3}} &amp; \dots &amp; 0 &amp; 0\\<br />
+      \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots\\<br />
+      0 &amp; 0 &amp; 0 &amp; \dots &amp; M_{i-1} &amp; M_{i-1}^{z_{i-3}}\\<br />
+    \end{array}
+  \right), \quad
+  M_4=H, \quad
+  H =
+  \left(
+    \begin{array}{c}
+      h_1\\<br />
+      h_2\\<br />
+      \vdots\\<br />
+      h_{n-3}\\<br />
+    \end{array}
+  \right)
+$$
+</font size></p>
+
+<p><br></p>
+
 <p>$M_i$ is of dimensions $(i−4)×(i−3)$ when written in terms of $M_{i−1}$.
 After a derivative is taken the relevant $z_i$ is assumed to be set to zero.</p>
 <!-- raw HTML omitted -->
@@ -674,6 +721,22 @@ This polynomial is called the Pfaffian.</p>
 
 <span style="color:#f92672">&gt;&gt;&gt;</span> oDF2Amp <span style="color:#f92672">=</span> NumericalAmplitude(theory<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;DF2&#34;</span>, helconf<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;+++++&#34;</span>)
 <span style="color:#f92672">&gt;&gt;&gt;</span> oParticles <span style="color:#f92672">=</span> Particles(<span style="color:#ae81ff">5</span>)
+
+<span style="color:#f92672">&gt;&gt;&gt;</span> oDF2Amp(oParticles)
+mpc(real<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>, imag<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>)</code></pre></div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<p><b> Analytical reconstruction </b>
+<br></p>
 
 <span style="color:#f92672">&gt;&gt;&gt;</span> oDF2Amp(oParticles)
 mpc(real<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>, imag<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;#nbr&#39;</span>)
