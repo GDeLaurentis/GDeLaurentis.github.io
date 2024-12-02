@@ -1,66 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Giuseppe De Laurentis</title>
+    <title>Giuseppe De‎⠀Laurentis | Giuseppe De Laurentis</title>
     <link>https://gdelaurentis.github.io/authors/admin/</link>
-    <description>Recent content on Giuseppe De Laurentis</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://gdelaurentis.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>The pp→W(→lν)&#43;γ process at next-to-next-to-leading order</title>
-      <link>https://gdelaurentis.github.io/publication/arxiv2105.00954/</link>
-      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/publication/arxiv2105.00954/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Two-Loop Five-Parton Leading-Colour Finite Remainders in the Spinor-Helicity Formalism</title>
-      <link>https://gdelaurentis.github.io/publication/arxiv2010.14525/</link>
-      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/publication/arxiv2010.14525/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>The one-loop amplitudes for Higgs &#43; 4 partons with full mass effects</title>
-      <link>https://gdelaurentis.github.io/publication/arxiv2002.04018/</link>
-      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/publication/arxiv2002.04018/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Analytical amplitudes from numerical solutions of the scattering equations</title>
-      <link>https://gdelaurentis.github.io/publication/arxiv1910.11355/</link>
-      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/publication/arxiv1910.11355/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Extracting analytical one-loop amplitudes from numerical evaluations</title>
-      <link>https://gdelaurentis.github.io/publication/arxiv1904.04067/</link>
-      <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/publication/arxiv1904.04067/</guid>
-      <description></description>
-    </item>
+      <atom:link href="https://gdelaurentis.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Giuseppe De‎⠀Laurentis</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gdelaurentis.github.io/authors/admin/avatar_hu8652a6c4bf5509b8d8ed04ac34243db0_19626_270x270_fill_q75_lanczos_center.jpeg</url>
+      <title>Giuseppe De‎⠀Laurentis</title>
+      <link>https://gdelaurentis.github.io/authors/admin/</link>
+    </image>
     
     <item>
       <title>Review of the CHY Formalism - Master Thesis</title>
       <link>https://gdelaurentis.github.io/publication/chy-review/</link>
       <pubDate>Tue, 12 Apr 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://gdelaurentis.github.io/publication/chy-review/</guid>
       <description></description>
     </item>

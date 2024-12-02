@@ -1,50 +1,116 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recent &amp; Upcoming Talks on Giuseppe De Laurentis</title>
+    <title>Recent &amp; Upcoming Talks | Giuseppe De Laurentis</title>
     <link>https://gdelaurentis.github.io/talk/</link>
-    <description>Recent content in Recent &amp; Upcoming Talks on Giuseppe De Laurentis</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2020 17:00:00 +0000</lastBuildDate>
+      <atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent &amp; Upcoming Talks</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 20 Jul 2024 16:45:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://gdelaurentis.github.io/talk/</link>
+    </image>
     
-	<atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Two-Loop Five-Point Amplitudes in the Spinor Helicity Formalism</title>
+      <link>https://gdelaurentis.github.io/talk/ichep_jul2024/</link>
+      <pubDate>Sat, 20 Jul 2024 16:45:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/ichep_jul2024/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I present recent efforts to tame the algebraic complexity of two-loop five-point scattering amplitudes in the spinor helicity formalism. These amplitudes are required, for instance, to obtain next-to-next-to-leading order predictions for the production of three jets or of a massive vector boson with two jets at the Large Hadron Collider. I review the method of numerical generalized and the integrand decomposition technique employed to generate finite-field or p-adic samples of the amplitudes. I then focus on the study of the analytic properties of the rational coefficients and their reconstruction from said numerical samples. I show how to exploit correlations among codimension-one residues to simplify the calculation. I touch upon various interdisciplinary aspects, including elements of number theory, computational algebraic geometry, constraint programming, memoization, and GPU acceleration.&lt;/p&gt;
+</description>
+    </item>
     
+    <item>
+      <title>Non-Planar Two-Loop Amplitudes for Five-Parton Scattering</title>
+      <link>https://gdelaurentis.github.io/talk/loopslegs_apr2024/</link>
+      <pubDate>Sun, 07 Apr 2024 12:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/loopslegs_apr2024/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I present the recent calculation of the two-loop amplitudes required to obtain next-to-next-to-leading order predictions for three-jet production at the Large Hadron Collider. This calculation is performed in full color, that is including contributions from non-planar Feynman diagrams. I review the method of numerical generalized unitarity and the integrand decomposition technique employed to generate finite-field samples of the amplitude. I will then focus on the analytic reconstruction of the coefficient functions from said numerical samples. A novel algorithm, based on the correlation of codimension-one residues, helps tame the complexity of the calculation. Rescalings of the gluon amplitude, inspired by supersymmetry Ward identities, facilitate the computation of the quark amplitudes. I touch upon various interdisciplinary aspects of the computation, including elements of number theory, computational algebraic geometry, constraint programming, memoization, and GPU acceleration.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rational Functions of Scattering Amplitudes with Masses</title>
+      <link>https://gdelaurentis.github.io/talk/qcd_meets_ew_feb2024/</link>
+      <pubDate>Tue, 06 Feb 2024 11:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/qcd_meets_ew_feb2024/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Non-Planar Two-Loop Amplitudes for Five-Parton Scattering</title>
+      <link>https://gdelaurentis.github.io/talk/amlitudesmeeting_dec2023/</link>
+      <pubDate>Thu, 07 Dec 2023 11:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/amlitudesmeeting_dec2023/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I present the recent calculation of the two-loop amplitudes required to obtain next-to-next-to-leading order predictions for three-jet production at the Large Hadron Collider. This calculation is performed in full colour, that is including contributions from non-planar Feynman diagrams. I review the method of numerical generalized generalized and the integrand decomposition technique employed to generate finite-field samples of the amplitude. I will then focus on the analytic reconstruction of the coefficient functions from said numerical samples. A novel algorithm, based on the correlation of codimension-one residues, helps tame the complexity of the calculation. I touch upon various interdisciplinary aspects of the computation, including elements of number theory, computational algebraic geometry, constraint programming, memoization, and GPU acceleration.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mathematical and Physical Structures of Rational Functions in Scattering Amplitudes</title>
+      <link>https://gdelaurentis.github.io/talk/mathemamplitudes_sept2023/</link>
+      <pubDate>Mon, 25 Sep 2023 17:30:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/mathemamplitudes_sept2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Non-planar two-loop QCD corrections to qq̅→γγγ: finite remainders in the spinor-helicity formalism</title>
+      <link>https://gdelaurentis.github.io/talk/loopfestxxi_june2023/</link>
+      <pubDate>Tue, 27 Jun 2023 14:25:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/loopfestxxi_june2023/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I will present the computation of the NNLO double-virtual subleading-color corrections to the production of three photons at hadron colliders. I will briefly review the numerical generalized unitarity computation over finite fields performed with the C++ code Caravel, including updates that made this computation possible. I will then formulate the rational reconstruction problem for the finite remainders in spinor variables and obtain compact analytic expressions. Finally, I will show the effect of the subleading-color corrections on the hard functions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modern Methods for the Computation of Scattering Amplitudes</title>
+      <link>https://gdelaurentis.github.io/talk/psi-ltp-seminar/</link>
+      <pubDate>Sun, 14 May 2023 15:30:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/psi-ltp-seminar/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Analytical Amplitudes from Numerical Exploration</title>
       <link>https://gdelaurentis.github.io/talk/summer-meeting-july2020/</link>
       <pubDate>Thu, 30 Jul 2020 17:00:00 +0000</pubDate>
-      
       <guid>https://gdelaurentis.github.io/talk/summer-meeting-july2020/</guid>
-      <description>Freiburg Summer Meeting</description>
+      <description></description>
     </item>
     
     <item>
       <title>Reconstruction of analytical amplitudes across loops, legs and theories</title>
       <link>https://gdelaurentis.github.io/talk/ippp-internal-seminar/</link>
       <pubDate>Fri, 22 Nov 2019 14:00:00 +0000</pubDate>
-      
       <guid>https://gdelaurentis.github.io/talk/ippp-internal-seminar/</guid>
-      <description>IPPP Internal Seminar</description>
+      <description></description>
     </item>
     
     <item>
       <title>Analytical amplitudes from numerical evaluations</title>
-      <link>https://gdelaurentis.github.io/talk/qcdlhc/</link>
+      <link>https://gdelaurentis.github.io/talk/qcd@lhc/</link>
       <pubDate>Sun, 14 Jul 2019 13:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/talk/qcdlhc/</guid>
-      <description>QCD@LHC 2019</description>
+      <guid>https://gdelaurentis.github.io/talk/qcd@lhc/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I will present a new method (&lt;a href=&#34;https://arxiv.org/abs/1904.04067&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://arxiv.org/abs/1904.04067&lt;/a&gt;) to generate analytic expressions for the integral coefficients of loop amplitudes using numerical evaluations only. We use high precision arithmetic to explore the singularity structure of the coefficients and decompose them into parts of manageable complexity. Each part is isolated by choosing an appropriate region of phase space, and reconstructed by solving a system of linear equations for the coefficients of a generic ansatz. To illustrate the usability of our method I will present sample computations for six-gluon one-loop integral coefficients and rational parts.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>From numerical to analytical amplitudes</title>
       <link>https://gdelaurentis.github.io/talk/qcdmasterclass2019/</link>
-      <pubDate>Thu, 13 Jun 2019 21:00:00 +0100</pubDate>
-      
+      <pubDate>Sun, 14 Jul 2019 13:00:00 +0000</pubDate>
       <guid>https://gdelaurentis.github.io/talk/qcdmasterclass2019/</guid>
-      <description>QCD Master Class 2019</description>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Generalised unitarity and on-shell recursion relations have led to the automation of numerical computations for high multiplicity NLO matrix elements, whereas analytical expression are often still too complicated to be determined. I will present a new method (arXiv:1904.04067) to generate such analytic expressions using numerical evaluations only. We use high precision arithmetic to explore the singularity structure of the coefficients and decompose them into parts of manageable complexity. Each part is isolated by choosing an appropriate region of phase space, and reconstructed by solving a system of linear equations for the coefficients of a generic ansatz. To illustrate the usability of our method I will present sample computations for six-gluon one-loop integral coefficients and rational parts.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

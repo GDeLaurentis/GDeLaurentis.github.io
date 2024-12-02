@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Satyajit Seth on Giuseppe De Laurentis</title>
+    <title>Satyajit Seth | Giuseppe De Laurentis</title>
     <link>https://gdelaurentis.github.io/authors/satyajit-seth/</link>
-    <description>Recent content in Satyajit Seth on Giuseppe De Laurentis</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://gdelaurentis.github.io/authors/satyajit-seth/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://gdelaurentis.github.io/authors/satyajit-seth/index.xml" rel="self" type="application/rss+xml" />
+    <description>Satyajit Seth</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
+      <title>Satyajit Seth</title>
+      <link>https://gdelaurentis.github.io/authors/satyajit-seth/</link>
+    </image>
     
     <item>
       <title>The pp→W(→lν)&#43;γ process at next-to-next-to-leading order</title>
       <link>https://gdelaurentis.github.io/publication/arxiv2105.00954/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://gdelaurentis.github.io/publication/arxiv2105.00954/</guid>
       <description></description>
     </item>
@@ -24,7 +24,6 @@
       <title>The one-loop amplitudes for Higgs &#43; 4 partons with full mass effects</title>
       <link>https://gdelaurentis.github.io/publication/arxiv2002.04018/</link>
       <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://gdelaurentis.github.io/publication/arxiv2002.04018/</guid>
       <description></description>
     </item>

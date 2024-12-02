@@ -1,23 +1,134 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Giuseppe De Laurentis</title>
+    <title>Posts | Giuseppe De Laurentis</title>
     <link>https://gdelaurentis.github.io/post/</link>
-    <description>Recent content in Posts on Giuseppe De Laurentis</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 21 May 2019 19:16:01 +0100</lastBuildDate>
-    
-	<atom:link href="https://gdelaurentis.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://gdelaurentis.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 21 May 2019 19:16:01 +0100</lastBuildDate>
+    <image>
+      <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
+      <title>Posts</title>
+      <link>https://gdelaurentis.github.io/post/</link>
+    </image>
     
     <item>
       <title>Analytical Reconstruction of a Simple Tree Amplitude</title>
       <link>https://gdelaurentis.github.io/post/a-simple-tree-level-example/</link>
       <pubDate>Tue, 21 May 2019 19:16:01 +0100</pubDate>
-      
       <guid>https://gdelaurentis.github.io/post/a-simple-tree-level-example/</guid>
-      <description>&lt;a href=&#34;https://arxiv.org/abs/1904.04067&#34; target=&#34;_blank&#34;&gt;https://arxiv.org/abs/1904.04067&lt;/a&gt;</description>
+      <description>&lt;h1 id=&#34;a-simple-tree-example&#34;&gt;A Simple Tree Example&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Initialisations&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;antares.core.settings&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;settings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;antares.core.unknown&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Unknown&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BHUnknown&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;antares.particles.particles&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Particles&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;oTree&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BHUnknown&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;helconf&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;pmpmpm&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;amppart&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;tree&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;oUnknown&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Unknown&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;oTree&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;load_partial_results&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;silent&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Scalings&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;oUnknown&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;do_single_collinear_limits&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Finished calculating single scalings. The partial result is:
+/⟨1|2⟩[1|2]⟨1|6⟩[1|6]⟨2|3⟩[2|3]⟨3|4⟩[3|4]⟨4|5⟩[4|5]⟨5|6⟩[5|6]s_123s_234s_345
+
+The mass dimension of the unknown is -2.
+The phase weights of the unknown are [-2, 2, -2, 2, -2, 2].
+The mass dimension of the new unknown is 16.
+The phase weights of the new unknown are [-2, 2, -2, 2, -2, 2].
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;oUnknown&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;do_double_collinear_limits&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Finished calculating pair scalings. They are:
+[⟨1|2⟩, [1|2]]: 1.0, 2  → 2
+[⟨1|2⟩, ⟨1|6⟩]: 1.0, 30 → 5
+[⟨1|2⟩, [1|6]]: 1.0, 3  → 2
+...
+[s_123, s_234]: 1.0, 2  → 2
+[s_123, s_345]: 1.0, 2  → 2
+[s_234, s_345]: 1.0, 2  → 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Partial Fractioning&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;invariants&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;oUnknown&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;poles_to_be_eliminated&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Poles to be  eliminated:&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pprint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;invariants&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;lTerms&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;oUnknown&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get_partial_fractioned_terms&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;invariants&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Poles to be  eliminated:
+[s_123, s_234, s_345, ⟨1|2⟩, [1|2], ⟨1|6⟩, [1|6], ⟨2|3⟩, [2|3], ⟨3|4⟩, [3|4], ⟨4|5⟩, [4|5], ⟨5|6⟩, [5|6]]
+
+Forced:
+[]
+Forbidden: 
+[⟨1|6⟩, [1|6], ⟨3|4⟩, [3|4], s_234, s_345]
+Optional: 
+[(⟨5|6⟩, ⟨1|(2+3)|4]), ([4|5], ⟨6|(1+2)|3]), (⟨4|5⟩, ⟨3|(1+2)|6]), (⟨1|2⟩, ⟨6|(1+2)|3]), ([2|3], ⟨1|(2+3)|4]), (⟨2|3⟩, ⟨4|(2+3)|1]), ([5|6], ⟨4|(2+3)|1]), ([1|2], ⟨3|(1+2)|6])]
+
+There are 11 symmetries:                 
+[(165432, False), (216543, True), (234561, True), (321654, False), (345612, False), (432165, True), (456123, True), (543216, False), (561234, False), (612345, True), (654321, True)]
+
+/⟨1|2⟩⟨2|3⟩[4|5][5|6]⟨1|(2+3)|4]⟨3|(1+2)|6]s_123                                                                                                                 
+
+/[1|2][2|3]⟨4|5⟩⟨5|6⟩⟨4|(2+3)|1]⟨6|(1+2)|3]s_123
+
+...
+
+/⟨1|2⟩[2|3]⟨4|5⟩[5|6]⟨1|(2+3)|4]⟨3|(1+2)|6]⟨4|(2+3)|1]⟨6|(1+2)|3]s_123
+
+/[1|2]⟨2|3⟩[4|5]⟨5|6⟩⟨1|(2+3)|4]⟨3|(1+2)|6]⟨4|(2+3)|1]⟨6|(1+2)|3]s_123
+
+Found at least a result.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Numerator Fitting&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;oTerms&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lTerms&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;oTerms&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fit_numerators&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Starting fit of numerator coefficients for following ansatz:              
+/⟨1|2⟩⟨2|3⟩[4|5][5|6]⟨1|(2+3)|4]⟨3|(1+2)|6]s_123
+
+Inversion will proceed in s_123^1.0 collinear limit. No symmetry will be used.
+The following symmetries will then be appended to the result [(u&#39;165432&#39;, False), (u&#39;216543&#39;, True)]. Accuracy set to: -24
+Obtained ansatz from Daniel&#39;s spinor solve with lM, lPW: [8], [[0, 4, 0, 0, -4, 0]]. Size: 15.
+Finished loading augmented column.                                                                            Created new matrix of size 15x16
+Time elapsed loading the matrix: 0:00:00. Created new matrix of size 15x16.                                       
+Time elapsed in row reduction: 0:00:00. 0 elements of the ansatz were redundant!
+Nbr dropped redundant: 0, Nbr dropped zero: 10, Nbr dropped total: 10.
+
+Coeff. of ⟨1|2⟩⟨1|2⟩⟨1|2⟩⟨1|2⟩[1|5][1|5][1|5][1|5]: 1*I
+Coeff. of ⟨1|2⟩⟨1|2⟩⟨1|2⟩⟨2|3⟩[1|5][1|5][1|5][3|5]: -4*I
+Coeff. of ⟨1|2⟩⟨1|2⟩⟨2|3⟩⟨2|3⟩[1|5][1|5][3|5][3|5]: 6*I
+Coeff. of ⟨1|2⟩⟨2|3⟩⟨2|3⟩⟨2|3⟩[1|5][3|5][3|5][3|5]: -4*I
+Coeff. of ⟨2|3⟩⟨2|3⟩⟨2|3⟩⟨2|3⟩[3|5][3|5][3|5][3|5]: 1*I
+This piece correctly removes the singularity ([0])                                                 
+
+Refining the fit...
+Finished calculating single scalings. The partial result is:                                                              
+⟨2|(1+3)|5]⁴/⟨1|2⟩⟨2|3⟩[4|5][5|6]⟨1|(2+3)|4]⟨3|(1+2)|6]s_123
+
+The mass dimension of the unknown is -2.
+The phase weights of the unknown are [-2, 2, -2, 2, -2, 2].
+The mass dimension of the new unknown is 0.
+The phase weights of the new unknown are [0, 0, 0, 0, 0, 0].
+
+Starting fit of numerator coefficients for following ansatz:              
+⟨2|(1+3)|5]⁴/⟨1|2⟩⟨2|3⟩[4|5][5|6]⟨1|(2+3)|4]⟨3|(1+2)|6]s_123
+
+Inversion will proceed in s_123^1.0 collinear limit. No symmetry will be used.
+The following symmetries will then be appended to the result [(u&#39;165432&#39;, False), (u&#39;216543&#39;, True)]. Accuracy set to: -24
+Obtained ansatz from Daniel&#39;s spinor solve with lM, lPW: [0], [[0, 0, 0, 0, 0, 0]]. Size: 1.
+Finished loading augmented column.                                                                            Created new matrix of size 1x2
+Time elapsed loading the matrix: 0:00:00. Created new matrix of size 1x2.                                       
+Time elapsed in row reduction: 0:00:00. 0 elements of the ansatz were redundant!
+Nbr dropped redundant: 0, Nbr dropped zero: 0, Nbr dropped total: 0.
+
+Coeff. of this whole term is: 1*I
+This piece correctly removes the singularity ([0])                                                 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;oTerms&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;+1I⟨2|(1+3)|5]⁴/⟨1|2⟩⟨2|3⟩[4|5][5|6]⟨1|(2+3)|4]⟨3|(1+2)|6]s_123
+(u&#39;165432&#39;, False)
+(u&#39;216543&#39;, True)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;oParticles&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Particles&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;oParticles&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;fix_mom_cons&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;assert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;abs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;oTerms&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;oParticles&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;oTree&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;oParticles&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;**&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;280&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
   </channel>

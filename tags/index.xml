@@ -1,78 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Giuseppe De Laurentis</title>
+    <title>Tags | Giuseppe De Laurentis</title>
     <link>https://gdelaurentis.github.io/tags/</link>
-    <description>Recent content in Tags on Giuseppe De Laurentis</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://gdelaurentis.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Phenomenology</title>
-      <link>https://gdelaurentis.github.io/tags/phenomenology/</link>
-      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/tags/phenomenology/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scattering Amplitudes</title>
-      <link>https://gdelaurentis.github.io/tags/scattering-amplitudes/</link>
-      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/tags/scattering-amplitudes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>QCD</title>
-      <link>https://gdelaurentis.github.io/tags/qcd/</link>
-      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/tags/qcd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Higgs</title>
-      <link>https://gdelaurentis.github.io/tags/higgs/</link>
-      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/tags/higgs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CHY</title>
-      <link>https://gdelaurentis.github.io/tags/chy/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/tags/chy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Loop Calculations</title>
-      <link>https://gdelaurentis.github.io/tags/loop-calculations/</link>
-      <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/tags/loop-calculations/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Demo</title>
-      <link>https://gdelaurentis.github.io/tags/demo/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://gdelaurentis.github.io/tags/demo/</guid>
-      <description></description>
-    </item>
+      <atom:link href="https://gdelaurentis.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 30 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
+      <title>Tags</title>
+      <link>https://gdelaurentis.github.io/tags/</link>
+    </image>
     
   </channel>
 </rss>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CHY on Giuseppe De Laurentis</title>
@@ -17,11 +17,13 @@
       <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://gdelaurentis.github.io/slides/summer-meeting-july2020/</guid>
-      <description>Analytical &amp;nbsp; Amplitudes from &amp;nbsp; Numerical &amp;nbsp; Exploration  arXiv:1904.04067 (JHEP) &amp;nbsp; G. De Laurentis, D. Maître arXiv:1910.11355 (JHEP) &amp;nbsp; G. De Laurentis arXiv:2002.04018 (JHEP) &amp;nbsp; L. Budge, J. M. Campbell, G. De Laurentis, R. K. Ellis, S. Seth 
+      <description>Analytical Amplitudes from Numerical Exploration  arXiv:1904.04067 (JHEP) G. De Laurentis, D. Maître &amp;lt;/font size&amp;gt;
+arXiv:1910.11355 (JHEP) G. De Laurentis &amp;lt;/font size&amp;gt;
+arXiv:2002.04018 (JHEP) L. Budge, J. M. Campbell, G. De Laurentis, R. K. Ellis, S. Seth &amp;lt;/font size&amp;gt;
 Giuseppe De Laurentis
 PhD supervisor: Daniel Maître
-Summer Meeting - Freiburg
-These slides at gdelaurentis.github.io/slides/summer-meeting-july2020  Only speaker can read these. Press S to view.</description>
+Summer Meeting - Freiburg\
+ Only speaker can read these. Press S to view.    Table of Contents A. Reconstruction of analytical spinor-helicity amplitudes</description>
     </item>
     
     <item>
@@ -30,14 +32,13 @@ These slides at gdelaurentis.github.io/slides/summer-meeting-july2020  Only spea
       <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://gdelaurentis.github.io/slides/ippp-internal-seminar/</guid>
-      <description>Reconstruction &amp;nbsp; of &amp;nbsp; analytical &amp;nbsp; amplitudes &amp;nbsp; across &amp;nbsp; loops, &amp;nbsp; legs &amp;nbsp; and &amp;nbsp; theories   arXiv:1904.04067 (JHEP) &amp;nbsp; &amp;nbsp; arXiv:1910.11355
-
-Giuseppe De Laurentis
+      <description>Reconstruction of analytical amplitudes across loops, legs and theories &amp;lt;/font face&amp;gt; arXiv:1904.04067 (JHEP) arXiv:1910.11355
 with Daniel Maître
 IPPP Internal Seminar
- Only speaker can read these. Press S to view.   Table &amp;nbsp;of &amp;nbsp;Contents 
-A. &amp;nbsp; Reconstruction of analytical spinor-helicity amplitudes
-1. Motivation &amp;nbsp; &amp;nbsp; 2. Singular limits &amp;nbsp; &amp;nbsp; 3.</description>
+&amp;lt;img src=&amp;quot;IP3_logo_blue.png&amp;rdquo;; style=&amp;quot;max-width:280px;float:center;border:none;&amp;ldquo;&amp;gt; &amp;lt;img src=&amp;quot;DurhamLogo.svg&amp;rdquo;; style=&amp;quot;max-width:280px;float:center;border:none;&amp;ldquo;&amp;gt;
+ Only speaker can read these. Press S to view.    Table of Contents A. Reconstruction of analytical spinor-helicity amplitudes
+1. Motivation 2. Singular limits 3. Partial fractions and ansatze 4. Rational coefficients in QCD
+B. Tree amplitudes from the CHY formalism</description>
     </item>
     
     <item>

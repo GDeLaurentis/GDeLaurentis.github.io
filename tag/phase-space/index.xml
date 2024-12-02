@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phase Space | Giuseppe De Laurentis</title>
+    <link>https://gdelaurentis.github.io/tag/phase-space/</link>
+      <atom:link href="https://gdelaurentis.github.io/tag/phase-space/index.xml" rel="self" type="application/rss+xml" />
+    <description>Phase Space</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 23 May 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
+      <title>Phase Space</title>
+      <link>https://gdelaurentis.github.io/tag/phase-space/</link>
+    </image>
+    
+    <item>
+      <title>Lips: $p$-adic and singular phase space</title>
+      <link>https://gdelaurentis.github.io/publication/arxiv2305.14075/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/publication/arxiv2305.14075/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
