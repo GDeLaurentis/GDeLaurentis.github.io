@@ -5,12 +5,22 @@
     <link>https://gdelaurentis.github.io/talk/</link>
       <atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 20 Jul 2024 16:45:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 08 Apr 2025 16:55:00 +0000</lastBuildDate>
     <image>
       <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://gdelaurentis.github.io/talk/</link>
     </image>
+    
+    <item>
+      <title>Compact Two-Loop QCD Corrections for $Vjj$ Production in Proton Collisions</title>
+      <link>https://gdelaurentis.github.io/talk/sm@lhc_apr2025/</link>
+      <pubDate>Tue, 08 Apr 2025 16:55:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/sm@lhc_apr2025/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We consider two-loop QCD corrections in the leading color approximation for the production of a heavy electroweak vector boson, $V=\{W^\pm,Z,\gamma^*\}$, in association with two light jets ($Vjj$) at hadron colliders. Leptonic decays of the electroweak boson are included at the amplitude level. We develop an approach that allows us to derive an analytic representation three orders of magnitude smaller than previously known results. This approach combines an improved choice of bases for rational coefficients, the construction of judiciously partial-fractioned ansätze, and iterative reconstruction in singular limits. We identify several recurring features of the amplitudes that we expect will facilitate analytic reconstruction and optimization of analytic representation for more complex amplitudes in the future. Finally, we provide an efficient and stable C++ numerical implementation of our results, ready for phenomenological applications.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Two-Loop Five-Point Amplitudes in the Spinor Helicity Formalism</title>
