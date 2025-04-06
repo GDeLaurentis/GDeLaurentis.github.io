@@ -116,20 +116,6 @@ Giuseppe De Laurentis
     
       
 <p><b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> $V+n\text{-jet}$ Cross Sections at the LHC </b></p>
-<div style="text-align: left; font-size: 18pt; float: left; margin-top: -2mm; margin-bottom: 4mm;">
-     $\circ\,$ Observations at the LHC are beautifully predicted by the Standard Model
-</div>
-<div style="font-size: 16pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
-$$
-\require{color}
-\require{amsmath}
-σ_{2 \rightarrow n - 2} = \sum_{a,b} \int dx_a dx_b f_{a/h_1}(x_a, \mu_F) \, f_{b/h_2}(x_b, \mu_F) \;\hat{\sigma}_{ab\rightarrow n-2}(x_a, x_b, \mu_F, \mu_R) \, , \\
-\hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\Pi_{n-2}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R)}|^2 \, .
-$$
-</div>
-<div style="text-align: left; float:center; font-size: 18pt; margin-top: -3mm; margin-bottom: 4mm;">
-    $\phantom{\circ}\,$ at least to the extent with which we can compute <span style="font-size: 14pt"> $\mathcal{A} = \mathcal{A}^{(0)} + \alpha_{(s)}\mathcal{A}^{(1)} + \alpha^2_{(s)}\mathcal{A}^{(2)} + \dots$</span>
-</div>
 <div style="display: flex; justify-content: center; margin-top: 0mm;">
      <div style="margin: 0 10px; margin-left: -2mm;">
          <img src="ATLAS-XSections-transparent-Vnj.png" style="max-width:450px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
@@ -197,6 +183,20 @@ $$
                </div>
           </div>
      </div>
+</div>
+<div style="text-align: left; font-size: 18pt; float: left; margin-top: -2mm; margin-bottom: 4mm;">
+     $\phantom{\circ}\,$ Observations at the LHC are beautifully predicted by the Standard Model
+</div>
+<div style="font-size: 16pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+$$
+\require{color}
+\require{amsmath}
+σ_{2 \rightarrow n - 2} = \sum_{a,b} \int dx_a dx_b f_{a/h_1}(x_a, \mu_F) \, f_{b/h_2}(x_b, \mu_F) \;\hat{\sigma}_{ab\rightarrow n-2}(x_a, x_b, \mu_F, \mu_R) \, , \\
+\hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\Pi_{n-2}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R)}|^2 \, .
+$$
+</div>
+<div style="text-align: left; float:center; font-size: 18pt; margin-top: -3mm; margin-bottom: 4mm;">
+    $\phantom{\circ}\,$ at least to the extent with which we can compute <span style="font-size: 14pt"> $\mathcal{A} = \mathcal{A}^{(0)} + \alpha_{(s)}\mathcal{A}^{(1)} + \alpha^2_{(s)}\mathcal{A}^{(2)} + \dots$</span>
 </div>
 
     </section>
@@ -379,7 +379,7 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 	</div>
 </div>
 <div style="font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 4mm;">
-$\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 15pt;">$\mathcal{R}_{\bar qggqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}}$</span>
+$\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 15pt;">$\mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{NMHV}}$</span>
 </div>
 
     </section>
@@ -643,14 +643,14 @@ $\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 
     <section>
     
       
-<div style="margin-top: 2mm; margin-bottom: 3mm">
+<div style="margin-top: 2mm; margin-bottom: -2mm">
      <b style="font-variant: small-caps; font-size: 32pt"> Iterated Pole Subtraction </b>
      <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
      (i.e. geometry at codimension greater than one)
      </p>
 </div>
-<div style="text-align: left; font-size:16pt; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ$ Multivariate Partial Fraction Decompositions
+<div style="text-align: left; font-size:16pt; margin-top: -2mm; margin-bottom: 0mm;">
+     $\circ$ Multivariate partial fraction decompositions follow from varieties where pairs of denominator factors vanish
 </div>
 <div style="display: flex; margin-top:-6mm;">
     <div style="flex: 1;">
@@ -672,14 +672,14 @@ $\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 
         $=$
     </div>
     <div style="flex: 1;">
-        <img src="V3.png" style="max-width:60%; height:auto;">
-        <div style="width:100%; font-size: 14pt; margin-top: -3mm; margin-bottom: 1mm;">
-          $\begin{gather}\langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \\ \cap \langle z^2, x+y \rangle\end{gather}$ 
+        <img src="V3.png" style="max-width:53%; height:auto;">
+        <div style="width:120%; font-size: 14pt; margin-left:-10mm; margin-top: -3mm; margin-bottom: 1mm;">
+          $\begin{gather}\langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \cap \langle z^2, x+y \rangle\end{gather}$ 
         </div>
     </div>
 </div>
-<div style="text-align: left; font-size: 16pt; margin-top: -4mm; margin-bottom: 0mm;">
-$\circ\,$ Retain control iterating surface by surface
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\circ\,$ Retain control by iteratively fitting residues on varieties
 </div>
 <div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
 $$ 
@@ -691,7 +691,7 @@ $$
 $$
 </div>
 <div style="text-align: left; font-size: 16pt; margin-top: -4mm; margin-bottom: -4mm;">
-$\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
+$\circ\,$ Partial fraction decomposition and numerator insertions from e.g. (see appendix of paper):
 </div>
 <div style="text-align: left; font-size: 12pt; margin-top: 0mm; margin-bottom: 1mm;">
      $$
@@ -734,7 +734,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 <br></p>
 <div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm;">
      $\circ$ The <span style="font-size: 14pt;">$pp\rightarrow Wjj$</span> coefficient functions are now 1.9 MB (from 1.4 GB), fast and stable. <br>
-     $\phantom{\circ}$ Matrices <span style="font-size: 15pt;">$M_{ij}$</span> account for another 2 MB overall
+     $\phantom{\circ}$ Matrices <span style="font-size: 15pt;">$M_{ij}$</span> account for another 2 MB overall. Transcendental basis at <a href="https://gitlab.com/pentagon-functions/PentagonFunctions-cpp">PentagonFunctions++</a>.
 </div>
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
     <div style="padding: 0 10px;">
@@ -751,10 +751,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
      $\circ$ The largest numbers are: quarks NMHV and gluons MHV: 3-digit, gluons NMHV: 12 digits.
 </div>
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ Five-point one-mass transcendental basis <a href="https://gitlab.com/pentagon-functions/PentagonFunctions-cpp">PentagonFunctions++</a>
-</div>
-<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ Pheno ready results available at <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp">FivePointAmplitudes</a>
+     $\circ$ Pheno ready results available at <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp">FivePointAmplitudes</a>.
 </div>
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
      $\circ$ Amplitudes at <a href="https://github.com/GDeLaurentis/antares-results">antares-results</a>, with <a href="https://gdelaurentis.github.io/antares-results/index.html">human readable expr.</a>, and <a href="https://github.com/GDeLaurentis/antares-results/actions/">CI tests</a> for full amplitude in real kinematics

@@ -5530,20 +5530,6 @@ Giuseppe De Laurentis
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;&#34;&gt; $V+n\text{-jet}$ Cross Sections at the LHC &lt;/b&gt;&lt;/p&gt;
-&lt;div style=&#34;text-align: left; font-size: 18pt; float: left; margin-top: -2mm; margin-bottom: 4mm;&#34;&gt;
-     $\circ\,$ Observations at the LHC are beautifully predicted by the Standard Model
-&lt;/div&gt;
-&lt;div style=&#34;font-size: 16pt; float: center; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
-$$
-\require{color}
-\require{amsmath}
-σ_{2 \rightarrow n - 2} = \sum_{a,b} \int dx_a dx_b f_{a/h_1}(x_a, \mu_F) \, f_{b/h_2}(x_b, \mu_F) \;\hat{\sigma}_{ab\rightarrow n-2}(x_a, x_b, \mu_F, \mu_R) \, , \\
-\hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\Pi_{n-2}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R)}|^2 \, .
-$$
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; float:center; font-size: 18pt; margin-top: -3mm; margin-bottom: 4mm;&#34;&gt;
-    $\phantom{\circ}\,$ at least to the extent with which we can compute &lt;span style=&#34;font-size: 14pt&#34;&gt; $\mathcal{A} = \mathcal{A}^{(0)} + \alpha_{(s)}\mathcal{A}^{(1)} + \alpha^2_{(s)}\mathcal{A}^{(2)} + \dots$&lt;/span&gt;
-&lt;/div&gt;
 &lt;div style=&#34;display: flex; justify-content: center; margin-top: 0mm;&#34;&gt;
      &lt;div style=&#34;margin: 0 10px; margin-left: -2mm;&#34;&gt;
          &lt;img src=&#34;ATLAS-XSections-transparent-Vnj.png&#34; style=&#34;max-width:450px; border:none; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
@@ -5611,6 +5597,20 @@ $$
                &lt;/div&gt;
           &lt;/div&gt;
      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 18pt; float: left; margin-top: -2mm; margin-bottom: 4mm;&#34;&gt;
+     $\phantom{\circ}\,$ Observations at the LHC are beautifully predicted by the Standard Model
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 16pt; float: center; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+$$
+\require{color}
+\require{amsmath}
+σ_{2 \rightarrow n - 2} = \sum_{a,b} \int dx_a dx_b f_{a/h_1}(x_a, \mu_F) \, f_{b/h_2}(x_b, \mu_F) \;\hat{\sigma}_{ab\rightarrow n-2}(x_a, x_b, \mu_F, \mu_R) \, , \\
+\hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\Pi_{n-2}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R)}|^2 \, .
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; float:center; font-size: 18pt; margin-top: -3mm; margin-bottom: 4mm;&#34;&gt;
+    $\phantom{\circ}\,$ at least to the extent with which we can compute &lt;span style=&#34;font-size: 14pt&#34;&gt; $\mathcal{A} = \mathcal{A}^{(0)} + \alpha_{(s)}\mathcal{A}^{(1)} + \alpha^2_{(s)}\mathcal{A}^{(2)} + \dots$&lt;/span&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Precision Physics Requires Compact Amplitudes &lt;/b&gt;&lt;/p&gt;
@@ -5759,7 +5759,7 @@ $\circ$ Original computation  &lt;a href=&#34;https://arxiv.org/abs/hep-ph/97082
 	&lt;/div&gt;
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 4mm;&#34;&gt;
-$\circ$ Assemble helicity amplitudes into 3 categories: &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\mathcal{R}_{\bar qggqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}}$&lt;/span&gt;
+$\circ$ Assemble helicity amplitudes into 3 categories: &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{NMHV}}$&lt;/span&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Guiding Principles &lt;/b&gt;&lt;/p&gt;
@@ -5964,14 +5964,14 @@ $\circ$ Assemble helicity amplitudes into 3 categories: &lt;span style=&#34;font
 &lt;/div&gt;
 &lt;span style=&#34;font-size: 14pt&#34;&gt;127187555379407704220939486282289348327703498501718808908391691454242601886997968263623652083189652150273&lt;/span&gt;
 &lt;hr&gt;
-&lt;div style=&#34;margin-top: 2mm; margin-bottom: 3mm&#34;&gt;
+&lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
      &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Iterated Pole Subtraction &lt;/b&gt;
      &lt;p style=&#34;margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;&#34;&gt;
      (i.e. geometry at codimension greater than one)
      &lt;/p&gt;
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size:16pt; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
-     $\circ$ Multivariate Partial Fraction Decompositions
+&lt;div style=&#34;text-align: left; font-size:16pt; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
+     $\circ$ Multivariate partial fraction decompositions follow from varieties where pairs of denominator factors vanish
 &lt;/div&gt;
 &lt;div style=&#34;display: flex; margin-top:-6mm;&#34;&gt;
     &lt;div style=&#34;flex: 1;&#34;&gt;
@@ -5993,14 +5993,14 @@ $\circ$ Assemble helicity amplitudes into 3 categories: &lt;span style=&#34;font
         $=$
     &lt;/div&gt;
     &lt;div style=&#34;flex: 1;&#34;&gt;
-        &lt;img src=&#34;V3.png&#34; style=&#34;max-width:60%; height:auto;&#34;&gt;
-        &lt;div style=&#34;width:100%; font-size: 14pt; margin-top: -3mm; margin-bottom: 1mm;&#34;&gt;
-          $\begin{gather}\langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \\ \cap \langle z^2, x+y \rangle\end{gather}$ 
+        &lt;img src=&#34;V3.png&#34; style=&#34;max-width:53%; height:auto;&#34;&gt;
+        &lt;div style=&#34;width:120%; font-size: 14pt; margin-left:-10mm; margin-top: -3mm; margin-bottom: 1mm;&#34;&gt;
+          $\begin{gather}\langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \cap \langle z^2, x+y \rangle\end{gather}$ 
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: -4mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Retain control iterating surface by surface
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Retain control by iteratively fitting residues on varieties
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
 $$ 
@@ -6012,7 +6012,7 @@ $$
 $$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: -4mm; margin-bottom: -4mm;&#34;&gt;
-$\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
+$\circ\,$ Partial fraction decomposition and numerator insertions from e.g. (see appendix of paper):
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 12pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
      $$
@@ -6039,7 +6039,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 &lt;br&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm;&#34;&gt;
      $\circ$ The &lt;span style=&#34;font-size: 14pt;&#34;&gt;$pp\rightarrow Wjj$&lt;/span&gt; coefficient functions are now 1.9 MB (from 1.4 GB), fast and stable. &lt;br&gt;
-     $\phantom{\circ}$ Matrices &lt;span style=&#34;font-size: 15pt;&#34;&gt;$M_{ij}$&lt;/span&gt; account for another 2 MB overall
+     $\phantom{\circ}$ Matrices &lt;span style=&#34;font-size: 15pt;&#34;&gt;$M_{ij}$&lt;/span&gt; account for another 2 MB overall. Transcendental basis at &lt;a href=&#34;https://gitlab.com/pentagon-functions/PentagonFunctions-cpp&#34;&gt;PentagonFunctions++&lt;/a&gt;.
 &lt;/div&gt;
 &lt;div style=&#34;display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;&#34;&gt;
     &lt;div style=&#34;padding: 0 10px;&#34;&gt;
@@ -6056,10 +6056,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
      $\circ$ The largest numbers are: quarks NMHV and gluons MHV: 3-digit, gluons NMHV: 12 digits.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
-     $\circ$ Five-point one-mass transcendental basis &lt;a href=&#34;https://gitlab.com/pentagon-functions/PentagonFunctions-cpp&#34;&gt;PentagonFunctions++&lt;/a&gt;
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
-     $\circ$ Pheno ready results available at &lt;a href=&#34;https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp&#34;&gt;FivePointAmplitudes&lt;/a&gt;
+     $\circ$ Pheno ready results available at &lt;a href=&#34;https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp&#34;&gt;FivePointAmplitudes&lt;/a&gt;.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
      $\circ$ Amplitudes at &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results&#34;&gt;antares-results&lt;/a&gt;, with &lt;a href=&#34;https://gdelaurentis.github.io/antares-results/index.html&#34;&gt;human readable expr.&lt;/a&gt;, and &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results/actions/&#34;&gt;CI tests&lt;/a&gt; for full amplitude in real kinematics
