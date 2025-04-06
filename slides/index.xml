@@ -6038,7 +6038,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g. (see
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 36pt; margin-bottom: -6mm;&#34;&gt; Spinor-Helicity Amplitudes Results &lt;/b&gt;
 &lt;br&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm;&#34;&gt;
-     $\circ$ The &lt;span style=&#34;font-size: 14pt;&#34;&gt;$pp\rightarrow Wjj$&lt;/span&gt; coefficient functions are now 1.9 MB (from 1.4 GB), fast and stable. &lt;br&gt;
+     $\circ$ The &lt;span style=&#34;font-size: 14pt;&#34;&gt;$pp\rightarrow Vjj$&lt;/span&gt; coefficient functions are now 1.9 MB (from 1.4 GB), fast and stable. &lt;br&gt;
      $\phantom{\circ}$ Matrices &lt;span style=&#34;font-size: 15pt;&#34;&gt;$M_{ij}$&lt;/span&gt; account for another 2 MB overall. Transcendental basis at &lt;a href=&#34;https://gitlab.com/pentagon-functions/PentagonFunctions-cpp&#34;&gt;PentagonFunctions++&lt;/a&gt;.
 &lt;/div&gt;
 &lt;div style=&#34;display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;&#34;&gt;
