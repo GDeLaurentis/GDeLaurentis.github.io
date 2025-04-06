@@ -5988,7 +5988,7 @@ $\circ$ Assemble helicity amplitudes into 3 categories: &lt;span style=&#34;font
      ${\color{greeN} ✓}$ &lt;span style=&#34;font-size: 16pt;&#34;&gt;$\epsilon_\mu \rightarrow \epsilon_{\alpha\dot\alpha}$, $P^\mu \rightarrow  \lambda_\alpha \tilde\lambda_{\dot\alpha}$&lt;/span&gt;; all &lt;span style=&#34;font-size: 16pt;&#34;&gt;$\alpha, \dot\alpha$&lt;/span&gt; indices contracted
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ$ The singularity structure should be manifest in $\mathbb{C}$
+     $\circ$ The singularity structure should be manifest in $\mathbb{C}$ (thing will then be better behaved in $\mathbb{R}$ too)
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;&#34;&gt;
      ${\color{red} ✗}$ Rational reparametrisations of the kinematics change the denominator structure
@@ -6212,7 +6212,7 @@ $\circ$ Assemble helicity amplitudes into 3 categories: &lt;span style=&#34;font
     &lt;/div&gt;
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Retain control by iteratively fitting residues on varieties
+$\circ\,$ Retain control by iteratively fitting residues on varieties (using $p$-adic numbers, $\mathbb{Q}_p$)
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
 $$ 
