@@ -5776,7 +5776,7 @@ $\circ$ Assemble helicity amplitudes into 3 categories: &lt;span style=&#34;font
      ${\color{greeN} ✓}$ &lt;span style=&#34;font-size: 16pt;&#34;&gt;$\epsilon_\mu \rightarrow \epsilon_{\alpha\dot\alpha}$, $P^\mu \rightarrow  \lambda_\alpha \tilde\lambda_{\dot\alpha}$&lt;/span&gt;; all &lt;span style=&#34;font-size: 16pt;&#34;&gt;$\alpha, \dot\alpha$&lt;/span&gt; indices contracted
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ$ The singularity structure should be manifest in $\mathbb{C}$ (thing will then be better behaved in $\mathbb{R}$ too)
+     $\circ$ The singularity structure should be manifest in $\mathbb{C}$ (exprs will then be better behaved in $\mathbb{R}$ too)
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;&#34;&gt;
      ${\color{red} ✗}$ Rational reparametrisations of the kinematics change the denominator structure
@@ -6056,7 +6056,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g. (see
      $\circ$ The largest numbers are: quarks NMHV and gluons MHV: 3-digit, gluons NMHV: 12 digits.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
-     $\circ$ Pheno ready results available at &lt;a href=&#34;https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp&#34;&gt;FivePointAmplitudes&lt;/a&gt;.
+     $\circ$ Pheno ready results for the hard functions are available at &lt;a href=&#34;https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp&#34;&gt;FivePointAmplitudes&lt;/a&gt;.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
      $\circ$ Amplitudes at &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results&#34;&gt;antares-results&lt;/a&gt;, with &lt;a href=&#34;https://gdelaurentis.github.io/antares-results/index.html&#34;&gt;human readable expr.&lt;/a&gt;, and &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results/actions/&#34;&gt;CI tests&lt;/a&gt; for full amplitude in real kinematics
