@@ -2977,20 +2977,20 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
      Install from github (&lt;code style=&#34;font-size:14pt;&#34;&gt;git clone&lt;/code&gt;) or PyPI (&lt;code style=&#34;font-size:14pt;&#34;&gt;pip install&lt;/code&gt;); use of Jupyter is recommended.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-     $\circ$ pyadic &lt;br&gt;
+     $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/pyadic/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;pyadic&lt;/a&gt;&lt;br&gt;
      $\quad\rightarrow$ Finite-charactistic number types $Q_p$, $F_p$, including field extensions &lt;br&gt;
      $\quad\rightarrow$ rational number reconstruction (Wang&#39;s EEA, LGRR, MQRR) &lt;br&gt;
      $\quad\rightarrow$ univariate and multivariante Newthon &amp; univariate Thiele interpolation algorithms
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-     $\circ$ syngular (in the backhand Singular is used for many operations)&lt;br&gt;
+     $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/syngular/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;syngular&lt;/a&gt; (in the backhand Singular is used for many operations)&lt;br&gt;
      $\quad\rightarrow$ object-oriented algebraic geometry (Field, Ring, Quotient Ring, Ideal) &lt;br&gt;
      $\quad\rightarrow$ ring-agnostic monomials and polynomials (with support for unicode characters, e.g. spinor brackets)&lt;br&gt;
      $\quad\rightarrow$ multivariate solver (Ideal.point_on_variety), under- and over-constrained systems OK &lt;br&gt;
      $\quad\rightarrow$ a semi-numerical prime and primary ideal test (assumes equi-dimensionality of ideal)
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-     $\circ$ lips (Lorentz invariant phase space)&lt;br&gt;
+     $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/lips/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;lips&lt;/a&gt; (Lorentz invariant phase space)&lt;br&gt;
      $\quad\rightarrow$ phase space points over any field ($Q, Qi, R, C, Qp, Fp$), including internal and external masses &lt;br&gt;
      $\quad\rightarrow$ evaluate any Mandelstam or spinor expression (custom ast/regex parser) &lt;br&gt;
      $\quad\rightarrow$ generation of any special kinematic configuration (wrapper around Ideal.point_on_variety)
@@ -3043,7 +3043,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
      $\circ$ Only need to define the quotient ring to build the Ansatz (and even then not having anlytic identities for the redundancies is not a big problem)
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
-     $\circ$ github.com/GDeLaurentis/antares-results
+     $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/antares/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;antares&lt;/a&gt; (automated numerical to analytical reconstruction software), &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;antares-results&lt;/a&gt;, &lt;a href=&#34;https://gdelaurentis.github.io/antares-results/&#34;&gt;documentation&lt;/a&gt;
 &lt;/div&gt;
 &lt;div style=&#34;display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;&#34;&gt;
     &lt;div style=&#34;padding: 0 10px;&#34;&gt;
