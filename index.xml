@@ -3399,9 +3399,9 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
      $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/pyadic/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;pyadic&lt;/a&gt;&lt;br&gt;
-     $\quad\rightarrow$ Finite-charactistic number types $Q_p$, $F_p$, including field extensions &lt;br&gt;
+     $\quad\rightarrow$ Finite fields $\mathbb{F}_p$ and $p$-adic number types $\mathbb{Q}_p$, including field extensions &lt;br&gt;
      $\quad\rightarrow$ rational number reconstruction (Wang&#39;s EEA, LGRR, MQRR) &lt;br&gt;
-     $\quad\rightarrow$ univariate and multivariante Newthon &amp; univariate Thiele interpolation algorithms
+     $\quad\rightarrow$ univariate and multivariante Newthon &amp; univariate Thiele interpolation algorithms in $\mathbb{F}_p$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
      $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/syngular/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;syngular&lt;/a&gt; (in the backhand Singular is used for many operations)&lt;br&gt;
