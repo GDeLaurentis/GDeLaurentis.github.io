@@ -24,7 +24,7 @@
   <title> | Giuseppe De Laurentis</title>
 
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/sky.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/white.min.css">
 
   
   
@@ -147,27 +147,27 @@ ttH: <a href="https://arxiv.org/abs/2504.19909">arXiv:2504.19909</a> <div style=
           <div style="clear: both; text-align: left; font-size: 18pt; margin-top: -10mm;">
           $\rightarrow\,$ NNLO is essential for agreement with experiment,
           <a style="font-size: large; text-align: right; float: right; margin-top: 5mm;" href="https://arxiv.org/abs/2404.08598">
-          Mazzitelli, Sotnikov, Wiesemann '24
+          Mazzitelli, <div style="height: -10mm; margin-top: -1mm; margin-bottom: -1mm;"></div> Sotnikov, <div style="height: -10mm; margin-top: -1mm; margin-bottom: -1mm;"></div> Wiesemann '24
           </a>
           <img src="Z1jSotnikov-transparent-v2.png"
                style="max-width:500px; border:none; margin-left:24mm; margin-top: 0mm;" />
-          <div style="text-align: left; font-size: 18pt; margin-top: -5mm; margin-bottom: 0mm;">
-          Only two other studies at NNLO for <span style="font-size: 16pt">$q\bar q'\rightarrow Wb\bar b, \; \text{e.g. no} \; gg\rightarrow Wq\bar q'$</span>
+          <div style="text-align: right; font-size: 18pt; margin-top: -5mm; margin-bottom: 0mm; margin-left: -22mm;">
+          Other studies at NNLO only for <span style="font-size: 16pt">$q\bar q'\rightarrow Wb\bar b, \; \text{e.g. no} \; gg\rightarrow Wq\bar q'$</span> despite available amps
           </div>
-          <a style="font-size: large; text-align: right; float: right; margin-top: -2mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2212.04954">
+          <a style="font-size: large; text-align: right; float: right; margin-top: -1mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2212.04954">
           $\,$Buonocore, Devoto, Kallweit, Mazzitelli, Rottoli, Savoini '22;
           </a>
-          <a style="font-size: large; text-align: right; float: right; margin-top: -2mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2205.01687">
+          <a style="font-size: large; text-align: right; float: right; margin-top: -1mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2205.01687">
           Hartanto, Poncelet, Popescu, Zoia '22;$\,$
           </a>
           </div>
      </div>
 </div>
 <div class="fragment" data-fragment-index="2"
-     style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: -4mm;">
-     $\circ\,$ <span style="font-size: 16pt">$pp\rightarrow ttH$</span> of interest primarely for direct access to top Yukawa $y_t$ (but also CP, EFTs, ...) <br>
-     $\phantom{\circ}\,$ NNLO pheno. relies on approximate amplitudes
-     <a style="font-size: large; text-align: right; float: right; margin-top: 1mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2210.07846">
+     style="text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: -8mm;">
+     $\circ\,$ <span style="font-size: 16pt">$pp\rightarrow ttH$</span> of interest primarily for direct access to top Yukawa <span style="font-size: 16pt">$y_t$</span> (but also CP, EFTs, 2HDM, etc.) <br>
+     $\phantom{\circ}\,$ current N$^2$LO pheno. relies on approx. amplitudes
+     <a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2210.07846">
      Catani, Devoto, Grazzini, Kallweit, Mazzitelli, Savoini '22;$\,$
      </a>
      <a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2411.15340">
@@ -185,15 +185,21 @@ ttH: <a href="https://arxiv.org/abs/2504.19909">arXiv:2504.19909</a> <div style=
     
       
 <p><b style="font-variant: small-caps; font-size: 32pt"> Theoretical Motivation </b></p>
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -4mm;">
+     $\circ\,$ Status for Drell-Yan plus jets (Vjj)
+</div>
 <div style="display: flex; justify-content: center; margin-top: 0mm;">
-     <div style="width: 50%; text-align: left; font-size: 17pt; margin: 0 10px; margin-left: 0mm;">
-          $\circ\,$ Limited knowledge at higher loops/points <br>
-          $\circ\,$ Pheno can be hindered by complexity of results. It's hard to do Monte Carlo integration <br> 
-          $\phantom{\circ}\,$ and verify IR cancellations when you have to evaluate >1GB of files in higher precision. <br>
-          $\circ\,$ Goal:
+     <div style="width: 55%; text-align: left; font-size: 17pt; margin: 0 10px; margin-left: -4mm;">
+          $\;\star\,$ Limited knowledge at higher loops/points; <br>
+          $\;\star\,$ All amplitudes in the lower triangle contribute  <br> 
+          $\;\phantom{\star}\,$ at a given perturbatifve order; <br> 
+          $\;\star\,$ Pheno can be hindered by complexity of results, <br> 
+          $\;\phantom{\star}\,$ especially if IR cancellations are needed; <br> 
+          $\;\star\,$ E.g. the two-loop amps of [5] were >1GB of files. <br><br>
+          $\circ\,$ Goal: reduce complexity of [5] by manifesting the analytic structure to facilitate future computations
      </div>
-     <div style="width: 55%; font-size: 14pt; margin: 0 10px; margin-left: 0mm;">
-          <table style="border-collapse: collapse; text-align: center; margin-top: 4mm; font-size: 14pt;">
+     <div style="width: 55%; font-size: 14pt; margin: 0 10px; margin-left: -4mm; margin-right: -4mm;">
+          <table style="border-collapse: collapse; text-align: center; margin-top: 1mm; font-size: 14pt;">
                <tr>
                     <td style="border: 1px solid black; padding: 5px; text-align: center;">3</td>
                     <td style="border: 1px solid black; padding: 5px; background-color: #FFD700; text-align: center;">
@@ -256,14 +262,24 @@ ttH: <a href="https://arxiv.org/abs/2504.19909">arXiv:2504.19909</a> <div style=
           </div>
      </div>
 </div>
-<br>
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: -4mm;">
-     $\circ\,$ <span style="font-size: 16pt">$q\bar q\rightarrow ttH$</span> not known analytically, even at one-loop <br>
-     $\phantom{\circ}\,$ <span style="font-size: 16pt">$gg\rightarrow ttH$</span> to $\mathcal{O}(\epsilon^2)$ in 2312.10015 <br>
-     Numerical, Nf, qq initiated, Nf, 2402.03301 Bakul Agarwal,a Gudrun Heinrich,a Stephen P. Jones,b Matthias Kerner,a Sven
-Yannick Klein,c Jannis Lang,a Vitaly Magerya,a Anton Olssona <br>
-     2312.08131 2L Nf master integrals F. Febres Cordero, G. Figueiredo, M. Kraus, B. Page, L. Reina <br>
-     $\circ\,$ Goal:
+<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
+     $\circ\,$ Status for $pp\rightarrow t\bar tH$
+</div>
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 0mm; margin-left: -4mm;">
+     $\;\star\,$ one-loop: <span style="font-size: 15pt">$q\bar q\rightarrow t\bar tH$</span> previously not known analytically; <br>
+     $\kern15mm$ <span style="font-size: 15pt">$gg\rightarrow t\bar t H$</span> known to <span style="font-size: 15pt">$\mathcal{O}(\epsilon^2)$</span> in terms of form factors <br>
+     <a style="font-size: large; text-align: right; float: right; margin-top: -5mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2312.10015">
+     Buccioni, Kreer, Liu, Tancredi '23
+     </a>
+     $\;\star\,$ two-loop: <span style="font-size: 15pt">$q\bar q\rightarrow t\bar tH$</span> with quark-loop (<span style="font-size: 15pt">$n_f$</span> part), known numerically (<a href="https://secdec.readthedocs.io/en/stable/" style="font-variant: small-caps;">pySecDec</a>) <br>
+     <a style="font-size: large; text-align: right; float: right; margin-top: -1mm; margin-bottom: -4mm;" href="https://arxiv.org/abs/2402.03301">
+     Agarwal, Heinrich, Jones, Kerner, Klein, Lang, Magerya, Olsson '24
+     </a>
+     $\kern15mm$ <span style="font-size: 15pt; margin-top: 5mm;">$pp\rightarrow t\bar tH$</span> master integrals in LCA
+     <a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2312.08131">
+     Febres Cordero, Figueiredo, Kraus, Page, Reina '23
+     </a>
+     $\circ\,$ Goal: show how to reconstruct amplitudes in a manifestly spin- and little-group covariant form
 </div>
 </section>
 
@@ -318,17 +334,17 @@ $$
 \underbrace{\mathcal{R}^{(2)}}_{\text{finite remainder}} = \mathcal{A}^{(2)}_R \underbrace{- \quad I^{(1)}\mathcal{A}^{(1)}_R \quad - \quad I^{(2)}\mathcal{A}^{(0)}_R}_{\text{divergent + convention-dependent finite part}} + \mathcal{O}(\epsilon)
 $$
 </div>
-<a style="font-size: 13pt; float:right; text-align:right; margin-top:-14mm;" href=https://www.sciencedirect.com/science/article/abs/pii/S0370269398003323?via%3Dihub>
+<a style="font-size: 13pt; float:right; text-align:right; margin-top:-18mm;" href=https://www.sciencedirect.com/science/article/abs/pii/S0370269398003323?via%3Dihub>
 Catani ('98)
 </a>
-<a style="font-size: 13pt; float:right; margin-top:-9mm;" href=https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.102.162001>
+<a style="font-size: 13pt; float:right; margin-top:-13mm;" href=https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.102.162001>
 Becher, Neubert ('09)
 </a>
-<a style="font-size: 13pt; float:right; text-align:right; margin-top:-4mm;" href=https://arxiv.org/abs/0901.1091>
+<a style="font-size: 13pt; float:right; text-align:right; margin-top:-8mm;" href=https://arxiv.org/abs/0901.1091>
 Gardi, Magnea ('09)
 </a>
 <div style="text-align: left; font-size: 16pt; margin-bottom: 0mm; margin-top:0mm;">
-     $\phantom{\circ}$ $\mathcal{A}^{(1)}_R$ to order $\epsilon^2$ is still needed to build $\mathcal{R}^{(2)}$, but there is no real reason to reconstruct it.
+     $\phantom{\circ}$ <span style="font-size: 15pt">$\mathcal{A}^{(1)}_R$</span> to order <span style="font-size: 15pt">$\epsilon^2$</span> is still needed to build <span style="font-size: 15pt">$\mathcal{R}^{(2)}$</span>, but there is no real physical reason to reconstruct it.
 </div>
 <div style="text-align: left; font-size: 18pt; margin-top: 5mm; margin-bottom: 5mm;">
      $\circ$ Finite remainder as a weighted sum of <i>pentagon functions</i> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 0mm; margin-left: 4mm; " href=https://arxiv.org/abs/2009.07803> Chicherin, Sotnikov ('20) </a> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: -3mm; margin-left: 4mm; " href=https://arxiv.org/abs/2110.10111> Chicherin, Sotnikov, Zoia ('21) </a>
@@ -403,6 +419,30 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 <div style="font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 4mm;">
 $\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: <span style="font-size: 15pt;">$\mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{NMHV}}$</span>
 </div>
+</section>
+
+    </section>
+    
+
+    
+    
+    
+      
+<section >
+
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="varieties-no-background.png"
+  >
+
+<p><br><br><br><br></p>
+<h1 id="analytic--geometric-structure">Analytic &amp; Geometric Structure</h1>
+<p><br><br><br></p>
+<p><span style="font-size: 18pt">algebro-geometric formulation for physicists in:<span> <br>
+<span style="font-size: 18pt"><a href="https://arxiv.org/abs/2203.04269" target="_blank" rel="noopener">GDL, Page (JHEP 12 (2022) 140)</a><span></p>
+<p><span style="font-size: 18pt">see also Sturmfeld et al. &ldquo;Spinor-Helicity Varieties&rdquo;:<span> <br>
+<span style="font-size: 18pt"><a href="https://arxiv.org/abs/2406.17331" target="_blank" rel="noopener">arXiv:2406.17331</a><span></p>
 
     </section>
     
@@ -415,7 +455,7 @@ $\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: <span style="fon
       
 <p><b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Guiding Principles </b></p>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Amplitude should be gauge and Lorentz invariant, and little group covariant
+     $\circ$ Amplitude should be gauge and Lorentz invariant, and spin and little-group covariant
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
      ${\color{red} ✗}$ gauge dependence, e.g. through reference vectors <br>
@@ -470,7 +510,7 @@ $\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: <span style="fon
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\phantom{\circ}$ The covariant rings are
 </div>
-<div style="font-size: 15pt; margin-top: 5mm; margin-bottom: 5mm">
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
 \displaystyle \kern10mm R_{Vjj} = \mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |3⟩_{\alpha}, [3|_{\dot\alpha},  |4⟩_{\alpha}, [4|_{\dot\alpha}, [5|_{\dot\alpha}, |6⟩_{\alpha} \big] \Big/ \big\langle {\textstyle \sum_{i=1}^4} [5|i]\langle i |6\rangle \big\rangle
 $$
@@ -484,7 +524,8 @@ $$
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ where <span style="font-size: 15pt;">$\langle \boldsymbol{3}^I|\boldsymbol{3}^J⟩=m\epsilon^{JI} \text{ and } [\boldsymbol{3}^I|\boldsymbol{3}^J⟩=\bar{m}\epsilon^{IJ}$</span>; we are setting <span style="font-size: 15pt;">$m=\bar{m}$</span> and the tops on-shell.
+     $\phantom{\circ}$ where <span style="font-size: 15pt;">$\langle \boldsymbol{3}^I|\boldsymbol{3}^J⟩=m\epsilon^{JI} \text{ and } [\boldsymbol{3}^I|\boldsymbol{3}^J⟩=\bar{m}\epsilon^{IJ}$</span>; we are setting <span style="font-size: 15pt;">$m=\bar{m}$</span> and the tops on-shell. <br>
+     $\phantom{\circ}$ <u>Note</u>: we need only reconstruct a single choice, say <span style="font-size: 15pt;">$I=J=1$</span>, the other follow by covariance.
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ Helicity amplitudes are Lorentz invariant; minimal ansätze are build in the invariant sub-rings
@@ -496,33 +537,10 @@ $$
 </div>
 <div style="font-size: 15pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
-\displaystyle \mathcal{R}_{ttH} = \mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |\boldsymbol{3}^{I=1}⟩_{\alpha}, [\boldsymbol{3}^{I=1}|_{\dot\alpha}, \boldsymbol{3}_{\alpha\dot\alpha}, |\boldsymbol{4}_{J=1}⟩_{\alpha}, [\boldsymbol{4}_{J=1}|_{\dot\alpha}, \boldsymbol{4}_{\alpha\dot\alpha} \big]\Big/ \big\langle 90+ \text{generators}\big\rangle
+\displaystyle \mathcal{R}_{ttH} = \mathbb{F}\big[ \underbrace{\langle 12\rangle, \langle \boldsymbol{3}1\rangle ... ⟨2|\boldsymbol{3}|2] ... ⟨2|\boldsymbol{3}|\boldsymbol{4}|2⟩}_{37\; \text{invariants}}
+ \big]\Big/ \big\langle \underbrace{⟨2|\boldsymbol{3}|2]⟨2|\boldsymbol{4}1]-⟨2|\boldsymbol{3}|1]⟨2|\boldsymbol{4}|2]-[1|2]⟨2|\boldsymbol{3}|\boldsymbol{4}|2⟩, ...}_{\text{more than} \; 90 \; \text{generators}} \big\rangle
 $$
 </div>
-</section>
-
-    </section>
-    
-
-    
-    
-    
-      
-<section >
-
-<section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image="varieties-no-background.png"
-  >
-
-<p><br><br><br><br></p>
-<h1 id="analytic--geometric-structure">Analytic &amp; Geometric Structure</h1>
-<p><br><br><br></p>
-<p><span style="font-size: 18pt">algebro-geometric formulation for physicists in:<span> <br>
-<span style="font-size: 18pt"><a href="https://arxiv.org/abs/2203.04269" target="_blank" rel="noopener">GDL, Page (JHEP 12 (2022) 140)</a><span></p>
-<p><span style="font-size: 18pt">see also Sturmfeld et al. &ldquo;Spinor-Helicity Varieties&rdquo;:<span> <br>
-<span style="font-size: 18pt"><a href="https://arxiv.org/abs/2406.17331" target="_blank" rel="noopener">arXiv:2406.17331</a><span></p>
 
     </section>
     
@@ -775,10 +793,10 @@ $$
 \end{alignedat}
 $$
 </div>
-<div style="text-align: left; font-size: 16pt; margin-top: -4mm; margin-bottom: -4mm;">
-$\circ\,$ Partial fraction decomposition and numerator insertions from e.g. (see appendix of paper):
+<div style="text-align: left; font-size: 16pt; margin-top: -2mm; margin-bottom: 0mm;">
+$\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 </div>
-<div style="text-align: left; font-size: 12pt; margin-top: 0mm; margin-bottom: 1mm;">
+<div style="text-align: left; font-size: 12pt; margin-top: 2mm; margin-bottom: 1mm;">
      $$
      \sqrt{\big\langle ⟨2|1+4|3], Δ_{14|23|56} \big\rangle} = \big\langle {\color{green}(s_{124}-s_{134})}, ⟨2|1+4|3] \big\rangle \, , \\[1mm] 
      \big\langle ⟨1|2+3|4], ⟨2|1+4|3] \big\rangle = \big\langle ⟨1|2+3|4], ⟨2|1+4|3], {\color{blue}(s_{13}-s_{24})}\big\rangle \cap \big\langle ⟨12⟩, [34] \big\rangle
@@ -798,23 +816,23 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g. (see
      <b style="font-variant: small-caps; font-size: 32pt"> Core Tools - Fully Open Source </b>
 </div>
 <div style="text-align: center; float: center; font-size: 16pt; margin-top: 0mm; margin-bottom: 0mm;">
-     For a fleshed out example with open-source code see <a href=https://inspirehep.net/literature/2661970> GDL (ACAT '22) </a>
+     For fleshed out examples see e.g. <a href=https://inspirehep.net/literature/2661970> GDL (ACAT '22)</a> or <a href="https://arxiv.org/abs/2504.19909">Appendix B of 2504.19909</a>
 </div>
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 2mm;">
-     Install from github (<code style="font-size:14pt;">git clone</code>) or PyPI (<code style="font-size:14pt;">pip install</code>), use of Jupyter is recommended.
+     Install from github (<code style="font-size:14pt;">git clone</code>) or PyPI (<code style="font-size:14pt;">pip install</code>); use of Jupyter is recommended.
 </div>
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
      $\circ$ pyadic <br>
-     $\quad\rightarrow$ Finite-charactistic number types $Q_p$, $F_p$ <br>
+     $\quad\rightarrow$ Finite-charactistic number types $Q_p$, $F_p$, including field extensions <br>
      $\quad\rightarrow$ rational number reconstruction (Wang's EEA, LGRR, MQRR) <br>
      $\quad\rightarrow$ univariate and multivariante Newthon & univariate Thiele interpolation algorithms
 </div>
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ syngular (backhand Singular for many operations)<br>
+     $\circ$ syngular (in the backhand Singular is used for many operations)<br>
      $\quad\rightarrow$ object-oriented algebraic geometry (Field, Ring, Quotient Ring, Ideal) <br>
      $\quad\rightarrow$ ring-agnostic monomials and polynomials (with support for unicode characters, e.g. spinor brackets)<br>
      $\quad\rightarrow$ multivariate solver (Ideal.point_on_variety), under- and over-constrained systems OK <br>
-     $\quad\rightarrow$ custom prime and primary semi-numerical test
+     $\quad\rightarrow$ a semi-numerical prime and primary ideal test (assumes equi-dimensionality of ideal)
 </div>
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
      $\circ$ lips (Lorentz invariant phase space)<br>
@@ -892,7 +910,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g. (see
      $\circ$ Most operations do not require defining the variables, only being able to evaluate them.
 </div>
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ Only need to define the quotient ring to build the Ansatz (and even not having the redundancies is not a big problem)
+     $\circ$ Only need to define the quotient ring to build the Ansatz (and even then not having anlytic identities for the redundancies is not a big problem)
 </div>
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
      $\circ$ github.com/GDeLaurentis/antares-results
