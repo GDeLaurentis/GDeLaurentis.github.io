@@ -2361,19 +2361,19 @@ ttH: &lt;a href=&#34;https://arxiv.org/abs/2504.19909&#34;&gt;arXiv:2504.19909&l
 &lt;!-- Static background image (fades via fragment) --&gt;
 &lt;div style=&#34;position: relative; width: 100%; min-height: 450px;&#34;&gt;
      &lt;!-- Fragment 1: full-opacity image --&gt;
-     &lt;div class=&#34;fragment&#34; data-fragment-index=&#34;1&#34;
+     &lt;div class=&#34;fragment&#34; data-fragment-index=&#34;0&#34;
           style=&#34;position: absolute; top: 0; left: 0; z-index: 0; margin-top: 4mm;&#34;&gt;
           &lt;img src=&#34;ATLAS-XSections-transparent.png&#34;
                style=&#34;max-width: 550px; opacity: 1; border: none; margin: 0;&#34; /&gt;
      &lt;/div&gt;
-     &lt;!-- Fragment 2: faded image and content --&gt;
-     &lt;div class=&#34;fragment visible&#34; data-fragment-index=&#34;2&#34; 
+     &lt;!-- Fragment 1: faded image and content --&gt;
+     &lt;div class=&#34;fragment visible&#34; data-fragment-index=&#34;1&#34; 
           style=&#34;position: absolute; top: 0; left: 0; z-index: 0; margin-top: 4mm;&#34;&gt;
           &lt;img src=&#34;ATLAS-XSections-transparent-Vnj.png&#34;
                style=&#34;max-width: 550px; opacity: 0.10; border: none; margin: 0;&#34; /&gt;
      &lt;/div&gt;
      &lt;!-- Main text container (shown at same time as faded background) --&gt;
-     &lt;div class=&#34;fragment visible&#34; data-fragment-index=&#34;2&#34;
+     &lt;div class=&#34;fragment visible&#34; data-fragment-index=&#34;1&#34;
           style=&#34;position: relative; z-index: 1; margin-left: 15%; padding: 10px;&#34;&gt;
           &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: -5mm;&#34;&gt;
           $\rightarrow\,$ Theoretical uncertainties are already larger than experimental ones,
@@ -2402,7 +2402,7 @@ ttH: &lt;a href=&#34;https://arxiv.org/abs/2504.19909&#34;&gt;arXiv:2504.19909&l
           &lt;/div&gt;
      &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&#34;fragment&#34; data-fragment-index=&#34;2&#34;
+&lt;div class=&#34;fragment&#34; data-fragment-index=&#34;1&#34;
      style=&#34;text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: -8mm;&#34;&gt;
      $\circ\,$ &lt;span style=&#34;font-size: 16pt&#34;&gt;$pp\rightarrow ttH$&lt;/span&gt; of interest primarily for direct access to top Yukawa &lt;span style=&#34;font-size: 16pt&#34;&gt;$y_t$&lt;/span&gt; (but also CP, EFTs, 2HDM, etc.) &lt;br&gt;
      $\phantom{\circ}\,$ current N$^2$LO pheno. relies on approx. amplitudes
@@ -2583,11 +2583,11 @@ $\mathbb{Q}_p$: GDL, Page (&#39;22)
 &lt;/a&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 34pt; magin-bottom: -5mm;&#34;&gt; Setting up the Calculation &lt;/b&gt; &lt;br&gt;&lt;/p&gt;
-&lt;div style=&#34;font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 0mm;&#34;&gt;
-$\circ$ Original computation  &lt;a href=&#34;https://arxiv.org/abs/hep-ph/9708239&#34; style=&#34;font-size: 18pt&#34;&gt;[1]&lt;/a&gt; was performed with &lt;code style=&#34;font-size: 17pt&#34;&gt;Caravel&lt;/code&gt;
+&lt;div style=&#34;font-size: 17pt; text-align:left; margin-bottom: 0mm; margin-top: 0mm;&#34;&gt;
+$\circ$ Original computation  &lt;a href=&#34;https://arxiv.org/abs/hep-ph/9708239&#34; style=&#34;font-size: 18pt&#34;&gt;[1]&lt;/a&gt; was performed with &lt;span style=&#34;font-variant: small-caps;font-size: 17pt&#34;&gt;Caravel&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&#34;display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;&#34;&gt;
-     &lt;div style=&#34;font-size: 16pt; width:75%; text-align: left; display: inline-block; margin-top: 3mm;&#34;&gt;
+     &lt;div style=&#34;font-size: 15pt; width:75%; text-align: left; display: inline-block; margin-top: 1mm;&#34;&gt;
 	     $$
 	     \require{color}
 	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell)\big|_{\text{cut}_{\Gamma}} = \sum_{\substack{\Gamma&#39; \ge \Gamma, \\ i \in M_\Gamma&#39; \cup S_\Gamma&#39;}} \kern-2mm {\color{black}{c_{\,\Gamma&#39;,i}(\lambda, \tilde\lambda)}} \, \frac{m_{\Gamma&#39;,i}(\lambda\tilde\lambda, \ell)}{\displaystyle \prod_{j\in P_{\Gamma&#39;} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell)}\Bigg|_{\text{cut}_\Gamma}
@@ -2601,29 +2601,33 @@ $\circ$ Original computation  &lt;a href=&#34;https://arxiv.org/abs/hep-ph/97082
 	     &lt;br&gt;
 	     &lt;a style=&#34;font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;&#34;
 	     	href=https://arxiv.org/abs/2009.11957&gt;
-		&lt;div style=&#34;margin-top:0mm&#34;&gt; Abreu, Dormans, &lt;/div&gt;
-		&lt;div&gt; Febres Cordero, Ita  &lt;/div&gt;
-		&lt;div&gt; Kraus, Page, Pascual, &lt;/div&gt;
-		&lt;div&gt; Ruf, Sotnikov (&#39;20) &lt;/div&gt;
+		&lt;div style=&#34;margin-top:-4mm; font-size: 11pt;&#34;&gt; Abreu, Dormans, &lt;/div&gt;
+		&lt;div style=&#34;margin-top:0mm; font-size: 11pt;&#34;&gt; Febres Cordero, Ita  &lt;/div&gt;
+		&lt;div style=&#34;margin-top:0mm; font-size: 11pt;&#34;&gt; Kraus, Page, Pascual, &lt;/div&gt;
+		&lt;div style=&#34;margin-top:0mm; font-size: 11pt;&#34;&gt; Ruf, Sotnikov (&#39;20) &lt;/div&gt;
 	     &lt;/a&gt;
 	&lt;/div&gt;
-     &lt;div style=&#34;font-size: 18pt; width:75%; text-align: left; display: inline-block; margin-top: 5mm; margin-bottom: -4mm;&#34;&gt;
-	     $\star$ Numerical Berends-Giele recursion for LHS, solve for coeffs. in RHS.&lt;br&gt;
-	     $\star$ IBP reduction = decomposition on RHS, &lt;span style=&#34;font-size: 16t&#34;&gt;$\; m_{\Gamma,i} \in M_\Gamma \cup S_\Gamma$&lt;/span&gt;
+     &lt;div style=&#34;font-size: 16pt; width:75%; text-align: left; display: inline-block; margin-top: 2mm; margin-bottom: -4mm;&#34;&gt;
+	     $\rightarrow$ Numerical Berends-Giele recursion for LHS, solve for coeffs. in RHS.&lt;br&gt;
+	     $\rightarrow$ IBP reduction = decomposition on RHS, &lt;span style=&#34;font-size: 16t&#34;&gt;$\; m_{\Gamma,i} \in M_\Gamma \cup S_\Gamma$&lt;/span&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 0mm; margin-top: 6mm;&#34;&gt;
+&lt;div style=&#34;font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 6mm;&#34;&gt;
      $\circ$ This computation started from the ancillaries files of &lt;a href=&#34;https://arxiv.org/abs/hep-ph/9708239&#34; style=&#34;font-size: 14pt&#34;&gt;[1] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov&lt;/a&gt;
-     &lt;div style=&#34;font-size: 18pt; width:99%; text-align: left; display: inline-block; margin-top: 2mm; margin-left:10mm;&#34;&gt;
+     &lt;div style=&#34;font-size: 16pt; width:99%; text-align: left; display: inline-block; margin-top: 2mm; margin-left:10mm;&#34;&gt;
 	     1. Wrote a Python script to split the 1.4 GB ancillaries into &gt;10k files &lt;br&gt;
-	     2. Compile into 18.2 GB of C++ binaries (for reference &lt;code style=&#34;font-size: 17pt&#34;&gt;Caravel&lt;/code&gt; compiles into approx. 5 GB) &lt;br&gt;
+	     2. Compile into 18.2 GB of C++ binaries (for reference &lt;span style=&#34;font-variant: small-caps;font-size: 17pt&#34;&gt;Caravel&lt;/span&gt; compiles into approx. 5 GB) &lt;br&gt;
           3. Obtain &lt;span style=&#34;font-size: 16t&#34;&gt;$\mathbb{F}_p$&lt;/span&gt; evaluations of the form factors (each takes approx. 1 sec per point)&lt;br&gt;
-          4. Recombine triplets of form factors into helicity amplitudes
+          4. Recombine triplets of form factors into six-point helicity amplitudes (incl. decays)
 	&lt;/div&gt;
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 4mm;&#34;&gt;
-$\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{NMHV}}$&lt;/span&gt;
+&lt;div style=&#34;font-size: 17pt; text-align:left; margin-bottom: 0mm; margin-top: 2mm;&#34;&gt;
+$\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{NMHV}}$&lt;/span&gt;
 &lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 3mm;&#34;&gt;
+     $\circ$ &lt;span style=&#34;font-size: 15pt;&#34;&gt;$ttH$&lt;/span&gt; computed analytically (&lt;span style=&#34;font-variant: small-caps;&#34;&gt;Form&lt;/span&gt; optimized) with unitarity, standard Feynman diagrams techniques, &lt;br&gt; $\phantom{\circ}$ and cross checked with &lt;span style=&#34;font-variant: small-caps;&#34;&gt;Open-Loops&lt;/span&gt;
+&lt;/div&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1907.13071&#34; style=&#34;font-size: 14pt; margin-top: -5mm; float: right; font-align: right;&#34;&gt; Buccioni, Lang, Lindert, Maierhöfer, Pozzorini, Zhang, Zoller&lt;/a&gt;
 &lt;/section&gt;
 &lt;hr&gt;
 &lt;section &gt;
@@ -2696,15 +2700,15 @@ $$
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}$ where we took the the &lt;span style=&#34;font-size: 15pt;&#34;&gt;$V$&lt;/span&gt; current to be &lt;span style=&#34;font-size: 15pt;&#34;&gt;$[5|\gamma^\mu|6\rangle$&lt;/span&gt; and removed $5_{\alpha\dot\alpha}$ by mom. cons.; and
+     $\phantom{\circ}$ where we took the the &lt;span style=&#34;font-size: 15pt;&#34;&gt;$V$&lt;/span&gt; current to be &lt;span style=&#34;font-size: 15pt;&#34;&gt;$[5|\gamma^\mu|6\rangle$&lt;/span&gt; and removed &lt;span style=&#34;font-size: 15pt;&#34;&gt;$(5+6)_{\alpha\dot\alpha}$&lt;/span&gt; by mom. cons.; and
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 15pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
 $$ 
-\displaystyle \kern10mm R_{ttH} = \frac{\mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |\boldsymbol{3}^I⟩_{\alpha}, [\boldsymbol{3}^I|_{\dot\alpha}, |\boldsymbol{4}_J⟩_{\alpha}, [\boldsymbol{4}_J|_{\dot\alpha}, \boldsymbol{5}_{\alpha\dot\alpha} \big]}{\big\langle \sum_{i=1}^5 |i\rangle[i|, \langle \boldsymbol{3}|\boldsymbol{3}⟩ +[\boldsymbol{3}|\boldsymbol{3}], \langle \boldsymbol{3}|\boldsymbol{3}⟩-\langle \boldsymbol{4}|\boldsymbol{4}⟩, \langle \boldsymbol{4}|\boldsymbol{4}⟩ +[\boldsymbol{4}|\boldsymbol{4}]\big\rangle}
+\displaystyle \kern10mm R_{ttH} = \frac{\mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |\boldsymbol{3}^I⟩_{\alpha}, [\boldsymbol{3}^I|_{\dot\alpha}, |\boldsymbol{4}_J⟩_{\alpha}, [\boldsymbol{4}_J|_{\dot\alpha}, \boldsymbol{5}_{\alpha\dot\alpha} \big]}{\big\langle \sum_{i,I,J} |i\rangle[i|, \langle \boldsymbol{3}|\boldsymbol{3}⟩ +[\boldsymbol{3}|\boldsymbol{3}], \langle \boldsymbol{3}|\boldsymbol{3}⟩-\langle \boldsymbol{4}|\boldsymbol{4}⟩, \langle \boldsymbol{4}|\boldsymbol{4}⟩ +[\boldsymbol{4}|\boldsymbol{4}]\big\rangle}
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}$ where &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\langle \boldsymbol{3}^I|\boldsymbol{3}^J⟩=m\epsilon^{JI} \text{ and } [\boldsymbol{3}^I|\boldsymbol{3}^J⟩=\bar{m}\epsilon^{IJ}$&lt;/span&gt;; we are setting &lt;span style=&#34;font-size: 15pt;&#34;&gt;$m=\bar{m}$&lt;/span&gt; and the tops on-shell. &lt;br&gt;
+     $\phantom{\circ}$ where &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\langle \boldsymbol{3}^I|\boldsymbol{3}^J⟩=m\epsilon^{JI} \text{ and } [\boldsymbol{3}^I|\boldsymbol{3}^J]=\bar{m}\epsilon^{IJ}$&lt;/span&gt;; we are setting &lt;span style=&#34;font-size: 15pt;&#34;&gt;$m=\bar{m}$&lt;/span&gt; and the tops on-shell. &lt;br&gt;
      $\phantom{\circ}$ &lt;u&gt;Note&lt;/u&gt;: we need only reconstruct a single choice, say &lt;span style=&#34;font-size: 15pt;&#34;&gt;$I=J=1$&lt;/span&gt;, the other follow by covariance.
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
@@ -2718,7 +2722,7 @@ $$
 &lt;div style=&#34;font-size: 15pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
 $$ 
 \displaystyle \mathcal{R}_{ttH} = \mathbb{F}\big[ \underbrace{\langle 12\rangle, \langle \boldsymbol{3}1\rangle ... ⟨2|\boldsymbol{3}|2] ... ⟨2|\boldsymbol{3}|\boldsymbol{4}|2⟩}_{37\; \text{invariants}}
- \big]\Big/ \big\langle \underbrace{⟨2|\boldsymbol{3}|2]⟨2|\boldsymbol{4}1]-⟨2|\boldsymbol{3}|1]⟨2|\boldsymbol{4}|2]-[1|2]⟨2|\boldsymbol{3}|\boldsymbol{4}|2⟩, ...}_{\text{more than} \; 90 \; \text{generators}} \big\rangle
+ \big]\Big/ \big\langle \underbrace{⟨2|\boldsymbol{3}|2]⟨2|\boldsymbol{4}|1]-⟨2|\boldsymbol{3}|1]⟨2|\boldsymbol{4}|2]-[1|2]⟨2|\boldsymbol{3}|\boldsymbol{4}|2⟩, ...}_{\text{more than} \; 90 \; \text{generators}} \big\rangle
 $$
 &lt;/div&gt;
 &lt;hr&gt;
@@ -2960,12 +2964,12 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
      $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/pyadic/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;pyadic&lt;/a&gt;&lt;br&gt;
-     $\quad\rightarrow$ Finite fields $\mathbb{F}_p$ and $p$-adic number types $\mathbb{Q}_p$, including field extensions &lt;br&gt;
+     $\quad\rightarrow$ Finite field $\mathbb{F}_p$ and $p$-adic $\mathbb{Q}_p$ number types, including field extensions &lt;br&gt;
      $\quad\rightarrow$ rational number reconstruction (Wang&#39;s EEA, LGRR, MQRR) &lt;br&gt;
      $\quad\rightarrow$ univariate and multivariante Newthon &amp; univariate Thiele interpolation algorithms in $\mathbb{F}_p$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-     $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/syngular/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;syngular&lt;/a&gt; (in the backhand Singular is used for many operations)&lt;br&gt;
+     $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/syngular/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;syngular&lt;/a&gt; (in the backhand &lt;a href=&#34;https://www.singular.uni-kl.de/index.php.html&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;Singular&lt;/a&gt;  is used for many operations)&lt;br&gt;
      $\quad\rightarrow$ object-oriented algebraic geometry (Field, Ring, Quotient Ring, Ideal) &lt;br&gt;
      $\quad\rightarrow$ ring-agnostic monomials and polynomials (with support for unicode characters, e.g. spinor brackets)&lt;br&gt;
      $\quad\rightarrow$ multivariate solver (Ideal.point_on_variety), under- and over-constrained systems OK &lt;br&gt;
@@ -2973,7 +2977,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
      $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/lips/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;lips&lt;/a&gt; (Lorentz invariant phase space)&lt;br&gt;
-     $\quad\rightarrow$ phase space points over any field ($Q, Qi, R, C, Qp, Fp$), including internal and external masses &lt;br&gt;
+     $\quad\rightarrow$ phase space points over any field ($\mathbb{Q}, \mathbb{Q}[i], \mathbb{R}, \mathbb{C}, \mathbb{Q}_p, \mathbb{F}_p$), including internal and external masses &lt;br&gt;
      $\quad\rightarrow$ evaluate any Mandelstam or spinor expression (custom ast/regex parser) &lt;br&gt;
      $\quad\rightarrow$ generation of any special kinematic configuration (wrapper around Ideal.point_on_variety)
 &lt;/div&gt;
@@ -2987,12 +2991,12 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
       data-background-image=&#34;Wjj_diagrams.png&#34;
   &gt;
 
-&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;h1 id=&#34;br-conclusions-br--br-outlook&#34;&gt;&lt;br&gt; Conclusions &lt;br&gt; &amp;amp; &lt;br&gt; Outlook&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 36pt; margin-bottom: -6mm;&#34;&gt; Spinor-Helicity Amplitudes Results &lt;/b&gt;
 &lt;br&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm;&#34;&gt;
-     $\circ$ The &lt;span style=&#34;font-size: 14pt;&#34;&gt;$pp\rightarrow Vjj$&lt;/span&gt; coefficient functions are now 1.9 MB (from 1.4 GB), fast and stable. &lt;br&gt;
+     $\circ$ The &lt;span style=&#34;font-size: 15pt;&#34;&gt;$pp\rightarrow Vjj$&lt;/span&gt; coefficient functions are now 1.9 MB (down from 1.4 GB), fast and stable. &lt;br&gt;
      $\phantom{\circ}$ Matrices &lt;span style=&#34;font-size: 15pt;&#34;&gt;$M_{ij}$&lt;/span&gt; account for another 2 MB overall. Transcendental basis at &lt;a href=&#34;https://gitlab.com/pentagon-functions/PentagonFunctions-cpp&#34;&gt;PentagonFunctions++&lt;/a&gt;.
 &lt;/div&gt;
 &lt;div style=&#34;display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;&#34;&gt;
@@ -3012,25 +3016,30 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
      $\circ$ Pheno ready results for the hard functions are available at &lt;a href=&#34;https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp&#34;&gt;FivePointAmplitudes&lt;/a&gt;.
 &lt;/div&gt;
+&lt;!---
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
      $\circ$ Amplitudes at &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results&#34;&gt;antares-results&lt;/a&gt;, with &lt;a href=&#34;https://gdelaurentis.github.io/antares-results/index.html&#34;&gt;human readable expr.&lt;/a&gt;, and &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results/actions/&#34;&gt;CI tests&lt;/a&gt; for full amplitude in real kinematics
 &lt;/div&gt;
+---&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 34pt; margin-bottom: -6mm;&#34;&gt; A Numerical CAS for Computations in Q-Rings &lt;/b&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
-     $\circ$ Most operations do not require defining the variables, only being able to evaluate them.
+&lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
+     &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; A Numerical CAS for Computations in Q-Rings &lt;/b&gt;
+     &lt;p style=&#34;margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;&#34;&gt;
+     (partially work in progress)
+     &lt;/p&gt;
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
-     $\circ$ Only need to define the quotient ring to build the Ansatz (and even then not having anlytic identities for the redundancies is not a big problem)
+     $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/antares/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;antares&lt;/a&gt; (automated numerical to analytical reconstruction software) &lt;br&gt;
+     $\rightarrow$ Univariate slicing, LCD determination, basis change, multivariate partial fractioning strategies, &lt;br&gt;
+     $\phantom{\rightarrow}$ constraining of numerators, Ansatz generation and fitting strategies &lt;br&gt;
+     $\rightarrow$ Most operations do not require defining the variables (or redundancies), only being able to evaluate them.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
-     $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/antares/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;antares&lt;/a&gt; (automated numerical to analytical reconstruction software), &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;antares-results&lt;/a&gt;, &lt;a href=&#34;https://gdelaurentis.github.io/antares-results/&#34;&gt;documentation&lt;/a&gt;
+     $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;antares-results&lt;/a&gt; (human readable exprs in &lt;a href=&#34;https://gdelaurentis.github.io/antares-results/&#34;&gt;docs&lt;/a&gt;) with &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results/actions/&#34;&gt;CI tests&lt;/a&gt; for coefficients and/or full amplitudes
 &lt;/div&gt;
 &lt;div style=&#34;display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;&#34;&gt;
-    &lt;div style=&#34;padding: 0 10px;&#34;&gt;
-        &lt;img src=&#34;antares-results-transparent.png&#34; style=&#34;width: 100%; max-width: 250px; border: none; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-    &lt;/div&gt;
+     &lt;img src=&#34;antares-results-transparent-combined-v2.png&#34; 
+          style=&#34;width: 100%; max-width: 850px; float: left; border: none; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;hr&gt;
