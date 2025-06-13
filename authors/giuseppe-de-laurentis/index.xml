@@ -746,10 +746,10 @@ $\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: &lt;span style=&
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Trade-offs and Challenges &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ$ We must work with &lt;u&gt;variables subject to constrains&lt;/u&gt;; the language is that of algebraic geometry.
+     $\circ$ We must work with &lt;u&gt;variables subject to constrains&lt;/u&gt;. The language is that of algebraic geometry.
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ$ For example, consider polynomials in two variables &lt;span style=&#34;font-size: 14pt;&#34;&gt;$x, y$&lt;/span&gt;
+     $\circ$ For example, consider polynomials in two variables &lt;span style=&#34;font-size: 14pt;&#34;&gt;$x, y$&lt;/span&gt;. They live in a &lt;b&gt;polynomial ring&lt;/b&gt;:
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
 $$ 
@@ -757,7 +757,7 @@ $$
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}$ This is a &lt;b&gt;polynomial ring&lt;/b&gt;. Now, localize them on the unit circle &lt;span style=&#34;font-size: 14pt;&#34;&gt;$(x^2+y^2-1)$&lt;/span&gt;
+     $\circ$ Now, localize them on the unit circle &lt;span style=&#34;font-size: 14pt;&#34;&gt;$(x^2+y^2-1)$&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
 $$ 
@@ -765,7 +765,10 @@ $$
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}$ &lt;span style=&#34;font-size: 14pt;&#34;&gt;$f(x,y)$, $g(x, y)$&lt;/span&gt; are equivalent. The structure is that of a polynomial &lt;b&gt;quotient&lt;/b&gt; ring.
+     $\phantom{\circ}$ we should consider &lt;span style=&#34;font-size: 14pt;&#34;&gt;$f(x,y)$&lt;/span&gt; and &lt;span style=&#34;font-size: 14pt;&#34;&gt;$g(x, y)$&lt;/span&gt; as equivalent, for any &lt;span style=&#34;font-size: 14pt;&#34;&gt;$h(x,y)$&lt;/span&gt;.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ The structure is that of a polynomial &lt;b&gt;quotient&lt;/b&gt; ring
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
 $$ 
@@ -776,20 +779,39 @@ $$
      $\phantom{\circ}$ its elements are &lt;b&gt;equivalence classes&lt;/b&gt; of polynomials.
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ$ For $n$-point massless scattering, the quotient ring is
+     $\circ$ &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\big\langle x^2+y^2-1 \big\rangle \subset \mathbb{Q}[x, y]$&lt;/span&gt; is an example of an &lt;b&gt;ideal&lt;/b&gt;, the infinite set of polynomials &lt;br&gt; 
+     $\phantom{\circ}$ &lt;span style=&#34;font-size: 14pt;&#34;&gt;$h(x, y) (x^2+y^2-1)$&lt;/span&gt; that vanishes on the unit circle.
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Massless Scattering &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ For &lt;span style=&#34;font-size: 14pt;&#34;&gt;$n$&lt;/span&gt;-point massless scattering, the quotient ring is
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
 $$ 
-\displaystyle \kern10mm R_{n} = \mathbb{F}\Big[|1⟩_{\alpha}, [1|_{\dot\alpha}, \dots, |n⟩_{\alpha}, [n|_{\dot\alpha} \Big] \Big/ \Big\langle {\textstyle \sum_{i=1}^n} |i]\langle i | \Big\rangle
+\displaystyle \kern10mm R_{n} = \mathbb{F}\Big[|1⟩_{\alpha}, [1|_{\dot\alpha}, \dots, |n⟩_{\alpha}, [n|_{\dot\alpha} \Big] \Big/ \Big\langle {\textstyle \sum_{i=1}^n} |i\rangle[ i | \Big\rangle
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}$ polynomials equivalent on the momentum-conserving surface (a.k.a. variety).
+     $\circ$ The &#34;unit circle&#34; is now the codimension &lt;span style=&#34;font-size: 14pt;&#34;&gt;$4$&lt;/span&gt; &#34;momentum conservation&#34; &lt;b&gt;variety&lt;/b&gt; within a &lt;span style=&#34;font-size: 14pt;&#34;&gt;$4n$&lt;/span&gt; &lt;br&gt; $\phantom{\circ}$ dimensional space. On this variety we have equivalence relations such as 
+&lt;/div&gt;
+&lt;div style=&#34;font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm&#34;&gt;
+     $$
+     \displaystyle \langle 1|2+3|1]=\langle 1|-1-4-5|1]=-\langle 1|4+5|1] \quad \text{in} \quad R_5
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ The rational functions &lt;span style=&#34;font-size: 16pt&#34;&gt;$r_i$&lt;/span&gt; belong to the field of fractions of &lt;span style=&#34;font-size: 16pt&#34;&gt;$R_n$&lt;/span&gt;,
+&lt;/div&gt;
+&lt;div style=&#34;font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm&#34;&gt;
+     $$
+     \displaystyle r_i(|i\rangle,[i|) = \frac{\mathcal{N}(|i\rangle,[i|)}{\mathcal{D}(|i\rangle,[i|)} \, , \quad r_i(|i\rangle,[i|) \in \text{Frac}(R_n)
+     $$
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Choosing the Appropriate Covariant Q-Ring &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ$ The space of &lt;span style=&#34;font-size: 15pt;&#34;&gt;$pp \rightarrow V(\rightarrow \bar\ell\ell)jj$&lt;/span&gt; is simpler than that of say &lt;span style=&#34;font-size: 15pt;&#34;&gt;$pp \rightarrow jjjj$&lt;/span&gt;, we don&#39;t want to use &lt;span style=&#34;font-size: 15pt;&#34;&gt;$R_6$&lt;/span&gt;. &lt;br&gt;
+     $\circ$ For &lt;span style=&#34;font-size: 15pt;&#34;&gt;$pp \rightarrow V(\rightarrow \bar\ell\ell)jj$&lt;/span&gt; the space is simpler than that of say &lt;span style=&#34;font-size: 15pt;&#34;&gt;$pp \rightarrow jjjj$&lt;/span&gt;, we don&#39;t want to use &lt;span style=&#34;font-size: 15pt;&#34;&gt;$R_6$&lt;/span&gt;. &lt;br&gt;
      $\phantom{\circ}$ Take the decay current to be &lt;span style=&#34;font-size: 15pt;&#34;&gt;$[5|\gamma^\mu|6\rangle$&lt;/span&gt;, and remove &lt;span style=&#34;font-size: 15pt;&#34;&gt;$p_{V\alpha\dot\alpha}=(5+6)_{\alpha\dot\alpha}$&lt;/span&gt; by mom. cons.
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
@@ -798,22 +820,55 @@ $$
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}$ Assuming ...
+     $\phantom{\circ}$ This always hold for the numerator polynomials (and almost the denomiantors).
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ For &lt;span style=&#34;font-size: 15pt;&#34;&gt;$pp \rightarrow ttH$&lt;/span&gt; we use the massive spinor-helicity (or spin-spinor) formalism
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 15pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1809.09644&#34; style=&#34;font-size: 14pt; margin-top: -3mm; float: right; font-align: right;&#34;&gt; Shadmi, Weiss &lt;/a&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1802.06730&#34; style=&#34;font-size: 14pt; margin-top: -3mm;  margin-right: 2mm; float: right; font-align: right;&#34;&gt; Ochirov; &lt;/a&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1709.04891&#34; style=&#34;font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;&#34;&gt; Arkani-Hamed, Huang, Huang;&lt;/a&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 8mm; margin-bottom: 5mm&#34;&gt;
 $$ 
 \displaystyle \kern10mm R_{ttH} = \frac{\mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |\boldsymbol{3}^I⟩_{\alpha}, [\boldsymbol{3}^I|_{\dot\alpha}, |\boldsymbol{4}_J⟩_{\alpha}, [\boldsymbol{4}_J|_{\dot\alpha}, \boldsymbol{5}_{\alpha\dot\alpha} \big]}{\big\langle \sum_{i,I,J} |i\rangle[i|, \langle \boldsymbol{3}|\boldsymbol{3}⟩ +[\boldsymbol{3}|\boldsymbol{3}], \langle \boldsymbol{3}|\boldsymbol{3}⟩-\langle \boldsymbol{4}|\boldsymbol{4}⟩, \langle \boldsymbol{4}|\boldsymbol{4}⟩ +[\boldsymbol{4}|\boldsymbol{4}]\big\rangle}
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}$ where &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\langle \boldsymbol{3}^I|\boldsymbol{3}^J⟩=m\epsilon^{JI} \text{ and } [\boldsymbol{3}^I|\boldsymbol{3}^J]=\bar{m}\epsilon^{IJ}$&lt;/span&gt;; we are setting &lt;span style=&#34;font-size: 15pt;&#34;&gt;$m=\bar{m}$&lt;/span&gt; and the tops on-shell. &lt;br&gt;
-     $\phantom{\circ}$ &lt;u&gt;Note&lt;/u&gt;: we need only reconstruct a single choice, say &lt;span style=&#34;font-size: 15pt;&#34;&gt;$I=J=1$&lt;/span&gt;, the other follow by covariance.
+     $\phantom{\circ}$ where &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\langle \boldsymbol{3}^I|\boldsymbol{3}^J⟩=m\epsilon^{JI} \text{ and } [\boldsymbol{3}^I|\boldsymbol{3}^J]=\bar{m}\epsilon^{IJ}$&lt;/span&gt;; we are setting &lt;span style=&#34;font-size: 15pt;&#34;&gt;$m=\bar{m}$&lt;/span&gt; and the tops on-shell.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ &lt;span style=&#34;font-size: 15pt;&#34;&gt;$|\boldsymbol{3}^I⟩_{\alpha}$&lt;/span&gt; is basically two copies of a massless spinor, we can think of this through the map
+&lt;/div&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1601.08113&#34; style=&#34;font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;&#34;&gt; Conde, Marzolla&lt;/a&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1605.07402&#34; style=&#34;font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;&#34;&gt; Conde, Joung, Mkrtchyan;&lt;/a&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 8mm; margin-bottom: 5mm&#34;&gt;
+$$ 
+\displaystyle 1 \rightarrow 1, 2 \rightarrow 2, \boldsymbol{3} \rightarrow 3+4, \boldsymbol{4} \rightarrow 5+6, \boldsymbol{5} \rightarrow 7+8
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\phantom{\circ}$ but if we want neat expressions we must be careful not to overparametrise the space!
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Examples of Trees &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ To not make this too abstract, we are after expressions like these for the MI coefficients.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 8mm; margin-bottom: 5mm&#34;&gt;
+$$ 
+{A}_g^{(0)}(1^{+}_q, 2^{+}_g, 3^{+}_g, 4^{-}_\bar{q}) = \frac{⟨46⟩^2}{⟨12⟩⟨23⟩⟨34⟩⟨65⟩} \, , \\[4mm]
+{A}_g^{(0)}(1^{+}, 2^{+}, 3^{-}, 4^{-}) = \frac{⟨13⟩⟨3|1+2|5]^2}{⟨12⟩⟨23⟩[65]⟨1|2+3|4]s_{123}} \; + \; (123456\rightarrow \overline{432165}) \, , \\
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 8mm; margin-bottom: 5mm&#34;&gt;
+$$ 
+{A}_g^{(0)}(1^{+}_q, 2^{+}_\bar{q}, 3^{+}_t, 4^{-}_\bar{t}, 5_H) = \frac{⟨2|𝟑|1]⟨𝟑𝟒⟩-[𝟑1][1𝟒]⟨12⟩}{s_{12}(s_{12𝟑}-m_t²)} + 
+(\overline{21345}) + (12435) +  (\overline{21435})
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\phantom{\circ}$ &lt;u&gt;Note&lt;/u&gt;: we need only reconstruct a single choice, say &lt;span style=&#34;font-size: 15pt;&#34;&gt;$I=J=1$&lt;/span&gt;, the other follow by covariance.
+&lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Spinor Alphabets &lt;/b&gt;&lt;/p&gt;
 &lt;hr&gt;
