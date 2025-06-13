@@ -5,7 +5,7 @@
     <link>https://gdelaurentis.github.io/talk/</link>
       <atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 21 May 2025 12:20:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 16 Jun 2025 12:20:00 +0000</lastBuildDate>
     <image>
       <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
@@ -13,7 +13,21 @@
     </image>
     
     <item>
-      <title>Compact Two-Loop QCD Corrections for $Vjj$ Production in Proton Collisions</title>
+      <title>Analytic Structure and Reconstruction in QCD: Two-Loop $pp \rightarrow Vjj$ and One-Loop $q\bar{q} \rightarrow t\bar{t}H$</title>
+      <link>https://gdelaurentis.github.io/talk/cernjune2025/</link>
+      <pubDate>Mon, 16 Jun 2025 12:20:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/cernjune2025/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Loop amplitudes are essential ingredients in precision simulations of particle collisions at the LHC. Their computation poses both conceptual and computational challenges. A powerful and increasingly popular strategy to bypass intermediate bottlenecks in integrand reduction is to first evaluate amplitudes numerically over finite fields, and then recover their analytic form through analytic reconstruction.&lt;/p&gt;
+&lt;p&gt;In this talk, I will present two recent computations of fully analytic amplitudes obtained using this approach. The first is for the two-loop process $pp\rightarrow V(\rightarrow \bar\ell\ell)jj$ in the leading-color approximation (&lt;a href=&#34;https://arxiv.org/abs/2503.10595&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2503.10595&lt;/a&gt;). In this case, we revisited a previous result (&lt;a href=&#34;https://arxiv.org/abs/2110.07541&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2110.07541&lt;/a&gt;) and drastically simplified the amplitude from 1.4 GB to 1.9 MB, while also reducing the number of numerical samples from 1 million to 50 thousand.&lt;/p&gt;
+&lt;p&gt;The second computation is for the one-loop amplitude for $q\bar{q}\rightarrow t\bar{t}H$
+(&lt;a href=&#34;https://arxiv.org/abs/2504.19909&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2504.19909&lt;/a&gt;). This is the first time an amplitude has been reconstructed in the massive spinor-helicity formalism, which provides a minimal parametrisation.&lt;/p&gt;
+&lt;p&gt;I will outline key aspects of both computations, focusing on the reconstruction technique, and in particular the role of minimal spinor-helicity parametrisations, the choice of efficient bases for master integral coefficients, and their representation via multivariate partial fractions. In this way, we uncover structural features of the amplitudes and provide numerically stable and efficient implementations suitable for phenomenological applications and further theoretical studies.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analytic Structure and Reconstruction in QCD: Two-Loop $pp \rightarrow Vjj$ and One-Loop $q\bar{q} \rightarrow t\bar{t}H$</title>
       <link>https://gdelaurentis.github.io/talk/loopfest_may2025/</link>
       <pubDate>Wed, 21 May 2025 12:20:00 +0000</pubDate>
       <guid>https://gdelaurentis.github.io/talk/loopfest_may2025/</guid>
