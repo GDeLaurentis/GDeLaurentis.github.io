@@ -225,7 +225,7 @@ ttH: &lt;a href=&#34;https://arxiv.org/abs/2504.19909&#34;&gt;arXiv:2504.19909&l
 &lt;/div&gt;
 &lt;div class=&#34;fragment&#34; data-fragment-index=&#34;1&#34;
      style=&#34;text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: -8mm;&#34;&gt;
-     $\circ\,$ &lt;span style=&#34;font-size: 16pt&#34;&gt;$pp\rightarrow ttH$&lt;/span&gt; of interest primarily for direct access to top Yukawa &lt;span style=&#34;font-size: 16pt&#34;&gt;$y_t$&lt;/span&gt; (but also CP, EFTs, 2HDM, etc.) &lt;br&gt;
+     $\circ\,$ &lt;span style=&#34;font-size: 16pt&#34;&gt;$pp\rightarrow t\bar{t}H$&lt;/span&gt; of interest primarily for direct access to top Yukawa &lt;span style=&#34;font-size: 16pt&#34;&gt;$y_t$&lt;/span&gt; (but also CP, EFTs, 2HDM, etc.) &lt;br&gt;
      $\phantom{\circ}\,$ current N$^2$LO pheno. relies on approx. amplitudes
      &lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: -3mm;&#34; href=&#34;https://arxiv.org/abs/2210.07846&#34;&gt;
      Catani, Devoto, Grazzini, Kallweit, Mazzitelli, Savoini &#39;22;$\,$
@@ -307,7 +307,7 @@ ttH: &lt;a href=&#34;https://arxiv.org/abs/2504.19909&#34;&gt;arXiv:2504.19909&l
                     &lt;a href=&#34;https://arxiv.org/abs/0803.4180&#34;&gt;[3] BlackHat; &lt;/a&gt;&lt;a href=&#34;https://arxiv.org/abs/1907.13071&#34;&gt;OpenLoops; &lt;/a&gt;
                     &lt;a href=&#34;https://arxiv.org/abs/0711;.4711&#34;&gt;[4] Gehrmann-De Ridder, Gehrmann, Glover, Heinrich; &lt;/a&gt;
                     &lt;a href=&#34;https://arxiv.org/abs/2110.07541&#34;&gt;[5] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov &lt;/a&gt; 
-                    &lt;a href=&#34;https://arxiv.org/abs/2503.10595&#34; style=&#34;color:rgb(255, 149, 0);&#34;&gt;+ This talk; &lt;/a&gt;
+                    &lt;a href=&#34;https://arxiv.org/abs/2503.10595&#34; style=&#34;color:rgb(255, 149, 0);&#34;&gt;+ This work; &lt;/a&gt;
                     &lt;a href=&#34;https://arxiv.org/abs/2307.15405&#34;&gt;[6] Gehrmann, Jakubčík, Mella, Syrrakos, Tancredi&lt;/a&gt;
                &lt;/div&gt;
           &lt;/div&gt;
@@ -446,7 +446,7 @@ $\circ$ Original computation  &lt;a href=&#34;https://arxiv.org/abs/hep-ph/97082
 $\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{NMHV}}$&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 3mm;&#34;&gt;
-     $\circ$ &lt;span style=&#34;font-size: 15pt;&#34;&gt;$ttH$&lt;/span&gt; computed analytically (&lt;span style=&#34;font-variant: small-caps;&#34;&gt;Form&lt;/span&gt; optimized) with unitarity, standard Feynman diagrams techniques, &lt;br&gt; $\phantom{\circ}$ and cross checked with &lt;span style=&#34;font-variant: small-caps;&#34;&gt;Open-Loops&lt;/span&gt;
+     $\circ$ &lt;span style=&#34;font-size: 15pt;&#34;&gt;$t\bar{t}H$&lt;/span&gt; computed analytically (&lt;span style=&#34;font-variant: small-caps;&#34;&gt;Form&lt;/span&gt; optimized) with unitarity, standard Feynman diagrams techniques, &lt;br&gt; $\phantom{\circ}$ and cross checked with &lt;span style=&#34;font-variant: small-caps;&#34;&gt;Open-Loops&lt;/span&gt;
 &lt;/div&gt;
 &lt;a href=&#34;https://arxiv.org/abs/1907.13071&#34; style=&#34;font-size: 14pt; margin-top: -5mm; float: right; font-align: right;&#34;&gt; Buccioni, Lang, Lindert, Maierhöfer, Pozzorini, Zhang, Zoller&lt;/a&gt;
 &lt;/section&gt;
@@ -521,7 +521,7 @@ $$
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ$ Now, localize them on the unit circle &lt;span style=&#34;font-size: 14pt;&#34;&gt;$(x^2+y^2-1)$&lt;/span&gt;
+     $\circ$ Now, localize them, e.g. on the unit circle &lt;span style=&#34;font-size: 14pt;&#34;&gt;$(x^2+y^2-1)$&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
 $$ 
@@ -574,8 +574,8 @@ $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ Interesting mathematica observations and open questions: &lt;br&gt;
-     $\quad\star$ &lt;span style=&#34;font-size: 16pt&#34;&gt;$R_3$&lt;/span&gt; is not an Ingral Domain, i.e. it breaks &lt;span style=&#34;font-size: 16pt&#34;&gt;$ab=0 \Rightarrow a = 0 \text{ or } b = 0$&lt;/span&gt;, &lt;br&gt;
-     $\quad\star$ &lt;span style=&#34;font-size: 16pt&#34;&gt;$R_4$&lt;/span&gt; is not an Unique Factorization Domain (MHV = anti-MHV) &lt;br&gt;
+     $\quad\star$ &lt;span style=&#34;font-size: 16pt&#34;&gt;$R_3$&lt;/span&gt; is not an Integral Domain, i.e. it breaks &lt;span style=&#34;font-size: 16pt&#34;&gt;$ab=0 \Rightarrow a = 0 \text{ or } b = 0$&lt;/span&gt; &lt;br&gt;
+     $\quad\star$ &lt;span style=&#34;font-size: 16pt&#34;&gt;$R_4$&lt;/span&gt; is not an Unique Factorization Domain (which is why MHV = anti-MHV) &lt;br&gt;
      $\quad\star$ Conjecture: &lt;span style=&#34;font-size: 16pt&#34;&gt;$R_{n\geq 5}$&lt;/span&gt; is UFD. For instance, this would imply the  denominators $\mathcal{D}$ are unique &lt;br&gt;
      $\phantom{\circ}$ &lt;u&gt;Note&lt;/u&gt;: all polynomial rings are UFD, so clearly &lt;span style=&#34;font-size: 16pt&#34;&gt;$R_4$&lt;/span&gt; is not equivalent to one, e.g. &lt;span style=&#34;font-size: 16pt&#34;&gt;$\mathbb{F}[s,t]$&lt;/span&gt;
 &lt;/div&gt;
@@ -623,7 +623,7 @@ $$
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;&#34;&gt; Examples of Trees &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ$ To not make this too abstract, we are after expressions like these for the MI coefficients.
+     $\circ$ To not make this too abstract, we are after expressions like these, but for the MI coefficients.
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ For &lt;span style=&#34;font-size: 15pt;&#34;&gt;$Vjj$&lt;/span&gt; there are 5 amplitudes (showing 3)
@@ -645,11 +645,11 @@ $$
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}$ where for clarity I have not suppressed the spin indices.
+     $\phantom{\circ}$ where for clarity I have not suppressed the spin indices. Symmetries are made manifest.
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\phantom{\circ}$ &lt;u&gt;Note&lt;/u&gt;: The amplitude is &lt;b&gt;spin covariant&lt;/b&gt;, just like it is little group covariant! &lt;br&gt;
-     $\phantom{\circ}$ We need only obtain a single choice, say &lt;span style=&#34;font-size: 15pt;&#34;&gt;$I=J=1$&lt;/span&gt;, the other follows. 
+     $\phantom{\circ} \kern7.2mm$ We need only obtain a single choice, say &lt;span style=&#34;font-size: 15pt;&#34;&gt;$I=J=1$&lt;/span&gt;, the other follows. 
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Spinor Alphabets &lt;/b&gt;&lt;/p&gt;
@@ -661,14 +661,15 @@ $$
      \displaystyle r_i(|i\rangle,[i|) = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j \mathcal{D}_j^{q_{ij}}(|i\rangle,[i|)} % \, , \quad r_i(|i\rangle,[i|) \in \text{Frac}(R_n)
      $$
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 16pt; float: left; margin-top: 0mm; margin-bottom: 2mm;&#34;&gt;
+&lt;div style=&#34;font-size: 16pt; text-align: left; margin-top: 0mm; margin-bottom: 2mm;&#34;&gt;
+     $\phantom{\circ}$ For the numerators this is generally not particularly useful (when in least common denominator form) &lt;br&gt;
      $\phantom{\circ}$ The denominator factors &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{D}_j$&lt;/span&gt; are conjectured to be (mostly) related to the letters of the symbol alphabet
 &lt;/div&gt;
-&lt;a style=&#34;font-size: 13pt; text-align: right; float: right; margin-top: -3mm; margin-bottom: 2mm;&#34; href=https://arxiv.org/abs/1812.04586&gt;
+&lt;a style=&#34;font-size: 13pt; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/1812.04586&gt;
 Abreu, Dormans, Febres Cordero, Ita, Page (&#39;18)
 &lt;/a&gt;
 &lt;br&gt;
-&lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: -5mm; margin-bottom: 2mm;&#34;&gt;
+&lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: -10mm; margin-bottom: 2mm;&#34;&gt;
      $\circ$ Convert your alphabet from independent Mandelstam invariants to redudant spinors brackets
 &lt;/div&gt;
 &lt;a style=&#34;font-size: 13pt; text-align: right; float: right; margin-top: -3mm; margin-bottom: 2mm;&#34; href=&#34;&#34;&gt;
@@ -729,12 +730,12 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
 	     &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
                 $\circ\,$ We can now determine the least common denominators (LCDs),
           &lt;/div&gt;
-          &lt;div style=&#34;font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm&#34;&gt;
+          &lt;div style=&#34;font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 0mm&#34;&gt;
                $$
                \displaystyle \mathcal{D} = \prod_j \mathcal{D}_j^{q_{ij}}(|i\rangle,[i|) \, .
                $$
           &lt;/div&gt;
-          &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
+          &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: -3mm; margin-bottom: 1mm;&#34;&gt;
                $\phantom{\circ}\,$ Obtain the &lt;span style=&#34;font-size: 16pt&#34;&gt;$q_{ij}$&lt;/span&gt; from a univariate slice  &lt;span style=&#34;font-size: 16pt&#34;&gt;$\vec\lambda(t)$&lt;/span&gt;, i.e. a 1D curve.
           &lt;/div&gt;
           &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
@@ -782,9 +783,9 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
      &lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt;LCDs&lt;/b&gt;
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
-     $\circ\,$ The irreducible denominator factors &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{D}_j \text{ for } Vjj$&lt;/span&gt; read (modding out by permutation orbits)
+     $\circ\,$ The irreducible denominator factors &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{D}_j \text{ for } Vjj$&lt;/span&gt; (modding out by permutation orbits) read
 &lt;/div&gt;
-&lt;div style=&#34;text-align: center; float: center; font-size: 14pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
+&lt;div style=&#34;text-align: center; font-size: 14pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
      $$
      \displaystyle \mathcal{D}_{Vjj} \subset \kern-3mm \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\}
      $$
@@ -792,20 +793,23 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
      $\phantom{\circ}\,$ where only the last one is new at two loops.
 &lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: 2mm;&#34;&gt;
+     $\circ\,$ The &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{D}_j \text{ for } t\bar{t}H$&lt;/span&gt; read
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; font-size: 14pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
+     $$
+     \displaystyle \kern-10mm \mathcal{D}_{ttH} = \big\{ \langle 12 \rangle, [12], s_{123}, \dots, (s_{123}-m^2), \langle 1|\boldsymbol{3}|1], \dots, \\[2mm] 
+     \kern30mm \langle 1|\boldsymbol{3}|\boldsymbol{4}| 2 \rangle, \dots, \langle 1|\boldsymbol{3}|1+2|\boldsymbol{4}| 2], \dots, \Delta_{12|34|5}, \dots \Delta_{12|3|4|5} \big\}
+     $$
+&lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
-     $\circ\,$ The &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{D}_j \text{ for } ttH$&lt;/span&gt; read
+     $\phantom{\circ}\,$ note that there is no dependence on the top states (this looks like 3 massive scalars).
 &lt;/div&gt;
-&lt;div style=&#34;text-align: center; float: center; font-size: 14pt; margin-top: 4mm; margin-bottom: 4mm;&#34;&gt;
-     $
-     \displaystyle \mathcal{D}_{ttH} = \big\{ \langle 12 \rangle, [12], s_{123}, \dots, (s_{123}-m^2), \langle 1|\boldsymbol{3}|1], \dots, \\[2mm] \kern40mm \langle 1|\boldsymbol{3}|\boldsymbol{4}| 2 \rangle, \dots, \langle 1|\boldsymbol{3}|1+2|\boldsymbol{4}| 2], \dots, \Delta_{12|34|5}, \dots \Delta_{12|3|4|5} \big\}
-     $
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
-     $\phantom{\circ}\,$ note that there is no dependence on the top states (this looks like 3 massive scalars)
-&lt;/div&gt;
-&lt;div style=&#34;font-size: 16pt; float: left; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
-     $\circ\,$ Challenge: in LCD form the numerators are intractably complicated
-     [114], \{3, -12, 12, -3, -1, 1\} Ansatz size ~ 25M
+&lt;div style=&#34;font-size: 16pt; text-align: left; margin-top: 3mm; margin-bottom: 2mm;&#34;&gt;
+     $\circ\,$ Challenge: in LCD form the numerators are intractably complicated. &lt;br&gt;
+     $\phantom{\circ}\,$ For &lt;span style=&#34;font-size: 15pt&#34;&gt;$Vjj$&lt;/span&gt; the most complicated &lt;span style=&#34;font-size: 14pt&#34;&gt;$\bar{q}^+g^-g^+q^-$&lt;/span&gt; function had a mass dimension (&lt;span style=&#34;font-size: 13pt&#34;&gt;$\approx$&lt;/span&gt; poly. degree) of 114, &lt;br&gt;
+     $\phantom{\circ}\,$ and little group weights &lt;span style=&#34;font-size: 14pt&#34;&gt;$\{3, -12, 12, -3, -1, 1\}$&lt;/span&gt;.  The ansatz size is approx. 25M. &lt;br&gt;
+     $\phantom{\circ}\,$ Note how different from zero the little group weights are, chiral invariants are important!
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Basis Change from Laurent Coefficients &lt;/b&gt;&lt;/p&gt;
@@ -1141,6 +1145,20 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
      \sqrt{\big\langle ⟨2|1+4|3], Δ_{14|23|56} \big\rangle} = \big\langle {\color{green}(s_{124}-s_{134})}, ⟨2|1+4|3] \big\rangle \, , \\[1mm] 
      \big\langle ⟨1|2+3|4], ⟨2|1+4|3] \big\rangle = \big\langle ⟨1|2+3|4], ⟨2|1+4|3], {\color{blue}(s_{13}-s_{24})}\big\rangle \cap \big\langle ⟨12⟩, [34] \big\rangle
      $$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
+     &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Challenges &lt;/b&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Can we guess the constraints? If not, can we verify them with numerical evaluations? &lt;br&gt;
+$\phantom{\circ}\,$ Qp evaluations can be costly (probably depending on implementation) cite new padic paper.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Ideal intersection can be highly non-trivial
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ This implies that we generally have choices, how do we choose?
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
