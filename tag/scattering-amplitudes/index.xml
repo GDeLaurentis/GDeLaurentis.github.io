@@ -612,9 +612,9 @@ $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 15pt; margin-top: 0mm; margin-bottom: 3mm&#34;&gt;
 $$ 
-{A}_g^{(0)}(1^{+}_\bar{q}, 2^{+}_g, 3^{+}_g, 4^{-}_q) = \frac{⟨46⟩^2}{⟨12⟩⟨23⟩⟨34⟩⟨65⟩} \, , \\[6mm]
-{A}_g^{(0)}(1^{+}_\bar{q}, 2^{+}_g, 3^{-}_g, 4^{-}_q) = \frac{⟨13⟩⟨3|1+2|5]^2}{⟨12⟩⟨23⟩[65]⟨1|2+3|4]s_{123}} \; + \; (123456\rightarrow \overline{432165}) \, , \\[6mm]
-{A}_q^{(0)}(1^{+}_\bar{q}, 2^{+}_{q&#39;}, 3^{+}_{\bar{q}&#39;}, 4^{-}_q) = -\frac{[12]⟨46⟩⟨3|1+2|5]}{⟨23⟩[23]⟨56⟩[56]s_{123}}+(123456\rightarrow 156423)\phantom{+}
+{A}_g^{(0)}(1^{+}_\bar{q}, 2^{+}_g, 3^{+}_g, 4^{-}_q, 5^{+}_\bar{\ell}, 6^{-}_\ell) = \frac{⟨46⟩^2}{⟨12⟩⟨23⟩⟨34⟩⟨65⟩} \, , \\[6mm]
+{A}_g^{(0)}(1^{+}_\bar{q}, 2^{+}_g, 3^{-}_g, 4^{-}_q, 5^{+}_\bar{\ell}, 6^{-}_\ell) = \frac{⟨13⟩⟨3|1+2|5]^2}{⟨12⟩⟨23⟩[65]⟨1|2+3|4]s_{123}} \; + \; (123456\rightarrow \overline{432165}) \, , \\[6mm]
+{A}_q^{(0)}(1^{+}_\bar{q}, 2^{+}_{q&#39;}, 3^{+}_{\bar{q}&#39;}, 4^{-}_q, 5^{+}_\bar{\ell}, 6^{-}_\ell) = -\frac{[12]⟨46⟩⟨3|1+2|5]}{⟨23⟩[23]⟨56⟩[56]s_{123}}+(123456\rightarrow 156423)\phantom{+}
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
@@ -622,7 +622,7 @@ $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 15pt; margin-top: 8mm; margin-bottom: 5mm&#34;&gt;
 $$ 
-{A}_{ttH}^{(0)}(1^{+}_q, 2^{+}_\bar{q}, 3^{+}_t, 4^{-}_\bar{t}, 5_H)^I_J = \frac{⟨2|𝟑|1]⟨𝟑^I𝟒_J⟩-[𝟑^I1][1𝟒_J]⟨12⟩}{s_{12}(s_{12𝟑}-m_t²)} + 
+{A}_{ttH}^{(0)}(1^{+}_q, 2^{-}_\bar{q}, 3_t, 4_\bar{t}, 5_H)^I_J = \frac{⟨2|𝟑|1]⟨𝟑^I𝟒_J⟩-[𝟑^I1][1𝟒_J]⟨12⟩}{s_{12}(s_{12𝟑}-m_t²)} + 
 (12345\rightarrow\overline{21345},12435,\overline{21435})
 $$
 &lt;/div&gt;
@@ -836,29 +836,40 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Laurent Series or p(z)-adic expansion &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;&#34;&gt;
-     $\circ\,$ Build Laurent expansions around $t_{\mathcal{D}_k}$ &lt;span style=&#34;font-size: 12pt&#34;&gt; (use more slices)
+     $\circ\,$ With &lt;span style=&#34;font-size: 14pt&#34;&gt;$p$&lt;/span&gt;-adic numbers this would be straight forward, set &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{D}_j\propto p$&lt;/span&gt; and evaluate the function
 &lt;/div&gt;
 &lt;div style=&#34;text-align: center; font-size: 15pt; margin-top: -2mm; margin-bottom: 2mm;&#34;&gt;
      $$
-     r_{i \in \mathcal{B}} = \sum_{m = 1}^{q_k = \text{max}_i(q_{ik})} \frac{e^k_{im}}{(t-t_{\mathcal{D}_k})^m} + \mathcal{O}((t-t_{\mathcal{D}_k})^0)
+     r_{i\in \mathcal{B}} = \sum_{m = 1}^{\text{max}_i(q_{ik})} \frac{e^k_{im}}{p^m} + \mathcal{O}(p^0) \text{ is a number in } \mathbb{Q}_p
+     $$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;&#34;&gt;
+     See &lt;code style=&#34;font-size: 14pt;&#34;&gt;Particles._singular_variety&lt;/code&gt; or &lt;code style=&#34;font-size: 14pt;&#34;&gt;Ideal.point_on_variety&lt;/code&gt; to generate the configuration
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: -2mm;&#34;&gt;
+     $\circ\,$ We can&#39;t do this with only finite fields. Instead, build Laurent expansions around $t_{\mathcal{D}_k}$ &lt;span style=&#34;font-size: 12pt&#34;&gt; (use more slices) &lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center; font-size: 15pt; margin-top: -2mm; margin-bottom: 2mm;&#34;&gt;
+     $$
+     r_{i \in \mathcal{B}} = \sum_{m = 1}^{\text{max}_i(q_{ik})} \frac{e^k_{im}}{(t-t_{\mathcal{D}_k})^m} + \mathcal{O}((t-t_{\mathcal{D}_k})^0)
      $$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;&#34;&gt;
      $\phantom{\circ}\,$ strictly formal over $\mathbb{F}_p$, but convergent over $\mathbb{Q}_p$ for $(t-t_{\mathcal{D}_k}) \propto p$
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;&#34;&gt;
-     $\circ\,$ Issue what if the letter does not have a factor linear in $t$ ?
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: -2mm;&#34;&gt;
+     $\circ\,$ Issue what if the letter does not have a factor linear in &lt;span style=&#34;font-size: 15pt&#34;&gt;$t$&lt;/span&gt;?
 &lt;/div&gt;
 &lt;div style=&#34;text-align: center; font-size: 15pt; margin-top: -2mm; margin-bottom: 2mm;&#34;&gt;
      $$
-     r_{i \in \mathcal{B}} = \sum_{m = 1}^{q_k = \text{max}_i(q_{ik})} \frac{c^k_{im} t + d^k_{im}}{(t^2+at+b)^m} + \mathcal{O}((t^2+at+b)^0)
+     r_{i \in \mathcal{B}} = \sum_{m = 1}^{\text{max}_i(q_{ik})} \frac{c^k_{im} t + d^k_{im}}{(t^2+a_kt+b_k)^m} + \mathcal{O}((t^2+a_kt+b_k)^0)
      $$
 &lt;/div&gt;
-&lt;a style=&#34;font-size: 13pt; text-align: right; float: right; margin-top: -3mm; margin-bottom: 2mm;&#34; href=https://arxiv.org/abs/2304.14336 &gt;
+&lt;a style=&#34;font-size: 13pt; text-align: right; float: right; margin-top: -10mm; margin-bottom: 2mm;&#34; href=https://arxiv.org/abs/2304.14336 &gt;
 see also Fontana, Peraro (&#39;23)
 &lt;/a&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;&#34;&gt;
-     $\circ\,$ Build null spaces
+     $\circ\,$ From these coefficients, build null spaces used in the search for simple functions
 &lt;/div&gt;
 &lt;div style=&#34;text-align: center; font-size: 15pt; float: center; margin-top: -2mm; margin-bottom: 2mm;&#34;&gt;
      $$
@@ -903,7 +914,7 @@ $$
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\quad\star$ Compute a lexicographical Gr\&#34;obenr basis with invariants &gt; covariants
+     $\quad\star$ Compute a lexicographical Groebner basis with invariants &gt; covariants
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ We obtain the following invariant rings
@@ -1007,32 +1018,48 @@ $\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: 3mm&#34;&gt;
      &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Example &lt;/b&gt;
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 14pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
+     $\circ\,$ Start from the function
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
 $$ 
 \displaystyle f^{\text{ex}} = \frac{\mathcal{N}^{\text{ex}}}{⟨14⟩^2[14]^2 s_{56} ⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2Δ_{14|23|56}^4}
 $$
 &lt;/div&gt;
-&lt;p&gt;104 128&lt;/p&gt;
-&lt;div style=&#34;font-size: 14pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
+     $\phantom{\circ}\,$  The numerator Ansatz has size 104$\,$128
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
+     $\circ\,$ Clean up the &lt;span style=&#34;font-size: 14pt&#34;&gt;$Δ_{14|23|56}$&lt;/span&gt; Gram residue
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
 $$ 
 \displaystyle f^{\text{ex}} = \frac{\mathcal{N}^{\text{ex}}_1}{⟨14⟩^2[14]^2s_{56}⟨2|1\!+\!4|3]^4Δ_{14|23|56}^4 \,} + \frac{\mathcal{N}^{\text{ex}}_2}{⟨14⟩^2[14]^2s_{56}⟨2|1+4|3]^4⟨1|2\!+\!4|3]^2⟨2|1\!+\!3|4]^2}
 $$
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 14pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
+     $\circ\,$ Split &lt;span style=&#34;font-size: 14pt&#34;&gt;$s_{14}$&lt;/span&gt; and impose symmetry
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
 $$ 
 \displaystyle f^{\text{ex}} =
   \frac{\mathcal{N}^{\text{ex}}_{3}}{⟨14⟩^2 s_{56} ⟨2|1+4|3]^4Δ_{14|23|56}^4}
   + \frac{\mathcal{N}^{\text{ex}}_{4}}{⟨14⟩^2 s_{56} ⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2} + (123456\rightarrow \overline{432165})
 $$
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 14pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
+     $\circ\,$ Impose degree bound on poles at codimension two
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
 $$ 
 \displaystyle f^{\text{ex}} = 
   \sum_{k=0}^3 \frac{\mathcal{N}^{\text{ex}}_{5,k}}{⟨14⟩^2 s_{56} ⟨2|1+4|3]^{1+k} Δ_{14|23|56}^{4-k}}
     + \frac{\mathcal{N}^{\text{ex}}_6}{⟨14⟩^2 s_{56}⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2} + (123456\rightarrow \overline{432165})
 $$
 &lt;/div&gt;
-&lt;p&gt;13 532&lt;/p&gt;
+&lt;div style=&#34;text-align: center; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
+     The Ansatz now has size 13$\,$532, almost a factor of 10 simpler.
+&lt;/div&gt;
 &lt;hr&gt;
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: 3mm&#34;&gt;
      &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Multivariate Partial Fractions &lt;/b&gt;
@@ -1044,7 +1071,7 @@ $$
    GDL, Page (&#39;22)
 &lt;/a&gt;
 &lt;div style=&#34;text-align: left; font-size:16pt; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
-     $\circ$ We want to answer the question
+     $\circ$ We want a mathematically rigorous answer to the question
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
 $$ 
@@ -1068,29 +1095,42 @@ $$
 &lt;div style=&#34;display: flex; margin-top:-6mm;&#34;&gt;
     &lt;div style=&#34;flex: 1;&#34;&gt;
         &lt;img src=&#34;V1.png&#34; style=&#34;max-width:60%; height:auto;&#34;&gt;
+        &lt;!--
         &lt;div style=&#34;width:100%; font-size: 13pt; margin-top: -3mm; margin-bottom: 1mm;&#34;&gt;
           $\langle xy^2 + y^3 - z^2 \rangle$
         &lt;/div&gt;
+        --&gt;
     &lt;/div&gt;
     &lt;div style=&#34;flex: 1; max-width:3%; margin-top:20mm;&#34;&gt;
         $\cap$
     &lt;/div&gt;
     &lt;div style=&#34;flex: 1;&#34;&gt;
         &lt;img src=&#34;V2.png&#34; style=&#34;max-width:60%; height:auto;&#34;&gt;
+        &lt;!--
         &lt;div style=&#34;width:100%; font-size: 13pt; margin-top: -3mm; margin-bottom: 1mm;&#34;&gt;
           $\langle x^3 + y^3 - z^2 \rangle$
         &lt;/div&gt;
+        --&gt;
     &lt;/div&gt;
     &lt;div style=&#34;flex: 1; max-width:3%; margin-top:20mm;&#34;&gt;
         $=$
     &lt;/div&gt;
     &lt;div style=&#34;flex: 1;&#34;&gt;
         &lt;img src=&#34;V3.png&#34; style=&#34;max-width:53%; height:auto;&#34;&gt;
+        &lt;!--
         &lt;div style=&#34;width:120%; font-size: 14pt; margin-left:-10mm; margin-top: -3mm; margin-bottom: 1mm;&#34;&gt;
           $\begin{gather}\langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \cap \langle z^2, x+y \rangle\end{gather}$ 
         &lt;/div&gt;
+        --&gt;
     &lt;/div&gt;
 &lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: -4mm; margin-bottom: 1mm;&#34;&gt;
+$$ 
+\langle xy^2 + y^3 - z^2 \rangle \cap \langle x^3 + y^3 - z^2 \rangle = \langle xy^2 + y^3 - z^2, x^3 + y^3 - z^2 \rangle = \langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \cap \langle z^2, x+y \rangle
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     $\phantom{\circ}$ This is a primary decomposition. If &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{N}$&lt;/span&gt; vanishes on all branches, than the partial fraction decomposition exists.
 &lt;hr&gt;
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
      &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Iterated Pole Subtraction &lt;/b&gt;
@@ -1098,29 +1138,32 @@ $$
      (i.e. geometry at codimension greater than one)
      &lt;/p&gt;
 &lt;/div&gt;
-&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -18mm; margin-bottom: -10mm;&#34; href=https://arxiv.org/abs/1904.04067&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -21mm; margin-bottom: -10mm;&#34; href=https://arxiv.org/abs/1904.04067&gt;
    GDL, Maître (&#39;19)
 &lt;/a&gt;
-&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -13mm; margin-bottom: -10mm;&#34; href=https://arxiv.org/abs/2203.04269&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -16mm; margin-bottom: -10mm;&#34; href=https://arxiv.org/abs/2203.04269&gt;
    GDL, Page (&#39;22)
 &lt;/a&gt;
-&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -8mm; margin-bottom: -10mm;&#34; href=https://arxiv.org/abs/2312.03672&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -11mm; margin-bottom: -10mm;&#34; href=https://arxiv.org/abs/2312.03672&gt;
    Chawdhry (&#39;23)
 &lt;/a&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: -10mm;&#34; href=https://arxiv.org/abs/2506.08452&gt;
+   Xia, Yang (&#39;25)
+&lt;/a&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Retain control by iteratively fitting residues on varieties (using &lt;span style=&#34;text-size: 14pt&#34;&gt;$p$&lt;/span&gt;-adic numbers $\mathbb{Q}_p$, get $\mathbb{F}_p$ vals for nums)
+$\circ\,$ Iteratively reconstruct a residues at a time using &lt;span style=&#34;text-size: 13pt&#34;&gt;$p$&lt;/span&gt;-adic numbers to get &lt;span style=&#34;text-size: 13pt&#34;&gt;$\mathbb{F}_p$&lt;/span&gt; samples for the residues
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
 $$ 
 \begin{alignedat}{2}
 &amp; r^{(139 \text{ of } 139)}_{\bar{u}^+g^+g^-d^-(V\rightarrow \ell^+ \ell^-)} = &amp; \qquad\qquad &amp; {\small \text{Variety (scheme?) to isolate term(s)}} \\[2mm]
-&amp; +\frac{7/4{\color{blue}(s_{24}-s_{13})}⟨6|1+4|5]s_{123}{\color{green}(s_{124}-s_{134})}}{⟨1|2+3|4]⟨2|1+4|3]^2 Δ_{14|23|56}} + ... &amp; \qquad\qquad &amp; \Big\langle ⟨2|1+4|3]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
-% &amp; -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} + \dots &amp; \qquad\qquad &amp; \Big\langle Δ_{14|23|56} \Big\rangle
+&amp; +\frac{7/4{\color{blue}(s_{24}-s_{13})}⟨6|1+4|5]s_{123}{\color{green}(s_{124}-s_{134})}}{⟨1|2+3|4]⟨2|1+4|3]^2 Δ_{14|23|56}} +  &amp; \qquad\qquad &amp; \Big\langle ⟨2|1+4|3]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
+&amp; -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} + \dots &amp; \qquad\qquad &amp; \Big\langle Δ_{14|23|56} \Big\rangle
 \end{alignedat}
 $$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
+$\circ\,$ We get more than just partial fraction decomposition, we cna identify numerator insertions from e.g.:
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 12pt; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
      $$
@@ -1128,19 +1171,93 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
      \big\langle ⟨1|2+3|4], ⟨2|1+4|3] \big\rangle = \big\langle ⟨1|2+3|4], ⟨2|1+4|3], {\color{blue}(s_{13}-s_{24})}\big\rangle \cap \big\langle ⟨12⟩, [34] \big\rangle
      $$
 &lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Interesting and non-trivial bevhavior also at 5-point 3-mass
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
+$$ 
+\def\spa#1.#2{\left\langle#1\,#2\right\rangle}
+\def\spb#1.#2{\left[#1\,#2\right]}
+\def\spaa#1.#2.#3{\langle\mskip-1mu{#1} 
+                  | #2 | {#3}\mskip-1mu\rangle}
+\def\spbb#1.#2.#3{[\mskip-1mu{#1}
+                  | #2 | {#3}\mskip-1mu]}
+\def\spab#1.#2.#3{\langle\mskip-1mu{#1} 
+                  | #2 | {#3}\mskip-1mu]}
+\def\spba#1.#2.#3{[\mskip-1mu{#1} 
+                  | #2 | {#3}\mskip-1mu\rangle}
+\def\spaba#1.#2.#3.#4{\langle\mskip-1mu{#1} 
+                  | #2 | #3 | {#4}\mskip-1mu\rangle}
+\def\spbab#1.#2.#3.#4{[\mskip-1mu{#1} 
+                  | #2 | #3 | {#4}\mskip-1mu]}
+\def\spabab#1.#2.#3.#4.#5{\langle\mskip-1mu{#1}
+                  | #2 | #3 | {#4}| {#5} \mskip-1mu]}
+\def\spbaba#1.#2.#3.#4.#5{[\mskip-1mu{#1} 
+                  | #2 | #3 | {#4}| {#5}\mskip-1mu\rangle}
+\def\tr#1.#2{\text{tr}(#1|#2)}
+\def\qb{\bar{q}}
+\def\Qb{\bar{Q}}
+\def\cA{{\cal A}}
+\def\slsh{\rlap{$\;\!\!\not$}}     \def\three{{\bf 3}}
+\def\four{{\bf 4}}
+\def\five{{\bf 5}}
+\begin{align}\label{eq:decomp_spaba1351_spbab2542}
+\big\langle \spaba1.\three.\five.1,\, \spbab2.\five.\four.2 \big\rangle = \; &amp;\big\langle \,  \spab1.\three.2,\, \spab1.\four.2,\, \spaba1.\three.\five.1,\, \spbab2.\five.\four.2
+\, \big\rangle\; \cap \\
+&amp;\big\langle \, \spaba1.\three.\five.1,\, \spbab2.\five.\four.2, |\five|2]\langle1|\three| - |1+\three|2]\langle1|\five| \, \big\rangle \;, \nonumber
+\end{align} \\
+\text{because: } |\five|2]\spaba1.\three.\five.1[2| + |1\rangle\spbab2.\five.\four.2\langle1|\five| = \spab1.\five.2 \Big( |\five|2]\langle1|\three| - |1+\three|2]\langle1|\five| \Big) \, ,
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
+$\phantom{\circ}\,$ or between the triangle and box Grams
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
+$$ 
+\begin{gather}\label{eq:decomp_delta12_34_5_and_delta_12_3_4_5}
+  \big\langle \Delta_{12|34|5},\,\Delta_{12|3|4|5} \big\rangle =
+  \big\langle
+  s_{34},\, \tr1+2.{\three+\four}^2
+  \big\rangle \cap
+  \big\langle
+  \Delta_{12|34|5},\, \tr1+2.{\three-\four}^2 
+  \big\rangle \, .
+\end{gather}
+$$
+&lt;/div&gt;
 &lt;hr&gt;
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
      &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Challenges &lt;/b&gt;
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
 $\circ\,$ Can we guess the constraints? If not, can we verify them with numerical evaluations? &lt;br&gt;
-$\phantom{\circ}\,$ Qp evaluations can be costly (probably depending on implementation) cite new padic paper.
+$\phantom{\circ}\,$ &lt;span style=&#34;text-size: 13pt&#34;&gt;$\mathbb{Q}_p$&lt;/span&gt; evaluations can be costly (probably depending on implementation). &lt;a href=https://arxiv.org/abs/2506.08452&gt; Xia, Yang (&#39;25) &lt;/a&gt; say they are not!
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Ideal intersection can be highly non-trivial
+$\circ\,$ Ideal intersection can be highly non-trivial:
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
+$$ 
+\mathcal{N} \in \langle q_1, q_2 \rangle \cap \langle q_3, q_4 \rangle \stackrel{?}{=} \langle q_1q_3, q_1q_4, q_2q_3, q_2 q_4\rangle 
+$$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ This implies that we generally have choices, how do we choose?
+$\phantom{\circ}\,$ Unfortunately not always. This is called a &lt;i&gt;complete intersection&lt;/i&gt; when it holds.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Therefore, either: 
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\quad\star\,$ we compute the intersection explicitly (can be prohibitively hard)
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\quad\star\,$ or we have to make a choice of which constrain we manifest
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Computing primary decompositions with these many variables is hard, Singular can&#39;t do it on its own
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Even constructing the ansatz requires a GB, which in some cases Singular doesn&#39;t easily give
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
