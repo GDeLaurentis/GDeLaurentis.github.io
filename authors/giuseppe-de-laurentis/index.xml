@@ -4225,6 +4225,7 @@ $\circ$ We perform a first analytic computation in two ways
 from lips import Particles
 Particles(5, field=Field(&#34;finite field&#34;, 2 ** 31 - 1, 1), seed=0)  # Fp
 Particles(5, field=Field(&#34;padic&#34;, 2 ** 31 - 1, 5), seed=0)  # Qp
+Particles(5, field=Field(&#34;mpc&#34;, 0, 300), seed=0)  # C (examples for massless PSPs)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$  Analytic manipulations are too complex, we bypass this complexity by letting cancellations &lt;br&gt;
@@ -4351,7 +4352,7 @@ $$
      (i.e. geometry at codimension one)
      &lt;/p&gt;
 &lt;/div&gt;
-&lt;div style=&#34;display:block; width:100%; margin-top: 2mm; margin-bottom: 0mm; margin-left: 0mm;&#34;&gt;
+&lt;div style=&#34;display:block; width:100%; margin-top: 2mm; margin-bottom: -3mm; margin-left: 0mm;&#34;&gt;
      &lt;div style=&#34;font-size: x-large; width: 65%; text-align: left; display: inline-block; margin-top: 2mm;&#34;&gt;
           &lt;!---
           &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
@@ -4371,7 +4372,7 @@ $$
           &lt;/div&gt;
           &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: -3mm; margin-bottom: 1mm;&#34;&gt;
                $\phantom{\circ}\,$ from a univariate slice &lt;span style=&#34;font-size: 16pt&#34;&gt;$\vec\lambda(t)$&lt;/span&gt; giving us &lt;span style=&#34;font-size: 16pt&#34;&gt;$\mathcal{D}(t)$&lt;/span&gt;, &lt;br&gt; 
-               $\phantom{\circ}\,$ if we know the possible &lt;span style=&#34;font-size: 16pt&#34;&gt;$\mathcal{D}_j$&lt;/span&gt;
+               $\phantom{\circ}\,$ if we know the possible &lt;span style=&#34;font-size: 16pt&#34;&gt;$\mathcal{D}_j$&lt;/span&gt;.
           &lt;/div&gt;
           &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 5mm; margin-bottom: 1mm;&#34;&gt;
                $\circ$ The curve must intersect all varieties &lt;span style=&#34;font-size: 16pt&#34;&gt;$V(\langle \mathcal{D}_j \rangle)$&lt;/span&gt;, e.g.
@@ -4382,11 +4383,12 @@ $$
                $$
           &lt;/div&gt;
           &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
-               $\phantom{\circ}\,$ Solve for &lt;span style=&#34;font-size: 16pt&#34;&gt;$a_i, b_i$&lt;/span&gt; such that constraints are satisfied.
+               $\phantom{\circ}\,$ Solve for &lt;span style=&#34;font-size: 16pt&#34;&gt;$a_i, b_i$&lt;/span&gt; such that constraints are satisfied. For &lt;span style=&#34;font-size: 16pt&#34;&gt;$HHH$&lt;/span&gt;, &lt;br&gt;
+               $\phantom{\circ}\,$ we can use the massless algorithm at 8 point (or shift the &lt;span style=&#34;font-size: 16pt&#34;&gt;$p_{\alpha,\dot\alpha}$&lt;/span&gt;).
           &lt;/div&gt;
 	&lt;/div&gt;
      &lt;div style=&#34;width:35%; float: right; display: inline-block; margin-top: 6mm; &#34;&gt;
-          &lt;img src=&#34;variety_slice_v2-transparent.png&#34;; style=&#34;max-width:360px; float:center; border:none; margin-top: -5mm; margin-bottom: -2mm;&#34;&gt;
+          &lt;img src=&#34;variety_slice_v2-transparent.png&#34;; style=&#34;max-width:360px; float:center; border:none; margin-top: -7mm; margin-bottom: -2mm;&#34;&gt;
           &lt;div style=&#34;width:100%; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
                The space has dimension $20-6=14$,
           &lt;/div&gt;
@@ -4419,7 +4421,7 @@ $$
      $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}$ plus some permutations, where 
+     $\phantom{\circ}$ plus closure under permutations, where 
 &lt;/div&gt;
 &lt;div style=&#34;text-align: center; font-size: 14pt; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
      $$
@@ -4431,14 +4433,17 @@ p_{4}\!\cdot\! p_{12} &amp; p_{4}\!\cdot\! p_{3}   &amp; p_{4}\!\cdot\! p_{4}
 \end{pmatrix} \quad \text{ and } \quad\quad
    \begin{aligned}
        \text{tr}_5(1|2|3|4)^2 &amp;= \text{tr}(\gamma^5 p_1 p_2 p_3 p_4) \\
-       &amp;= [1|2|𝟑|𝟒||1⟩ - ⟨1|2|𝟑|𝟒||1]
+       &amp;= [1|2|𝟑|𝟒||1⟩ - ⟨1|2|𝟑|𝟒|1]
      \end{aligned}
      $$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\phantom{\circ}$ The two poles mixing kinematics with the top mass are what is left overs of the pentagons.
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ For example, for an integral coefficient at this stage we see
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 14pt; margin-top: 10mm; margin-bottom: 10mm&#34;&gt;
+&lt;div style=&#34;font-size: 14pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
 $$ 
 \hat d^{++}_{12\times 3 \times 4}= \frac{\mathcal{N}}{⟨12⟩²⟨1|𝟓|𝟒|𝟑|2]⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}}
 $$
@@ -4485,6 +4490,9 @@ $$
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Invariant Quotient Sub-Rings &lt;/b&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-top: -6mm; margin-bottom: 2mm; font-size: 15pt;&#34;&gt;
+(see also &lt;a href=https://arxiv.org/abs/2509.14350&gt;2509.14350&lt;/a&gt;, &lt;i&gt;Some remarks on invariants&lt;/i&gt;)
+&lt;/p&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ Helicity amplitudes are Lorentz invariant: minimal ansätze are build in the &lt;b&gt;invariant sub-ring&lt;/b&gt;.
 &lt;/div&gt;
@@ -4522,7 +4530,7 @@ $$
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; The Numerator Ansatz &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
-$\circ\,$ The numerator Ansatz takes the form
+$\circ\,$ The numerator Ansatz takes the form (for the massless case)
 &lt;/div&gt;
 &lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 4mm;&#34; href=https://arxiv.org/abs/1904.04067&gt;
    GDL, Maître (&#39;19)
@@ -4530,8 +4538,9 @@ $\circ\,$ The numerator Ansatz takes the form
 &lt;div style=&#34;text-align: center; font-size: 15pt; margin-bottom: 5mm; margin-top: 1mm;&#34;&gt;
 $\displaystyle \text{Num. poly}(\lambda, \tilde\lambda) = \sum_{\vec \alpha, \vec \beta} c_{(\vec\alpha,\vec\beta)} \prod_{j=1}^n\prod_{i=1}^{j-1} \langle ij\rangle^{\alpha_{ij}} [ij]^{\beta_{ij}}$
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
-     $\phantom{\circ}$ subject to constraints on $\vec\alpha,\vec\beta$ due to: 1) mass dimension; 2) little group; 3) linear independence.
+&lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 4mm;&#34;&gt;
+     $\phantom{\circ}$ subject to constraints on $\vec\alpha,\vec\beta$ due to: 1) mass dimension; 2) little group; 3) linear independence. &lt;br&gt;
+     $\phantom{\circ}$ For HHH we have polynomials in the 20 invariants from the previous slide.
 &lt;/div&gt;
 &lt;br&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; &#34;&gt;
@@ -4586,7 +4595,7 @@ $$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
      $\phantom{\circ}$ without knowing &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{N}$&lt;/span&gt; analytically. The complexity should not depend on &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{N}$&lt;/span&gt; (besided numerical evaluations). &lt;br&gt;
-     $\phantom{\circ}$ The complexity will depend on &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{D}_1, \mathcal{D}_2$&lt;/span&gt;
+     $\phantom{\circ}$ The complexity will depend on the irreducible polynomials &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{D}_1, \mathcal{D}_2$&lt;/span&gt;.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
      $\circ$ Multivariate partial fraction decompositions follow from varieties where pairs of denominator factors vanish
@@ -4631,7 +4640,7 @@ $$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: -4mm; margin-bottom: 1mm;&#34;&gt;
 $$ 
-\langle xy^2 + y^3 - z^2 \rangle + \langle x^3 + y^3 - z^2 \rangle = \langle xy^2 + y^3 - z^2, x^3 + y^3 - z^2 \rangle = \langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \cap \langle z^2, x+y \rangle
+\langle {\color{orange}xy^2 + y^3 - z^2} \rangle + \langle {\color{blue}x^3 + y^3 - z^2} \rangle = \langle xy^2 + y^3 - z^2, x^3 + y^3 - z^2 \rangle = \langle {\color{red}2y^3-z^2, x-y} \rangle \cap \langle {\color{green}y^3-z^2, x} \rangle \cap \langle {\color{blue}z^2, x+y} \rangle
 $$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
@@ -4683,11 +4692,13 @@ $$
 $$ 
 \big\langle ⟨1|𝟓|𝟒|𝟑|2] , \, Δ_{12|𝟑|𝟒|𝟓} \big\rangle= \big\langle M_H, \; 𝟓_{\alpha\dot\alpha}𝟒^{\dot\alpha\beta} \big\rangle \cap \big\langle M_H, \; 𝟒^{\dot\alpha\alpha}𝟑_{\alpha\dot\beta} \big\rangle \cap \big\langle \langle 1 | 𝟑 | 2], \; \langle 1 | 𝟒 | 2], \; \langle 1 | 𝟑 | 𝟒 | 1 \rangle, [2 | 𝟑 | 𝟒 | 2] \big\rangle \cap \big\langle ??? \big\rangle
 $$
+&lt;/div&gt;&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\phantom{\circ}$ Although we don&#39;t have a complete set of generators for the last branch, we can still sample it.
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ Fit &lt;span style=&#34;font-size: 13pt&#34;&gt;$⟨1|𝟓|𝟒|𝟑|2]$&lt;/span&gt; residue by sampling in limit &lt;span style=&#34;font-size: 13pt&#34;&gt;$⟨1|𝟓|𝟒|𝟑|2] \rightarrow 0$&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 14pt; margin-top: 10mm; margin-bottom: 10mm&#34;&gt;
+&lt;div style=&#34;font-size: 14pt; margin-top: 4mm; margin-bottom: 10mm&#34;&gt;
 $$ 
 \hat d^{++}_{12\times 3 \times 4} = \frac{\mathcal{N} \leftarrow 112 \text{ free parameters }}{⟨12⟩²⟨1|𝟓|𝟒|𝟑|2]} + \mathcal{O}(⟨1|𝟓|𝟒|𝟑|2]^0)
 $$
@@ -4710,14 +4721,15 @@ oPs8pt.m_h = &#34;sqrt(s_34)&#34;
 oPs5pt = oPs.cluster([[1, ], [2, ], [3, 4], [5, 6], [7, 8]])
 &lt;p&gt;from antares_results.HHH.ggHHH.pp import coeffs as coeffs_pp
 coeffs_pp[&amp;rsquo;d_12x3x4&amp;rsquo;](oPsC)
-1308080686*2147483647^-1 + 687356881 + 792807618*2147483647 + 696603492*2147483647^2 + O(2147483647^3)
 &lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34; style=&#34;margin-top:-5mm; font-size: 10pt&#34;&gt;130808068*2147483647^-1 + 687356881 + 792807618*2147483647 + 696603492*2147483647^2 + O(2147483647^3)
+&lt;/code&gt;&lt;/pre&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      The denominator goes like &lt;span style=&#34;font-size: 13pt&#34;&gt;$p^2$&lt;/span&gt;, but the coefficient goes like &lt;span style=&#34;font-size: 13pt&#34;&gt;$p^{-1} \Rightarrow$&lt;/span&gt; the numerator vanishes linearly.
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ$ This is a &lt;span style=&#34;font-size: 13pt&#34;&gt;$p$&lt;/span&gt;-adic numbers, i.e. a Laurent series in powers of the prime.&lt;br&gt; 
-     $\phantom{\circ}$ Note that with finite fields we cannot do this! We would be dividing by zero.
+     $\circ$ The output is a &lt;span style=&#34;font-size: 15pt&#34;&gt;$p$&lt;/span&gt;-adic number, i.e. a Laurent series in powers of the prime.&lt;br&gt; 
+     $\phantom{\circ}$ With finite fields we cannot do this (with just one evaluation)! It would be dividing by zero.
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
@@ -4785,12 +4797,12 @@ coeffs_pp[&amp;rsquo;d_12x3x4&amp;rsquo;](oPsC)
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
      &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Challenges &lt;/b&gt;
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Can we guess the constraints? If not, can we verify them with numerical evaluations? &lt;br&gt;
-$\phantom{\circ}\,$ &lt;span style=&#34;text-size: 13pt&#34;&gt;$\mathbb{Q}_p$&lt;/span&gt; evaluations can be costly (probably depending on implementation). &lt;a href=https://arxiv.org/abs/2506.08452&gt; Xia, Yang (&#39;25) &lt;/a&gt; say they are not!
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Can we always verify constraints numericlaly? Alternatively, can we predict/guess them? &lt;br&gt;
+$\phantom{\circ}\,$ &lt;span style=&#34;font-size: 14pt&#34;&gt;$p$&lt;/span&gt;-adic evaluations can be costly (especially with multi-loop amplitudes).
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Ideal intersection can be highly non-trivial:
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Imposing multiple constraints at ones means computing ideal intersections, which can be highly non-trivial:
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
 $$ 
@@ -4800,23 +4812,24 @@ $$
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
 $\phantom{\circ}\,$ Unfortunately not always. This is called a &lt;i&gt;complete intersection&lt;/i&gt; when it holds.
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
 $\circ\,$ Therefore, either: 
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\quad\star\,$ we compute the intersection explicitly (can be prohibitively hard)
+$\quad\star\,$ we compute the intersection explicitly (can be prohibitively hard),
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\quad\star\,$ or we have to make a choice of which constrain we manifest
+$\quad\star\,$ or we have to make a choice of which constrain we manifest (trial and error).
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Computing primary decompositions with these many variables is hard, Singular can&#39;t do it on its own
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Computing primary decompositions with these many variables is hard, Singular can&#39;t do it on its own.
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Even constructing the ansatz requires a GB, which in some cases Singular doesn&#39;t easily give
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Even constructing the ansatz requires a Groebner Basis, which in some cases Singular doesn&#39;t easily give. &lt;br&gt;
+$\phantom{\circ}\,$ For &lt;span style=&#34;font-size: 14pt&#34;&gt;$pp\rightarrow HHHj$&lt;/span&gt; we don&#39;t have the full GB, we need to remove redundancies through linear algebra.
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ And of course computing the reduction to MIs of the amplitude is not easy in the first place.
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ The reduction to master integrals of the amplitude is often not easy in the first place.
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;hr&gt;
