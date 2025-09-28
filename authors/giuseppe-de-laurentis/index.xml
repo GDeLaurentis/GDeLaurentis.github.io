@@ -4821,6 +4821,46 @@ $\circ\,$ The reduction to master integrals of the amplitude is often not easy i
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
+     &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Effective Pentagons &lt;/b&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ As mentioned, pentagons can be reduced to a combination of boxes,
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
+$$
+\begin{eqnarray}
+  &amp;&amp;E_0(p_1,p_2,p_3,p_4;\mt)=
+  c^{(1)} D_0(p_2,p_3,p_4;\mt)
+  +c^{(2)} D_0(p_{12},p_3,p_4;\mt) \\
+  &amp;+&amp;c^{(3)} D_0(p_1,p_{23},p_4;\mt)
+  +c^{(4)} D_0(p_1,p_2,p_{34};\mt)
+  +c^{(5)} D_0(p_1,p_2,p_3;\mt)\, .
+\end{eqnarray}
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ We find it useful to write the box coefficients in terms of effective pentagons &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\hat e$&lt;/span&gt; and boxes &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\hat d$&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
+$$
+d^{h_1h_2}_{p_a\times p_b \times p_c } =  \sum_{i=\{i_1,i_2\}} c^{(i)} \hat e_{p_x \times p_y \times p_z \times p_w}+ \hat d^{h_1h_2}_{p_a\times p_b \times p_c }
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\phantom{\circ}$ where the sum involves the two pentagons that pinch to the given box.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ The coefficients &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\hat e$&lt;/span&gt; and &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\hat d$&lt;/span&gt; are not uniquely defined, but &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\hat e$&lt;/span&gt; has the property of capturing &lt;br&gt;
+     $\phantom{\circ}$ the residue of the poles that mix top-mass and kinematic dependence. &lt;br&gt;
+     $\phantom{\circ}$ The non-uniqueness comes from, e.g.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
+$$
+⟨1|2⟩[1|2]⟨1|𝟓|𝟒|𝟑|2]⟨2|𝟑|𝟒|𝟓|1]+m_t^2\text{tr}_5(1|2|𝟑|𝟒)^2=0
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
      &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Example of Code Syntax &lt;/b&gt;
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
