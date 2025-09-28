@@ -3780,9 +3780,12 @@ Giuseppe De Laurentis
 &lt;a href=&#34;https://arxiv.org/pdf/2507.19313&#34;&gt;arXiv:2507.19313&lt;/a&gt; 
 &lt;div style=&#34;font-size: large; margin-bottom:5mm;&#34;&gt; with J. M. Campbell and R. K. Ellis &lt;/div&gt;
 &lt;div style=&#34;font-size: large; margin-top:10mm; margin-bottom:10mm;&#34;&gt; See also: &lt;br&gt;
-&lt;span style=&#34;font-size: 12pt;&#34;&gt;$q\bar{q}\rightarrow t\bar{t}H$&lt;/span&gt; (&lt;a href=&#34;https://arxiv.org/abs/2504.19909&#34;&gt;arXiv:2504.19909&lt;/a&gt;) &lt;br&gt;
-&lt;span style=&#34;font-size: 12pt;&#34;&gt;$pp\rightarrow HHj$&lt;/span&gt; (&lt;a href=&#34;https://arxiv.org/abs/2408.12686&#34;&gt;arXiv:2408.12686&lt;/a&gt;) &lt;br&gt;
-&lt;span style=&#34;font-size: 12pt;&#34;&gt;$pp\rightarrow Hjj$&lt;/span&gt; (&lt;a href=&#34;https://arxiv.org/abs/2002.04018&#34;&gt;arXiv:2002.04018&lt;/a&gt;)
+&lt;span style=&#34;font-size: 12pt;&#34;&gt;$q\bar{q}\rightarrow t\bar{t}H$&lt;/span&gt; (&lt;a href=&#34;https://arxiv.org/abs/2504.19909&#34;&gt;arXiv:2504.19909&lt;/a&gt;,
+&lt;a href=&#34;https://link.springer.com/article/10.1007/JHEP07(2025)147&#34;&gt;JHEP07(2025)147&lt;/a&gt;) &lt;br&gt;
+&lt;span style=&#34;font-size: 12pt;&#34;&gt;$pp\rightarrow HHj$&lt;/span&gt; (&lt;a href=&#34;https://arxiv.org/abs/2408.12686&#34;&gt;arXiv:2408.12686&lt;/a&gt;, 
+&lt;a href=&#34;https://link.springer.com/article/10.1007/JHEP10(2024)230&#34;&gt;JHEP10(2024)230&lt;/a&gt;) &lt;br&gt;
+&lt;span style=&#34;font-size: 12pt;&#34;&gt;$pp\rightarrow Hjj$&lt;/span&gt; (&lt;a href=&#34;https://arxiv.org/abs/2002.04018&#34;&gt;arXiv:2002.04018&lt;/a&gt;,
+&lt;a href=&#34;https://link.springer.com/article/10.1007/JHEP05(2020)079&#34;&gt;JHEP05(2020)079&lt;/a&gt;)
 &lt;/div&gt;
 &lt;p&gt;HHH Workshop&lt;/p&gt;
 &lt;div style=&#34;font-size: large; margin-top:-5mm; margin-bottom:5mm&#34;&gt; Dubrovnik, HR &lt;/div&gt;
@@ -3874,7 +3877,7 @@ $$
      $\phantom{\circ}\,$ Their contribution is also fairly simple, it can be written in 4 or 5 lines.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 8mm; margin-top: 2mm; margin-left: -4mm;&#34;&gt;
-     $\circ\,$ The background diagrams are by far the most complicated, for reasons we&#39;ll see shortly
+     $\circ\,$ The background diagrams are by far the most complicated,
 &lt;/div&gt;
 &lt;img src=&#34;diagrams_background_transparent.png&#34; style=&#34;max-width:70%; height:auto; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -4mm;&#34;&gt;
@@ -3943,7 +3946,7 @@ $\circ$ We perform a first analytic computation in two ways
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;&#34;&gt;
      Think of this as a bootstrap approach, helped by additional numerical information.
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 10mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ The analytic structure should be clear with $p^\mu \in \mathbb{C}^{4}$ (good $\mathbb{R}^{4}$ behaviour will follow)
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;&#34;&gt;
@@ -4026,6 +4029,9 @@ $$
 \displaystyle \kern10mm R_{n} = \mathbb{F}\Big[|1⟩_{\alpha}, [1|_{\dot\alpha}, \dots, |n⟩_{\alpha}, [n|_{\dot\alpha} \Big] \Big/ \Big\langle {\textstyle \sum_{i=1}^n} |i\rangle[ i | \Big\rangle
 $$
 &lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\phantom{\circ}$ Recall the simple relation &lt;span style=&#34;font-size: 14pt;&#34;&gt;$p_i^\mu \sigma^\mu_{\alpha\dot\alpha} = |i\rangle_\alpha [i|_{\dot\alpha}$&lt;/span&gt;.
+&lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ The &#34;unit circle&#34; is now the codimension &lt;span style=&#34;font-size: 14pt;&#34;&gt;$4$&lt;/span&gt; &#34;momentum conservation&#34; &lt;b&gt;variety&lt;/b&gt; within a &lt;span style=&#34;font-size: 14pt;&#34;&gt;$4n$&lt;/span&gt; &lt;br&gt; $\phantom{\circ}$ dimensional space. On this variety we have equivalence relations such as 
 &lt;/div&gt;
@@ -4056,7 +4062,7 @@ $$
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}$ where &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\boldsymbol{3}_{\alpha,\dot\alpha} \boldsymbol{3}^{\dot\alpha,\alpha} = \boldsymbol{4}_{\alpha,\dot\alpha} \boldsymbol{4}^{\dot\alpha,\alpha} = \boldsymbol{5}_{\alpha,\dot\alpha} \boldsymbol{5}^{\dot\alpha,\alpha} = 2 M_h^2$&lt;/span&gt;.
+     $\phantom{\circ}$ where &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\boldsymbol{3}_{\alpha,\dot\alpha} \boldsymbol{3}^{\dot\alpha,\alpha} = \boldsymbol{4}_{\alpha,\dot\alpha} \boldsymbol{4}^{\dot\alpha,\alpha} = \boldsymbol{5}_{\alpha,\dot\alpha} \boldsymbol{5}^{\dot\alpha,\alpha} = 2 M_h^2$&lt;/span&gt;, &lt;span style=&#34;font-size: 15pt;&#34;&gt;$\boldsymbol{3}_{\alpha,\dot\alpha},\boldsymbol{4}_{\alpha,\dot\alpha},\boldsymbol{5}_{\alpha,\dot\alpha}$&lt;/span&gt; are full-rank (unfactorizable).
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ It is sometimes useful to map to a set of all massless momenta / spinors,
@@ -4161,8 +4167,8 @@ p_{3}\!\cdot\! p_{12} &amp; p_{3}\!\cdot\! p_{3}   &amp; p_{3}\!\cdot\! p_{4} \\
 p_{4}\!\cdot\! p_{12} &amp; p_{4}\!\cdot\! p_{3}   &amp; p_{4}\!\cdot\! p_{4}
 \end{pmatrix} \quad \text{ and } \quad\quad
    \begin{aligned}
-       \text{tr}_5(1|2|3|4)^2 &amp;= \text{tr}(\gamma^5 p_1 p_2 p_3 p_4) \\
-       &amp;= [1|2|𝟑|𝟒||1⟩ - ⟨1|2|𝟑|𝟒|1]
+       \text{tr}_5(1|2|3|4) &amp;= \text{tr}(\gamma^5 p_1 p_2 p_3 p_4) \\
+       &amp;= [1|2|𝟑|𝟒|1⟩ - ⟨1|2|𝟑|𝟒|1]
      \end{aligned}
      $$
 &lt;/div&gt;
@@ -4432,6 +4438,116 @@ $$
 \hat d^{++}_{12\times 3 \times 4} = \frac{\mathcal{N} \leftarrow 112 \text{ free parameters }}{⟨12⟩²⟨1|𝟓|𝟒|𝟑|2]} + \mathcal{O}(⟨1|𝟓|𝟒|𝟑|2]^0)
 $$
 &lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;Wjj_diagrams.png&#34;
+  &gt;
+
+&lt;h1 id=&#34;br-conclusions-br--br-outlook&#34;&gt;&lt;br&gt; Conclusions &lt;br&gt; &amp;amp; &lt;br&gt; Outlook&lt;/h1&gt;
+&lt;hr&gt;
+&lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
+     &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Analytic Results for Theory and Phenomenology &lt;/b&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
+     $\circ$ Analytic expressions implemented in &lt;a href=&#34;https://mcfm.fnal.gov/&#34;&gt;MCFM&lt;/a&gt;, for phenomenology use this efficient Fortran implementation
+&lt;/div&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1909.09117&#34; style=&#34;font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;&#34;&gt; Campbell, Neumann&lt;/a&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1503.06182&#34; style=&#34;font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;&#34;&gt; Campbell, Ellis, Giele;&lt;/a&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1105.0020&#34; style=&#34;font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;&#34;&gt; Campbell, Ellis, Williams;&lt;/a&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 10mm;&#34;&gt;
+     $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;antares-results&lt;/a&gt; (human readable exprs in &lt;a href=&#34;https://gdelaurentis.github.io/antares-results/&#34;&gt;docs&lt;/a&gt;) with &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results/actions/&#34;&gt;CI tests&lt;/a&gt; for coefficients and/or full amplitudes
+&lt;/div&gt;
+&lt;div style=&#34;display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;&#34;&gt;
+     &lt;img src=&#34;antares-results-transparent.png&#34; 
+          style=&#34;width: 100%; max-width: 700px; float: left; border: none; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
+     &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Challenges &lt;/b&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Can we always verify constraints numericaly? Alternatively, can we predict/guess them? &lt;br&gt;
+$\phantom{\circ}\,$ &lt;span style=&#34;font-size: 14pt&#34;&gt;$p$&lt;/span&gt;-adic evaluations can be costly (especially with multi-loop amplitudes).
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Imposing multiple constraints at ones means computing ideal intersections, which can be highly non-trivial:
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
+$$ 
+\mathcal{N} \in \langle q_1, q_2 \rangle \cap \langle q_3, q_4 \rangle \stackrel{?}{=} \langle q_1q_3, q_1q_4, q_2q_3, q_2 q_4\rangle 
+$$
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\phantom{\circ}\,$ Unfortunately not always. This is called a &lt;i&gt;complete intersection&lt;/i&gt; when it holds.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+$\phantom{\circ}\,$ Therefore, either: 
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\quad\star\,$ we compute the intersection explicitly (can be prohibitively hard),
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\quad\star\,$ or we have to make a choice of which constrain we manifest (trial and error).
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Computing primary decompositions with these many variables is hard, Singular can&#39;t do it on its own.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Even constructing the ansatz requires a Groebner Basis, which in some cases Singular doesn&#39;t easily give. &lt;br&gt;
+$\phantom{\circ}\,$ For &lt;span style=&#34;font-size: 14pt&#34;&gt;$pp\rightarrow HHHj$&lt;/span&gt; we don&#39;t have the full GB, we need to remove redundancies through linear algebra.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ The reduction to master integrals of the amplitude is often not easy in the first place.
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;dubrovnik.jpeg&#34;
+  &gt;
+
+&lt;div style=&#34;margin-top: 50mm; margin-bottom: 30mm;&#34;&gt;
+&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large;&#34;&gt; Thank you &lt;br&gt; for your attention! &lt;/b&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;!---
+&lt;b style=&#34;font-variant: small-caps; font-size: xx-large;&#34;&gt; Questions? &lt;/b&gt;
+---&gt;
+&lt;/div&gt;
+&lt;span style=&#34;font-size: 11pt; &#34;&gt;
+    These slides are powered by:&lt;br&gt;
+    &lt;span style=&#34;display: block; margin-top: 2mm;&#34;&gt;
+        &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;markdown&lt;/a&gt;, 
+        &lt;a href=&#34;https://en.wikipedia.org/wiki/HTML&#34;&gt;html&lt;/a&gt;, 
+        &lt;a href=&#34;https://revealjs.com/&#34;&gt;revealjs&lt;/a&gt;, 
+        &lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;, 
+        &lt;a href=&#34;https://www.mathjax.org/&#34;&gt;mathjax&lt;/a&gt;, 
+        &lt;a href=&#34;https://github.com/&#34;&gt;github&lt;/a&gt;
+    &lt;/span&gt;
+&lt;/span&gt;
+&lt;!---
+&lt;br&gt;
+&lt;font size=3&gt;
+     For open source packages: 
+     &lt;code&gt;
+          $   $ pip install [lips](https://github.com/GDeLaurentis/lips) [pyadic](https://github.com/GDeLaurentis/pyadic)
+     &lt;/code&gt;
+&lt;/font size&gt;
+---&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+&lt;div style=&#34;margin-top: 50mm; margin-bottom: 30mm;&#34;&gt;
+&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large;&#34;&gt; Backup slides. &lt;/b&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
      &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Example of Code Syntax &lt;/b&gt;
@@ -4494,110 +4610,6 @@ coeffs_pp[&amp;rsquo;d_12x3x4&amp;rsquo;](oPsC)
      $\quad\rightarrow$ Univariate slicing, LCD determination, basis change, multivariate partial fractioning strategies, &lt;br&gt;
      $\phantom{\rightarrow}$ constraining of numerators, Ansatz generation and fitting strategies, etc.
 &lt;/div&gt;
-&lt;/section&gt;
-&lt;hr&gt;
-&lt;section&gt;
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;Wjj_diagrams.png&#34;
-  &gt;
-
-&lt;h1 id=&#34;br-conclusions-br--br-outlook&#34;&gt;&lt;br&gt; Conclusions &lt;br&gt; &amp;amp; &lt;br&gt; Outlook&lt;/h1&gt;
-&lt;hr&gt;
-&lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
-     &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Analytic Results for Theory and Phenomenology &lt;/b&gt;
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
-     $\circ$ Analytic expressions implemented in &lt;a href=&#34;https://mcfm.fnal.gov/&#34;&gt;MCFM&lt;/a&gt;, for phenomenology use this efficient Fortran implementation
-&lt;/div&gt;
-&lt;a href=&#34;https://arxiv.org/abs/1909.09117&#34; style=&#34;font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;&#34;&gt; Campbell, Neumann&lt;/a&gt;
-&lt;a href=&#34;https://arxiv.org/abs/1503.06182&#34; style=&#34;font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;&#34;&gt; Campbell, Ellis, Giele;&lt;/a&gt;
-&lt;a href=&#34;https://arxiv.org/abs/1105.0020&#34; style=&#34;font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;&#34;&gt; Campbell, Ellis, Williams;&lt;/a&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 10mm;&#34;&gt;
-     $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;antares-results&lt;/a&gt; (human readable exprs in &lt;a href=&#34;https://gdelaurentis.github.io/antares-results/&#34;&gt;docs&lt;/a&gt;) with &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results/actions/&#34;&gt;CI tests&lt;/a&gt; for coefficients and/or full amplitudes
-&lt;/div&gt;
-&lt;div style=&#34;display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;&#34;&gt;
-     &lt;img src=&#34;antares-results-transparent.png&#34; 
-          style=&#34;width: 100%; max-width: 700px; float: left; border: none; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
-     &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Challenges &lt;/b&gt;
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 5mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Can we always verify constraints numericlaly? Alternatively, can we predict/guess them? &lt;br&gt;
-$\phantom{\circ}\,$ &lt;span style=&#34;font-size: 14pt&#34;&gt;$p$&lt;/span&gt;-adic evaluations can be costly (especially with multi-loop amplitudes).
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Imposing multiple constraints at ones means computing ideal intersections, which can be highly non-trivial:
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
-$$ 
-\mathcal{N} \in \langle q_1, q_2 \rangle \cap \langle q_3, q_4 \rangle \stackrel{?}{=} \langle q_1q_3, q_1q_4, q_2q_3, q_2 q_4\rangle 
-$$
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\phantom{\circ}\,$ Unfortunately not always. This is called a &lt;i&gt;complete intersection&lt;/i&gt; when it holds.
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Therefore, either: 
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\quad\star\,$ we compute the intersection explicitly (can be prohibitively hard),
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\quad\star\,$ or we have to make a choice of which constrain we manifest (trial and error).
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Computing primary decompositions with these many variables is hard, Singular can&#39;t do it on its own.
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Even constructing the ansatz requires a Groebner Basis, which in some cases Singular doesn&#39;t easily give. &lt;br&gt;
-$\phantom{\circ}\,$ For &lt;span style=&#34;font-size: 14pt&#34;&gt;$pp\rightarrow HHHj$&lt;/span&gt; we don&#39;t have the full GB, we need to remove redundancies through linear algebra.
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ The reduction to master integrals of the amplitude is often not easy in the first place.
-&lt;/div&gt;
-&lt;/section&gt;
-&lt;hr&gt;
-&lt;section&gt;
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;dubrovnik.jpeg&#34;
-  &gt;
-
-&lt;div style=&#34;margin-top: 50mm; margin-bottom: 30mm;&#34;&gt;
-&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large;&#34;&gt; Thank you &lt;br&gt; for your attention! &lt;/b&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;!---
-&lt;b style=&#34;font-variant: small-caps; font-size: xx-large;&#34;&gt; Questions? &lt;/b&gt;
----&gt;
-&lt;/div&gt;
-&lt;span style=&#34;font-size: 11pt; &#34;&gt;
-    These slides are powered by:&lt;br&gt;
-    &lt;span style=&#34;display: block; margin-top: 2mm;&#34;&gt;
-        &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;markdown&lt;/a&gt;, 
-        &lt;a href=&#34;https://en.wikipedia.org/wiki/HTML&#34;&gt;html&lt;/a&gt;, 
-        &lt;a href=&#34;https://revealjs.com/&#34;&gt;revealjs&lt;/a&gt;, 
-        &lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;, 
-        &lt;a href=&#34;https://www.mathjax.org/&#34;&gt;mathjax&lt;/a&gt;, 
-        &lt;a href=&#34;https://github.com/&#34;&gt;github&lt;/a&gt;
-    &lt;/span&gt;
-&lt;/span&gt;
-&lt;!---
-&lt;br&gt;
-&lt;font size=3&gt;
-     For open source packages: 
-     &lt;code&gt;
-          $   $ pip install [lips](https://github.com/GDeLaurentis/lips) [pyadic](https://github.com/GDeLaurentis/pyadic)
-     &lt;/code&gt;
-&lt;/font size&gt;
----&gt;
 &lt;/section&gt;
 &lt;!-- REVEAL.JS CUSTOMIZATION --&gt;
 &lt;!-- Include MathJax library --&gt;
