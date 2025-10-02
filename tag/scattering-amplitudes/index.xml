@@ -10472,6 +10472,41 @@ $$
      $\phantom{\circ}$ while &lt;span style=&#34;font-size: 15pt;&#34;&gt;$R_{HHH}$&lt;/span&gt; has 20 invariants, subject to 122 constraints.
 &lt;/div&gt;
 &lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Invariant Rings in Mathematics Literature &lt;/b&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-top: -6mm; margin-bottom: 2mm; font-size: 15pt;&#34;&gt;
+(taking some quotes from &lt;a href=https://arxiv.org/abs/2509.14350&gt;arXiv:2509.14350&lt;/a&gt;, &lt;i&gt;“Some remarks on invariants”&lt;/i&gt;)
+&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
+$\circ\,$ The authors of &lt;a href=https://arxiv.org/abs/2509.14350&gt;arXiv:2509.14350&lt;/a&gt; seem to tackle a very similar problem for
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
+$\quad\small\rhd\,$ &lt;i&gt; “[...] finding possible terms in an action, or many other applications.” &lt;/i&gt; &lt;br&gt;
+$\quad\small\rhd\,$ They say &lt;i&gt; “[...] the awareness in the physics community of the possible structures of the rings
+of invariants thus arising is rather low, to our knowledge. In particular, the possibility of having relations among invariants has received very little attention in physics.” &lt;/i&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
+$\phantom{\circ}\,$ The key concept is that the ring we consider are &lt;b&gt;&lt;i&gt;not freely generated&lt;/i&gt;&lt;/b&gt;.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 5mm; margin-bottom: 2mm; &#34;&gt;
+$\circ\,$ With Ben in &lt;a href=https://arxiv.org/abs/2203.04269&gt;arXiv:2203.04269&lt;/a&gt; we showed that these rings are “Cohen–Macaulay”
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
+$\quad\small\rhd\,$ Follows from quotienting a polynomial ring by a maximal-codimension ideal &lt;br&gt;
+$\quad\small\rhd\,$ Implies e.g. that symbolic powers of max-codim ideals match normal powers &lt;br&gt;
+$\kern20.9mm$ that all max-codim ideals are equi-dimensional &lt;br&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
+$\circ\,$ The authors of &lt;a href=https://arxiv.org/abs/2509.14350&gt;arXiv:2509.14350&lt;/a&gt; state that invariant rings are “Gorenstein”, which implies CM
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 0mm; &#34;&gt;
+$\quad\small\rhd\,$ &lt;i&gt; “all rings of the type we are discussing are Gorenstein” &lt;/i&gt; &lt;br&gt;
+$\quad\small\rhd\,$ &lt;i&gt; “Gorenstein is for rings what Calabi–Yau is for manifolds; 
+the spaces of invariants are in fact (non-compact) Calabi-Yau varieties” &lt;/i&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 16pt; padding: 10px; display: inline-block; margin-top: -4mm;&#34;&gt;
+    &lt;u&gt; What futher practical information can we learn from the mathematics literature? &lt;/u&gt;
+&lt;/div&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; The Numerator Ansatz &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
 $\circ\,$ The numerator Ansatz takes the form (massless case)
@@ -10480,7 +10515,7 @@ $\circ\,$ The numerator Ansatz takes the form (massless case)
    GDL, Maître (&#39;19)
 &lt;/a&gt;
 &lt;div style=&#34;text-align: center; font-size: 15pt; margin-bottom: 5mm; margin-top: 1mm;&#34;&gt;
-$\displaystyle \text{Num. poly}(\lambda, \tilde\lambda) = \sum_{\vec \alpha, \vec \beta} c_{(\vec\alpha,\vec\beta)} \prod_{j=1}^n\prod_{i=1}^{j-1} \langle ij\rangle^{\alpha_{ij}} [ij]^{\beta_{ij}}$
+$\displaystyle \text{Num. poly} = \sum_{\vec \alpha, \vec \beta} c_{(\vec\alpha,\vec\beta)} \prod_{j=1}^n\prod_{i=1}^{j-1} \langle ij\rangle^{\alpha_{ij}} [ij]^{\beta_{ij}}$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
      $\phantom{\circ}$ subject to constraints on $\vec\alpha,\vec\beta$ due to: 1) mass dimension; 2) little group; 3) linear independence.
