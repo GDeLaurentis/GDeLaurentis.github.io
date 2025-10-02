@@ -10825,7 +10825,7 @@ $\quad\star\,$ or we have to make a choice of which constrain we manifest
 $\circ\,$ Computing primary decompositions with these many variables is hard, Singular can&#39;t do it on its own
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\phantom{\circ}\,$ On going project with a masters&#39; student in Edinburgh to improve our ability to compute them.
+$\phantom{\circ}\,$ Ongoing project with a masters&#39; student in Edinburgh to improve our ability to compute them.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
 $\circ\,$ Even constructing the ansatz requires a GB, which in some cases Singular doesn&#39;t easily give
