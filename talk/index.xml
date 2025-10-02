@@ -5,7 +5,7 @@
     <link>https://gdelaurentis.github.io/talk/</link>
       <atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 07 Oct 2025 15:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 13 Oct 2025 17:00:00 +0000</lastBuildDate>
     <image>
       <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
@@ -13,13 +13,39 @@
     </image>
     
     <item>
-      <title>Analytic Reconstruction and Algebro-Geometric Structures in QCD: Two-Loop $pp \rightarrow Vjj$ in the leading-colour approximation</title>
+      <title>Towards the complete NNLO BFKL Kernel</title>
+      <link>https://gdelaurentis.github.io/talk/refoct2025/</link>
+      <pubDate>Mon, 13 Oct 2025 17:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/refoct2025/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Recently there has been significant progress in understanding the
+Regge limit in massless scattering amplitudes. In particular, all
+the ingredients needed for the computation of the BFKL kernel at
+NNLO have been determined in QCD, apart from the two-gluon
+central emission vertex at one loop, which is known so far only
+in maximally supersymmetric Yang-Mills theory. We present the
+calculation of the next-to-multi-Regge-kinematic (NRMK) limit of
+the six-gluon amplitude in QCD, from which this vertex can be
+determined. Due to the complexity of the expressions for the
+next-to-maximally-helicity-violating (NMHV) amplitude and the
+high powers of spurious poles in the NMRK expansion parameter, we
+use p-adic evaluation to obtain numerical samples for the leading
+NMRK behaviour. We then employ analytic reconstruction techniques
+to recover analytic results in a minimal set of independent
+variables. In particular, allowed partial fraction depositions
+are identified through nested p-adic limits near codimension-two
+varieties.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analytic Reconstruction and Algebro-Geometric Structures in QCD: Two-Loop $pp \rightarrow Vjj$ &amp; One-Loop $pp \rightarrow t\bar{t}H$ &amp; $HHH$</title>
       <link>https://gdelaurentis.github.io/talk/sduoct2025/</link>
       <pubDate>Tue, 07 Oct 2025 15:00:00 +0000</pubDate>
       <guid>https://gdelaurentis.github.io/talk/sduoct2025/</guid>
       <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Loop amplitudes are central to precision collider phenomenology, yet their computation remains a major challenge due to the complexity of intermediate steps. A powerful modern strategy is to bypass this complexity through numerical evaluations over finite fields, followed by the reconstruction of the amplitudes’ analytic form from a set of numerical samples using number-theoretic and algebro-geometric techniques.&lt;/p&gt;
-&lt;p&gt;In this talk, I will present the recent re-computation of the two-loop leading-colour amplitudes for the production of a heavy electroweak vector boson, $V=\{W^\pm,Z,\gamma^*\}$, in association with two light jets at hadron colliders ($pp\rightarrow Vjj$) (&lt;a href=&#34;https://arxiv.org/abs/2503.10595&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2503.10595&lt;/a&gt;), including leptonic decays of the electroweak boson ($V\rightarrow \ell\bar{\ell}$). Compared to the previous state-of-the-art result (&lt;a href=&#34;https://arxiv.org/abs/2110.07541&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2110.07541&lt;/a&gt;), the new approach achieves a three-order-of-magnitude reduction in size (1.4 GB to 1.9 MB), while also lowering the number of required numerical samples from one million to fifty thousand.&lt;/p&gt;
+&lt;p&gt;In this talk, I will present the recent re-computation of the two-loop leading-colour amplitudes for the production of a heavy electroweak vector boson, $V=\{W^\pm,Z,\gamma^*\}$, in association with two light jets at hadron colliders ($pp\rightarrow Vjj$) (&lt;a href=&#34;https://arxiv.org/abs/2503.10595&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2503.10595&lt;/a&gt;), including leptonic decays of the electroweak boson ($V\rightarrow \ell\bar{\ell}$). Compared to the previous state-of-the-art result (&lt;a href=&#34;https://arxiv.org/abs/2110.07541&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2110.07541&lt;/a&gt;), the new approach achieves a three-order-of-magnitude reduction in size (1.4 GB to 1.9 MB), while also lowering the number of required numerical samples from one million to fifty thousand. To illustrate the applicability of these techniques in settings with more massive external legs, I will also briefly discuss the one-loop processes $pp \to HHH$ and $pp \to t\bar t H$.&lt;/p&gt;
 &lt;p&gt;I will outline the core ingredients of this computation: a basis-change algorithm in the vector space of rational functions based on correlations among multivariate residues; numerical sampling in number fields with non-Archimedean metrics (finite fields and $p$-adic numbers); the use of redundant spinor-helicity variables organised via polynomial quotient rings; and the role of primary decompositions in identifying allowed multivariate partial fraction decompositions. These methods not only yield efficient and stable results ready for phenomenological applications, but also expose structural features that we expect to generalise to more complex multi-loop amplitudes.&lt;/p&gt;
 </description>
     </item>
