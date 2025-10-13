@@ -13,13 +13,13 @@
     </image>
     
     <item>
-      <title>Analytic Reconstruction and Algebro-Geometric Structures in QCD: Two-Loop $pp \rightarrow Vjj$ &amp; One-Loop $pp \rightarrow t\bar{t}H$ &amp; $HHH$</title>
+      <title>Analytic Reconstruction and Algebro-Geometric Structures in QCD: Two-Loop $pp \to Vjj$ &amp; One-Loop $pp \to t\bar{t}H$ &amp; $HHH$</title>
       <link>https://gdelaurentis.github.io/talk/universe&#43;oct2025/</link>
       <pubDate>Wed, 22 Oct 2025 16:00:00 +0000</pubDate>
       <guid>https://gdelaurentis.github.io/talk/universe&#43;oct2025/</guid>
       <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Loop amplitudes are central to precision collider phenomenology, yet their computation remains a major challenge due to the complexity of intermediate steps. A powerful modern strategy is to bypass this complexity through numerical evaluations over finite fields, followed by the reconstruction of the amplitudes’ analytic form from a set of numerical samples using number-theoretic and algebro-geometric techniques.&lt;/p&gt;
-&lt;p&gt;In this talk, I will present the recent re-computation of the two-loop leading-colour amplitudes for the production of a heavy electroweak vector boson, $V=\{W^\pm,Z,\gamma^*\}$, in association with two light jets at hadron colliders ($pp\rightarrow Vjj$) (&lt;a href=&#34;https://arxiv.org/abs/2503.10595&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2503.10595&lt;/a&gt;), including leptonic decays of the electroweak boson ($V\rightarrow \ell\bar{\ell}$). Compared to the previous state-of-the-art result (&lt;a href=&#34;https://arxiv.org/abs/2110.07541&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2110.07541&lt;/a&gt;), the new approach achieves a three-order-of-magnitude reduction in size (1.4 GB to 1.9 MB), while also lowering the number of required numerical samples from one million to fifty thousand. To illustrate the applicability of these techniques in settings with more massive external legs, I will also briefly discuss the one-loop processes $pp \to HHH$ and $pp \to t\bar t H$.&lt;/p&gt;
+&lt;p&gt;In this talk, I will present the recent re-computation of the two-loop leading-colour amplitudes for the production of a heavy electroweak vector boson, $V=\{W^\pm,Z,\gamma^*\}$, in association with two light jets at hadron colliders ($pp\to Vjj$) (&lt;a href=&#34;https://arxiv.org/abs/2503.10595&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2503.10595&lt;/a&gt;), including leptonic decays of the electroweak boson ($V\to \ell\bar{\ell}$). Compared to the previous state-of-the-art result (&lt;a href=&#34;https://arxiv.org/abs/2110.07541&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2110.07541&lt;/a&gt;), the new approach achieves a three-order-of-magnitude reduction in size (1.4 GB to 1.9 MB), while also lowering the number of required numerical samples from one million to fifty thousand. To illustrate the applicability of these techniques in settings with more massive external legs, I will also briefly discuss the one-loop processes $pp \to HHH$ and $pp \to t\bar t H$.&lt;/p&gt;
 &lt;p&gt;I will outline the core ingredients of this computation: a basis-change algorithm in the vector space of rational functions based on correlations among multivariate residues; numerical sampling in number fields with non-Archimedean metrics (finite fields and $p$-adic numbers); the use of redundant spinor-helicity variables organised via polynomial quotient rings; and the role of primary decompositions in identifying allowed multivariate partial fraction decompositions. These methods not only yield efficient and stable results ready for phenomenological applications, but also expose structural features that we expect to generalise to more complex multi-loop amplitudes.&lt;/p&gt;
 </description>
     </item>
@@ -9983,7 +9983,7 @@ Giuseppe De Laurentis
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Large Logarithms from Big Rapidity Gaps  &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: -5mm;&#34;&gt;
-     $\circ\,$ In &lt;span style=&#34;font-size: 15pt&#34;&gt;$2\to 2$&lt;/span&gt; scattering, in the &lt;b&gt;forward limit&lt;/b&gt; &lt;span style=&#34;font-size: 15pt&#34;&gt;$s \gg t$&lt;/span&gt; (large CoM energy vs. momentum transfer)
+     $\circ\,$ In the &lt;b&gt;forward limit&lt;/b&gt; &lt;span style=&#34;font-size: 15pt&#34;&gt;$s \gg t$&lt;/span&gt; (large CoM energy vs. momentum transfer), e.g. &lt;span style=&#34;font-size: 15pt&#34;&gt;$2\to 2$&lt;/span&gt; scattering,
 &lt;/div&gt;
 &lt;img src=&#34;forward_diagram.png&#34; style=&#34;max-width:100mm; margin-top:-4mm; margin-bottom:-7mm;&#34;&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: -5mm;&#34;&gt;
@@ -10013,13 +10013,13 @@ $$
 &lt;/div&gt;
 &lt;img src=&#34;Emissions-transparent.png&#34; style=&#34;max-width:225mm; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
 &lt;br&gt;
-&lt;span style=&#34;font-size: 14pt; margin-top: -8mm; margin-bottom: -8mm; margin-right:-5mm; float: right; font-align: right;&#34;&gt; Images from &lt;a href=&#34;https://arxiv.org/abs/2312.15051&#34;&gt; Byrne `23&lt;/a&gt;&lt;/span&gt;
+&lt;span style=&#34;font-size: 14pt; margin-top: -8mm; margin-bottom: -8mm; margin-right:-5mm; float: right; font-align: right;&#34;&gt; Images adapted from &lt;a href=&#34;https://arxiv.org/abs/2312.15051&#34;&gt; Byrne `23&lt;/a&gt;&lt;/span&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: -2mm;&#34;&gt;
      $\phantom{\circ}\;$ where: the ziggly line is a Reggeon &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{R}$&lt;/span&gt;, the green blobs are impact factors &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{C}$&lt;/span&gt;, the blue blob is &lt;br&gt;
      $\phantom{\circ}\;$ a one-emission central vertex &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_g$&lt;/span&gt;, and the gray blob is a two-emission central vertex &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_{gg}$&lt;/span&gt;.
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: -2mm;&#34;&gt;
-     $\circ\;$ The amplitude factorise as follows (schematically)
+     $\circ\;$ The amplitude factorise as follows (very schematically)
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 16pt; margin-top: 0mm; margin-bottom: -3mm&#34;&gt;
 $$
@@ -10030,42 +10030,6 @@ $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: -2mm;&#34;&gt;
      $\phantom{\circ}\;$ where each component admits an expansion in powers of &lt;span style=&#34;font-size: 15pt&#34;&gt;$\alpha_s$&lt;/span&gt;, thus e.g. &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{A}_4^{(1)}$&lt;/span&gt; gives us &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{C}^{(1)}$&lt;/span&gt; and &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{R}^{(1)}$&lt;/span&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 34pt; magin-bottom: -10mm;&#34;&gt; Minimal Variables for (N)MRK &lt;/b&gt; &lt;br&gt;&lt;/p&gt;
-&lt;div style=&#34;font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: -4mm;&#34;&gt;
-$\circ$ The MRK limit is a two-variable problem &lt;span style=&#34;font-size: 15pt;&#34;&gt;$z, \bar z$&lt;/span&gt;
-&lt;/div&gt;
-&lt;div style=&#34;display: flex; justify-content: space-between; align-items: flex-start; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-  &lt;!-- Left column: image --&gt;
-  &lt;div style=&#34;flex: 1; margin-right: 10mm;&#34;&gt;
-    &lt;img src=&#34;mrk-variables.png&#34; style=&#34;max-width:100mm; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-  &lt;/div&gt;
-  &lt;!-- Right column: table --&gt;
-  &lt;div style=&#34;flex: 1; font-family: &#39;Latin Modern Math&#39;, serif; font-size: 13pt;&#34;&gt;
-    &lt;table style=&#34;border-collapse: collapse; width: 100%;&#34;&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;&lt;td&gt;&lt;b&gt;p&lt;sub&gt;4⊥&lt;/sub&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;= − q₁ / (z − 1)&lt;/td&gt;&lt;/tr&gt;
-        &lt;tr&gt;&lt;td&gt;&lt;b&gt;p&lt;sub&gt;4⊥&lt;/sub&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;= − q₁* / (ż − 1)&lt;/td&gt;&lt;/tr&gt;
-        &lt;tr&gt;&lt;td&gt;&lt;b&gt;p&lt;sub&gt;5⊥&lt;/sub&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;= z q₁ / (z − 1)&lt;/td&gt;&lt;/tr&gt;
-        &lt;tr&gt;&lt;td&gt;&lt;b&gt;p&lt;sub&gt;5⊥&lt;/sub&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;= ż q₁* / (ż − 1)&lt;/td&gt;&lt;/tr&gt;
-        &lt;tr&gt;&lt;td&gt;&lt;b&gt;p₃⁺&lt;/b&gt;&lt;/td&gt;&lt;td&gt;= p₄⁺ X&lt;sub&gt;34&lt;/sub&gt;&lt;/td&gt;&lt;/tr&gt;
-        &lt;tr&gt;&lt;td&gt;&lt;b&gt;p₅⁺&lt;/b&gt;&lt;/td&gt;&lt;td&gt;= p₄⁺ / X&lt;sub&gt;45&lt;/sub&gt;&lt;/td&gt;&lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-    &lt;p style=&#34;margin-top: 6mm; font-weight: bold;&#34;&gt;Light-cone momenta:&lt;/p&gt;
-    &lt;pre style=&#34;font-family: &#39;Courier New&#39;, monospace; font-size: 12pt; line-height: 1.2; margin-top: 2mm;&#34;&gt;
-[   0      fix     0      0   ]
-[  fix      0      0      0   ]
-[  p₃⁺     fix    fix    fix  ]
-[  p₄⁺     fix   p₄_⊥= − q₁ / (z − 1)   p₄⊥*  ]
-[  p₅⁺     fix   p₅⊥   p₅⊥*  ]
-    &lt;/pre&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;img src=&#34;mrk-variables.png&#34; style=&#34;max-width:100mm; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-&lt;div style=&#34;font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
-$\circ$ The NMRK limit is a five-variable problem &lt;span style=&#34;font-size: 15pt;&#34;&gt;$z, \bar z, w, \bar w, X=X_{(45)}$&lt;/span&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;hr&gt;
@@ -10090,8 +10054,8 @@ Leading-Log (LL) Resummation: &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\mat
 &lt;img src=&#34;LOKernel.png&#34; style=&#34;max-width: 130mm; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
 &lt;p&gt;&lt;span style=&#34;font-size: 14pt; margin-top: -5mm; margin-bottom: 5mm; float: right; font-align: right;&#34;&gt;Images from&lt;a href=&#34;https://arxiv.org/abs/2204.12459&#34;&gt; Byrne, Del Duca, Dixon, Gardi, Smillie &lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 10mm;&#34;&gt;
-     $\phantom{\circ}\,$ (a) is a correction to the Regge trajectory &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{R^{(1)}}$&lt;/span&gt;&lt;br&gt;
-     $\phantom{\circ}\,$ (b) is the leading order central emission vertex (CEV) &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_g^{(0)}$&lt;/span&gt;
+     $\phantom{\circ}\,$ (a) is a correction to the Regge trajectory &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{R}^{(1)}$&lt;/span&gt;&lt;br&gt;
+     $\phantom{\circ}\,$ (b) is the leading order central emission vertex (CEV) &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_g^{(0)}$&lt;/span&gt; in MRK
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; NLO Kernel &lt;/b&gt;&lt;/p&gt;
@@ -10103,7 +10067,7 @@ Next-To-Leading-Log (NLL) Resummation: &lt;span style=&#34;font-size: 14pt;&#34;
      $\phantom{\circ}\,$ (a) two-loop correction to the Regge trajectory, &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{R}^{(2)}$&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;&#34;&gt;
-     $\phantom{\circ}\,$ (b) one-loop correction to the one-emission CEV, &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_g^{(1)}$&lt;/span&gt;
+     $\phantom{\circ}\,$ (b) one-loop correction to the one-emission CEV &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_g^{(1)}$&lt;/span&gt; in MRK
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;&#34;&gt;
      $\phantom{\circ}\,$ (c) leading two-emission CEV &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_{gg}^{(0)}$&lt;/span&gt;, this requires an next-to-MRK (NMRK) tree computation: &lt;br&gt;
@@ -10114,7 +10078,7 @@ Next-To-Leading-Log (NLL) Resummation: &lt;span style=&#34;font-size: 14pt;&#34;
 &lt;div  style=&#34;text-align: left; font-size: 16pt; margin-bottom: 5mm; margin-top: -6mm; text-align: center;&#34;&gt;
 NNLL Resummation: &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\mathcal{O}\big(\alpha_s^n \log^{n-2}(s/|t|)\big )$&lt;/span&gt;
 &lt;/div&gt;
-&lt;img src=&#34;NNLOKernel.png&#34; style=&#34;max-width: 280mm; margin-top: 0mm; margin-bottom: 0mm; margin-left: -16mm&#34;&gt;
+&lt;img src=&#34;NNLOKernel.png&#34; style=&#34;max-width: 280mm; margin-top: -5mm; margin-bottom: 2mm; margin-left: -16mm&#34;&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: -3mm; margin-left: -7mm;&#34;&gt;
      $\phantom{\circ}\,$ (a) Three loop &lt;span style=&#34;font-size: 15pt&#34;&gt;$2\to 2$&lt;/span&gt; MRK, from three Reggeons to three-loop correction to the trajectory, &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{R}^{(3)}$&lt;/span&gt;
 &lt;/div&gt;
@@ -10124,22 +10088,22 @@ NNLL Resummation: &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\mathcal{O}\big(
 &lt;/div&gt;
 &lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/2412.20578&#34;&gt; Abreu, GDL, Falcioni, Gardi, Milloy, Vernazza `24&lt;/a&gt;;$\;$&lt;a href=&#34;https://arxiv.org/abs/2411.14050&#34;&gt; Buccioni, Caola, Devoto, Gambuti `24&lt;/a&gt;&lt;/span&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm; margin-left: -7mm;&#34;&gt;
-     $\phantom{\circ}\,\kern4mm$ expanding in the MRK limit the recently available two-loop five-parton amplitudes
+     $\phantom{\circ}\,\kern9mm$ by expanding in the MRK limit the recently available two-loop five-parton amplitudes
 &lt;/div&gt;
+&lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/2311.10086&#34;&gt; GDL, Ita, Klinkert, Sotnikov `23&lt;/a&gt;;$\;$&lt;a href=&#34;https://arxiv.org/abs/2311.18752&#34;&gt; GDL, Ita, Sotnikov `23&lt;/a&gt;;$\;$&lt;a href=&#34;https://arxiv.org/abs/2311.09870&#34;&gt; Agarwal, Buccioni, Devoto, Gambuti, von Manteuffel, Tancredi `23&lt;/a&gt;&lt;/span&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;&#34;&gt;
-     $\phantom{\circ}\,$ (d) The last missing component is the next-to-maximally-helicity-violiating (NMHV) one-loop two-gluon CEV &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_{gg}^{(0)}$&lt;/span&gt;, that is, &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_{g^{+}g^{-}}^{(0)}$&lt;/span&gt; 
+     $\phantom{\circ}\,$ (d) The last missing component is the next-to-maximally-helicity-violiating (NMHV) one-loop &lt;br&gt;
+     $\phantom{\circ}\,\kern9mm$ two-gluon CEV &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_{g^{+}g^{-}}^{(0)}$&lt;/span&gt;,
+     this requires expanding in NMRK the one-loop six-gluon amplitude
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm; margin-left: -7mm;&#34;&gt;
-     $\phantom{\circ}\,\kern4mm$ this requires expanding in the NMRK the one-loop six-gluon amplitude
-&lt;/div&gt;
-&lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/19xx.xxxx&#34; &gt; GDL, Maitre (&#39;19)&lt;/a&gt;&lt;/span&gt;
+&lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; Byrne, GDL, Del Duca, Gardi, Smillie - in progress; &lt;a href=&#34;https://arxiv.org/abs/1904.04067&#34; &gt;GDL, Maitre `19&lt;/a&gt;&lt;/span&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;&#34;&gt;
-     $\phantom{\circ}\,$ (a) Three loop MRK &lt;/span&gt; 
+     $\phantom{\circ}\,$ (e) The leading CEV for three emissions &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_{ggg}^{(0)}$&lt;/span&gt; from an NNMRK limit at tree level
 &lt;/div&gt;
-&lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/pdf/2506.10644&#34; &gt; Gardi, &lt;/a&gt;&lt;/span&gt;
+&lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/2506.10644&#34;&gt; Byrne, Del Duca, Gardi, Mo, Smillie `25&lt;/a&gt;&lt;/span&gt;
 &lt;/section&gt;
 &lt;hr&gt;
-&lt;section &gt;
+&lt;section&gt;
 
 &lt;section data-noprocess data-shortcode-slide
   
@@ -10149,9 +10113,56 @@ NNLL Resummation: &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\mathcal{O}\big(
 
 &lt;h1 id=&#34;nmrk-numerical-expansion&#34;&gt;NMRK Numerical Expansion&lt;/h1&gt;
 &lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 34pt; magin-bottom: -10mm;&#34;&gt; Minimal Variables for (N)MRK &lt;/b&gt; &lt;br&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: -4mm;&#34;&gt;
+$\circ$ The problem is most easily formulated in terms of lightcone momenta
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 16pt; margin-top: 0mm; margin-bottom: 0mm&#34;&gt;
+$$
+\begin{array}{rllll}
+p \; = &amp; (p^+, &amp; p^-, &amp; p_\perp , &amp; \bar p_\perp ) \\
+  = &amp; (E + p_z, &amp; E - p_z, &amp; p_x + i p_y, &amp; p_x - i p_y)
+\end{array}
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
+$\circ$ We can picture the MRK limit as follows
+&lt;/div&gt;
+&lt;div style=&#34;display: flex; justify-content: space-between; align-items: flex-start; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     &lt;!-- Left column: image --&gt;
+     &lt;div style=&#34;flex: 1; margin-right: 10mm;&#34;&gt;
+     &lt;img src=&#34;mrk-variables.png&#34; style=&#34;max-width:100mm; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+     &lt;/div&gt;
+     &lt;!-- Right column: table --&gt;
+     &lt;div style=&#34;font-size: 16pt; margin-top: 10mm; margin-bottom: 0mm; margin-right: 20mm;&#34;&gt;
+     $$
+     p_{i}^{\;j} = \left(
+     \begin{array}{cccc}
+     0 &amp; \text{mc} &amp; 0 &amp; 0 \\
+     \text{mc} &amp; 0 &amp; 0 &amp; 0 \\
+     p_4^{+} X_{34} &amp; \text{mc} &amp; \text{mc} &amp; \text{mc} \\
+     p_4^{+}  &amp; \text{mc} &amp; \frac{-q_1}{z − 1} &amp; \frac{-\bar q_1}{\bar z − 1} \\
+     p_4^{+} / X_{45} &amp; \text{mc} &amp; \frac{q_1 z}{z − 1} &amp; \frac{\bar q_1\bar z }{\bar z − 1} 
+     \end{array}\right)
+     $$
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
+$\circ\,$ The MRK limit is a two-variable problem &lt;span style=&#34;font-size: 16pt;&#34;&gt;$z, \bar z$&lt;/span&gt;; &lt;br&gt;
+$\phantom{\circ}\,$ &lt;span style=&#34;font-size: 16pt;&#34;&gt;$q_1, \bar q_1, p_4^+$&lt;/span&gt; drop out by normalizing by the tree and &lt;span style=&#34;font-size: 16pt;&#34;&gt;$X_{34} \sim X_{45} \sim 1/x \gg 1$&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
+$\circ$ The NMRK limit is a five-variable problem &lt;span style=&#34;font-size: 15pt;&#34;&gt;$z, \bar z, w, \bar w, X=X_{(45)}$&lt;/span&gt;
+&lt;/div&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Challenge from Spurious Cancellations &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: 16pt; margin-top: 10mm; margin-bottom: 0mm; margin-right: 20mm;&#34;&gt;
+$$
+\mathcal{A}^{(\ell)} = \sum_i c_i \, I_i
+$$
+&lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ\,$ For the two-loop MRK limit of last year
+     $\circ\,$ For the MRK limit of the two-loop five-point amplitude we had to expand to second order in &lt;span style=&#34;font-size: 16pt;&#34;&gt;$x$&lt;/span&gt;, because of one order of spurious singularity between the &lt;span style=&#34;font-size: 16pt;&#34;&gt;$c_i$&lt;/span&gt; and &lt;span style=&#34;font-size: 16pt;&#34;&gt;$I_i$&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ\,$ NMRK six point
@@ -10161,13 +10172,9 @@ NNLL Resummation: &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\mathcal{O}\big(
 &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34; style=&#34;margin-top:-5mm; font-size: 10pt&#34;&gt;&lt; Terms(&#34;&#34;&#34;+(-1/2j⟨1|2⟩⁴[1|2][2|3]⟨3|1+2|5]⁴)/(⟨1|3⟩⁴[4|5][5|6]⟨1|2+3|4]⟨3|1+2|6]s_123)&#34;&#34;&#34;)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34; style=&#34;font-size: 11pt&#34;&gt;&gt; len(str(coeffs[&#39;box(1)&#39;]))
+&lt;pre&gt;&lt;code class=&#34;language-python&#34; style=&#34;font-size: 11pt&#34;&gt;&gt; len(str(coeffs[&#39;box(1)&#39;])), len(str(coeffs[&#39;triangle(19)&#39;]))
 &lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34; style=&#34;margin-top:-5mm; font-size: 10pt&#34;&gt;&lt; 76
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34; style=&#34;font-size: 11pt&#34;&gt;&gt; len(str(coeffs[&#39;triangle(19)&#39;]))
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34; style=&#34;margin-top:-5mm; font-size: 10pt&#34;&gt;&lt; 168150
+&lt;pre&gt;&lt;code class=&#34;language-python&#34; style=&#34;margin-top:-5mm; font-size: 10pt&#34;&gt;&lt; 76, 168150
 &lt;/code&gt;&lt;/pre&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\phantom{\circ}\,$ Some coefficients (three mass triangles and bubbles) are very complicated!
@@ -10176,12 +10183,12 @@ NNLL Resummation: &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\mathcal{O}\big(
      $\circ\,$ Problem: we observe up to 8 orders of spurious cancellations in the MRK parameter $x\rightarrow 0$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     ${\color{red} ✗}$ Analytic expansion is a no go. Run out of memory and time! &lt;br&gt;
+     ${\color{red} ✗}$ Analytic expansion is a no go. Run out of memory and time after 3 or 4 orders! &lt;br&gt;
      ${\color{red} ✗}$ Numerical expansion with floating-point numbers is also too complicated. &lt;br&gt;
      $\phantom{{\color{red} ✗}}$ Say we input $x\approx 10^{-10}$ to have 10 good digits to work with, we would lose 80 digits!
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;&#34;&gt; &lt;span style=&#34;font-size: 27pt;&#34;&gt;$p\kern0.2mm$&lt;/span&gt;-adic numbers &lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;&#34;&gt; &lt;span style=&#34;font-size: 27pt;&#34;&gt;$p\kern2mm$&lt;/span&gt;-adic numbers &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ You may be familiar with finite field (integers modulo a prime)
 &lt;/div&gt;
@@ -10194,7 +10201,7 @@ $$
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}$ Limits (and calculus) is not well defined in $\mathbb{F}_p$. We can make things zero, but not small:
+     $\phantom{\circ}$ Limits (and calculus) are not well defined in $\mathbb{F}_p$. We can make things zero, but not small:
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
 $$ 
@@ -10236,7 +10243,7 @@ $$
      $\phantom{\circ}$ Think of $p$ as a small quantity, $\epsilon$, even if it is a large prime (by the real absolute value, $|\,|_\infty$).
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; The &lt;span style=&#34;font-size: 27pt;&#34;&gt;$p\kern0.2mm$&lt;/span&gt;-adic (N)MRK Limit &lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; The &lt;span style=&#34;font-size: 27pt;&#34;&gt;$p\kern2mm$&lt;/span&gt;-adic (N)MRK Limit &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ The space of $p$-adic numbers is an &lt;b&gt;ultrametric&lt;/b&gt; space, the triangle inequality is strengthened to:
 &lt;/div&gt;
