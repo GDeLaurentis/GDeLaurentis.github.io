@@ -40,9 +40,9 @@ varieties.&lt;/p&gt;
     
     <item>
       <title>Analytic Reconstruction and Algebro-Geometric Structures in QCD: Two-Loop $pp \rightarrow Vjj$ &amp; One-Loop $pp \rightarrow t\bar{t}H$ &amp; $HHH$</title>
-      <link>https://gdelaurentis.github.io/talk/sduoct2025/</link>
+      <link>https://gdelaurentis.github.io/talk/universe&#43;oct2025/</link>
       <pubDate>Tue, 07 Oct 2025 15:00:00 +0000</pubDate>
-      <guid>https://gdelaurentis.github.io/talk/sduoct2025/</guid>
+      <guid>https://gdelaurentis.github.io/talk/universe&#43;oct2025/</guid>
       <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Loop amplitudes are central to precision collider phenomenology, yet their computation remains a major challenge due to the complexity of intermediate steps. A powerful modern strategy is to bypass this complexity through numerical evaluations over finite fields, followed by the reconstruction of the amplitudes’ analytic form from a set of numerical samples using number-theoretic and algebro-geometric techniques.&lt;/p&gt;
 &lt;p&gt;In this talk, I will present the recent re-computation of the two-loop leading-colour amplitudes for the production of a heavy electroweak vector boson, $V=\{W^\pm,Z,\gamma^*\}$, in association with two light jets at hadron colliders ($pp\rightarrow Vjj$) (&lt;a href=&#34;https://arxiv.org/abs/2503.10595&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2503.10595&lt;/a&gt;), including leptonic decays of the electroweak boson ($V\rightarrow \ell\bar{\ell}$). Compared to the previous state-of-the-art result (&lt;a href=&#34;https://arxiv.org/abs/2110.07541&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2110.07541&lt;/a&gt;), the new approach achieves a three-order-of-magnitude reduction in size (1.4 GB to 1.9 MB), while also lowering the number of required numerical samples from one million to fifty thousand. To illustrate the applicability of these techniques in settings with more massive external legs, I will also briefly discuss the one-loop processes $pp \to HHH$ and $pp \to t\bar t H$.&lt;/p&gt;
