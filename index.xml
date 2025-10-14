@@ -10372,8 +10372,11 @@ $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 15pt; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
 $$
-c_i \approx \frac{c_{i,-1}}{x} + c_{i,0} + \mathcal{O}(x)\; ,  \quad I_i \approx \frac{I_{i,-1}}{x} + x I_{i,0} + \mathcal{O}(x)
+c_i \approx \frac{c_{i,-1}}{x} + c_{i,0} + \mathcal{O}(x)\; ,  \quad I_i \approx I_{i,0} + x I_{i,1} + \mathcal{O}(x)
 $$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\phantom{\circ}\,$ one spurious order in  &lt;span style=&#34;font-size: 16pt;&#34;&gt;$x\rightarrow 0$&lt;/span&gt; cancels between rational and transcendental.
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 10mm;&#34;&gt;
      $\circ\,$ For &lt;span style=&#34;font-size: 16pt;&#34;&gt;$\mathcal{A}^{(1)}_6$&lt;/span&gt; in the NMRK limit we have (for the NMHV amplitude):
@@ -10439,7 +10442,7 @@ $$
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ$ There exists just one more absolute value on the rationals, the $p$-adic absolute value.
+     $\circ$ There exists just one more absolute value on the rationals, the &lt;span style=&#34;font-size: 16pt;&#34;&gt;$p$&lt;/span&gt;-adic absolute value.
 &lt;/div&gt;
 &lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;&#34; href=https://en.wikipedia.org/wiki/Ostrowski%27s_theorem&gt;
    Ostrowski&#39;s theorem 1916
