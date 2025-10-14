@@ -9856,7 +9856,7 @@ $\circ\,$ The MRK limit is a two-variable problem &lt;span style=&#34;font-size:
 $\phantom{\circ}\,$ &lt;span style=&#34;font-size: 16pt;&#34;&gt;$q_1, \bar q_1, p_4^+$&lt;/span&gt; drop out by normalizing by the tree and &lt;span style=&#34;font-size: 16pt;&#34;&gt;$X_{34} \sim X_{45} \sim 1/x \gg 1$&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
-$\circ$ The NMRK limit is a five-variable problem &lt;span style=&#34;font-size: 15pt;&#34;&gt;$z, \bar z, w, \bar w, X=X_{(45)}$&lt;/span&gt;, other variables that drop out
+$\circ$ The NMRK limit is a five-variable problem &lt;span style=&#34;font-size: 15pt;&#34;&gt;$z, \bar z, w, \bar w, X=X_{(45)}$&lt;/span&gt;, other variables drop out
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Challenge from Spurious Cancellations &lt;/b&gt;&lt;/p&gt;
@@ -10056,7 +10056,7 @@ $$
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ\;$ In Least Common Denominator form the numberators are too complex, &lt;br&gt;
+     $\circ\;$ In Least Common Denominator form the numerators are too complex, &lt;br&gt;
      $\phantom{\circ}\;$ we would need hundred of thousands to millions of evaluations to determine them.
 &lt;/div&gt;
 &lt;hr&gt;
