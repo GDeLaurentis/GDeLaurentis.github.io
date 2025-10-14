@@ -10186,7 +10186,7 @@ c_i \approx \frac{\cancelto{0}{c_{i,-8}}}{x^{-8}} + \dots +  \frac{\cancelto{0}{
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}\,$ Problem: &lt;span style=&#34;color: red&#34;&gt;8 orders of spurious cancellations&lt;/span&gt; in the (N)MRK parameter as $x\rightarrow 0$
+     $\phantom{\circ}\,$ Problem: &lt;span style=&#34;color: red&#34;&gt;8 orders of spurious cancellations&lt;/span&gt; in the (N)MRK parameter as &lt;span style=&#34;font-size: 16pt;&#34;&gt;$x\rightarrow 0$&lt;/span&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Challenge from Spurious Cancellations (2) &lt;/b&gt;&lt;/p&gt;
@@ -10218,7 +10218,7 @@ $$
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      ${\color{red} ✗}$ Analytic expansion is a no go. Run out of memory and time after 3 or 4 orders! &lt;br&gt;
      ${\color{red} ✗}$ Numerical expansion with floating-point numbers is also too complicated. &lt;br&gt;
-     $\phantom{{\color{red} ✗}}$ Say we input &lt;span style=&#34;font-size: 15pt;&#34;&gt;$x\approx 10^{-10}$&lt;/span&gt; to have 10 good digits to work with, we would lose 80 digits!
+     $\phantom{{\color{red} ✗}}$ Say we input &lt;span style=&#34;font-size: 15pt;&#34;&gt;$x\approx 10^{-10}$&lt;/span&gt; to have 10 digits to work with, we would lose (at least) 80 digits!
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;&#34;&gt; &lt;span style=&#34;font-size: 27pt;&#34;&gt;$p\kern0.2mm$&lt;/span&gt;-adic numbers &lt;/b&gt;&lt;/p&gt;
@@ -10243,7 +10243,7 @@ $$
      $\circ$ There exists just one more absolute value on the rationals, the $p$-adic absolute value.
 &lt;/div&gt;
 &lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;&#34; href=https://en.wikipedia.org/wiki/Ostrowski%27s_theorem&gt;
-   Ostrowski&#39;s theorem
+   Ostrowski&#39;s theorem 1916
 &lt;/a&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ Let&#39;s start from &lt;span style=&#34;font-size: 16pt;&#34;&gt;$p$&lt;/span&gt;-adic integers, instead of working modulo &lt;span style=&#34;font-size: 16pt;&#34;&gt;$p$&lt;/span&gt;, expand in powers of &lt;span style=&#34;font-size: 16pt;&#34;&gt;$p$&lt;/span&gt;
@@ -10265,7 +10265,7 @@ $$
 $$
 &lt;/div&gt;
 &lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;&#34; href=https://arxiv.org/abs/2203.04269&gt;
-   GDL, Page (&#39;22)
+   GDL, Page `22
 &lt;/a&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ The &lt;span style=&#34;font-size: 16pt;&#34;&gt;$p$&lt;/span&gt;-adic absolute value is defined as &lt;span style=&#34;font-size: 16pt;&#34;&gt;$|a|_p = p^\nu$&lt;/span&gt;.
@@ -10462,7 +10462,7 @@ $$
      $\phantom{\circ}\;\quad\star$ set &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{D}_1 \propto p$&lt;/span&gt;, as long as its pole degree is less than 5, get a value for the residue.
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ\;$ Example of explicit construction with &lt;a href=https://github.com/GDeLaurentis/syngular&gt;syngular&lt;/a&gt; (on GitHub), Python extension to &lt;a href=https://www.singular.uni-kl.de/&gt;Singular&lt;/a&gt;
+     $\circ\;$ Example of explicit construction with &lt;a href=https://github.com/GDeLaurentis/syngular&gt;syngular&lt;/a&gt; (on GitHub), a Python extension to &lt;a href=https://www.singular.uni-kl.de/&gt;Singular&lt;/a&gt;
 &lt;/div&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34; style=&#34;font-size: 11pt&#34;&gt;&gt; from syngular import Field, Ring, Ideal, RingPoint
 &gt; ring = Ring(&#39;0&#39;, (&#39;z&#39;, &#39;zb&#39;, &#39;w&#39;, &#39;wb&#39;, &#39;X&#39;), &#39;dp&#39;)
@@ -10488,8 +10488,32 @@ $$
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
      &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Towards the NMHV 2-Emission CEV &lt;/b&gt;
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
-     $\circ$ Tests: MRK, same functions from ++-+-- and +-+-+-, match part of the result to N=4 and N=1 SUSY
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;&#34;&gt;
+     $\circ\;$ Status: 
+     &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
+     $\quad\star\;$ all amplitude coefficients have been reconstructed in the NMRK limit.
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;&#34;&gt;
+     $\circ\;$ Checks:
+     &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
+     $\quad\star\;$ The MRK limit (&lt;span style=&#34;font-size: 14pt&#34;&gt;$X_{45}\rightarrow \text{large}$&lt;/span&gt;) reproduces known results; &lt;br&gt;
+     $\quad\star\;$ We obtain the same result from &lt;span style=&#34;font-size: 14pt&#34;&gt;$g^+g^-g^+g^-g^+g^-$&lt;/span&gt; and &lt;span style=&#34;font-size: 14pt&#34;&gt;$g^+g^+g^-g^+g^-g^-$&lt;/span&gt; (distinct in general kinematics); &lt;br&gt;
+     $\quad\star\;$ Reproduce known &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{N}=4$&lt;/span&gt; and &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{N}=1$&lt;/span&gt; SUSY results.
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;&#34;&gt;
+     $\circ\;$ To do: 
+     &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
+     $\quad\star\;$ Split result into contributions to trajectory, impact factors (known) and identify the (new) vertex.
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;&#34;&gt;
+     $\circ\;$ Outlook: 
+     &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
+     $\quad\star\;$ The proposed method provides a scalable solution to more complex processes, &lt;br&gt;
+     $\phantom{\quad\star\;}$ this calculation was performed entirely on a laptop.
+     &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;hr&gt;
