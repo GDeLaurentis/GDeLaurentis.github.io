@@ -9604,28 +9604,27 @@ Giuseppe De Laurentis
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Large Logarithms from Big Rapidity Gaps  &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: -5mm;&#34;&gt;
-     $\circ\,$ In the &lt;b&gt;forward limit&lt;/b&gt; &lt;span style=&#34;font-size: 15pt&#34;&gt;$s \gg t$&lt;/span&gt; (large CoM energy vs. momentum transfer), e.g. &lt;span style=&#34;font-size: 15pt&#34;&gt;$2\to 2$&lt;/span&gt; scattering,
+     $\circ\,$ In the &lt;b&gt;forward limit&lt;/b&gt; &lt;span style=&#34;font-size: 16pt&#34;&gt;$s \gg |t|$&lt;/span&gt;, i.e. at large CoM energy vs. momentum transfer, &lt;br&gt;
+     $\phantom{\circ}\,$ when final state emissions develop &lt;b&gt; large rapidity gaps&lt;/b&gt;
 &lt;/div&gt;
-&lt;img src=&#34;forward_diagram.png&#34; style=&#34;max-width:100mm; margin-top:-4mm; margin-bottom:-7mm;&#34;&gt;
+&lt;img src=&#34;forward_diagram.png&#34; style=&#34;max-width:100mm; margin-top: -1mm; margin-bottom:-4mm;&#34;&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: -5mm;&#34;&gt;
-     $\phantom{\circ}\,$ final state emissions develop &lt;b&gt; large rapidity gaps&lt;/b&gt;. The cross section grows as
+     $\phantom{\circ}\,$ amplitudes are dominated by unphysically &lt;b&gt; large logarithms &lt;/b&gt;
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 16pt; margin-top: 0mm; margin-bottom: -3mm&#34;&gt;
+&lt;div style=&#34;font-size: 16pt; margin-top: 0mm; margin-bottom: 0mm&#34;&gt;
 $$
-\sigma \approx \mathcal{O}\big(\alpha_s^n \log^n(s/|t|)\big )
+\mathcal{A} \approx \mathcal{O}\big(\alpha_s^n \log^n(s/|t|)\big )
 $$
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: -5mm;&#34;&gt;
-     $\phantom{\circ}\,$ which is unphysically large (e.g. it violates the Froissart bound).
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 8mm; margin-left: -5mm;&#34;&gt;
-     $\circ\,$ The BFKL kernel captures the &lt;b&gt;exponentiation&lt;/b&gt; of these &lt;b&gt;large logarithms&lt;/b&gt;,&lt;br&gt;
+     $\circ\,$ The BFKL kernel captures the &lt;b&gt;exponentiation&lt;/b&gt; of these large logarithms, &lt;br&gt;
      $\phantom{\circ}\,$ allowing us to &lt;b&gt;resum&lt;/b&gt; their contribution to the cross section.
 &lt;/div&gt;
-&lt;span style=&#34;font-size: 14pt; margin-top: -2mm; margin-bottom: -8mm; margin-right:-5mm; float: right; font-align: right;&#34;&gt;&lt;a href=&#34;https://www.sciencedirect.com/science/article/abs/pii/0370269375905249&#34;&gt; Fadin, Kuraev, Lipatov `75&lt;/a&gt;;$\;$&lt;a href=&#34;https://inspirehep.net/literature/137229&#34;&gt; Balitsky, Lipatov `78&lt;/a&gt;&lt;/span&gt;
-&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 8mm; margin-left: -5mm;&#34;&gt;
+&lt;span style=&#34;font-size: 14pt; margin-top: -8mm; margin-bottom: 0mm; margin-right:-5mm; float: right; font-align: right;&#34;&gt;&lt;a href=&#34;https://www.sciencedirect.com/science/article/abs/pii/0370269375905249&#34;&gt; Fadin, Kuraev, Lipatov `75&lt;/a&gt;;$\;$&lt;a href=&#34;https://inspirehep.net/literature/137229&#34;&gt; Balitsky, Lipatov `78&lt;/a&gt;&lt;/span&gt;
+&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 6mm; margin-left: -5mm;&#34;&gt;
      $\circ\,$ In this kinematic limit, known as &lt;b&gt;Multi-Regge Kinematics&lt;/b&gt; (MRK), an effective particle is &lt;br&gt;
-     $\phantom{\circ}\,$ exchanged in the t-channel, a Reggeon, from which more rapidity-gapped radiation can be emitted.
+     $\phantom{\circ}\,$ exchanged in the t-channel, a Reggeon, from which more rapidity-gapped radiation can be emitted. &lt;br&gt;
+     $\phantom{\circ}\,$ Depending on whether the extra radiation is itself rapidity gapped we talk about next-to-MRK.
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;&#34;&gt; Amplitude Factorization in MRK and NMRK &lt;/b&gt;&lt;/p&gt;
@@ -9639,8 +9638,8 @@ $$
      $\phantom{\circ}\;$ where: the ziggly line is the &lt;b&gt;Regge trajectory&lt;/b&gt; &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{R}$&lt;/span&gt;, the green blobs are &lt;b&gt;impact factors&lt;/b&gt; &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{C}$&lt;/span&gt;, the blue &lt;br&gt;
      $\phantom{\circ}\;$ blob is a one-emission &lt;b&gt;central vertex&lt;/b&gt; &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_g$&lt;/span&gt;, and the gray blob is a two-emission central vertex &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_{gg}$&lt;/span&gt;.
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: -2mm;&#34;&gt;
-     $\circ\;$ The amplitude factorise as follows (very schematically)
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: -2mm;&#34;&gt;
+     $\circ\;$ Amplitudes factorise (very schematically, octet component only and up to Regge)
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 16pt; margin-top: 0mm; margin-bottom: -3mm&#34;&gt;
 $$
@@ -9668,13 +9667,16 @@ $$
 &lt;div  style=&#34;text-align: left; font-size: 16pt; margin-bottom: 5mm; margin-top: -6mm; text-align: center;&#34;&gt;
 Leading-Log (LL) Resummation: &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\mathcal{O}\big(\alpha_s^n \log^n(s/|t|)\big )$&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 5mm;&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm;&#34;&gt;
      $\circ\,$ The two components of the leading order (LO) BFKL kernel, &lt;br&gt;
      $\phantom{\circ}\,$ required for resummation of leading logarithms (LL), are
 &lt;/div&gt;
 &lt;img src=&#34;LOKernel.png&#34; style=&#34;max-width: 130mm; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: 14pt; margin-top: -5mm; margin-bottom: 5mm; float: right; font-align: right;&#34;&gt;Images from&lt;a href=&#34;https://arxiv.org/abs/2204.12459&#34;&gt; Byrne, Del Duca, Dixon, Gardi, Smillie &lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 10mm;&#34;&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: 14pt; margin-top: -10mm; margin-bottom: 0mm; float: right; font-align: right;&#34;&gt;Images from&lt;a href=&#34;https://arxiv.org/abs/2204.12459&#34;&gt; Byrne, Del Duca, Dixon, Gardi, Smillie `22&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 5mm;&#34;&gt;
+     $\phantom{\circ}\,$ where pictured is a forward squared amplitude with a final-state cut.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 2mm;&#34;&gt;
      $\phantom{\circ}\,$ (a) is a correction to the Regge trajectory &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{R}^{(1)}$&lt;/span&gt;&lt;br&gt;
      $\phantom{\circ}\,$ (b) is the leading order central emission vertex (CEV) &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_g^{(0)}$&lt;/span&gt; in MRK
 &lt;/div&gt;
@@ -9940,46 +9942,188 @@ $$
       data-background-image=&#34;varieties-no-background.png&#34;
   &gt;
 
-&lt;h1 id=&#34;nmrk-analytic-reconstruction&#34;&gt;NMRK Analytic Reconstruction&lt;/h1&gt;
+&lt;h1 id=&#34;analytic-br-reconstruction&#34;&gt;Analytic &lt;br&gt; Reconstruction&lt;/h1&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Variables Ring &amp;amp; Least Common Denomiantors &lt;/b&gt;&lt;/p&gt;
-&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;&#34;&gt; Fundamentals of Analytic Reconstruction &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: -4mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ\;$ Analytic reconstruction is a powerful alternative to symbolic manipulations: &lt;br&gt;
+     $\phantom{\circ}\;\star\;$ cancellations happen numerically, avoiding intermediate bottlenecks &lt;br&gt;
+     $\phantom{\circ}\;\star\;$ the cost is largely driven by the complexity of the final results
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ\;$ We have a ring in 5 independent variables over a field &lt;span style=&#34;font-size: 16pt;&#34;&gt;$\mathbb{F}(=\mathbb{Q}_p)$&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 15pt; margin-top: 2mm; margin-bottom: 5mm&#34;&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 0mm; margin-bottom: 0mm&#34;&gt;
 $$ 
 \displaystyle \kern10mm R_{NRMK} = \mathbb{F}\big[ z, \bar z, w, \bar w, X(=X_{45}) \big]
 $$
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}\;$ we need to recover rational functions in these five variables from numerical samples in &lt;span style=&#34;font-size: 16pt;&#34;&gt;$\mathbb{F}$&lt;/span&gt;.
+&lt;div style=&#34;font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\phantom{\circ}\;$ we need to recover rational functions from numerical samples:
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 0mm; margin-bottom: 0mm&#34;&gt;
+$$ 
+\displaystyle \{z, \bar z, w, \bar w, X\} \in \mathbb{F}^5 \rightarrow \text{BlackBox} \rightarrow c_i \in \mathbb{F} \rightarrow c_i = \frac{\mathcal{N}(z, \bar z, w, \bar w, X)}{\mathcal{D}(z, \bar z, w, \bar w, X)}
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\phantom{\circ}\;$ The real power of the approach is with polynomial quotient rings.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ\;$ The complexity is not driven just by the number of variables, but also by the sigularities
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 15pt; margin-top: 2mm; margin-bottom: 5mm&#34;&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 0mm; margin-bottom: 0mm&#34;&gt;
 $$ 
 \displaystyle \mathcal{D}_{\Delta_{3m}} = -4(-1+w)w(-1+\bar w)\bar w X^2 (-1+z) z (-1+\bar z) \bar z+ \\ (X z (\bar w+\bar z-\bar w \bar z+X\bar z)+w(\bar w-X (-1+z) \bar z+\bar w X(1-\bar z+z(-1+2\bar z))))^2
 $$
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\phantom{\circ}\;$ alone has degreee 10. It appears up to cubic pole, making denominators exceed degree 30.
+&lt;div style=&#34;font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\phantom{\circ}\;$ alone has degreee 10. It appears up to cubic pole, making denominators exceed degree 30. &lt;br&gt;
+     $\phantom{\circ}\;$ By comparison the most complicated singularity for &lt;span style=&#34;font-size: 16pt;&#34;&gt;$\mathcal{A}^{(2)}_5$&lt;/span&gt; was &lt;span style=&#34;font-size: 15pt;&#34;&gt;$(z - \bar{z})$&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ\;$ By comparison the most complicated singularity for &lt;span style=&#34;font-size: 16pt;&#34;&gt;$\mathcal{A}^{(2)}_5$&lt;/span&gt; was &lt;span style=&#34;font-size: 15pt;&#34;&gt;$(z - \bar{z})$&lt;/span&gt;
+&lt;hr&gt;
+&lt;div style=&#34;margin-top: 2mm; margin-bottom: 3mm&#34;&gt;
+     &lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Least Common Denominator &lt;/b&gt;
+     &lt;p style=&#34;margin-top: -2mm; margin-bottom: 2mm; font-size: 16pt;&#34;&gt;
+     (i.e. geometry at codimension one)
+     &lt;/p&gt;
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ\;$ Obtain least common denominators from a unviariate slice (think BCFW shift)
+&lt;div style=&#34;display:block; width:100%; margin-top: 2mm; margin-bottom: 0mm; margin-left: 0mm;&#34;&gt;
+     &lt;div style=&#34;font-size: x-large; width: 65%; text-align: left; display: inline-block; margin-top: 2mm;&#34;&gt;
+          &lt;!---
+          &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
+               $\circ$ Polynomials belong to the the covariant quotient ring of spinors,
+          &lt;/div&gt;
+          &lt;div style=&#34;font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm&#34;&gt;
+               $$\displaystyle \kern10mm R_n = \mathbb{F}\big[|1⟩, [1|, \dots, |n⟩, [n|\big] \big/ \big\langle \sum_i |i⟩[i| \big\rangle$$
+          &lt;/div&gt;
+          ---&gt;
+          &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
+                $\circ\,$ We can determine the least common denominators (LCDs),
+          &lt;/div&gt;
+          &lt;div style=&#34;font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 0mm&#34;&gt;
+               $$
+               \displaystyle \mathcal{D} = \prod_j \mathcal{D}_j^{q_{ij}}(|i\rangle,[i|) \, .
+               $$
+          &lt;/div&gt;
+          &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: -3mm; margin-bottom: 1mm;&#34;&gt;
+               $\phantom{\circ}\,$ from a univariate slice &lt;span style=&#34;font-size: 16pt&#34;&gt;$\vec\lambda(t)$&lt;/span&gt; and guesses for the possible &lt;span style=&#34;font-size: 16pt&#34;&gt;$\mathcal{D}_j$&lt;/span&gt;.
+          &lt;/div&gt;
+          &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
+               $\circ$ The curve &lt;span style=&#34;font-size: 16pt&#34;&gt;$\vec\lambda(t)$&lt;/span&gt; must intersect all varieties &lt;span style=&#34;font-size: 16pt&#34;&gt;$V(\langle \mathcal{D}_j \rangle)$&lt;/span&gt;, e.g.
+          &lt;/div&gt;
+          &lt;div style=&#34;font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm&#34;&gt;
+               $$
+               \displaystyle z \rightarrow z + c_z t, \; \bar z \rightarrow \bar z + c_{\bar z} t, \\ 
+               \; w \rightarrow w + c_{\bar w} t, \; \bar w \rightarrow \bar w + c_{\bar w} t, \; X \rightarrow X + c_X t
+               $$
+          &lt;/div&gt;
+          &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: -3mm; margin-bottom: 1mm;&#34;&gt;
+               $\phantom{\circ}\,$ Thiele interpolation yields &lt;span style=&#34;font-size: 16pt&#34;&gt;$\mathcal{D}(t)$&lt;/span&gt;, do univariate factorization &lt;br&gt; $\phantom{\circ}\,$ and match to factors from multivariate guesses.
+          &lt;/div&gt;
+          &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
+               $\circ\,$ Open-source implementation in &lt;a href=&#34;https://github.com/GDeLaurentis/antares/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;antares&lt;/a&gt;, &lt;a href=&#34;https://github.com/GDeLaurentis/lips/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;lips&lt;/a&gt;, &lt;a href=&#34;https://github.com/GDeLaurentis/syngular/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;syngular&lt;/a&gt; 
+          &lt;/div&gt;
+          &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 1mm; margin-bottom: 1mm;&#34;&gt; 
+               $\phantom{\circ}\,$ &lt;code style=&#34;font-size: 15pt;&#34;&gt;Ring.univariate_slice&lt;/code&gt; and &lt;code style=&#34;font-size: 15pt;&#34;&gt;num_func.get_lcd&lt;/code&gt;
+          &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div style=&#34;width:35%; float: right; display: inline-block; margin-top: 6mm; &#34;&gt;
+          &lt;img src=&#34;variety_slice_v2-transparent.png&#34;; style=&#34;max-width:360px; float:center; border:none; margin-top: -5mm; margin-bottom: -2mm;&#34;&gt;
+          &lt;div style=&#34;width:100%; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
+               Space has dimension $5$,
+          &lt;/div&gt;
+          &lt;div style=&#34;width:100%; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
+               $\mathcal{D}_j = 0$ have dimension $4$,
+          &lt;/div&gt;
+          &lt;div style=&#34;width:100%; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
+               $\vec\lambda(t)$&#39;s have dimension 1.
+          &lt;/div&gt;
+     &lt;/div&gt;
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 15pt; margin-top: 2mm; margin-bottom: 5mm&#34;&gt;
-$$ 
-\displaystyle z \rightarrow z + c_z t, \; \bar z \rightarrow \bar z + c_{\bar z} t, \; w \rightarrow w + c_{\bar w} t, \; \bar w \rightarrow \bar w + c_{\bar w} t, \; X \rightarrow X + c_X t
-$$
+&lt;div style=&#34;border: 2px solid black; font-size: 16pt; padding: 10px; display: inline-block; margin-top: 4mm;&#34;&gt;
+    Poles &amp; Zeros $\;\Leftrightarrow\;$ Irreducible Varieties $\;\Leftrightarrow\;$ Prime Ideals &lt;br&gt;
+    &lt;i style=&#34;font-size: 14pt; border-top: -8mm; border-bottom: -2mm;&#34;&gt; Physics $\kern19mm$ Geometry $\kern19mm$ Algebra &lt;/i&gt;
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ\;$ In Least Common Denominator form the numerators are too complex, &lt;br&gt;
-     $\phantom{\circ}\;$ we would need hundred of thousands to millions of evaluations to determine them.
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+&lt;h1 id=&#34;br-summary-br--br-outlook&#34;&gt;&lt;br&gt; Summary &lt;br&gt; &amp;amp; &lt;br&gt; Outlook&lt;/h1&gt;
+&lt;hr&gt;
+&lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
+     &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Towards the NMHV 2-Emission CEV &lt;/b&gt;
 &lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;&#34;&gt;
+     $\circ\;$ Status: 
+     &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
+     $\quad\star\;$ all amplitude coefficients have been reconstructed in the NMRK limit; &lt;br&gt;
+     $\quad\star\;$ after reconstruction, no more spurious cancellations in the NMRK parameter.
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;&#34;&gt;
+     $\circ\;$ Checks:
+     &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
+     $\quad\star\;$ The MRK limit (&lt;span style=&#34;font-size: 14pt&#34;&gt;$X_{45}\rightarrow \text{large}$&lt;/span&gt;) reproduces known results; &lt;br&gt;
+     $\quad\star\;$ We obtain the same result from &lt;span style=&#34;font-size: 14pt&#34;&gt;$g^+g^-g^+g^-g^+g^-$&lt;/span&gt; and &lt;span style=&#34;font-size: 14pt&#34;&gt;$g^+g^+g^-g^+g^-g^-$&lt;/span&gt; (distinct in general kinematics); &lt;br&gt;
+     $\quad\star\;$ Reproduce known &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{N}=4$&lt;/span&gt; and &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{N}=1$&lt;/span&gt; SUSY results.
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;&#34;&gt;
+     $\circ\;$ To do: 
+     &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
+     $\quad\star\;$ Split result into contributions to trajectory, impact factors (known) and identify the (new) vertex.
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;&#34;&gt;
+     $\circ\;$ Outlook: 
+     &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
+     $\quad\star\;$ The proposed method provides a scalable solution to more complex processes, &lt;br&gt;
+     $\phantom{\quad\star\;}$ this calculation was performed entirely on a laptop.
+     &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;italy-milan-cathedral.jpg&#34;
+  &gt;
+
+&lt;div style=&#34;margin-top: 50mm; margin-bottom: 30mm;&#34;&gt;
+&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large;&#34;&gt; Thank you &lt;br&gt; for your attention! &lt;/b&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;!---
+&lt;b style=&#34;font-variant: small-caps; font-size: xx-large;&#34;&gt; Questions? &lt;/b&gt;
+---&gt;
+&lt;/div&gt;
+&lt;span style=&#34;font-size: 11pt; &#34;&gt;
+    These slides are powered by:&lt;br&gt;
+    &lt;span style=&#34;display: block; margin-top: 2mm;&#34;&gt;
+        &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;markdown&lt;/a&gt;, 
+        &lt;a href=&#34;https://en.wikipedia.org/wiki/HTML&#34;&gt;html&lt;/a&gt;, 
+        &lt;a href=&#34;https://revealjs.com/&#34;&gt;revealjs&lt;/a&gt;, 
+        &lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;, 
+        &lt;a href=&#34;https://www.mathjax.org/&#34;&gt;mathjax&lt;/a&gt;, 
+        &lt;a href=&#34;https://github.com/&#34;&gt;github&lt;/a&gt;
+    &lt;/span&gt;
+&lt;/span&gt;
+&lt;!---
+&lt;br&gt;
+&lt;font size=3&gt;
+     For open source packages: 
+     &lt;code&gt;
+          $   $ pip install [lips](https://github.com/GDeLaurentis/lips) [pyadic](https://github.com/GDeLaurentis/pyadic)
+     &lt;/code&gt;
+&lt;/font size&gt;
+---&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section&gt;
+&lt;div style=&#34;margin-top: 50mm; margin-bottom: 30mm;&#34;&gt;
+&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large;&#34;&gt; Backup Slides &lt;/b&gt;
 &lt;hr&gt;
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: 3mm&#34;&gt;
      &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Multivariate Partial Fractions &lt;/b&gt;
@@ -10097,79 +10241,6 @@ $$
 &gt; point(I.generators[0])
 &lt; 26429729*2147483647 + ... + O(2147483647^9)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/section&gt;
-&lt;hr&gt;
-&lt;section&gt;
-&lt;h1 id=&#34;br-summary-br--br-outlook&#34;&gt;&lt;br&gt; Summary &lt;br&gt; &amp;amp; &lt;br&gt; Outlook&lt;/h1&gt;
-&lt;hr&gt;
-&lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
-     &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Towards the NMHV 2-Emission CEV &lt;/b&gt;
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;&#34;&gt;
-     $\circ\;$ Status: 
-     &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
-     $\quad\star\;$ all amplitude coefficients have been reconstructed in the NMRK limit.
-     &lt;/div&gt;
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;&#34;&gt;
-     $\circ\;$ Checks:
-     &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
-     $\quad\star\;$ The MRK limit (&lt;span style=&#34;font-size: 14pt&#34;&gt;$X_{45}\rightarrow \text{large}$&lt;/span&gt;) reproduces known results; &lt;br&gt;
-     $\quad\star\;$ We obtain the same result from &lt;span style=&#34;font-size: 14pt&#34;&gt;$g^+g^-g^+g^-g^+g^-$&lt;/span&gt; and &lt;span style=&#34;font-size: 14pt&#34;&gt;$g^+g^+g^-g^+g^-g^-$&lt;/span&gt; (distinct in general kinematics); &lt;br&gt;
-     $\quad\star\;$ Reproduce known &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{N}=4$&lt;/span&gt; and &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{N}=1$&lt;/span&gt; SUSY results.
-     &lt;/div&gt;
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;&#34;&gt;
-     $\circ\;$ To do: 
-     &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
-     $\quad\star\;$ Split result into contributions to trajectory, impact factors (known) and identify the (new) vertex.
-     &lt;/div&gt;
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;&#34;&gt;
-     $\circ\;$ Outlook: 
-     &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;&#34;&gt;
-     $\quad\star\;$ The proposed method provides a scalable solution to more complex processes, &lt;br&gt;
-     $\phantom{\quad\star\;}$ this calculation was performed entirely on a laptop.
-     &lt;/div&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-&lt;hr&gt;
-&lt;section&gt;
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;italy-milan-cathedral.jpg&#34;
-  &gt;
-
-&lt;div style=&#34;margin-top: 50mm; margin-bottom: 30mm;&#34;&gt;
-&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large;&#34;&gt; Thank you &lt;br&gt; for your attention! &lt;/b&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;!---
-&lt;b style=&#34;font-variant: small-caps; font-size: xx-large;&#34;&gt; Questions? &lt;/b&gt;
----&gt;
-&lt;/div&gt;
-&lt;span style=&#34;font-size: 11pt; &#34;&gt;
-    These slides are powered by:&lt;br&gt;
-    &lt;span style=&#34;display: block; margin-top: 2mm;&#34;&gt;
-        &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;markdown&lt;/a&gt;, 
-        &lt;a href=&#34;https://en.wikipedia.org/wiki/HTML&#34;&gt;html&lt;/a&gt;, 
-        &lt;a href=&#34;https://revealjs.com/&#34;&gt;revealjs&lt;/a&gt;, 
-        &lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;, 
-        &lt;a href=&#34;https://www.mathjax.org/&#34;&gt;mathjax&lt;/a&gt;, 
-        &lt;a href=&#34;https://github.com/&#34;&gt;github&lt;/a&gt;
-    &lt;/span&gt;
-&lt;/span&gt;
-&lt;!---
-&lt;br&gt;
-&lt;font size=3&gt;
-     For open source packages: 
-     &lt;code&gt;
-          $   $ pip install [lips](https://github.com/GDeLaurentis/lips) [pyadic](https://github.com/GDeLaurentis/pyadic)
-     &lt;/code&gt;
-&lt;/font size&gt;
----&gt;
 &lt;/section&gt;
 &lt;!-- REVEAL.JS CUSTOMIZATION --&gt;
 &lt;!-- Include MathJax library --&gt;

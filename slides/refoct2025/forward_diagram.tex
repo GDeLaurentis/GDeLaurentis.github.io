@@ -24,6 +24,12 @@
 
   % Tilted line (right)
   \draw[->, thick] ($(O)+(\angDeg:\gapB)$) -- ($(O)+(\angDeg:\L)$);
+  
+  % Tilted line (right)
+  \draw[->, thick] ($(O)+(4*\angDeg:\gapB)$) -- ($(O)+(4*\angDeg:0.5*\L)$);
+
+  % Tilted line (right)
+  \draw[->, thick] ($(O)+(6*\angDeg:\gapB)$) -- ($(O)+(6*\angDeg:0.5*\L)$);
 
   % Tilted line (left)
   \draw[<-, thick] ($(O)+(\angDeg+180:\L)$) -- ($(O)+(\angDeg+180:\gapB)$);
@@ -38,6 +44,19 @@
       {angle = H--O--U};
 
   \node[scale=1] at (1.5,0.19) {$\theta \ll 1$};
+
+  % ===== Angle arc and label between the two outgoing rays =====
+  % Define points one unit along each outgoing direction for the angle pic:
+  \path (O) -- ++(31:1) coordinate (H1)
+             -- ++(110:1) coordinate (U1);
+
+  % Draw the angle at O between horizontal (H) and tilted (U), label it \theta
+  \pic[draw, thick, angle eccentricity=1.8, angle radius=30pt]
+      {angle = H1--O--U1};
+
+  \node[scale=1] at (1.2,1.0) {$\alpha \gg 1$};
+
+  \node[scale=0.8] at (-0.15, 0.9) {$\dots$};
 
 \end{tikzpicture}
 
