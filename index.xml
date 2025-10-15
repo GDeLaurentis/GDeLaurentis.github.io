@@ -10275,30 +10275,34 @@ Next-To-Leading-Log (NLL) Resummation: &lt;span style=&#34;font-size: 14pt;&#34;
      $\phantom{\circ}\,\kern4mm$ the two central gluons are &lt;u&gt;not&lt;/u&gt; rapidity gapped
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; NNLO Kernel &lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-top: -3mm;&#34;&gt; NNLO Kernel &lt;/b&gt;&lt;/p&gt;
 &lt;div  style=&#34;text-align: left; font-size: 16pt; margin-bottom: 5mm; margin-top: -6mm; text-align: center;&#34;&gt;
 NNLL Resummation: &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\mathcal{O}\big(\alpha_s^n \log^{n-2}(s/|t|)\big )$&lt;/span&gt;
 &lt;/div&gt;
-&lt;img src=&#34;NNLOKernel.png&#34; style=&#34;max-width: 280mm; margin-top: -5mm; margin-bottom: 2mm; margin-left: -16mm&#34;&gt;
-&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: -3mm; margin-left: -7mm;&#34;&gt;
+&lt;img src=&#34;NNLOKernel.png&#34; style=&#34;max-width: 260mm; margin-top: -5mm; margin-bottom: 2mm; margin-left: -12mm&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: -3mm; margin-left: -7mm;&#34;&gt;
      $\phantom{\circ}\,$ (a) Three loop &lt;span style=&#34;font-size: 15pt&#34;&gt;$2\to 2$&lt;/span&gt; MRK, from three Reggeons to three-loop correction to the trajectory, &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{R}^{(3)}$&lt;/span&gt;
 &lt;/div&gt;
 &lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/2112.11098&#34; &gt; Falcioni, Gardi, Maher, Milloy, Vernazza `21&lt;/a&gt;;$\;$&lt;a href=&#34;https://arxiv.org/abs/2112.11097&#34; &gt; Caola, Chakraborty, Gambuti, von Manteuffel, Tancredi `21&lt;/a&gt;&lt;/span&gt;
-&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 6mm; margin-left: -7mm;&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: 6mm; margin-left: -7mm;&#34;&gt;
      $\phantom{\circ}\,$ (b) Two-loop correction to the central emission vertex &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_g^{(2)}$&lt;/span&gt; for one gluon
 &lt;/div&gt;
 &lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/2412.20578&#34;&gt; Abreu, GDL, Falcioni, Gardi, Milloy, Vernazza `24&lt;/a&gt;;$\;$&lt;a href=&#34;https://arxiv.org/abs/2411.14050&#34;&gt; Buccioni, Caola, Devoto, Gambuti `24&lt;/a&gt;&lt;/span&gt;
-&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm; margin-left: -7mm;&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: 5mm; margin-left: -7mm;&#34;&gt;
      $\phantom{\circ}\,\kern9mm$ by expanding in the MRK limit the recently available two-loop five-parton amplitudes
 &lt;/div&gt;
 &lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/2311.10086&#34;&gt; GDL, Ita, Klinkert, Sotnikov `23&lt;/a&gt;;$\;$&lt;a href=&#34;https://arxiv.org/abs/2311.18752&#34;&gt; GDL, Ita, Sotnikov `23&lt;/a&gt;;$\;$&lt;a href=&#34;https://arxiv.org/abs/2311.09870&#34;&gt; Agarwal, Buccioni, Devoto, Gambuti, von Manteuffel, Tancredi `23&lt;/a&gt;&lt;/span&gt;
-&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;&#34;&gt;
+     $\phantom{\circ}\,$ (c) The CEV for one emission &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_{gg}^{(0)}$&lt;/span&gt; (at higher orders in epsilon)
+&lt;/div&gt;
+&lt;span style=&#34;font-size: 14pt; margin-top: -10mm; margin-bottom: -6mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/2302.09868&#34;&gt; Fadin, Fucilla, Papa `23&lt;/a&gt;&lt;/span&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -7mm;&#34;&gt;
      $\phantom{\circ}\,$ (d) The last missing component is the next-to-maximally-helicity-violiating (NMHV) one-loop &lt;br&gt;
      $\phantom{\circ}\,\kern9mm$ two-gluon CEV &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_{g^{+}g^{-}}^{(0)}$&lt;/span&gt;,
      this requires expanding in NMRK the one-loop six-gluon amplitude
 &lt;/div&gt;
 &lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; Byrne, GDL, Del Duca, Gardi, Smillie - in progress; &lt;a href=&#34;https://arxiv.org/abs/1904.04067&#34; &gt;GDL, Maitre `19&lt;/a&gt;&lt;/span&gt;
-&lt;div style=&#34;text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;&#34;&gt;
      $\phantom{\circ}\,$ (e) The leading CEV for three emissions &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_{ggg}^{(0)}$&lt;/span&gt; from an NNMRK limit at tree level
 &lt;/div&gt;
 &lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/2506.10644&#34;&gt; Byrne, Del Duca, Gardi, Mo, Smillie `25&lt;/a&gt;&lt;/span&gt;
