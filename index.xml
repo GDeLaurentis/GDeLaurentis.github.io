@@ -10289,7 +10289,7 @@ NNLL Resummation: &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\mathcal{O}\big(
 &lt;/div&gt;
 &lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/2412.20578&#34;&gt; Abreu, GDL, Falcioni, Gardi, Milloy, Vernazza `24&lt;/a&gt;;$\;$&lt;a href=&#34;https://arxiv.org/abs/2411.14050&#34;&gt; Buccioni, Caola, Devoto, Gambuti `24&lt;/a&gt;&lt;/span&gt;
 &lt;div style=&#34;text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: 5mm; margin-left: -7mm;&#34;&gt;
-     $\phantom{\circ}\,\kern9mm$ by expanding in the MRK limit the recently available two-loop five-parton amplitudes
+     $\phantom{\circ\,\text{(b)}}$ by expanding in the MRK limit the recently available two-loop five-parton amplitudes
 &lt;/div&gt;
 &lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/2311.10086&#34;&gt; GDL, Ita, Klinkert, Sotnikov `23&lt;/a&gt;;$\;$&lt;a href=&#34;https://arxiv.org/abs/2311.18752&#34;&gt; GDL, Ita, Sotnikov `23&lt;/a&gt;;$\;$&lt;a href=&#34;https://arxiv.org/abs/2311.09870&#34;&gt; Agarwal, Buccioni, Devoto, Gambuti, von Manteuffel, Tancredi `23&lt;/a&gt;&lt;/span&gt;
 &lt;div style=&#34;text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;&#34;&gt;
@@ -10298,7 +10298,7 @@ NNLL Resummation: &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\mathcal{O}\big(
 &lt;span style=&#34;font-size: 14pt; margin-top: -10mm; margin-bottom: -6mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/2302.09868&#34;&gt; Fadin, Fucilla, Papa `23&lt;/a&gt;&lt;/span&gt;
 &lt;div style=&#34;text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -7mm;&#34;&gt;
      $\phantom{\circ}\,$ (d) The last missing component is the next-to-maximally-helicity-violiating (NMHV) one-loop &lt;br&gt;
-     $\phantom{\circ}\,\kern9mm$ two-gluon CEV &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_{g^{+}g^{-}}^{(0)}$&lt;/span&gt;,
+     $\phantom{\circ\,\text{(d)}}$ two-gluon CEV &lt;span style=&#34;font-size: 15pt&#34;&gt;$\mathcal{V}_{g^{+}g^{-}}^{(0)}$&lt;/span&gt;,
      this requires expanding in NMRK the one-loop six-gluon amplitude
 &lt;/div&gt;
 &lt;span style=&#34;font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; Byrne, GDL, Del Duca, Gardi, Smillie - in progress; &lt;a href=&#34;https://arxiv.org/abs/1904.04067&#34; &gt;GDL, Maitre `19&lt;/a&gt;&lt;/span&gt;
@@ -10433,7 +10433,7 @@ $$
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ You may be familiar with finite field (integers modulo a prime)
 &lt;/div&gt;
-&lt;span style=&#34;font-size: 14pt; margin-top: -4mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/1406.4513&#34;&gt; Heller, von Manteuffel `14&lt;/a&gt;;$\;$&lt;a href=&#34;https://arxiv.org/abs/1608.01902&#34;&gt; Peraro `16&lt;/a&gt;&lt;/span&gt;
+&lt;span style=&#34;font-size: 14pt; margin-top: -4mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/1406.4513&#34;&gt; von Manteuffel, Schabinger `14&lt;/a&gt;;$\;$&lt;a href=&#34;https://arxiv.org/abs/1608.01902&#34;&gt; Peraro `16&lt;/a&gt;&lt;/span&gt;
 &lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
 $$ 
 \displaystyle a \in \mathbb{F}_p : a \in \{0, \dots, p -1\} \; \text{ with } \; \{+, -, \times, \div\}
