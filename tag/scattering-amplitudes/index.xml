@@ -11322,10 +11322,10 @@ $\circ$ Original computation  &lt;a href=&#34;https://arxiv.org/abs/hep-ph/97082
 	     $$
 	&lt;/div&gt;
      &lt;div style=&#34;width:25%; float: right; display: inline-block; margin-top: -15mm;&#34;&gt;
-	     &lt;div style=&#34;font-size: x-large; width:50%; float: center; text-align: center;  display: inline-block; margin-top: 0mm;&#34;&gt;
+	     &lt;div style=&#34;font-size: x-large; width:50%; float: center; text-align: center;  display: inline-block; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
 	     	  &lt;code&gt; C++ code &lt;/code&gt;
-	     &lt;/div&gt;&lt;br&gt;
-	     &lt;img src=&#34;CaravelLogo.png&#34;; style=&#34;max-width:150px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
+	     &lt;/div&gt;
+	     &lt;img src=&#34;CaravelLogo.png&#34;; style=&#34;max-width:150px; float:center; border:none; margin-top: -2mm; margin-bottom: 0mm;&#34;&gt;
 	     &lt;br&gt;
 	     &lt;a style=&#34;font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;&#34;
 	     	href=https://arxiv.org/abs/2009.11957&gt;
@@ -11343,7 +11343,7 @@ $\circ$ Original computation  &lt;a href=&#34;https://arxiv.org/abs/hep-ph/97082
 &lt;div style=&#34;font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 6mm;&#34;&gt;
      $\circ$ This computation started from the ancillaries files of &lt;a href=&#34;https://arxiv.org/abs/hep-ph/9708239&#34; style=&#34;font-size: 14pt&#34;&gt;[1] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov&lt;/a&gt;
      &lt;div style=&#34;font-size: 16pt; width:99%; text-align: left; display: inline-block; margin-top: 2mm; margin-left:10mm;&#34;&gt;
-	     1. Wrote a Python script to split the 1.4 GB ancillaries into &gt;10k files &lt;br&gt;
+	     1. Split the 1.4 GB ancillaries into &gt;10k files (via Python script)&lt;br&gt;
 	     2. Compile into 18.2 GB of C++ binaries (for reference &lt;span style=&#34;font-variant: small-caps;font-size: 17pt&#34;&gt;Caravel&lt;/span&gt; compiles into approx. 5 GB) &lt;br&gt;
           3. Obtain &lt;span style=&#34;font-size: 16t&#34;&gt;$\mathbb{F}_p$&lt;/span&gt; evaluations of the form factors (each takes approx. 1 sec per point)&lt;br&gt;
           4. Recombine triplets of form factors into six-point helicity amplitudes (incl. decays)
@@ -11368,7 +11368,7 @@ $\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: &lt;span style=&
   &gt;
 
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&#34;analytic--geometric-structure&#34;&gt;Analytic &amp;amp; Geometric Structure&lt;/h1&gt;
+&lt;h1 id=&#34;algebraic--geometric-structure&#34;&gt;Algebraic &amp;amp; Geometric Structure&lt;/h1&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;font-size: 18pt&#34;&gt;based on work with Ben Page in:&lt;span&gt; &lt;br&gt;
 &lt;span style=&#34;font-size: 17pt&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2203.04269&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;arXiv:2203.04269&lt;/a&gt;&lt;span&gt;
@@ -11787,6 +11787,59 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
      &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;&#34;&gt; &lt;span style=&#34;font-size: 27pt;&#34;&gt;$p$&lt;/span&gt;-adic numbers &lt;/b&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ You may be familiar with finite field (integers modulo a prime)
+&lt;/div&gt;
+&lt;span style=&#34;font-size: 14pt; margin-top: -4mm; margin-bottom: -5mm; float: right; font-align: right;&#34;&gt; &lt;a href=&#34;https://arxiv.org/abs/1406.4513&#34;&gt; von Manteuffel, Schabinger `14&lt;/a&gt;;$\;$&lt;a href=&#34;https://arxiv.org/abs/1608.01902&#34;&gt; Peraro `16&lt;/a&gt;&lt;/span&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
+$$ 
+\displaystyle a \in \mathbb{F}_p : a \in \{0, \dots, p -1\} \; \text{ with } \; \{+, -, \times, \div\}
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\phantom{\circ}$ Limits (and calculus) are not well defined in $\mathbb{F}_p$. We can make things zero, but not small:
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
+$$ 
+\displaystyle |a|_0 = 0 \; \text{if} \; a = 0 \; \text{else} \; 1 \quad \text{a.k.a. the trivial absolute value.}
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ There exists just one more absolute value on the rationals, the &lt;span style=&#34;font-size: 16pt;&#34;&gt;$p$&lt;/span&gt;-adic absolute value.
+&lt;/div&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;&#34; href=https://en.wikipedia.org/wiki/Ostrowski%27s_theorem&gt;
+   Ostrowski&#39;s theorem 1916
+&lt;/a&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ Let&#39;s start from &lt;span style=&#34;font-size: 16pt;&#34;&gt;$p$&lt;/span&gt;-adic integers, instead of working modulo &lt;span style=&#34;font-size: 16pt;&#34;&gt;$p$&lt;/span&gt;, expand in powers of &lt;span style=&#34;font-size: 16pt;&#34;&gt;$p$&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
+$$ 
+\displaystyle a \in \mathbb{Z}_p : a_0 p^0 + a_1 p^1 + a_2 p^2 + \dots + \mathcal{O}(p^n)
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\phantom{\circ}$ In some sense we are correcting the finite field result with more (subleading) information.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ &lt;span style=&#34;font-size: 16pt;&#34;&gt;$p$&lt;/span&gt;-adic numbers &lt;span style=&#34;font-size: 16pt;&#34;&gt;$\mathbb{Q}_p$&lt;/span&gt; allow for negative powers of &lt;span style=&#34;font-size: 16pt;&#34;&gt;$p$&lt;/span&gt;, (would be division by zero in $\mathbb{F}_p$!)
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
+$$ 
+\displaystyle a \in \mathbb{Q}_p : a_{-\nu} p^{-\nu} + \dots + a_0 + a_1 p^1 + \dots + \mathcal{O}(p^n)
+$$
+&lt;/div&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;&#34; href=https://arxiv.org/abs/2203.04269&gt;
+   GDL, Page `22
+&lt;/a&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ The &lt;span style=&#34;font-size: 16pt;&#34;&gt;$p$&lt;/span&gt;-adic absolute value is defined as &lt;span style=&#34;font-size: 16pt;&#34;&gt;$|a|_p = p^\nu$&lt;/span&gt;.
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\phantom{\circ}$ Think of &lt;span style=&#34;font-size: 16pt;&#34;&gt;$p$&lt;/span&gt; as a small quantity, &lt;span style=&#34;font-size: 16pt;&#34;&gt;$\epsilon$&lt;/span&gt;, (by &lt;span style=&#34;font-size: 16pt;&#34;&gt;$|\,|_p$&lt;/span&gt;) even if it is a large prime (by the real abs. &lt;span style=&#34;font-size: 16pt;&#34;&gt;$|\,|_\infty$&lt;/span&gt;).
+&lt;/div&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; Laurent Series or p(z)-adic expansion &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;&#34;&gt;
      $\circ\,$ With &lt;span style=&#34;font-size: 14pt&#34;&gt;$p$&lt;/span&gt;-adic numbers this would be straight forward, set &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{D}_j\propto p$&lt;/span&gt; and evaluate the function
@@ -11796,8 +11849,8 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
      r_{i\in \mathcal{B}} = \sum_{m = 1}^{\text{max}_i(q_{ik})} \frac{e^k_{im}}{p^m} + \mathcal{O}(p^0) \text{ is a number in } \mathbb{Q}_p
      $$
 &lt;/div&gt;
-&lt;div style=&#34;text-align: center; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;&#34;&gt;
-     See &lt;code style=&#34;font-size: 14pt;&#34;&gt;Particles._singular_variety&lt;/code&gt; or &lt;code style=&#34;font-size: 14pt;&#34;&gt;Ideal.point_on_variety&lt;/code&gt; to generate the configuration
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;&#34;&gt;
+     $\phantom{\circ}\,$ See &lt;code style=&#34;font-size: 14pt;&#34;&gt;Particles._singular_variety&lt;/code&gt; or &lt;code style=&#34;font-size: 14pt;&#34;&gt;Ideal.point_on_variety&lt;/code&gt; to generate the configuration
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: -2mm;&#34;&gt;
      $\circ\,$ We can&#39;t do this with only finite fields. Instead, build Laurent expansions around $t_{\mathcal{D}_k}$ &lt;span style=&#34;font-size: 12pt&#34;&gt; (use more slices) &lt;/span&gt;
@@ -11811,7 +11864,7 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
      $\phantom{\circ}\,$ strictly formal over $\mathbb{F}_p$, but convergent over $\mathbb{Q}_p$ for $(t-t_{\mathcal{D}_k}) \propto p$
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: -2mm;&#34;&gt;
-     $\circ\,$ Issue what if the letter does not have a factor linear in &lt;span style=&#34;font-size: 15pt&#34;&gt;$t$&lt;/span&gt;?
+     $\circ\,$ What if the letter does not have a factor linear in &lt;span style=&#34;font-size: 15pt&#34;&gt;$t$&lt;/span&gt;? E.g.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: center; font-size: 15pt; margin-top: -2mm; margin-bottom: 2mm;&#34;&gt;
      $$
@@ -11903,12 +11956,12 @@ of invariants thus arising is rather low, to our knowledge. In particular, the p
 $\phantom{\circ}\,$ The key concept is that the ring we consider are &lt;b&gt;&lt;i&gt;not freely generated&lt;/i&gt;&lt;/b&gt;.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 5mm; margin-bottom: 2mm; &#34;&gt;
-$\circ\,$ With Ben in &lt;a href=https://arxiv.org/abs/2203.04269&gt;arXiv:2203.04269&lt;/a&gt; we showed that these rings are “Cohen–Macaulay”
+$\circ\,$ With Ben in &lt;a href=https://arxiv.org/abs/2203.04269&gt;arXiv:2203.04269&lt;/a&gt; we showed that these rings are “Cohen–Macaulay” (CM)
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
 $\quad\small\rhd\,$ Follows from quotienting a polynomial ring by a maximal-codimension ideal &lt;br&gt;
 $\quad\small\rhd\,$ Implies e.g. that symbolic powers of max-codim ideals match normal powers &lt;br&gt;
-$\kern20.9mm$ that all max-codim ideals are equi-dimensional &lt;br&gt;
+$\phantom{\quad\small\rhd\,}$ that all max-codim ideals are equi-dimensional &lt;br&gt;
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
 $\circ\,$ The authors of &lt;a href=https://arxiv.org/abs/2509.14350&gt;arXiv:2509.14350&lt;/a&gt; state that invariant rings are “Gorenstein”, which implies CM
@@ -11916,7 +11969,7 @@ $\circ\,$ The authors of &lt;a href=https://arxiv.org/abs/2509.14350&gt;arXiv:25
 &lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 0mm; &#34;&gt;
 $\quad\small\rhd\,$ &lt;i&gt; “all rings of the type we are discussing are Gorenstein” &lt;/i&gt; &lt;br&gt;
 $\quad\small\rhd\,$ &lt;i&gt; “Gorenstein is for rings what Calabi–Yau is for manifolds; 
-the spaces of invariants are in fact (non-compact) Calabi-Yau varieties” &lt;/i&gt;
+the spaces of invariants are in fact (non-compact) Calabi-Yau varieties” &lt;/i&gt; $-$ Connection to Feynman integral literature?
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 16pt; padding: 10px; display: inline-block; margin-top: -4mm;&#34;&gt;
     &lt;u&gt; What futher practical information can we learn from the mathematics literature? &lt;/u&gt;
@@ -12411,7 +12464,7 @@ Courtesy of V. Sotnikov, &lt;br&gt;see also Mazzitelli, Sotnikov, Wiesemann (&#3
      $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/antares/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;antares&lt;/a&gt; (automated numerical to analytical reconstruction software) &lt;br&gt;
      $\rightarrow$ Univariate slicing, LCD determination, basis change, multivariate partial fractioning strategies, &lt;br&gt;
      $\phantom{\rightarrow}$ constraining of numerators, Ansatz generation and fitting strategies &lt;br&gt;
-     $\rightarrow$ Most operations do not require defining the variables (or redundancies), only being able to evaluate them.
+     $\rightarrow$ Limit analytic manipulations as much as possible, mostly relies on numerical evaluations.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;&#34;&gt;
      $\circ$ &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results/&#34; style=&#34;font-size: 20pt; font-variant: small-caps;&#34;&gt;antares-results&lt;/a&gt; (human readable exprs in &lt;a href=&#34;https://gdelaurentis.github.io/antares-results/&#34;&gt;docs&lt;/a&gt;) with &lt;a href=&#34;https://github.com/GDeLaurentis/antares-results/actions/&#34;&gt;CI tests&lt;/a&gt; for coefficients and/or full amplitudes
