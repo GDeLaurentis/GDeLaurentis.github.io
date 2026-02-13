@@ -5,12 +5,24 @@
     <link>https://gdelaurentis.github.io/talk/</link>
       <atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 22 Oct 2025 16:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 16 Feb 2026 15:30:00 +0000</lastBuildDate>
     <image>
       <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://gdelaurentis.github.io/talk/</link>
     </image>
+    
+    <item>
+      <title>Analytic Reconstruction of Two-Loop QCD Amplitudes</title>
+      <link>https://gdelaurentis.github.io/talk/sussexfeb2026/</link>
+      <pubDate>Mon, 16 Feb 2026 15:30:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/sussexfeb2026/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Loop amplitudes are central to precision collider phenomenology, yet their computation remains challenging due to the complexity of intermediate steps. A powerful modern strategy is to bypass much of this complexity by performing numerical evaluations over finite fields and reconstructing analytic expressions from numerical data using number-theoretic and algebro-geometric techniques.&lt;/p&gt;
+&lt;p&gt;In this talk, I will present a recent re-computation of the two-loop leading-colour amplitudes for the production of a heavy electroweak vector boson in association with two jets at hadron colliders (pp → Vjj). Compared to the previous state of the art, the new result achieves a three-order-of-magnitude reduction in size (from 1.4 GB to 1.9 MB) and reduces the required number of numerical samples from one million to fifty thousand. I will also briefly discuss applications to processes with massive external legs, including pp → tt̄H and HHH at one loop.&lt;/p&gt;
+&lt;p&gt;I will outline the core ingredients of this computation: a basis-change algorithm in the vector space of rational functions based on correlations among multivariate residues; numerical sampling in number fields with non-Archimedean metrics (finite fields and p-adic numbers); redundant spinor-helicity variables organised via polynomial quotient rings; and primary decompositions used to identify allowed multivariate partial fraction decompositions. Beyond enabling efficient phenomenological applications, these methods expose structural features that are expected to generalise to more complex QCD amplitudes.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Analytic Reconstruction and Algebro-Geometric Structures in QCD: Two-Loop $pp \to Vjj$ &amp; One-Loop $pp \to t\bar{t}H$ &amp; $HHH$</title>
