@@ -11949,15 +11949,15 @@ $\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: &lt;span style=&
 
 ---
 ---&gt;
-&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Variables Subject to Constraints &lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Toy example &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ$ Manifesting amplitude&#39;s gauge and Lorentz invariance, and spin and little-group covariance
+     $\circ$ Manifesting amplitude&#39;s gauge and Lorentz invariance, and spin and little-group covariance requires
      &lt;div style=&#34;font-size: 17pt; text-align: center; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-          &lt;u&gt;requires working with variables subject to constraints&lt;/u&gt;
+          &lt;u&gt;variables subject to constraints&lt;/u&gt;.
      &lt;/div&gt;
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
-     $\circ$ Toy example: &lt;br&gt;  $\phantom{\circ}$  consider polynomials &lt;span style=&#34;font-size: 14pt;&#34;&gt;$f, g, h$&lt;/span&gt; in two variables &lt;span style=&#34;font-size: 14pt;&#34;&gt;$x, y$&lt;/span&gt;. They live in a &lt;b&gt;polynomial ring&lt;/b&gt;:
+&lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
+     $\circ$ Consider polynomials &lt;span style=&#34;font-size: 14pt;&#34;&gt;$f, g, h$&lt;/span&gt; in two variables &lt;span style=&#34;font-size: 14pt;&#34;&gt;$x, y$&lt;/span&gt;. They live in a &lt;b&gt;polynomial ring&lt;/b&gt;:
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm&#34;&gt;
 $$ 
