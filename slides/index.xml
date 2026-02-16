@@ -11082,7 +11082,7 @@ Giuseppe De Laurentis
 &lt;span style=&#34;font-size: 14pt;&#34;&gt;$gg\rightarrow HHH$&lt;/span&gt;: &lt;a href=&#34;https://arxiv.org/pdf/2507.19313&#34;&gt;arXiv:2507.19313&lt;/a&gt; /
 &lt;a href=&#34;https://link.springer.com/article/10.1007/JHEP01(2026)157&#34;&gt;JHEP01(2026)157&lt;/a&gt; &lt;br&gt;
 &lt;div style=&#34;font-size: large;&#34;&gt; at 1 loop, with J. Campbell and K. Ellis &lt;/div&gt;
-&lt;p&gt;University of Sussex - Physics Seminar&lt;/p&gt;
+&lt;p&gt;University of Sussex - TPP Seminar&lt;/p&gt;
 &lt;p style=&#34;line-height: 0.05;&#34;&gt; &lt;img src=&#34;UniEdinburghLogo-transparent.png&#34;; style=&#34;max-width:120px;float:center;border:none;margin-bottom:5mm;&#34;&gt; 
 &lt;br&gt;&lt;br&gt;&lt;br&gt;
 &lt;span style=&#34;font-size: 11pt; margin-top: 10mm;&#34;&gt;Find these slides at  &lt;a href=&#34;https://gdelaurentis.github.io/slides//sussexfeb2026/#/&#34;&gt;gdelaurentis.github.io/slides/sussexfeb2026&lt;/a&gt; &lt;/span&gt;
@@ -11970,10 +11970,13 @@ $$
      $\phantom{\circ}$ while &lt;span style=&#34;font-size: 15pt;&#34;&gt;$R_{HHH}$&lt;/span&gt; has 20 invariants, subject to 122 constraints.
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Invariant Rings in Mathematics Literature &lt;/b&gt;&lt;/p&gt;
+&lt;!---
+&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Invariant Rings in Mathematics Literature &lt;/b&gt;
+
 &lt;p style=&#34;margin-top: -6mm; margin-bottom: 2mm; font-size: 15pt;&#34;&gt;
 (taking some quotes from &lt;a href=https://arxiv.org/abs/2509.14350&gt;arXiv:2509.14350&lt;/a&gt;, &lt;i&gt;“Some remarks on invariants”&lt;/i&gt;)
 &lt;/p&gt;
+
 &lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
 $\circ\,$ The authors of &lt;a href=https://arxiv.org/abs/2509.14350&gt;arXiv:2509.14350&lt;/a&gt; seem to tackle a very similar problem for
 &lt;/div&gt;
@@ -11985,6 +11988,7 @@ of invariants thus arising is rather low, to our knowledge. In particular, the p
 &lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
 $\phantom{\circ}\,$ The key concept is that the ring we consider are &lt;b&gt;&lt;i&gt;not freely generated&lt;/i&gt;&lt;/b&gt;.
 &lt;/div&gt;
+
 &lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 5mm; margin-bottom: 2mm; &#34;&gt;
 $\circ\,$ With Ben in &lt;a href=https://arxiv.org/abs/2203.04269&gt;arXiv:2203.04269&lt;/a&gt; we showed that these rings are “Cohen–Macaulay” (CM)
 &lt;/div&gt;
@@ -11993,6 +11997,7 @@ $\quad\small\rhd\,$ Follows from quotienting a polynomial ring by a maximal-codi
 $\quad\small\rhd\,$ Implies e.g. that symbolic powers of max-codim ideals match normal powers &lt;br&gt;
 $\phantom{\quad\small\rhd\,}$ that all max-codim ideals are equi-dimensional &lt;br&gt;
 &lt;/div&gt;
+
 &lt;div style=&#34;text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
 $\circ\,$ The authors of &lt;a href=https://arxiv.org/abs/2509.14350&gt;arXiv:2509.14350&lt;/a&gt; state that invariant rings are “Gorenstein”, which implies CM
 &lt;/div&gt;
@@ -12001,10 +12006,13 @@ $\quad\small\rhd\,$ &lt;i&gt; “all rings of the type we are discussing are Gor
 $\quad\small\rhd\,$ &lt;i&gt; “Gorenstein is for rings what Calabi–Yau is for manifolds; 
 the spaces of invariants are in fact (non-compact) Calabi-Yau varieties” &lt;/i&gt; $-$ Connection to Feynman integral literature?
 &lt;/div&gt;
+
 &lt;div style=&#34;font-size: 16pt; padding: 10px; display: inline-block; margin-top: -4mm;&#34;&gt;
     &lt;u&gt; What futher practical information can we learn from the mathematics literature? &lt;/u&gt;
 &lt;/div&gt;
-&lt;hr&gt;
+
+---
+---&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: xxx-large&#34;&gt; The Numerator Ansatz &lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
 $\circ\,$ The numerator Ansatz takes the form (massless case)
@@ -12356,15 +12364,17 @@ $$
 $$
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;div style=&#34;margin-top: 2mm; margin-bottom: -2mm&#34;&gt;
+&lt;div style=&#34;margin-top: 2mm; margin-bottom: 2mm&#34;&gt;
      &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Challenges &lt;/b&gt;
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Can we guess the constraints? If not, can we verify them with numerical evaluations? &lt;br&gt;
-$\phantom{\circ}\,$ &lt;span style=&#34;text-size: 13pt&#34;&gt;$\mathbb{Q}_p$&lt;/span&gt; evaluations can be costly (probably depending on implementation). &lt;a href=https://arxiv.org/abs/2506.08452&gt; Xia, Yang (&#39;25) &lt;/a&gt; say they are not!
+$\circ\,$ Can we get an IBP reduction to work stably in singular limits with p-adics?
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Ideal intersection can be highly non-trivial:
+$\circ\,$ Alternatively, can we do the same with slicing over finite fields? Working on a bivariate slice approach.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Ideal intersection can be highly non-trivial (lcm product):
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
 $$ 
@@ -12384,13 +12394,16 @@ $\quad\star\,$ we compute the intersection explicitly (can be prohibitively hard
 $\quad\star\,$ or we have to make a choice of which constrain we manifest
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Computing primary decompositions with these many variables is hard, Singular can&#39;t do it on its own
+$\phantom{\circ}\,$ Tentative solution with the bivariate slice approach.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\phantom{\circ}\,$ Ongoing project with a masters&#39; student in Edinburgh to improve our ability to compute them.
+$\circ\,$ Computing primary decompositions with these many variables is hard, Singular can&#39;t do it on its own.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Even constructing the ansatz requires a GB, which in some cases Singular doesn&#39;t easily give
+$\phantom{\circ}\,$ Article with a Edinburgh masters&#39; student (D. Tai) to appear.
+&lt;/div&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Even constructing the ansatz requires a GBasis, which in some cases Singular doesn&#39;t easily give.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
 $\circ\,$ And of course computing the reduction to MIs of the amplitude is not easy in the first place.
