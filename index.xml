@@ -306,7 +306,7 @@ $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;&#34;&gt;
      $\circ$ &lt;span style=&#34;font-size: 13pt;&#34;&gt;$\big\langle q_1(\underline X), \dots, q_m(\underline X) \big\rangle \subseteq \mathbb{Q}[\underline X]$&lt;/span&gt; is an &lt;b&gt;ideal&lt;/b&gt;, the infinite set of polynomials &lt;span style=&#34;font-size: 13pt;&#34;&gt;$r_1(\underline X) q_1(\underline X) + \dots $&lt;/span&gt; &lt;br&gt; 
-     $\phantom{\circ}$ In this example, the set of polynomils &lt;span style=&#34;font-size: 14pt;&#34;&gt;$h(x, y) (x^2+y^2-1)$&lt;/span&gt; that vanish on the unit circle.
+     $\phantom{\circ}$ In this example, the set of polynomials &lt;span style=&#34;font-size: 14pt;&#34;&gt;$h(x, y) (x^2+y^2-1)$&lt;/span&gt; that vanish on the unit circle.
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;&#34;&gt; Massless Scattering &lt;/b&gt;&lt;/p&gt;
@@ -526,10 +526,18 @@ $$
      $\phantom{\circ}$ with &lt;span style=&#34;font-size: 14pt;&#34;&gt;$h_i$&lt;/span&gt; pure and &lt;span style=&#34;font-size: 14pt;&#34;&gt;$q$&lt;/span&gt; irreducible polynomials in Mandelstams
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 8mm; margin-bottom: 2mm;&#34;&gt;
-     $\circ$ Distinguish 3 cases for &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\sqrt{q} = \sqrt{\Delta_5}, \sqrt{\Delta_3}, \sqrt{\Sigma_5}$&lt;/span&gt;
+     $\circ$ Distinguish 3 cases for &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\sqrt{q} = \sqrt{\Delta_3}, \sqrt{\Delta_5}, \sqrt{\Sigma_5}$&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
-     $\quad 1.$ &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\sqrt{q}$&lt;/span&gt; is rational in spinors, e.g. &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\sqrt{\Delta_5} = \pm \text{tr}(\gamma^5p_1p_2p_3p_4) = \pm ([1|2|3|4|1\rangle-\langle1|2|3|4|1])$&lt;/span&gt;,
+     $\quad 1.$ &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\sqrt{q} = \sqrt{\Delta_3}$&lt;/span&gt; is the boring case, leave it unchanged, here &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\lim_{q\rightarrow 0} h_i = \sqrt{q}$&lt;/span&gt;,
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
+$$ 
+G_i \rightarrow \frac{h_i}{\sqrt{\Delta_3}}
+$$
+&lt;/div&gt;
+&lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
+     $\quad 2.$ &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\sqrt{q} = \sqrt{\Delta_5}$&lt;/span&gt; is rational in spinors, &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\sqrt{\Delta_5} = \pm \text{tr}(\gamma^5p_1p_2p_3p_4) = \pm ([1|2|3|4|1\rangle-\langle1|2|3|4|1])$&lt;/span&gt;,
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
 $$ 
@@ -537,20 +545,26 @@ G_i \rightarrow \frac{\text{tr}_5}{\sqrt{\Delta_5}} h_i = \text{sign}\big(\text{
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
-     $\quad 2.$ The rational coefficient vanishes linearly in &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\lim_{q\rightarrow 0}$&lt;/span&gt;,
+     $\quad 3.$ &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\sqrt{q} = \sqrt{\Sigma_5}$&lt;/span&gt;, the rational coefficient vanishes linearly in &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\lim_{q\rightarrow 0}$&lt;/span&gt;,
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
 $$ 
 G_i \rightarrow \sqrt{\Sigma_5} \, h_i
 $$
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;&#34;&gt;
-     $\quad 3.$ Otherwise, leave it unchanged, here &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\lim_{q\rightarrow 0} h_i = \sqrt{q}$&lt;/span&gt;,
+&lt;hr&gt;
+&lt;p&gt;&lt;b style=&#34;font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;&#34;&gt; Discontinuity in the second derivative remainder &lt;/b&gt;
+&lt;a href=&#34;https://arxiv.org/abs/arXiv:2605.04009&#34; style=&#34;font-size: 14pt; margin-bottom: -6mm; margin-top: -2mm; float: right; font-align: right;&#34;&gt; GDL, Ita, Kuschke, Ruf, Sotnikov &lt;/a&gt;&lt;/p&gt;
+&lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 4mm;&#34;&gt;
+     $\circ$ First (?) fully massless pseudo-threshold(?). Cross &lt;span style=&#34;font-size: 14pt;&#34;&gt;$\Sigma_5^{(3)}=0 \text{ at } t=0$&lt;/span&gt; ,
 &lt;/div&gt;
-&lt;div style=&#34;font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
+&lt;div style=&#34;font-size: 13.5pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
 $$ 
-G_i \rightarrow \frac{h_i}{\sqrt{\Delta_3}}
+\Sigma_5^{(3)} \, = \, \big(s_{12}s_{24}+s_{13}(s_{14}+s_{24})+s_{123}(s_{12}+s_{14})\big)^2-4s_{13}s_{14}s_{123}s_{124} \, .
 $$
+&lt;/div&gt;
+&lt;div&gt;
+&lt;img src=&#34;plot_sigma5_threshold.png&#34;; style=&#34;max-width:600px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;hr&gt;
@@ -1007,8 +1021,8 @@ $$
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 8mm; margin-bottom: 0mm;&#34;&gt;
 $\circ\,$ How to get ideal membership information? &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathbb{Q}_p$&lt;/span&gt; points?  &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathbb{F}_p$&lt;/span&gt; slice(s)?
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Ideal intersection can be highly non-trivial (lcm product):
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 6mm; margin-bottom: 0mm;&#34;&gt;
+$\circ\,$ Ideal intersection can be highly non-trivial (lcm is in general insufficient):
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;&#34;&gt;
 $$ 
@@ -1028,17 +1042,11 @@ $\quad\star\,$ we compute the intersection explicitly (can be prohibitively hard
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
 $\quad\star\,$ or give up on some of the information (lose some contraining power)
 &lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
+&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 6mm; margin-bottom: 0mm;&#34;&gt;
 $\circ\,$ Computing primary decompositions with these many variables is hard, Singular can&#39;t do it on its own.
 &lt;/div&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;&#34;&gt;
-$\phantom{\circ}\,$ Article with a Edinburgh masters&#39; student (D. Tai) to appear. Or avoid entirely?
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ Even constructing the ansatz requires a GBasis, which in some cases Singular doesn&#39;t easily give.
-&lt;/div&gt;
-&lt;div style=&#34;text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;&#34;&gt;
-$\circ\,$ And of course IBP reduction to obtain the MI coefficients is not easy in the first place.
+$\phantom{\circ}\,$ Article with a Edinburgh masters&#39; student (D. Tai) to appear. Can we avoid it? If so, at what cost?
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: 2mm&#34;&gt;
@@ -1084,7 +1092,7 @@ $$
 $$
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;&#34;&gt;
-     $\phantom{\circ}$ Where &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{I}_{\rm s}$&lt;/span&gt; starts as the unit ideal.
+     $\phantom{\circ}$ Where &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{I}_{\rm s}$&lt;/span&gt; starts as the unit ideal, and is otherwise generated by &lt;span style=&#34;font-size: 14pt&#34;&gt;$m_1, \dots, m_r$&lt;/span&gt;.
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 1mm;&#34;&gt;
      $\circ$ Test &lt;span style=&#34;font-size: 14pt&#34;&gt;$\;\mathcal{N}_i(t_1, t_2) \in \mathcal{I}_{\rm s}&#39;$&lt;/span&gt;, if it passes set &lt;span style=&#34;font-size: 14pt&#34;&gt;$\; \mathcal{I}_{\rm s} = \mathcal{I}_{\rm s}&#39;$&lt;/span&gt;
@@ -1245,7 +1253,7 @@ the spaces of invariants are in fact (non-compact) Calabi-Yau varieties” &lt;/
 &lt;div style=&#34;text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm; &#34;&gt;
 $\circ\,$ The numerator Ansatz takes the form (massless case)
 &lt;/div&gt;
-&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 4mm;&#34; href=https://arxiv.org/abs/1904.04067&gt;
+&lt;a style=&#34;font-size: large; text-align: right; float: right; margin-top: -7mm; margin-bottom: 0mm;&#34; href=https://arxiv.org/abs/1904.04067&gt;
    GDL, Maître (&#39;19)
 &lt;/a&gt;
 &lt;div style=&#34;text-align: center; font-size: 15pt; margin-bottom: 5mm; margin-top: 1mm;&#34;&gt;
@@ -1290,7 +1298,7 @@ $\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{
 &lt;div style=&#34;margin-top: 2mm; margin-bottom: 3mm&#34;&gt;
      &lt;b style=&#34;font-variant: small-caps; font-size: 32pt&#34;&gt; Preview of Linac &lt;/b&gt;
      &lt;p style=&#34;margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;&#34;&gt;
-     work in collaboration with Jack Franklin, to appear
+     work in collaboration with Jack Franklin, &lt;b&gt;avaiable now!&lt;/b&gt; @ github.com/GDeLaurentis/linac
      &lt;/p&gt;
 &lt;/div&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34; style=&#34;font-size: 11pt&#34;&gt;cuda_row_reduce(A, field_characteristic=primes[0], verbose=False)  # A is a 2D numpy.ndarray

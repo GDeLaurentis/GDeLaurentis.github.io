@@ -328,7 +328,7 @@ $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ <span style="font-size: 13pt;">$\big\langle q_1(\underline X), \dots, q_m(\underline X) \big\rangle \subseteq \mathbb{Q}[\underline X]$</span> is an <b>ideal</b>, the infinite set of polynomials <span style="font-size: 13pt;">$r_1(\underline X) q_1(\underline X) + \dots $</span> <br> 
-     $\phantom{\circ}$ In this example, the set of polynomils <span style="font-size: 14pt;">$h(x, y) (x^2+y^2-1)$</span> that vanish on the unit circle.
+     $\phantom{\circ}$ In this example, the set of polynomials <span style="font-size: 14pt;">$h(x, y) (x^2+y^2-1)$</span> that vanish on the unit circle.
 </div>
 
     </section>
@@ -602,10 +602,18 @@ $$
      $\phantom{\circ}$ with <span style="font-size: 14pt;">$h_i$</span> pure and <span style="font-size: 14pt;">$q$</span> irreducible polynomials in Mandelstams
 </div>
 <div style="font-size: 17pt; text-align: left; margin-top: 8mm; margin-bottom: 2mm;">
-     $\circ$ Distinguish 3 cases for <span style="font-size: 14pt;">$\sqrt{q} = \sqrt{\Delta_5}, \sqrt{\Delta_3}, \sqrt{\Sigma_5}$</span>
+     $\circ$ Distinguish 3 cases for <span style="font-size: 14pt;">$\sqrt{q} = \sqrt{\Delta_3}, \sqrt{\Delta_5}, \sqrt{\Sigma_5}$</span>
 </div>
 <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\quad 1.$ <span style="font-size: 14pt;">$\sqrt{q}$</span> is rational in spinors, e.g. <span style="font-size: 14pt;">$\sqrt{\Delta_5} = \pm \text{tr}(\gamma^5p_1p_2p_3p_4) = \pm ([1|2|3|4|1\rangle-\langle1|2|3|4|1])$</span>,
+     $\quad 1.$ <span style="font-size: 14pt;">$\sqrt{q} = \sqrt{\Delta_3}$</span> is the boring case, leave it unchanged, here <span style="font-size: 14pt;">$\lim_{q\rightarrow 0} h_i = \sqrt{q}$</span>,
+</div>
+<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+G_i \rightarrow \frac{h_i}{\sqrt{\Delta_3}}
+$$
+</div>
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
+     $\quad 2.$ <span style="font-size: 14pt;">$\sqrt{q} = \sqrt{\Delta_5}$</span> is rational in spinors, <span style="font-size: 14pt;">$\sqrt{\Delta_5} = \pm \text{tr}(\gamma^5p_1p_2p_3p_4) = \pm ([1|2|3|4|1\rangle-\langle1|2|3|4|1])$</span>,
 </div>
 <div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
@@ -613,20 +621,35 @@ G_i \rightarrow \frac{\text{tr}_5}{\sqrt{\Delta_5}} h_i = \text{sign}\big(\text{
 $$
 </div>
 <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\quad 2.$ The rational coefficient vanishes linearly in <span style="font-size: 14pt;">$\lim_{q\rightarrow 0}$</span>,
+     $\quad 3.$ <span style="font-size: 14pt;">$\sqrt{q} = \sqrt{\Sigma_5}$</span>, the rational coefficient vanishes linearly in <span style="font-size: 14pt;">$\lim_{q\rightarrow 0}$</span>,
 </div>
 <div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
 G_i \rightarrow \sqrt{\Sigma_5} \, h_i
 $$
 </div>
-<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\quad 3.$ Otherwise, leave it unchanged, here <span style="font-size: 14pt;">$\lim_{q\rightarrow 0} h_i = \sqrt{q}$</span>,
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p><b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Discontinuity in the second derivative remainder </b>
+<a href="https://arxiv.org/abs/arXiv:2605.04009" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -2mm; float: right; font-align: right;"> GDL, Ita, Kuschke, Ruf, Sotnikov </a></p>
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 4mm;">
+     $\circ$ First (?) fully massless pseudo-threshold(?). Cross <span style="font-size: 14pt;">$\Sigma_5^{(3)}=0 \text{ at } t=0$</span> ,
 </div>
-<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
+<div style="font-size: 13.5pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
-G_i \rightarrow \frac{h_i}{\sqrt{\Delta_3}}
+\Sigma_5^{(3)} \, = \, \big(s_{12}s_{24}+s_{13}(s_{14}+s_{24})+s_{123}(s_{12}+s_{14})\big)^2-4s_{13}s_{14}s_{123}s_{124} \, .
 $$
+</div>
+<div>
+<img src="plot_sigma5_threshold.png"; style="max-width:600px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;">
 </div>
 </section>
 
@@ -1196,8 +1219,8 @@ $$
 <div style="text-align: left; font-size: 16pt; margin-top: 8mm; margin-bottom: 0mm;">
 $\circ\,$ How to get ideal membership information? <span style="font-size: 14pt">$\mathbb{Q}_p$</span> points?  <span style="font-size: 14pt">$\mathbb{F}_p$</span> slice(s)?
 </div>
-<div style="text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;">
-$\circ\,$ Ideal intersection can be highly non-trivial (lcm product):
+<div style="text-align: left; font-size: 16pt; margin-top: 6mm; margin-bottom: 0mm;">
+$\circ\,$ Ideal intersection can be highly non-trivial (lcm is in general insufficient):
 </div>
 <div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
 $$ 
@@ -1217,17 +1240,11 @@ $\quad\star\,$ we compute the intersection explicitly (can be prohibitively hard
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
 $\quad\star\,$ or give up on some of the information (lose some contraining power)
 </div>
-<div style="text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;">
+<div style="text-align: left; font-size: 16pt; margin-top: 6mm; margin-bottom: 0mm;">
 $\circ\,$ Computing primary decompositions with these many variables is hard, Singular can't do it on its own.
 </div>
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\phantom{\circ}\,$ Article with a Edinburgh masters' student (D. Tai) to appear. Or avoid entirely?
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;">
-$\circ\,$ Even constructing the ansatz requires a GBasis, which in some cases Singular doesn't easily give.
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;">
-$\circ\,$ And of course IBP reduction to obtain the MI coefficients is not easy in the first place.
+$\phantom{\circ}\,$ Article with a Edinburgh masters' student (D. Tai) to appear. Can we avoid it? If so, at what cost?
 </div>
 
     </section>
@@ -1282,7 +1299,7 @@ $$
 $$
 </div>
 <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
-     $\phantom{\circ}$ Where <span style="font-size: 14pt">$\mathcal{I}_{\rm s}$</span> starts as the unit ideal.
+     $\phantom{\circ}$ Where <span style="font-size: 14pt">$\mathcal{I}_{\rm s}$</span> starts as the unit ideal, and is otherwise generated by <span style="font-size: 14pt">$m_1, \dots, m_r$</span>.
 </div>
 <div style="font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 1mm;">
      $\circ$ Test <span style="font-size: 14pt">$\;\mathcal{N}_i(t_1, t_2) \in \mathcal{I}_{\rm s}'$</span>, if it passes set <span style="font-size: 14pt">$\; \mathcal{I}_{\rm s} = \mathcal{I}_{\rm s}'$</span>
@@ -1477,7 +1494,7 @@ the spaces of invariants are in fact (non-compact) Calabi-Yau varieties” </i> 
 <div style="text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm; ">
 $\circ\,$ The numerator Ansatz takes the form (massless case)
 </div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 4mm;" href=https://arxiv.org/abs/1904.04067>
+<a style="font-size: large; text-align: right; float: right; margin-top: -7mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1904.04067>
    GDL, Maître ('19)
 </a>
 <div style="text-align: center; font-size: 15pt; margin-bottom: 5mm; margin-top: 1mm;">
@@ -1531,7 +1548,7 @@ $\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{
 <div style="margin-top: 2mm; margin-bottom: 3mm">
      <b style="font-variant: small-caps; font-size: 32pt"> Preview of Linac </b>
      <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
-     work in collaboration with Jack Franklin, to appear
+     work in collaboration with Jack Franklin, <b>avaiable now!</b> @ github.com/GDeLaurentis/linac
      </p>
 </div>
 <pre><code class="language-python" style="font-size: 11pt">cuda_row_reduce(A, field_characteristic=primes[0], verbose=False)  # A is a 2D numpy.ndarray
