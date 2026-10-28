@@ -5,12 +5,32 @@
     <link>https://gdelaurentis.github.io/talk/</link>
       <atom:link href="https://gdelaurentis.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 22 May 2026 14:30:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 29 Oct 2026 17:00:00 +0000</lastBuildDate>
     <image>
       <url>https://gdelaurentis.github.io/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://gdelaurentis.github.io/talk/</link>
     </image>
+    
+    <item>
+      <title>What can algebraic geometry do for rational functions in scattering amplitudes?</title>
+      <link>https://gdelaurentis.github.io/talk/leipzig_oct2026/</link>
+      <pubDate>Thu, 29 Oct 2026 17:00:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/leipzig_oct2026/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Scattering amplitudes are weighted sums of transcendental functions with rational-function coefficients. The latter arise, for example, from tensor and integration-by-parts reductions, and are naturally expressed in spinor-helicity variables: elements of the field of fractions of a polynomial quotient ring. In least-common-denominator form they can have numerators containing millions of monomials, while obtaining even a single exact numerical sample can be computationally expensive.&lt;/p&gt;
+&lt;p&gt;I will discuss how computational algebraic geometry can help expose and exploit their underlying structure, making reconstruction of analytic expressions from numerical samples feasible. In particular, I will describe multivariate partial-fraction decompositions constructed from interpolation on a two-dimensional slice, as used in a recent two-loop Higgs+2jet calculation, or through p-adic probes near codimension-two irreducible varieties. The latter approach is closely connected to primary decomposition, and I will discuss practical approaches for their computation in Lorentz-covariant kinematic rings. If time permits, I will discuss upcoming work on factorization properties of spinor-helicity rings and corresponding factorization algorithms.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analytic multi-loop helicity amplitudes in QCD</title>
+      <link>https://gdelaurentis.github.io/talk/amplitudesjune2026gongshow/</link>
+      <pubDate>Fri, 22 May 2026 14:30:00 +0000</pubDate>
+      <guid>https://gdelaurentis.github.io/talk/amplitudesjune2026gongshow/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Reconstructing and simplifying rational coefficients in multi-loop scattering amplitudes</title>

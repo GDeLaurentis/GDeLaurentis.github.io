@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo Blox Builder 5.9.6">
+
+  
+    <link rel="manifest" href="/manifest.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hud8124bf0cbf9cb4bbe62c81882a42a0c_277_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://gdelaurentis.github.io/slides/amplitudes2026/">
+
+  <title> | Giuseppe De Laurentis</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/white.min.css">
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css">
+  
+
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/reveal_custom.min.css">
+  
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      <style>
+.reveal mjx-container {
+  font-size: 115% !important;
+}
+
+.reveal .MathJax,
+.reveal .MathJax_Display,
+.reveal .MathJax_CHTML {
+  font-size: 115% !important;
+}
+</style>
+<script>
+window.addEventListener("load", function () {
+  function relayoutReveal() {
+    if (window.Reveal && typeof Reveal.layout === "function") {
+      Reveal.layout();
+    }
+  }
+
+  if (window.MathJax && MathJax.startup && MathJax.startup.promise) {
+    MathJax.startup.promise.then(function () {
+      relayoutReveal();
+      setTimeout(relayoutReveal, 100);
+      setTimeout(relayoutReveal, 500);
+    });
+  } else {
+    setTimeout(relayoutReveal, 500);
+  }
+});
+</script>
+<!---
+<style>
+.reveal mjx-container[display="true"] {
+  font-size: 130% !important;
+}
+</style>
+
+<script>
+window.addEventListener("load", function () {
+  if (window.Reveal && typeof Reveal.configure === "function") {
+    Reveal.configure({
+      minScale: 1,
+      maxScale: 1
+    });
+    Reveal.layout();
+  }
+});
+</script>
+--->
+<section>
+
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="LHCcern.jpg"
+  >
+
+<h3 style="margin-top: 2mm; margin-left: -10mm; margin-right: -10mm; margin-bottom: -5mm;">
+	<b style="margin-top:15mm; font-size: 30pt; text-transform: none; font-variant-caps: small-caps;">
+     Analytic Multi-Loop Helicity Amplitudes in QCD
+     </b>
+</h3>
+<span style="margin-top:-5mm; font-size: 18pt;">
+     Giuseppe De Laurentis
+</span>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
+     The full physical information of a color-ordered helicity amplitude is in the finite remainder:
+</div>
+<span style="font-size: 13pt; margin-bottom: -14mm; margin-top: -3mm; float: right; font-align: right;"> 
+<a href=https://www.sciencedirect.com/science/article/abs/pii/S0370269398003323?via%3Dihub>Catani ('98) </a> 
+</span>
+<span style="font-size: 13pt; margin-bottom: -14mm; margin-top: 2mm; float: right; font-align: right;"> 
+<a href=https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.102.162001>Becher, Neubert ('09) </a>
+</span>
+<span style="font-size: 13pt; margin-bottom: -14mm; margin-top: 7mm; float: right; font-align: right;"> 
+<a  href=https://arxiv.org/abs/0901.1091>Gardi, Magnea ('09) </a> 
+</span>
+<span style="font-size: 13pt; margin-bottom: -20mm; margin-top: 12mm; float: right; font-align: right;"> 
+<a href=https://inspirehep.net/literature/920274>Weinzierl ('11) </a>
+</span>
+<div style="font-size: 14pt; margin-top: 5mm; margin-bottom: 5mm; float: center;">
+$$ 
+\textstyle \mathcal{R}^{\ell-\text{loop}}_{n-\text{point}}(|i⟩_{\alpha}, [i|_{\dot\alpha}) = \sum_i {\color{red}{r_{i}}}(|i⟩_{\alpha}, [i|_{\dot\alpha}) \, {\color{blue}{G_i}}(|i⟩_{\alpha} {\scriptsize\times} [i|_{\dot\alpha}) \, .
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 0mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     <b><i>Challenges:</i></b>
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Compute the <span style="font-size: 15pt;">$\color{blue}{G_i}\,$</span>, a basis of transcendental functions, e.g. the <i>Pentagon Functions</i>;
+</div>
+<a style="font-size: 13pt; display: inline-block; text-align: right; float: right; margin-top: -2mm; margin-bottom: -2mm; margin-left: 2mm;" href=https://arxiv.org/abs/2306.15431> + Abreu, Ita, Page, Tschernow ('23) </a>
+<a style="font-size: 13pt; display: inline-block; text-align: right; float: right; margin-top: -2mm; margin-bottom: -2mm; margin-left: 2mm;" href=https://arxiv.org/abs/2110.10111> + Zoia ('21) </a>
+<a style="font-size: 13pt; display: inline-block; text-align: right; float: right; margin-top: -2mm; margin-bottom: -2mm; margin-right: 0mm; " href=https://arxiv.org/abs/2009.07803> Chicherin, Sotnikov ('20) </a> 
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 7mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Reconstruct the <span style="font-size: 15pt;">$\color{red}{r_{i}}\,$</span>, functions in the field of fractions over a polynomial quotient ring,
+</div>
+<a style="font-size: 13pt; display: inline-block; text-align: right; float: right; margin-top: -2mm; margin-bottom: -2mm; margin-left: 2mm;" href=https://arxiv.org/abs/1406.4513>
+GDL, Page ('22).
+</a>
+<a style="font-size: 13pt; display: inline-block; text-align: right; float: right; margin-top: -2mm; margin-bottom: -2mm; margin-left: 2mm;" href=https://arxiv.org/abs/1406.4513>
+GDL, Maitre ('19);
+</a>
+<a style="font-size: 13pt; display: inline-block; text-align: right; float: right; margin-top: -2mm; margin-bottom: -2mm; margin-left: 2mm;" href=https://arxiv.org/abs/1608.01902>
+Peraro ('16); 
+</a>
+<div style="font-size: 14pt; margin-top: 9mm; margin-bottom: 1mm">
+$$
+\displaystyle \kern10mm R_{n} = \mathbb{F}\Big[|1⟩_{\alpha}, [1|_{\dot\alpha}, \dots, |n⟩_{\alpha}, [n|_{\dot\alpha} \Big] \Big/ J \qquad \text{with} \qquad J = \text{Ideal} \Big( {\textstyle \sum_{i=1}^n} |i\rangle[ i | \Big) \, ,
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 3mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ in connection with algebraic geometry, and extended to massive particles (spin-spinors).
+</div>
+<span style="font-size: 13pt; margin-bottom: -1mm; margin-top: -3mm; float: right; font-align: right;"> 
+<a href="https://arxiv.org/abs/1709.04891"> Arkani-Hamed, Huang, Huang ('17); </a> 
+<a href="https://arxiv.org/abs/1802.06730"> Ochirov ('18); </a>
+<a href="https://arxiv.org/abs/1809.09644"> Shadmi, Weiss ('18); </a> 
+<a href="https://arxiv.org/abs/arXiv:2504.19909"> Campbell, GDL, Ellis ('25); </a>
+<a href="https://arxiv.org/abs/arXiv:2603.10269"> GDL, Melnikov, Tresoldi ('26) </a>
+</span>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 7mm; margin-left: 2mm; margin-right: 2mm;">
+     <b><i>Amplitudes we computed:</i></b> $\kern3mm$ <span style="font-size: 13pt;">GDL + [Abreu, Campbell, Ellis, Ita, Klinkert, Kuschke, Maitre, Page, Ruf, Seth, Sotnikov, ...]</span>
+</div>
+<div>
+<img src="GDLTableTransparent2.png"; style="max-width:950px; float:center; border:none; margin-top: -3mm; margin-bottom: 0mm;">
+</div>
+<p><span style="font-size: 15pt;">$\color{red}{r_{i}},$</span> known since
+<a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-right: 0mm; " href=https://arxiv.org/abs/2605.04009> GDL, Ita, Kuschke, Ruf, Sotnikov (&lsquo;26) </a></p>
+<p>LCD d.o.f.: 30K, 250K, 25M, 80M</p>
+</section>
+<!-- REVEAL.JS CUSTOMIZATION -->
+<!-- Include MathJax library -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- Include Reveal.js and the Math plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/reveal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/plugin/math/math.js"></script>
+<!-- Initialize Reveal.js with the MathJax plugin -->
+<script>
+  Reveal.initialize({
+    history: true,
+    slideNumber: false,
+    plugins: [ RevealMath ],
+    math: {
+      inlineMath: [ ['\\(', '\\)'] ],
+      displayMath: [ ['\\[', '\\]'] ],
+      mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+      config: 'TeX-MML-AM_CHTML',
+      CommonHTML: {
+        scale: 100, // Adjust the font size as needed
+      },
+    }
+  });
+</script>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+
+  
+  
+
+  
+  
+  <script src="/js/wowchemy-slides.js"></script>
+
+</body>
+</html>
