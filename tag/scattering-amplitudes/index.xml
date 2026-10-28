@@ -2352,7 +2352,7 @@ lTermsLCD[:5]&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt; &lt;br&gt;
 &lt;img src=&#34;search_tree_v2.png&#34;; style=&#34;max-width:520px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;&#34;&gt;
 &lt;div style=&#34;text-align: left; font-size: 16pt; float: left; margin-top: 0mm; margin-bottom: -2mm;&#34;&gt;
-     $\phantom{\circ}\,$ &lt;span style=&#34;font-size: 14pt&#34;&gt;$N^{(\text{pole order})}_{\text{denominator factor}}$&lt;/span&gt; denote null-spaces, and arrows denote intersections. Greated observed breadth &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{O}(100k)$&lt;/span&gt;.
+     $\phantom{\circ}\,$ &lt;span style=&#34;font-size: 14pt&#34;&gt;$N^{(\text{pole order})}_{\text{denominator factor}}$&lt;/span&gt; denote null-spaces, and arrows denote intersections. Greatest observed breadth &lt;span style=&#34;font-size: 14pt&#34;&gt;$\mathcal{O}(100k)$&lt;/span&gt;.
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;hr&gt;
