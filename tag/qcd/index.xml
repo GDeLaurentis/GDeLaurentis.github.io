@@ -4299,6 +4299,7 @@ Giuseppe De Laurentis
           &lt;div style=&#34;margin-top: 5mm; margin-bottom: 2mm; font-size: 12pt;&#34;&gt;
                &lt;span style=&#34;background-color: #90EE90; padding: 5px; margin-right: 10px;&#34;&gt;Analytic&lt;/span&gt;
                &lt;span style=&#34;background-color: #c8ff00; padding: 5px; margin-right: 10px;&#34;&gt;Analytic (LCA)&lt;/span&gt;
+               &lt;span style=&#34;background-color: #e5ff00; padding: 5px; margin-right: 10px;&#34;&gt;Semi-Analytic&lt;/span&gt;
                &lt;span style=&#34;background-color: rgb(250, 255, 0); padding: 5px; margin-right: 10px;&#34;&gt; Numeric&lt;/span&gt;
                &lt;span style=&#34;background-color: #FF7F7F; padding: 5px; margin-right: 10px;&#34;&gt;Unknown&lt;/span&gt;
           &lt;/div&gt;
@@ -4338,8 +4339,17 @@ Giuseppe De Laurentis
                &lt;/tr&gt;
                &lt;tr&gt;
                     &lt;td style=&#34;border: 1px solid black; padding: 5px; text-align: center;&#34;&gt;2&lt;/td&gt;
-                    &lt;td style=&#34;border: 1px solid black; padding: 5px; background-color:rgb(250, 255, 0); text-align: center;&#34;&gt;
-                    `18 &lt;a href=&#34;https://arxiv.org/abs/1802.00349&#34;&gt;[15]&lt;/a&gt; `21 &lt;a href=&#34;https://arxiv.org/abs/2110.06953&#34;&gt;[16]&lt;/a&gt;
+                    &lt;td style=&#34;font-size: 10pt; border: 1px solid black; padding: 0; text-align: center !important;&#34;&gt;
+                    &lt;div style=&#34;display: flex; width: 100%;&#34;&gt;
+                         &lt;div style=&#34;background-color: rgb(250,255,0); padding: 5px; border-right: 1px solid black; flex: 2;&#34;&gt;
+                              `18 &lt;a href=&#34;https://arxiv.org/abs/1802.00349&#34;&gt;[15]&lt;/a&gt;
+                              `21 &lt;a href=&#34;https://arxiv.org/abs/2110.06953&#34;&gt;[16]&lt;/a&gt;
+                         &lt;/div&gt;
+                         &lt;div style=&#34;background-color: #e5ff00; padding: 5px; flex: 1;&#34;&gt;
+                              `22 &lt;a href=&#34;https://arxiv.org/abs/2206.10490&#34;&gt;[17]&lt;/a&gt;
+                         &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;/td&gt;
                     &lt;/td&gt;
                     &lt;td style=&#34;border: 1px solid black; padding: 5px; background-color: #FF7F7F; text-align: center;&#34;&gt;
                     ?
@@ -4379,6 +4389,7 @@ Giuseppe De Laurentis
                     &lt;a href=&#34;https://arxiv.org/abs/1608.01195&#34;&gt;[14] Greiner, Hoeche,Luisoni, Schonherr, Winter; &lt;/a&gt;
                     &lt;a href=&#34;https://arxiv.org/abs/1802.00349&#34;&gt;[15] Jones, Kerner, Luisoni; &lt;/a&gt;
                     &lt;a href=&#34;https://arxiv.org/abs/2110.06953&#34;&gt;[16] Chen, Huss, Jones, Kerner, Lang, Lindert, Zhang; &lt;/a&gt;
+                    &lt;a href=&#34;https://arxiv.org/abs/2206.10490&#34;&gt;[17] Bonciani, Del Duca, Frellesvig, Hidding, Hirschi, Moriello, Salvatori, Somogyi, Tramontano; &lt;/a&gt;
                &lt;/div&gt;
           &lt;/div&gt;
      &lt;/div&gt;
@@ -4442,7 +4453,7 @@ Gardi, Magnea (&#39;09)
 &lt;div style=&#34;text-align: left; font-size: 18pt; margin-top: 5mm; margin-bottom: 5mm;&#34;&gt;
      $\circ$ Finite remainder as a weighted sum of &lt;i style=&#34;color: orange;&#34;&gt;pentagon functions&lt;/i&gt;
      &lt;a style=&#34;font-size: large; display: inline-block; text-align: right; float: right; margin-top: 0mm; margin-left: -7mm; &#34; href=https://arxiv.org/abs/2110.10111&gt; + Zoia (&#39;21) &lt;/a&gt;  &lt;a style=&#34;font-size: large; display: inline-block; text-align: right; float: right; margin-top: 0mm; margin-right: 10mm; &#34; href=https://arxiv.org/abs/2009.07803&gt; Chicherin, Sotnikov (&#39;20) &lt;/a&gt; 
-     &lt;a style=&#34;font-size: large; display: inline-block; text-align: right; float: right; margin-top: -3mm; margin-left: 4mm; &#34; href=https://arxiv.org/abs/2110.10111&gt; + Abreu, Ita, Page, Tschernow (&#39;23) &lt;/a&gt;
+     &lt;a style=&#34;font-size: large; display: inline-block; text-align: right; float: right; margin-top: -3mm; margin-left: 4mm; &#34; href=https://arxiv.org/abs/2306.15431&gt; + Abreu, Ita, Page, Tschernow (&#39;23) &lt;/a&gt;
 &lt;/div&gt;
 &lt;div style=&#34;font-size: 13.5pt; margin-top: 5mm; margin-bottom: 5mm&#34;&gt;
 $$ 
@@ -4901,13 +4912,19 @@ In [4]: print(lTerms[:2], lTerms[-2:])
 &lt;/div&gt;
 &lt;span style=&#34;font-size: 11pt; &#34;&gt;
     These slides are powered by:&lt;br&gt;
-    &lt;span style=&#34;display: block; margin-top: 2mm;&#34;&gt;
+    &lt;span style=&#34;display: block; margin-top: -2mm;&#34;&gt;
         &lt;a href=&#34;https://en.wikipedia.org/wiki/Markdown&#34;&gt;markdown&lt;/a&gt;, 
         &lt;a href=&#34;https://en.wikipedia.org/wiki/HTML&#34;&gt;html&lt;/a&gt;, 
         &lt;a href=&#34;https://revealjs.com/&#34;&gt;revealjs&lt;/a&gt;, 
         &lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;, 
         &lt;a href=&#34;https://www.mathjax.org/&#34;&gt;mathjax&lt;/a&gt;, 
         &lt;a href=&#34;https://github.com/&#34;&gt;github&lt;/a&gt;
+    &lt;/span&gt;
+&lt;/span&gt;
+&lt;span style=&#34;font-size: 8pt; margin-top: 2mm;&#34;&gt;
+     GDL acknowledges support from the European Union&#39;s Horizon Europe programme under Marie Skłodowska-Curie grant agreement No. 101270050.
+     &lt;span style=&#34;display: block; margin-top: -1mm;&#34;&gt;
+     The views and opinions expressed are those of the author only and do not necessarily reflect those of the European Union or the European Research Executive Agency (REA).
     &lt;/span&gt;
 &lt;/span&gt;
 &lt;!---
